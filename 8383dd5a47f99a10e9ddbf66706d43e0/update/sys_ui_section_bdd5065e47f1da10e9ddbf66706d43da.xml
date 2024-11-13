@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Related Records" section_id="bdd5065e47f1da10e9ddbf66706d43da" sys_domain="global" table="x_rptp_kotak_uw_case" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>f9d5065e47f1da10e9ddbf66706d43db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>incident</element>
+            <position>1</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>f1d5065e47f1da10e9ddbf66706d43dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>problem</element>
+            <position>2</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>f9d5065e47f1da10e9ddbf66706d43dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>post_case_review</element>
+            <position>3</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>f1d5065e47f1da10e9ddbf66706d43dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>f9d5065e47f1da10e9ddbf66706d43dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>change</element>
+            <position>5</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>f1d5065e47f1da10e9ddbf66706d43de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>caused_by</element>
+            <position>6</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>f9d5065e47f1da10e9ddbf66706d43de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_action_summary</element>
+            <position>7</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>39d5465e47f1da10e9ddbf66706d4304</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_id>31d5465e47f1da10e9ddbf66706d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">bdd5065e47f1da10e9ddbf66706d43da</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Related Records</caption>
+            <header>false</header>
+            <name>x_rptp_kotak_uw_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 09:59:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bdd5065e47f1da10e9ddbf66706d43da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_uw_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_bdd5065e47f1da10e9ddbf66706d43da</sys_update_name>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:59:48</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">ae8ab94147a13110237dd902516d43bd</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="06a4421affbd9a5019a8ffda7c4fd912" sys_domain="global" table="x_rptp_kotak_kil_policy" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 09:54:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1ea48a1affbd9a5019a8ffda7c4fd9a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_rptp_kotak_kil_policy" name="x_rptp_kotak_kil_policy" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">06a4421affbd9a5019a8ffda7c4fd912</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kil_policy" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">82a48a1affbd9a5019a8ffda7c4fd999</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:54:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 09:54:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0aa48a1affbd9a5019a8ffda7c4fd998</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_rptp_kotak_kil_policy" name="x_rptp_kotak_kil_policy" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">06a4421affbd9a5019a8ffda7c4fd912</sys_ui_form>
+            <sys_ui_section caption="Premium Details" display_value="Premium Details" name="x_rptp_kotak_kil_policy" sys_domain="global" view="ae8ab94147a13110237dd902516d43bd">46a48a1affbd9a5019a8ffda7c4fd990</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:54:38</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_rptp_kotak_kil_policy</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 09:54:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>06a4421affbd9a5019a8ffda7c4fd912</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_kil_policy</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_06a4421affbd9a5019a8ffda7c4fd912</sys_update_name>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:54:38</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">ae8ab94147a13110237dd902516d43bd</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

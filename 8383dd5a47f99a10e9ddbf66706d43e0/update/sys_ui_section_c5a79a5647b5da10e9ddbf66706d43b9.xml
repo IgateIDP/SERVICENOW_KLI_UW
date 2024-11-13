@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="c5a79a5647b5da10e9ddbf66706d43b9" sys_domain="global" table="x_rptp_kotak_kli_consumer" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>c4281a5a47b5da10e9ddbf66706d43a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>8c281a5a47b5da10e9ddbf66706d43ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>title</element>
+            <position>2</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>84281a5a47b5da10e9ddbf66706d43f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>3</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>8c281a5a47b5da10e9ddbf66706d43f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_domain</element>
+            <position>4</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>84281a5a47b5da10e9ddbf66706d43f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>5</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>8c281a5a47b5da10e9ddbf66706d43f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>6</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>84281a5a47b5da10e9ddbf66706d43f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>8c281a5a47b5da10e9ddbf66706d43f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>prefix</element>
+            <position>8</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>84281a5a47b5da10e9ddbf66706d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>suffix</element>
+            <position>9</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>8c281a5a47b5da10e9ddbf66706d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>middle_name</element>
+            <position>10</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>84281a5a47b5da10e9ddbf66706d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>household</element>
+            <position>11</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>8c281a5a47b5da10e9ddbf66706d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>preferred_language</element>
+            <position>12</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>84281a5a47b5da10e9ddbf66706d43f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>13</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>8c281a5a47b5da10e9ddbf66706d43f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>14</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>street</element>
+            <position>15</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>16</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_format</element>
+            <position>17</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>18</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_phone</element>
+            <position>19</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>20</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>zip</element>
+            <position>21</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>22</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>23</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>24</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notes</element>
+            <position>25</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>26</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>country</element>
+            <position>27</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_zone</element>
+            <position>28</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>29</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>home_phone</element>
+            <position>30</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>31</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>32</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94281a5a47b5da10e9ddbf66706d43ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>33</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c281a5a47b5da10e9ddbf66706d43ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>photo</element>
+            <position>34</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4300</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>35</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4300</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_phone</element>
+            <position>36</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4301</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>37</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4301</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>38</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4302</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>39</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4302</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fax</element>
+            <position>40</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4303</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notification</element>
+            <position>41</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4303</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>primary</element>
+            <position>42</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4304</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_format</element>
+            <position>43</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4304</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_date_of_birth</element>
+            <position>44</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_income_source</element>
+            <position>45</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>46</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4306</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_country_code</element>
+            <position>47</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4306</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_market_segment</element>
+            <position>48</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4307</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_nationality</element>
+            <position>49</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4307</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_risk_tolerance</element>
+            <position>50</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_suitability</element>
+            <position>51</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nationality</element>
+            <position>52</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4309</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>53</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4309</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_gw_cm_id</element>
+            <position>54</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d430a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fso_gw_pc_id</element>
+            <position>55</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d430a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>56</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d430b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_text</element>
+            <position>57</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d430b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_rptp_smartassu_2_lead_owner</element>
+            <position>58</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d430c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>59</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d430c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_rptp_smartassu_2_agent_id</element>
+            <position>60</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d430d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_rptp_smartassu_2_lead_status</element>
+            <position>61</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d430d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>62</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d430e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_rptp_smartassu_2_customer_id</element>
+            <position>63</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d430e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>64</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d430f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sn_tmt_core_external_id</element>
+            <position>65</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:42</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d430f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>66</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4310</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_rptp_smartassu_2_belongs_to</element>
+            <position>67</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4310</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>68</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_annual_income</element>
+            <position>69</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4311</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_maritial_status</element>
+            <position>70</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_weight</element>
+            <position>71</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_height</element>
+            <position>72</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4313</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_area</element>
+            <position>73</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4313</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_house_number</element>
+            <position>74</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4314</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_social_staus</element>
+            <position>75</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4314</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>member_number</element>
+            <position>76</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>94285a5a47b5da10e9ddbf66706d4315</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>member_client_id</element>
+            <position>77</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:19:43</sys_created_on>
+            <sys_id>9c285a5a47b5da10e9ddbf66706d4315</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:19:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>age</element>
+            <position>78</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 11:24:32</sys_created_on>
+            <sys_id>47399e9a47b5da10e9ddbf66706d431c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="Default view">c5a79a5647b5da10e9ddbf66706d43b9</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:24:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_rptp_kotak_kli_consumer</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-13 11:17:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c5a79a5647b5da10e9ddbf66706d43b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_kli_consumer</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_c5a79a5647b5da10e9ddbf66706d43b9</sys_update_name>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:17:34</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

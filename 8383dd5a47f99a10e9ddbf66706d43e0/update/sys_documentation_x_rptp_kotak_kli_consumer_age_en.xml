@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="age" label="Age" language="en" table="x_rptp_kotak_kli_consumer">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>age</element>
+            <help/>
+            <hint/>
+            <label>Age</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_consumer</name>
+            <plural>Ages</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 11:24:33</sys_created_on>
+            <sys_id>4339deda47b5da10e9ddbf66706d430f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Age</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_kli_consumer_age_en</sys_update_name>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:24:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
