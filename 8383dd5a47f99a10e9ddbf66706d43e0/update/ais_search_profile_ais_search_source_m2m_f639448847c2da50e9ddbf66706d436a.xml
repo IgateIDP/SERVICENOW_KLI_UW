@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="kotak-demo Search Profile">55c88444f8c2da509ce901054376dce7</profile>
+        <search_source display_value="KLI Requirement Excel">ae39048847c2da50e9ddbf66706d43aa</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:24:45</sys_created_on>
+        <sys_id>f639448847c2da50e9ddbf66706d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>kotak-demo Search Profile.KLI Requirement Excel</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_f639448847c2da50e9ddbf66706d436a</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:24:45</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

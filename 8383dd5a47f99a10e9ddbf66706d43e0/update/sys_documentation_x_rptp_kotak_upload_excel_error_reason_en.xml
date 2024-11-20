@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="error_reason" label="Error Reason" language="en" table="x_rptp_kotak_upload_excel">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>error_reason</element>
+            <help/>
+            <hint/>
+            <label>Error Reason</label>
+            <language>en</language>
+            <name>x_rptp_kotak_upload_excel</name>
+            <plural>Error Reasons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 09:48:53</sys_created_on>
+            <sys_id>d0ec7858474e5e50e9ddbf66706d431d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Error Reason</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_upload_excel_error_reason_en</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 09:48:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Location to display the ribbon</description>
+        <name>ribbonLocation</name>
+        <page display_value="Kotak Tracking Portal">9ad80084dec2da50378fe68ce0cdb110</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-18 11:23:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>42d8cc44dac2da50eb22ce2420b3e1ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ribbonLocation</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_page_property_42d8cc44dac2da50eb22ce2420b3e1ff</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:23:05</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_rptp_kotak.9ad80084dec2da50378fe68ce0cdb110.root.ribbonLocation</unique_name>
+        <value>sidebar</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=42d8cc44dac2da50eb22ce2420b3e1ff"/>
+</record_update>

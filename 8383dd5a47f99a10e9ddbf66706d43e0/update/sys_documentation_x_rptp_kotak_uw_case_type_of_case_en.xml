@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="type_of_case" label="Type of Case" language="en" table="x_rptp_kotak_uw_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>type_of_case</element>
+            <help/>
+            <hint/>
+            <label>Type of Case</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <plural>Type of Cases</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-15 09:55:57</sys_created_on>
+            <sys_id>f028188b47b1d250e9ddbf66706d4373</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Type of Case</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_uw_case_type_of_case_en</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-15 09:55:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

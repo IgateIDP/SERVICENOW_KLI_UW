@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="9a498c8847c2da50e9ddbf66706d4364" sys_domain="global" table="x_rptp_kotak_uw_case" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e24900c847c2da50e9ddbf66706d439a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_rptp_kotak_uw_case" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">9a498c8847c2da50e9ddbf66706d4364</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">a24900c847c2da50e9ddbf66706d4399</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee4940c847c2da50e9ddbf66706d430b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_rptp_kotak_uw_case" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">9a498c8847c2da50e9ddbf66706d4364</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">ae4940c847c2da50e9ddbf66706d430a</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae4940c847c2da50e9ddbf66706d4350</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_rptp_kotak_uw_case" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">9a498c8847c2da50e9ddbf66706d4364</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">aa4940c847c2da50e9ddbf66706d4311</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a24940c847c2da50e9ddbf66706d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_rptp_kotak_uw_case" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">9a498c8847c2da50e9ddbf66706d4364</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_rptp_kotak_uw_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">624940c847c2da50e9ddbf66706d4356</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_rptp_kotak_uw_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:24:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a498c8847c2da50e9ddbf66706d4364</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_uw_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_9a498c8847c2da50e9ddbf66706d4364</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:24:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Kotak demo 0" name="workspace-kotak-demo-0">99c8844483c2da506ff58cccfdbc4cdd</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

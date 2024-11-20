@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Kotak Tracking Portal">9ad80084dec2da50378fe68ce0cdb110</page>
+        <required_translations>[ {
+  "message" : "New Case",
+  "comment" : ""
+}, {
+  "message" : "New KLI Audit trail",
+  "comment" : ""
+}, {
+  "message" : "New KLI Consumer",
+  "comment" : ""
+}, {
+  "message" : "New KLI Loan Table",
+  "comment" : ""
+}, {
+  "message" : "New KLI Policy",
+  "comment" : ""
+}, {
+  "message" : "New KLI Requirement Excel",
+  "comment" : ""
+}, {
+  "message" : "New KLI Requirement Mapping",
+  "comment" : ""
+}, {
+  "message" : "New KLI Requirements",
+  "comment" : ""
+}, {
+  "message" : "New KLI UnderWriter Decision",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-18 11:23:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>cad8008405c2da500ed4250961026f01</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_page_property_cad8008405c2da500ed4250961026f01</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:24:42</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_rptp_kotak.9ad80084dec2da50378fe68ce0cdb110.root.global.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Case"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_uw_case","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_uw_case","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI Audit trail"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_kotak_audit_trail","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_kotak_audit_trail","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI Consumer"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_kli_consumer","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_kli_consumer","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI Loan Table"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_kotak_loan_table","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_kotak_loan_table","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI Policy"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_kil_policy","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_kil_policy","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI Requirement Excel"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_upload_excel","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_upload_excel","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI Requirement Mapping"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_requirement_mapping","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_requirement_mapping","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI Requirements"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_requirements","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_requirements","canCreate":true}}},{"label":{"translatable":true,"message":"New KLI UnderWriter Decision"},"routeInfo":{"route":"record","fields":{"table":"x_rptp_kotak_underwriter_decision","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_rptp_kotak_underwriter_decision","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=cad8008405c2da500ed4250961026f01"/>
+</record_update>

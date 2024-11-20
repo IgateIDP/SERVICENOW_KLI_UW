@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="recieved_date" label="Recieved Date" language="en" table="x_rptp_kotak_requirement_mapping">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>recieved_date</element>
+            <help/>
+            <hint/>
+            <label>Recieved Date</label>
+            <language>en</language>
+            <name>x_rptp_kotak_requirement_mapping</name>
+            <plural>Recieved Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-15 05:19:15</sys_created_on>
+            <sys_id>b7c85b3247799250e9ddbf66706d4300</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Recieved Date</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_requirement_mapping_recieved_date_en</sys_update_name>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-15 05:19:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

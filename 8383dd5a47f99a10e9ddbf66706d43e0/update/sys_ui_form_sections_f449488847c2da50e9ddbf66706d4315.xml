@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="f449488847c2da50e9ddbf66706d4315" sys_domain="global" table="sn_customerservice_case" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:24:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61494c8847c2da50e9ddbf66706d4318</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_customerservice_case" name="sn_customerservice_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">f449488847c2da50e9ddbf66706d4315</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sn_customerservice_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">25494c8847c2da50e9ddbf66706d4316</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:24:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:24:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed494c8847c2da50e9ddbf66706d434b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_customerservice_case" name="sn_customerservice_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">f449488847c2da50e9ddbf66706d4315</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="sn_customerservice_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">6d494c8847c2da50e9ddbf66706d434a</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:24:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:24:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e9494c8847c2da50e9ddbf66706d4352</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_customerservice_case" name="sn_customerservice_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">f449488847c2da50e9ddbf66706d4315</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="sn_customerservice_case" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">a9494c8847c2da50e9ddbf66706d4351</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:24:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_customerservice_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:24:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f449488847c2da50e9ddbf66706d4315</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_customerservice_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_f449488847c2da50e9ddbf66706d4315</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:24:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Kotak demo 0" name="workspace-kotak-demo-0">99c8844483c2da506ff58cccfdbc4cdd</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

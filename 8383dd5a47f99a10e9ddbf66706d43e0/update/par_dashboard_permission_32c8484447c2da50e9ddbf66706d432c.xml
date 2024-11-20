@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="Kotak demo">99c88444ccc2da506ef0befc7ed67be0</dashboard>
+        <group/>
+        <owner>false</owner>
+        <role display_value="x_rptp_kotak.user" name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</role>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>32c8484447c2da50e9ddbf66706d432c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>99c88444ccc2da506ef0befc7ed67be0</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>par_dashboard_permission_32c8484447c2da50e9ddbf66706d432c</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:22:50</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>

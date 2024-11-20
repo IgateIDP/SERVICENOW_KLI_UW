@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Loan Details" section_id="c2589e5a47b5da10e9ddbf66706d43db" sys_domain="global" table="x_rptp_kotak_uw_case" version="3" view="kotak_case_view">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.loan_number</element>
+            <position>0</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>2e290d1c47ce5e50e9ddbf66706d43b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.loan_type</element>
+            <position>1</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>26290d1c47ce5e50e9ddbf66706d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.start_date</element>
+            <position>2</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>2e290d1c47ce5e50e9ddbf66706d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.co_borrower</element>
+            <position>3</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>26290d1c47ce5e50e9ddbf66706d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>2e290d1c47ce5e50e9ddbf66706d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.temporary_loan_id</element>
+            <position>5</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>26290d1c47ce5e50e9ddbf66706d43b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.u_amount</element>
+            <position>6</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>2e290d1c47ce5e50e9ddbf66706d43b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.borrower</element>
+            <position>7</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 10:42:33</sys_created_on>
+            <sys_id>26290d1c47ce5e50e9ddbf66706d43b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Loan Details" display_value="Loan Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="b6c64a5e47f1da10e9ddbf66706d4317">c2589e5a47b5da10e9ddbf66706d43db</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:42:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Loan Details</caption>
+            <header>false</header>
+            <name>x_rptp_kotak_uw_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 11:20:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2589e5a47b5da10e9ddbf66706d43db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_uw_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_c2589e5a47b5da10e9ddbf66706d43db</sys_update_name>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 11:20:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Kotak Case view" name="kotak_case_view">b6c64a5e47f1da10e9ddbf66706d4317</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

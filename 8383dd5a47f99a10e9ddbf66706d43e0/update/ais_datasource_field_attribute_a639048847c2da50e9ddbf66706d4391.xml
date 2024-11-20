@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_datasource_field_attribute">
+    <ais_datasource_field_attribute action="INSERT_OR_UPDATE">
+        <attribute display_value="map_to">f734a634c7320010d1cfd9795cc26094</attribute>
+        <datasource display_value="KLI Policy Table">2a39048847c2da50e9ddbf66706d432a</datasource>
+        <field>number</field>
+        <source>x_rptp_kotak_kil_policy</source>
+        <sys_class_name>ais_datasource_field_attribute</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:24:44</sys_created_on>
+        <sys_id>a639048847c2da50e9ddbf66706d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_kil_policy.number</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>ais_datasource_field_attribute_a639048847c2da50e9ddbf66706d4391</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:24:44</sys_updated_on>
+        <value>text</value>
+    </ais_datasource_field_attribute>
+</record_update>

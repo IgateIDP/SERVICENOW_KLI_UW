@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>true</click_in_mode>
+        <context_config_id display_value="Kotak demo - Workspace Search">95c884448ec2da50a5071c158535a0de</context_config_id>
+        <limit>5</limit>
+        <order>100</order>
+        <section_header>Recent searches</section_header>
+        <suggestion_type>Recent Search Reader Group for Starter Workspace - Workspace Search</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:44</sys_created_on>
+        <sys_id>55c88444e5c2da505746ba07dada09e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Recent Search Reader Group for Starter Workspace - Workspace Search</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_55c88444e5c2da505746ba07dada09e2</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:22:44</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

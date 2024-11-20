@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Record Default">8ad8008433c2da50c3affec5456c9002</macroponent>
+        <name>card_base_header_1/tagline</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	 var comments=api.item.value.sys_created_by.displayValue;
+  var obj={
+    "label":comments,
+    "icon":"document-outline"
+  }
+	return obj;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-19 03:02:12</sys_created_on>
+        <sys_id>5e9d1f4047ce1e50e9ddbf66706d43dc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>card_base_header_1/tagline</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_client_script_5e9d1f4047ce1e50e9ddbf66706d43dc</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-19 09:38:14</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

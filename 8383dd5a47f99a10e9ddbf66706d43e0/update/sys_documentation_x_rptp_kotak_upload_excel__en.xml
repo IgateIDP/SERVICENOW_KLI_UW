@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="KLI Requirement Excel" language="en" table="x_rptp_kotak_upload_excel">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>KLI Requirement Excel</label>
+            <language>en</language>
+            <name>x_rptp_kotak_upload_excel</name>
+            <plural>KLI Requirement Excels</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-11-15 06:33:59</sys_created_on>
+            <sys_id>1ee9e3baffb5129019a8ffda7c4fd98f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>KLI Requirement Excel</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_upload_excel__en</sys_update_name>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-15 09:23:46</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

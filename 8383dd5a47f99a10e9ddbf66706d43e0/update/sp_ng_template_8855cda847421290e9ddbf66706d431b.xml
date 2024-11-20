@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>customFormss.xml</id>
+        <sp_widget display_value="Kotak Form">3be4856847421290e9ddbf66706d430f</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-20 05:07:49</sys_created_on>
+        <sys_id>8855cda847421290e9ddbf66706d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>customFormss.xml</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_ng_template_8855cda847421290e9ddbf66706d431b</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:07:49</sys_updated_on>
+        <template><![CDATA[<div>
+  <custom-sp-variable ng-if="!delayView" ng-attr-id="{{::formModel.table}}.do" embedded_in_modal="embeddedInModal" template-url='customVariableLayoutss.xml'>
+  </custom-sp-variable>
+  <div ng-init="execItemScripts()">
+  </div>
+</div>]]></template>
+    </sp_ng_template>
+</record_update>
