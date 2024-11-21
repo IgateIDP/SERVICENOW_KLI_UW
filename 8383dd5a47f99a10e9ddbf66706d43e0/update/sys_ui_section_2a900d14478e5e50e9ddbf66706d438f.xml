@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="2a900d14478e5e50e9ddbf66706d438f" sys_domain="global" table="x_rptp_kotak_requirement_mapping" version="3" view="nedmed_view">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_id</element>
+            <position>0</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:28</sys_created_on>
+            <sys_id>5e6bcee447c25290e9ddbf66706d43ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>raised_date</element>
+            <position>1</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:28</sys_created_on>
+            <sys_id>9a6bcee447c25290e9ddbf66706d43ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>2</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:28</sys_created_on>
+            <sys_id>926bcee447c25290e9ddbf66706d43ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>waiver</element>
+            <position>3</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:28</sys_created_on>
+            <sys_id>9a6bcee447c25290e9ddbf66706d43ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recieved_date</element>
+            <position>4</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:28</sys_created_on>
+            <sys_id>926bcee447c25290e9ddbf66706d43ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ageing_1</element>
+            <position>5</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:28</sys_created_on>
+            <sys_id>9a6bcee447c25290e9ddbf66706d43ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>raised_by</element>
+            <position>6</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:28</sys_created_on>
+            <sys_id>926bcee447c25290e9ddbf66706d43f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>9a6bcee447c25290e9ddbf66706d43f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requirement_id</element>
+            <position>8</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>926bcee447c25290e9ddbf66706d43f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>uw_additional_req</element>
+            <position>9</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>9a6bcee447c25290e9ddbf66706d43f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reason_for_waiver</element>
+            <position>10</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>926bcee447c25290e9ddbf66706d43f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>classification</element>
+            <position>11</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>9a6bcee447c25290e9ddbf66706d43f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>upload_date</element>
+            <position>12</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>926bcee447c25290e9ddbf66706d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ageing_2</element>
+            <position>13</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>9a6bcee447c25290e9ddbf66706d43f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recieved_by</element>
+            <position>14</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 10:10:29</sys_created_on>
+            <sys_id>926bcee447c25290e9ddbf66706d43f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="ca900d14478e5e50e9ddbf66706d4387">2a900d14478e5e50e9ddbf66706d438f</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 10:10:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_rptp_kotak_requirement_mapping</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-19 10:05:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a900d14478e5e50e9ddbf66706d438f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_requirement_mapping</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_2a900d14478e5e50e9ddbf66706d438f</sys_update_name>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-19 10:05:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Nedmed view" name="nedmed_view">ca900d14478e5e50e9ddbf66706d4387</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

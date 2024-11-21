@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="hold_internal_requirement" table="x_rptp_kotak_underwriter_decision" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>hold_internal_requirement</element>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 07:26:49</sys_created_on>
+            <sys_id>0df5e5a847ca1290e9ddbf66706d437a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>hold_internal_requirement</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_choice_x_rptp_kotak_underwriter_decision_hold_internal_requirement</sys_update_name>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 07:26:49</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>hold_internal_requirement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hold</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 07:26:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8bd5e9e847ca1290e9ddbf66706d43dc</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 07:27:46</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>hold_internal_requirement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AMO</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 07:27:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49f5e9e847ca1290e9ddbf66706d43dd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 07:27:49</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>hold_internal_requirement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CMO</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 07:27:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c06e9e847ca1290e9ddbf66706d43a0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 07:27:52</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>hold_internal_requirement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RI</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 07:27:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>050665e847ca1290e9ddbf66706d438f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 07:28:00</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>hold_internal_requirement</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MedNet</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-20 07:27:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e706eda847ca1290e9ddbf66706d43e7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-20 07:28:02</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
