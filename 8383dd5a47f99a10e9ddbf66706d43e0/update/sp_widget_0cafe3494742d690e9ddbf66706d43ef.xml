@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope,$rootScope,spUtil) {
+	var c = this;
+
+
+	$rootScope.$on('CaseId', function(event, sysId) {
+
+		$scope.receivedSysId = sysId;
+//console.log($scope.receivedSysId)
+		c.server.get({'action':'getAuditRecord','value' : $scope.receivedSysId}).then(function(res){
+			//console.log(res.data.caseAudit)
+			$scope.activityLogs = res.data.caseAudit;
+		})
+		
+		$scope.DownloadPDF=function(){
+		
+	c.server.get({'action':'create','value' : $scope.receivedSysId}).then(function(res){
+			console.log(res.data.recordId)
+		})
+}
+	});
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.activity-container {
+  margin: 20px auto;
+  width: 100%; /* Full width */
+  max-width: 100%; /* Ensure it takes full screen width */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activity-table thead {
+  background-color: #f4f4f4;
+}
+
+.activity-table thead th {
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.activity-table tbody td {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.activity-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Ensure activity takes up 40% and date takes 60% */
+.activity-column {
+  width: 40%; /* Activity takes 40% */
+}
+
+.date-column {
+  width: 40%; /* Date takes 60% */
+}
+
+.widget-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #03428E;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+  margin-bottom : 2rem;
+}
+
+.widget-title:hover {
+  background-color: #e9e9e9;
+}
+
+.widget-title i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.widget-title .exit-icon {
+  margin-right: 10px;
+}
+
+.widget-title .content {
+  flex-grow: 1; /* This ensures the content takes up available space */
+  display: flex;
+  justify-content: left; /* Centers the heading */
+}
+
+.widget-title .chart-icon {
+  margin-left: 10px;
+}
+
+
+/* Button container styling */
+.button-container {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.search-button {
+  background-color: #003366; /* Navy blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #002244; /* Darker navy blue on hover */
+}
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>audit_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Audit List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+if (input && input.action == 'getAuditRecord') {
+
+    var auditLogs = [];
+
+    var caseSysId = new GlideRecord('x_rptp_kotak_kotak_audit_trail');
+    caseSysId.addQuery('case_id', input.value);
+   // caseSysId.orderBy('sys_created_on');
+    caseSysId.query();
+
+    while (caseSysId.next()) {
+        var AuditObject = {
+            activity: caseSysId.getValue('activity'),
+            date: caseSysId.getValue('sys_created_on'),
+						user: caseSysId.getValue("sys_created_by")
+        };
+
+        auditLogs.push(AuditObject);
+    }
+	
+
+    data.caseAudit = auditLogs;
+}
+		if (input && input.action == 'create') {
+	    var caseSysId1 = new GlideRecord('x_rptp_kotak_kotak_audit_trail');
+
+	caseSysId1.initialize(); 
+
+    if (input && input.value) {
+        caseSysId1.setValue('activity', 'Audit Trail of the Case was sent via Email');
+        caseSysId1.setValue('case_id', input.value);
+
+         data.recordId = caseSysId1.insert();
+			gs.addInfoMessage("Audit Trail pdf has been sent to your Email");
+      
+		}
+	}
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-22 06:45:30</sys_created_on>
+        <sys_id>0cafe3494742d690e9ddbf66706d43ef</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>Audit List</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_widget_0cafe3494742d690e9ddbf66706d43ef</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 06:18:48</sys_updated_on>
+        <template><![CDATA[<div class="widget-title" ng-if = 'receivedSysId'>
+
+
+  <div class="content" >
+
+    <span>Audit Trail</span>
+
+  </div>
+</div>
+
+
+<div ng-if = 'receivedSysId'>
+
+
+
+
+  <div class="activity-container" >
+    <table class="activity-table">
+      <thead>
+        <tr>
+          <th class="activity-column">Activity</th>
+          <th class="date-column">Date</th>
+          <th class="date-column">User</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="log in activityLogs">
+          <td class="activity-column">{{ log.activity }}</td>
+          <td class="date-column">{{ log.date }}</td>
+          <td class="date-column">{{ log.user }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="button-container">
+    <button class="search-button"  ng-click = "DownloadPDF()">Download</button>
+  </div>
+
+
+</div>
+
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>0cafe3494742d690e9ddbf66706d43ef</id>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-22 06:45:29</sys_created_on>
+        <sys_id>c3af67494742d690e9ddbf66706d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-22 06:45:29</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

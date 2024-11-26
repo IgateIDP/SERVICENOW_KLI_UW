@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="req_pending_ageing" label="Req Pending Ageing" language="en" table="x_rptp_kotak_uw_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>req_pending_ageing</element>
+            <help/>
+            <hint/>
+            <label>Req Pending Ageing</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <plural>Req Pending Ageings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-25 09:58:06</sys_created_on>
+            <sys_id>b9883b86478212d0e9ddbf66706d43ac</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Req Pending Ageing</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_uw_case_req_pending_ageing_en</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-26 07:29:32</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

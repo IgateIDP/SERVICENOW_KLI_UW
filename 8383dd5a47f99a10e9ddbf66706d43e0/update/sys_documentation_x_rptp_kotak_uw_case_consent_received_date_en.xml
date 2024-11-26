@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="consent_received_date" label="Consent Received Date" language="en" table="x_rptp_kotak_uw_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>consent_received_date</element>
+            <help/>
+            <hint/>
+            <label>Consent Received Date</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <plural>Consent Received Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-26 07:11:29</sys_created_on>
+            <sys_id>47fb586a478e92d0e9ddbf66706d430a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Consent Received Date</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_uw_case_consent_received_date_en</sys_update_name>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-26 07:11:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

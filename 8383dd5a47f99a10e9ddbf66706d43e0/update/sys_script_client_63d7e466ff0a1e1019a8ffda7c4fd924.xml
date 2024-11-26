@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>false</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Make specified view readOnly</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+  var fields = g_form.getEditableFields();  // Gets all fields that are editable
+  for (var i = 0; i < fields.length; i++) {
+    g_form.setReadOnly(fields[i], true);   // Set each field to read-only
+  }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 08:04:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>63d7e466ff0a1e1019a8ffda7c4fd924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make specified view readOnly</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_63d7e466ff0a1e1019a8ffda7c4fd924</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 08:04:23</sys_updated_on>
+        <table>x_rptp_kotak_kli_consumer</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view>kotak_customer</view>
+    </sys_script_client>
+</record_update>
