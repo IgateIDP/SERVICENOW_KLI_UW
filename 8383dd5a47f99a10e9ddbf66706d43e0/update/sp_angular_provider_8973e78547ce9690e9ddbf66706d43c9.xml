@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>spCheckboxLists</name>
+        <script><![CDATA[function spCheckboxList() {
+  return {
+    restrict: 'E',
+    scope: {
+      field: '=',
+      formModel: '=',
+      snSelectWidth: '@',
+      refTable: '@',
+      refId: '@',
+      glideForm: '&',
+      recordValues: '&',
+      snOptions: '=',
+      snDisabled: '='
+    },
+    template: '<div class="form-groups">' +
+                '<div class="checkbox" ng-repeat="option in options">' +
+                  '<label>' +
+                    '<input type="checkbox" ng-model="option.selected" ng-change="updateSelectedOptions()" ng-disabled="snDisabled">' +
+                    '{{ option.label}}' +
+                  '</label>' +
+                '</div>' +
+              '</div>',
+    controller: ['$scope', '$http', function($scope, $http) {
+      $scope.options = [];
+			
+      var currentfield = $scope.field.ed.searchField;
+
+      function fetchReferenceOptions() {
+        var url = '/api/now/table/' + $scope.field.ed.reference + '?sysparm_display_value=true';
+        $http.get(url).then(function(response) {
+          var data = response.data.result;
+          $scope.options = data.map(function(item) {
+            return {
+              sys_id: item.sys_id,
+              label: item[currentfield],
+              selected: false
+            };
+          });
+
+          if ($scope.field.display_value_list) {
+
+            $scope.field.display_value_list.forEach(function(value) {
+              var option = $scope.options.find(function(option) {
+                return option.label === value;
+              });
+              if (option) {
+                option.selected = true;
+              }
+            });
+          }
+
+          var selectedValues = $scope.recordValues().split(',');
+          $scope.options.forEach(function(option) {
+            if (selectedValues.indexOf(option.sys_id) !== -1) {
+              option.selected = true;
+            }
+          });
+        });
+      }
+
+      fetchReferenceOptions();
+
+      $scope.updateSelectedOptions = function() {
+        var selectedOptions = $scope.options.filter(function(option) {
+          return option.selected;
+        });
+        var selectedSysIds = selectedOptions.map(function(option) {
+          return option.sys_id;
+        });
+        $scope.field.value = selectedSysIds.join(',');
+      };
+    }]
+  };
+}
+]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-22 05:52:17</sys_created_on>
+        <sys_id>8973e78547ce9690e9ddbf66706d43c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spCheckboxLists</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_angular_provider_8973e78547ce9690e9ddbf66706d43c9</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-22 05:52:17</sys_updated_on>
+        <type>directive</type>
+    </sp_angular_provider>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>8973e78547ce9690e9ddbf66706d43c9</id>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-22 05:52:17</sys_created_on>
+        <sys_id>bb732f4547ce9690e9ddbf66706d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-22 05:52:17</sys_updated_on>
+        <table>sp_angular_provider</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

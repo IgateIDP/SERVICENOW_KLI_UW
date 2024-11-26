@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_scriptlet">
+    <sys_ux_data_broker_scriptlet action="INSERT_OR_UPDATE">
+        <api_name>x_rptp_kotak.Get Fields of a table from view</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Fields of a table from view</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "description": "Table to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "table_name",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "view",&#13;
+  "label": "View",&#13;
+  "description": "view to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "String",&#13;
+  "mandatory": true&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Table",
+  "comment" : ""
+}, {
+  "message" : "Table to look up",
+  "comment" : ""
+}, {
+  "message" : "View",
+  "comment" : ""
+}, {
+  "message" : "view to look up",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function () {
+    /**
+     * Fetches field metadata for a given table and view without using GlideTableHierarchy.
+     * @param {Object} input - The input object containing the table name and optional view name.
+     * @param {string} input.table - The name of the table to fetch fields for.
+     * @param {string} [input.view] - The name of the view to filter fields by (optional).
+     * @returns {Array} results - An array of field metadata objects.
+     */
+    function transform(input) {
+        var results = [];
+
+        // Validate input
+        if (!input.table) {
+            return results;
+        }
+
+        // Resolve all parent tables for the input table
+        var parentTables = getParentTables(input.table);
+
+        // Iterate through each table in the hierarchy
+        for (var i = 0; i < parentTables.length; i++) {
+            var table = parentTables[i];
+
+            // Query sys_ui_element for fields in the given view
+            var visibleFields = getVisibleFieldsForView(table, input.view);
+
+            // Query sys_dictionary for all fields on the table
+            var grSys = new GlideRecord('sys_dictionary');
+            grSys.addEncodedQuery('name=' + table + '^internal_type!=collection^internal_typeISNOTEMPTY');
+            grSys.query();
+
+            while (grSys.next()) {
+                var fieldName = grSys.getValue("element");
+
+                // If view is specified, filter out fields not in the visibleFields list
+                if (input.view && !visibleFields.includes(fieldName)) {
+                    continue;
+                }
+
+                // Add the field metadata to the results
+                results.push({
+                    "column_label": grSys.getValue("column_label"),
+                    "element": fieldName,
+                    "reference": grSys.getValue("reference"),
+                    "display": grSys.getValue("display"),
+                    "type": grSys.getValue("internal_type")
+                });
+            }
+        }
+
+        return results;
+    }
+
+    /**
+     * Gets all parent tables for the specified table.
+     * @param {string} tableName - The name of the table.
+     * @returns {Array} parentTables - An array of table names in the hierarchy.
+     */
+    function getParentTables(tableName) {
+        var parentTables = [];
+        var gr = new GlideRecord('sys_db_object');
+        gr.addQuery('name', tableName);
+        gr.query();
+
+        if (gr.next()) {
+            parentTables.push(tableName); // Add the current table
+            var extendsTable = gr.getValue('super_class');
+            while (extendsTable) {
+                parentTables.push(extendsTable); // Add parent table
+                var grParent = new GlideRecord('sys_db_object');
+                grParent.addQuery('name', extendsTable);
+                grParent.query();
+
+                if (grParent.next()) {
+                    extendsTable = grParent.getValue('super_class'); // Move to next parent
+                } else {
+                    extendsTable = null;
+                }
+            }
+        }
+
+        return parentTables;
+    }
+
+    /**
+     * Gets all fields visible in the specified view for a table.
+     * @param {string} table - The name of the table.
+     * @param {string} view - The name of the view (optional).
+     * @returns {Array} visibleFields - An array of field names visible in the view.
+     */
+    function getVisibleFieldsForView(table, view) {
+        var visibleFields = [];
+        if (!view) {
+            return visibleFields; // Return empty if no view is specified
+        }
+
+        var grUiElement = new GlideRecord('sys_ui_element');
+        grUiElement.addQuery('name', table);
+        grUiElement.addQuery('view', view);
+        grUiElement.query();
+
+        while (grUiElement.next()) {
+            visibleFields.push(grUiElement.getValue('element'));
+        }
+
+        return visibleFields;
+    }
+
+    // Execute and return the transformed results
+    return transform(input);
+})();
+]]></script>
+        <sys_class_name>sys_ux_data_broker_scriptlet</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 02:22:51</sys_created_on>
+        <sys_id>85b95bda47c292d0e9ddbf66706d43f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Get Fields of a table from view</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_data_broker_scriptlet_85b95bda47c292d0e9ddbf66706d43f0</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 02:27:32</sys_updated_on>
+    </sys_ux_data_broker_scriptlet>
+    <sys_translated_text action="delete_multiple" query="documentkey=85b95bda47c292d0e9ddbf66706d43f0"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>85b95bda47c292d0e9ddbf66706d43f0</id>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 02:22:50</sys_created_on>
+        <sys_id>b6e9931a47c292d0e9ddbf66706d434f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 02:22:50</sys_updated_on>
+        <table>sys_ux_data_broker_scriptlet</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

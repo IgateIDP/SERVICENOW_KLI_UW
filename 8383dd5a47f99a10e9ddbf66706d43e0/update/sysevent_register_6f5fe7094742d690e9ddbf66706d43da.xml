@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_rptp_kotak.audit_trail_email</event_name>
+        <fired_by>Business rule - whenever a new Audit Trail is created with Audit trail attachment</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix>audit_trail_email</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-22 06:46:41</sys_created_on>
+        <sys_id>6f5fe7094742d690e9ddbf66706d43da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak.audit_trail_email</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sysevent_register_6f5fe7094742d690e9ddbf66706d43da</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-22 06:46:41</sys_updated_on>
+        <table>x_rptp_kotak_kotak_audit_trail</table>
+    </sysevent_register>
+</record_update>

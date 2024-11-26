@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>policy_id.policy_no,consumer_id.member_number,loan_number.loan_number,loan_number.temporary_loan_id,consumer_id.mobile_phone,consumer_id.customer_name</field_list>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>2</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">c67010c34771d250e9ddbf66706d432c</sp_column>
+        <sp_page/>
+        <sp_widget display_value="KLI Search">592d2c4347b5d250e9ddbf66706d43c5</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-20 11:34:53</sys_created_on>
+        <sys_id>8fbe5e6c47c65290e9ddbf66706d43ba</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_instance_table_8fbe5e6c47c65290e9ddbf66706d43ba</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-25 06:51:50</sys_updated_on>
+        <table>x_rptp_kotak_uw_case</table>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=8fbe5e6c47c65290e9ddbf66706d43ba"/>
+</record_update>

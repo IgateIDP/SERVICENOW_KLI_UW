@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Ageing 2 - Req Submission ageing - Kotak</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+
+   var receivedDate = g_form.getValue('recieved_date');
+    var uploadDate = g_form.getValue('upload_date');
+
+    if (receivedDate && uploadDate) {
+        
+        var receive = new Date(receivedDate);
+        var upload = new Date(uploadDate);
+
+        var timeDiff = upload - receive;
+
+        // Convert milliseconds to days (1 day = 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+        var diffDays = timeDiff / (1000 * 3600 * 24);
+
+        // Round the result to remove decimal points (optional)
+        diffDays = Math.abs(Math.round(diffDays)); // Optional: Use Math.abs() to avoid negative days
+
+        g_form.setValue('ageing_2', diffDays);
+    }
+
+    // Return true to allow the form submission
+    return true;
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-25 06:53:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>989d87ce478ade90e9ddbf66706d43b2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Ageing 2 - Req Submission ageing - Kotak</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_989d87ce478ade90e9ddbf66706d43b2</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-25 06:59:03</sys_updated_on>
+        <table>x_rptp_kotak_requirement_mapping</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

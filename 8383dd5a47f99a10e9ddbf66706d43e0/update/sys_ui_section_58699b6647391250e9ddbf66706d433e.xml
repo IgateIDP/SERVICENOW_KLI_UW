@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="58699b6647391250e9ddbf66706d433e" sys_domain="global" table="x_rptp_kotak_kli_consumer" version="3" view="kotak_customer">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_name</element>
+            <position>0</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-25 06:42:23</sys_created_on>
+            <sys_id>f6bb8f4a478ade90e9ddbf66706d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-25 06:42:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>member_number</element>
+            <position>1</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-25 06:42:23</sys_created_on>
+            <sys_id>36bb8f4a478ade90e9ddbf66706d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-25 06:42:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>member_client_id</element>
+            <position>2</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-25 06:42:23</sys_created_on>
+            <sys_id>3ebb8f4a478ade90e9ddbf66706d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-25 06:42:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>age</element>
+            <position>3</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-25 06:42:23</sys_created_on>
+            <sys_id>36bb8f4a478ade90e9ddbf66706d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-25 06:42:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_rptp_kotak_kli_consumer</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-14 10:43:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58699b6647391250e9ddbf66706d433e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_kli_consumer</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_58699b6647391250e9ddbf66706d433e</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-14 10:43:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Kotak Customer" name="kotak_customer">e359d76647391250e9ddbf66706d4348</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

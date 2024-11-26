@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="spCheckboxLists">8973e78547ce9690e9ddbf66706d43c9</sp_angular_provider>
+        <sp_widget display_value="Kotak Audit Form View">39a22f0547ce9690e9ddbf66706d436e</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-22 05:52:17</sys_created_on>
+        <sys_id>7f73e78547ce9690e9ddbf66706d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spCheckboxLists.Kotak Audit Form View</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_7f73e78547ce9690e9ddbf66706d43db</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-22 05:52:17</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

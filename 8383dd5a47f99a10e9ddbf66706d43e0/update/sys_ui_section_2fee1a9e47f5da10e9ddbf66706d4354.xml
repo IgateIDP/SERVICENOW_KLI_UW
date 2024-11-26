@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="2fee1a9e47f5da10e9ddbf66706d4354" sys_domain="global" table="x_rptp_kotak_kotak_audit_trail" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>activity</element>
             <position>0</position>
             <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-13 11:49:26</sys_created_on>
-            <sys_id>e7eeda124739da10e9ddbf66706d4371</sys_id>
+            <sys_created_on>2024-11-22 06:53:44</sys_created_on>
+            <sys_id>fb81bf8d4742d690e9ddbf66706d437c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kotak_audit_trail" sys_domain="global" view="Default view">2fee1a9e47f5da10e9ddbf66706d4354</sys_ui_section>
             <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-13 11:49:26</sys_updated_on>
+            <sys_updated_on>2024-11-22 06:53:44</sys_updated_on>
             <sys_user/>
-            <type>.begin_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_action</element>
+            <element>sys_created_on</element>
             <position>1</position>
             <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-13 11:49:26</sys_created_on>
-            <sys_id>a7eeda124739da10e9ddbf66706d4372</sys_id>
+            <sys_created_on>2024-11-22 06:53:44</sys_created_on>
+            <sys_id>3b81bf8d4742d690e9ddbf66706d437d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kotak_audit_trail" sys_domain="global" view="Default view">2fee1a9e47f5da10e9ddbf66706d4354</sys_ui_section>
             <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-13 11:49:26</sys_updated_on>
+            <sys_updated_on>2024-11-22 06:53:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-13 11:49:26</sys_created_on>
-            <sys_id>afeeda124739da10e9ddbf66706d4372</sys_id>
+            <sys_created_on>2024-11-22 06:53:44</sys_created_on>
+            <sys_id>3381bf8d4742d690e9ddbf66706d437e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kotak_audit_trail" sys_domain="global" view="Default view">2fee1a9e47f5da10e9ddbf66706d4354</sys_ui_section>
             <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-13 11:49:26</sys_updated_on>
+            <sys_updated_on>2024-11-22 06:53:44</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,29 +46,29 @@
             <element>case_id</element>
             <position>3</position>
             <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-13 11:49:26</sys_created_on>
-            <sys_id>a7eeda124739da10e9ddbf66706d4373</sys_id>
+            <sys_created_on>2024-11-22 06:53:44</sys_created_on>
+            <sys_id>3b81bf8d4742d690e9ddbf66706d437e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kotak_audit_trail" sys_domain="global" view="Default view">2fee1a9e47f5da10e9ddbf66706d4354</sys_ui_section>
             <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-13 11:49:26</sys_updated_on>
+            <sys_updated_on>2024-11-22 06:53:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
+            <element>user</element>
             <position>4</position>
             <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-13 11:49:26</sys_created_on>
-            <sys_id>afeeda124739da10e9ddbf66706d4373</sys_id>
+            <sys_created_on>2024-11-22 06:53:44</sys_created_on>
+            <sys_id>3381bf8d4742d690e9ddbf66706d437f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kotak_audit_trail" sys_domain="global" view="Default view">2fee1a9e47f5da10e9ddbf66706d4354</sys_ui_section>
             <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-13 11:49:26</sys_updated_on>
+            <sys_updated_on>2024-11-22 06:53:44</sys_updated_on>
             <sys_user/>
-            <type>.end_split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
