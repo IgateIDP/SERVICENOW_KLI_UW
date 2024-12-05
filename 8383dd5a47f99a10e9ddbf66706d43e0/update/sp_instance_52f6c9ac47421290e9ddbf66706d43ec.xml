@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">2aa645ac47421290e9ddbf66706d4323</sp_column>
+        <sp_widget display_value="Kotak Form">3be4856847421290e9ddbf66706d430f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-20 05:11:28</sys_created_on>
+        <sys_id>52f6c9ac47421290e9ddbf66706d43ec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_instance_52f6c9ac47421290e9ddbf66706d43ec</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-27 11:44:54</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=52f6c9ac47421290e9ddbf66706d43ec"/>
+</record_update>

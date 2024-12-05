@@ -1,0 +1,1830 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=524114000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Changing the Case Stage and audit the activities in Audit Trail</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>change_in_requirement_mapping_status__kotak</internal_name>
+        <label_cache>[{"name":"Updated_1.current.sys_updated_by","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Updated by","reference":"","reference_display":"Updated by","type":"string","base_type":"string","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"sys_updated_by","usedInstances":{"86af6a2a-438b-461f-b728-c6711aee4865":["activity"]}},{"name":"Updated_1.current.requirement_id.requiremnt_id","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Requirement Id➛Requiremnt Id","reference":"","reference_display":"Requiremnt Id","type":"string","base_type":"string","parent_table_name":"x_rptp_kotak_requirements","column_name":"requiremnt_id","usedInstances":{"86af6a2a-438b-461f-b728-c6711aee4865":["activity"]}},{"name":"Updated_1.current.status","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Status ","reference":"","reference_display":"Status ","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"O","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Received","image":"","reference":false,"rawLabel":"Received","selected":false,"missing":false,"value":"R","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Waived","image":"","reference":false,"rawLabel":"Waived","selected":false,"missing":false,"value":"W","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}}],"usedInstances":{"06752930-e842-4ade-ae1e-77987588c7fd":["condition"]}},{"name":"Updated_1.current.case_id","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Case Id","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"case_id","usedInstances":{"d3fbd8c7-efbc-498c-8c91-2a57010eca7a":["conditions"],"4cb4e9fa-ff2a-4625-812b-121e3d97e717":["record"],"45ae6d7a-cabf-4571-aab6-7b4944adab86":["case_id"],"c26f74cc-454a-4bd9-9c92-43a9898f8dcb":["record"],"249b3959-ddde-4468-9ff4-f939159dd8da":["case_id"],"ed3007d2-d3f7-43cc-9a47-e1653c4dc10f":["case_id"],"86af6a2a-438b-461f-b728-c6711aee4865":["case_id"]}},{"name":"d3fbd8c7-efbc-498c-8c91-2a57010eca7a.Records","label":"3 - Look Up Records➛x_rptp_kotak_requirement_mapping Records","reference":"x_rptp_kotak_requirement_mapping","reference_display":"KLI Requirement Mapping","type":"records","base_type":"records","usedInstances":{"4b65f1af-3701-472d-8650-cf5511196a0f":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4b65f1af-3701-472d-8650-cf5511196a0f.item.status","label":"4 - For Each➛KLI Requirement Mapping Record➛Status ","reference":"","reference_display":"Status ","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"O","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Received","image":"","reference":false,"rawLabel":"Received","selected":false,"missing":false,"value":"R","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Waived","image":"","reference":false,"rawLabel":"Waived","selected":false,"missing":false,"value":"W","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}}],"usedInstances":{"ca40362b-2679-4cdd-8bba-85198a28f2ba":["condition"]}},{"name":"flow_variable.open_case_present","label":"Flow Variables➛Open Case present","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"1156989c-a56d-43ed-9103-de19ce3c29de":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e49619a4-4065-4d2b-a5a3-97a257e53a68"}},{"name":"Updated_1.current.case_id.u_case_stage","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Case Id➛Case Stage","reference":"","reference_display":"Case Stage","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"u_case_stage","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Pending Requirements menu","image":"","reference":false,"rawLabel":"Pending Requirements menu","selected":false,"missing":false,"value":"pending_requirements_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"UW Workbench menu","image":"","reference":false,"rawLabel":"UW Workbench menu","selected":false,"missing":false,"value":"uw_workbench_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"UW decision in assessment sheet","image":"","reference":false,"rawLabel":"UW decision in assessment sheet","selected":false,"missing":false,"value":"uw_decision_in_assessment_sheet","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"Groups Operations Workbench","image":"","reference":false,"rawLabel":"Groups Operations Workbench","selected":false,"missing":false,"value":"groups_operations_workbench","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{"07944302-711d-4562-9622-e1aed36cc9ba":["condition"],"4612698c-0231-4f5e-999a-2ecb3bc87356":["condition"]}}]</label_cache>
+        <master_snapshot>68978ae847825290e9ddbf66706d43a8</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Change in Requirement Mapping Status - Kotak</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>85970ee847825290e9ddbf66706d4308</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:34:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b233022c47425290e9ddbf66706d438d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Change in Requirement Mapping Status - Kotak</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_hub_flow_b233022c47425290e9ddbf66706d438d</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:04</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b233022c47425290e9ddbf66706d438d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b233022c47425290e9ddbf66706d438d"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_rptp_kotak_requirement_mapping">statusVALCHANGES<item display_value="-- None --" endquery="false" field="status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85970ee847825290e9ddbf66706d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:53:44</sys_updated_on>
+        <table>x_rptp_kotak_requirement_mapping</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>b233022c47425290e9ddbf66706d438d</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-26 11:10:04</sys_created_on>
+        <sys_id>bd92d12e47c6d2d0e9ddbf66706d4348</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:04</sys_updated_on>
+        <trigger display_value="">85970ee847825290e9ddbf66706d4308</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b233022c47425290e9ddbf66706d438d^sys_idNOT INbd92d12e47c6d2d0e9ddbf66706d4348"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b233022c47425290e9ddbf66706d438d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b233022c47425290e9ddbf66706d438d^sys_idNOT INb6338a2c47425290e9ddbf66706d4353"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b233022c47425290e9ddbf66706d438d</id>
+        <name>Change in Requirement Mapping Status - Kotak</name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:34:44</sys_created_on>
+        <sys_id>b6338a2c47425290e9ddbf66706d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:34:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b6338a2c47425290e9ddbf66706d4353"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b233022c47425290e9ddbf66706d438d^sys_idNOT IN8b450e2447825290e9ddbf66706d43cd,8f450e2447825290e9ddbf66706d43d0,b2450e2447825290e9ddbf66706d43c9"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">c93e354947e13110237dd902516d4382</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</model>
+        <model_id>b233022c47425290e9ddbf66706d438d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:45</sys_created_on>
+        <sys_id>8b450e2447825290e9ddbf66706d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:43:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8b450e2447825290e9ddbf66706d43cd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</model>
+        <model_id>b233022c47425290e9ddbf66706d438d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:45</sys_created_on>
+        <sys_id>8f450e2447825290e9ddbf66706d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:43:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8f450e2447825290e9ddbf66706d43d0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</model>
+        <model_id>b233022c47425290e9ddbf66706d438d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:45</sys_created_on>
+        <sys_id>b2450e2447825290e9ddbf66706d43c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:43:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b2450e2447825290e9ddbf66706d43c9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b233022c47425290e9ddbf66706d438d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b233022c47425290e9ddbf66706d438d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b233022c47425290e9ddbf66706d438d^sys_idNOT IN03450e2447825290e9ddbf66706d43e3"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>03450e2447825290e9ddbf66706d43e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:52:15</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VaW2/bNhT+K4KeNsAbJMuXOHvKclmDpQ3geN1DEQgUSdlEZUolKaVu0f++Q11sWRfHF2VJX5JYpHi+c/id7xOtfPpuBsijgXluzpAXULNnMq6o4CiYrSIKl5W+7HK01GNLxAlSoViZ50rEtGeGglBhnts9M0FBTB9W8pbATTA1vSO/3cyH4fNXV0Qqcj+HCn12Bf0SM0GXlCt3iaKI8TlMJUxGAVp9zO/4++7WmG4mGu/XE/GCBURQbp5/euyZERIQUmk43ytDTGOyCUF2n1rYsZ1+37L6ZwPbGzme3ScOougMFqyWopKDaqjIpgD0q6KcUAjlo0DShmIJisg9D1alGV8l+wZrnll61KeAGNOsfngRMkzvI8VCnl3JYGSDYRAv+YcMni4Z9VEcqKJkcCWW1CU00oi4Wgf0Hxbh07QIdMN4Cj4fDEKMgvUnpJRgXqyo1PX0WQCVdbPUZRiLFOb0+vJ+euX+ezG7fHc9dafXD7Pp7eXs+sr8kebjfon1ihnCHIubpfNjvc83jAZ6f+RKurBRPVNiwSJ1gRVLaA7nR2/D08uQE5ZWpcZVXAzJba7mKRV7ZVmtdMWlxQvKSoVULD9e3F2+u/jw1/XDwczzvAkiFLUwbzQuMa+cXAMk1ZBnOatdHMyvtJNwYFkvTcOsD45m4TIkNLjaLGfC4HwOvGQ8ipUuRlEAN4yo0InDfeZm6/7If99M798Xf8/u4b4nxJV0VegiQtxSeXUIyOU5Omc1qXP6eTaLmMMS7nrj6pxON2C9E3dMQuKfoCOLKqdLwrh/ly85jbkRwg7DDwPHQmjRLCTMv12ieb43/gMNKFYltvj/yPKn90xKrbQb1OugaVVqMdfhgHVGkVIWW54Y/PHIhq7XN6nUrWI3B3f3CBN74I1H1lj3tm05nm9bY2uIfOJY1sQpdXcdTCtKVdn9Dru8pcdlSqtgDxJVK5hjs8q83osQyTabihz1ZudSctkNNLsjaH0NrSKJzkGauGZddvlqm3y7UuvY0RFJENxB9pU4PWEPLfOD8Ank+Agd8xD+PBdhzElVWPSaBuPGZobxS16/XzvUND8UdDeA7RmvpGabChccRXzVgY4NKCbj0WBkgXw5oFzecDLxMOr7/ng0phap6NgGRiO2t6Bfz/AmaSJem5Y1UiBpYs4BKnYCwJqiHQzwdC3LedeoZNnYz6FZTwvKXYAq3ECrUk265gEjtBg7um9rUZJNp57au45/RobD8RiP4XQBvesPqIfsQX+IJuORQ0eV3q1B2QVTNRThBc8c+hiow7+5I/BLkk9SpbLvNA51TQ6Pjek9KAtSci5dcSOVhlAYH0L+2+1mnvFAwZDSM2VX9rkPClhMGC8LwwvVoubfEPpPuL4VWj/3tVTlNQ8rFT4k22mdbPJnzmRIfKdZKMb9JqHYgGmH+dp2vyfXk9auafL9fambNHZAq1EfQcYKC8oOvuMRo6ui2J0Xpf9yRXFOfqwpWq31hHYM2J/IjFLzP8WRdEzqhn5Zhq9CAwYMCGIw38i/t4MDt7cy1IJCSQN4foWAho5+qv6W/aAOZc3g/xdI9kRc8yW4bOTPO69qOZVd7/Zsif2JRyZOy/PpsP35tN17KsOvbUAH8ztpapedLnTYutU1G32oRL7tDd/TYTrNutlmTsu60Wiey/p0C9l1Mm5A8fbNQYOeZdtwhCWEHFfOBLjLlxExZ19i6uIF4vPsRUMR6AbqTBFeGNkUI5vSpagHT2glzaq7AGl1X+Rf4cIF6BCeCVVXkWlCxaqWq75oxBGo26lZ7jaUHS/881dyUgkAMV+VmqyAfKB32JNh3yFn2LEnTv29vV3yjm2WtgNqNYtnXuO3mcWCpW8jS+HznVBsSVPFWr9SNJZI4QWVPQO2K/2qPxU0JqRKZ/9uHnP4weV3H3m3NXlJaz8kba3Uqs07KJ5Um6NJjBvoWuVJWY53HnN2pG93kn6/i/Sd49IfnOxGeUWa7SivXrcWdMS/f5jNHvT4HyU2mVuiJAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b233022c47425290e9ddbf66706d438d^sys_idNOT IN0b454e2447825290e9ddbf66706d4309,23370ea847825290e9ddbf66706d43d2,2d7db4a24706d2d0e9ddbf66706d431a,67370ea847825290e9ddbf66706d43e1,6f370ea847825290e9ddbf66706d43e1,87454e2447825290e9ddbf66706d4304,e3370ea847825290e9ddbf66706d43e0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>07944302-711d-4562-9622-e1aed36cc9ba</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>0b454e2447825290e9ddbf66706d4309</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>4cb4e9fa-ff2a-4625-812b-121e3d97e717</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnQZAsx0h8K2AY6KEJkLa5pAFBkSubCCUxFOlHDf97lxTlOM+6RnooUB0EcLm7M7M74O02EjyaRCPgaXaRjVme5fkwTYfno6wY50U25DkFyKI4qmkFmKmBNZrjeUmldYHt9rvi1AAnWcKs1lCbhNEWiOC7HeZx0SpJNzchHSNsISTHvGhyexdHimrsbEBHk+2zK7NRQCQtQGLhtGG2wuaDz1PscSzrvvq6p/1chsPAMw/dkTUG8crxydI4grWBmgPClVS2EEcVrVFuozfRxGiLAQ2UX9Vys89YiNp0Siu6bsVP7D9KXV4JKI3tp9AIBlfKiKbuIoYWsr9spK3qy46rGyKU1EpzMESLE+agHDeH1lEpvy6a1XWPMxO1lxFoyYZRuT9RY7QorIHWzR0kePUVVUrUc6J0sxS+GKlUyVziISlls0LMVszrhDLHO8FJ0GSG8akP31AtnIgv2AaLd140ebAOt5MRCBOv2QsmfiOY2jItlPmEjZcQaO7i4M/i7L1Ns4vHxR70fPTommhlFLlvDL0ndkWcP19a842s0+z6zfEYXHY8jtXwpPgNTcGwT2LBr2cf5tfzv+3XAP2PGfZ3Nk2H7z5IByv1zmwPLGq93Uhr6Bx+2DTNuUN20jQ8WKG93Jbg37507p8Vn2hoqBDSwKADjY9W3DeYCZC8fWUEvaMDAFkGgP0r/GG2zsap//4/xqc8xne/AKN+m/8uCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>07944302-711d-4562-9622-e1aed36cc9ba</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:52:15</sys_created_on>
+        <sys_id>23370ea847825290e9ddbf66706d43d2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>45ae6d7a-cabf-4571-aab6-7b4944adab86</ui_id>
+        <values>H4sIAAAAAAAA/9VUW2/TMBT+K5GfoyhpRrX1DYH6xoYG7GUM6yQ+ba05tufYWUvV/85xLmMMKlUIkMhDJB9/Pt8lPrndMynYgs0LzF9dFPO6LMpyluez87OimpdVMRMlIJ6xlGlokJAeKoW8X6SsAxViccud9ZbfGw/34xuCkJ57B1IRUMjWKtjdnIqvN1IJh5otbu9SZsERn0fHFvsXW35nkSuoUFHbj1FbcjloO9XXD4eP+IwsL2vGiSgoTxluPWqBxLcC1WLKGtACvHE7tvAuUMEhiCutdk+IjdSeGrKI3bbyK3U/zyNuhWStxmGv3hhZ45X10uih0isYN40Kjb4c1MaIcQVB+SliqoQWuUAbtUW2kXr1YWMeryeipdS9jXFTmRrU0wq8d7IKHtsYPCpsqBFvwFqp19w608n+MGlpsrWiRbZS5pFIW7nWGdRReEZRQLak+tu+fANORhfvqA0dPvSu+UOIvIOPUTEfTBOgrZ20/jW163AUd0inmyswvzj6hYvq+xftL2v77NbWQAFJ8TnkeSn2+0+WlKLgRVYHR+H4bAQcDl+ilU763YB9Q/WkMR2KxJvkPcmlPJJrfAjS9Rm1Cb3Dz/f+HzD+5uRgQzo9JoPS9ORspwZLiUq0vwh7Gp2RgHcjwTg+xZ8an2Ke989fHqJB0H82Q8/+W0em6e4bv7AzpwkGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>06752930-e842-4ade-ae1e-77987588c7fd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-26 09:37:45</sys_created_on>
+        <sys_id>2d7db4a24706d2d0e9ddbf66706d431a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>86af6a2a-438b-461f-b728-c6711aee4865</ui_id>
+        <values>H4sIAAAAAAAA/9VUTW+bQBD9K2jPFIFJrcS3SpGlHppIaZse0nQ1sGN7lQU2++GYWvz3zgJ20tSWrKo9hAPSzL6d994ww92WScFmbJph+v4im5Z5lueTNJ2cn2XFNC+yicgB8YzFrIYKCemgUMj7IGZrUD4kN9xop/lD4+BhfIMX0nFnQCoCCmm1gvb2VHy5kkoYrNns7j5mGgzxOTRstn115FqNXEGBisp+Cdqiq0Hbqb5+u3zEZ2B5nWuMCILSmOHGYS2Q+BagLMasglqAa0zLZs54ShgEcV2rdo9YydpRQRawGyt/UvXzNOAWSNZKHM7KVSNLvNZONvWQ6RWMh43yVX01qA0txgV45XYtpoy3yAXqoC2wjdSLz6vm6WZHNJd1b2M8VE0Jah+Bc0YW3qENjUeFFRXiFWgt6yXXplnL/jJpqZKloiBZqOaJSK1c1gmUQXhCrYBkTvnLPn0LRgYXn6gMXe561/zRB97Bx6iYD6YJYEsjtftA5dY4iuvi3eQKTC+OfuGseP6i/bDaF1NbAjVIiu8+TXOx3X7VpBQFz5LSG2qOS0ZA1/0IVtbStQP2Bh+9NH03oo+X0bvo0GXzDKIa+7CPui5agY0KxDr6BuRKREV7sIptLfdjtmi77s9deqMu/nLDsSLvDqPBfXzyDOwKzCUqYQ8MxW7FRwK+HgnGNc/+1Zpn07R//vOyD4Le2K6/+L8e2fr7XzFPEvKxBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>4612698c-0231-4f5e-999a-2ecb3bc87356</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:52:15</sys_created_on>
+        <sys_id>67370ea847825290e9ddbf66706d43e1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>c26f74cc-454a-4bd9-9c92-43a9898f8dcb</ui_id>
+        <values>H4sIAAAAAAAA/+1US4vbMBD+K8FnY+w4G3ZzK4RAD92FbbuX7SJkaZyIyJYqS3k05L93ZMvZ7LMhbA+F+qbxzPcYfeh+FwkeTaIR8DS7ysYsz/J8mKbDy1FWjPMiG/KcAmRRHNW0Auw0wJTheF5R6Xxht/uuObXASZYwZwzUNmG0ASL4fo99XDRa0u1daMcKWwjJsS+a3D/EkaYGkS2YaLJ79stuNRBJC5A4OFXMVQg++DxFjFNV99O3veznNjwHnnlAR9VYxF9eT5bGEWws1ByQrqSygTiqaI12ldlGE2scFgxQflPL7aFjIWrbOa3ophG/EH+U+r4S0Bo7bEEJBjfaClV3FUsL2f9U0lX1dafVLxFK6qQ9WqLDDXPQXptn66SUXxdqfdvzzETd2giypGJUHk7UWiMKZ6HxewcJrfuKai3qOdFGrUQ7jFKqZC7xkJRSrZGzEfM6oczrTnATNJlhfdqW76gR3sQXhMHhfWua/HSet7MRBJPWc2uYtDeCrQ0zQttPCLyCIHMfh3wWF+/dNLt6vNgjzMeMbojRVpOlsnRJ3Jr4fL6M5htd58X1m9cxuO50nOrhyfAbnkJgn9RCXi8+LK+XfzuvgfofC+yfYpoO332Qjq60TWZzFFHXxo00ls7hh0vTnGMC18osC9zMgqBZ9zKxpw2dGWCokMrCoCOLT3bYA8wESN68YrlPcCAgq0BweHU/LMbZOG2//4/vOY/vw2/s2nMJHggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>4612698c-0231-4f5e-999a-2ecb3bc87356</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:52:15</sys_created_on>
+        <sys_id>6f370ea847825290e9ddbf66706d43e1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>249b3959-ddde-4468-9ff4-f939159dd8da</ui_id>
+        <values>H4sIAAAAAAAA/9VUyW7bMBD9FYFnQZCs1Eh8K1r41gRom+SQpsRIHFuEKZKlKMWu4X/vUEuaJjFgFM2hOgjg8HHeIo7u9kwKtmDzDNN3F9m8zLM8n6Xp7PwsK+Z5kc1EDohnLGYaaiSkh0Ih7xcx60C1objlznrLN8bDZnxDK6Tn3oFUBBSysQp2N6fiy0oq4VCzxd19zCw44vPo2GL/bMvvLHIFBSpq+zVoiy4Hbaf6+uPwEZ+B5XnNOBEEpTHDrUctkPhWoBqMWQ1agDduxxbetVRwCOJKq90jopLaU0MWsNtG/qTu52nArZCslTjslZWRJV5ZL40eKr2CcdOottaXg9oQMa6gVX6KmCptg1ygDdoC20i9+lKZh88T0VLq3sa4qUwJ6nEF3jtZtB6bEDwqrKkRr8FaqdfcOtPJ/jBpqZO1okWyUuaBSBu51gmUQXhCUUCypPrHvnwDTgYXn6gNHT70rvmPNvAOPkbFfDBNgKZ00vr31K7DUdwhnm6uwPTi6BfOit9ftL+szZNbWwIFJMW3Nk1zsd9fW1KKgmdJ2ToKxycj4HD4Hqx00u8G7AeqR7XpUETeRNe30a1xm4LirF5e9bch+cv5wJqkeYwGcfHJCU4NlhKVaF6JdBqQkYB3I8E4JNm/GpJsnvbPG4/KIOg/m5Qnf6cjM3P/C93pMLLvBQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>87454e2447825290e9ddbf66706d4304</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>d3fbd8c7-efbc-498c-8c91-2a57010eca7a</ui_id>
+        <values>H4sIAAAAAAAA/9VXTU/jMBD9K1XOUZWQUlhuCIS0B0AClguLLMd2WgvXDo7TD6r+9x3HSfqVQugWCY4ez3jevHnjOE9zj1PvzDtNekGAw+PTkyCIoiDo9yOCwziO+iQO4l7s+Z7EIwaeBseCwXKMRW7XU6RTk6IXZfAL0uw155qNmDRohNOUywG4Up6lAs8e20eQIRdUM+mdPT37Xoo15DZMe2fzjS0zSxkSOGYCDn6w0Do3Fqffuqy14O0ybYJqiaQ7WmlqsQS+x6aGScogVYJFxnxvhCXFRulZbdEM01sploYhlwZO9KzzNONvcPxpYP0SBmUR5vbIUHHCblPDlXQWh8htKpGP5I1DaglmCc6FqQgGS54xRFlqwdlsZerkfqgmd1WiKy6LOspNoQgW9Qobo3mcG5ZZ0plY6xBKtRrzIhiwjLoDAYtuItQEkmZ8ILuYWOBd4AJ3r8B+WZgfsea2ims4BoIBEBfQVuTYzVSui/LHiIg8KzY0lpk7y1sUHKHX3KJ0VZf1IUcROGRE89ScQ8CYlaUs/FYSPw6WvSdKUm5zZis6Jxgo5fRvDtF0Pv+TQm2MorBLcg10mm7psFhsK/5Tsftp/2IVc9t6G4ObSCinYM1WTkF4sCkAuF89B0bn328MPhK2K/gDdZOTd7t9vGxsprRBjrkVeW+Ldm8pXnEm6No13AJcFXxrVdWJZ7vwlkpMbI6N+/jo59zH31KHAIgiRyyXgsviuwdADyPQ4P3r6NdGw4s+L+VZ2HBGtmWKO0Z13va/N4u+VkJtAbIKvAdEnQeHsgF4dWNWx5cajQ6m0ehoh0ZBIU/zGmZNTwOT1TvG9qjyf7P+eNMfZLQSEC6ea41f7Jcz/GzOI5tzYwijT03hqoTczuUOJR348bRjqvyvHOMhhJb5kJtKNOF0wMwye+VFlZlg8dK0X45aPSxFef/9EOu9O2T9cDlQIHb4QcigVasvsRDeCdv3QOg7837XwG9p2KAgry3EKvIaTzt3NcZG4OVdwOscpaZ7B3w6HfSDVTHcOCYV0T/iF2NfrT7/Azglc+MZDwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>7f8c1efa-18bd-4ca2-bd0c-d0bbd3e585d8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:52:15</sys_created_on>
+        <sys_id>e3370ea847825290e9ddbf66706d43e0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>ed3007d2-d3f7-43cc-9a47-e1653c4dc10f</ui_id>
+        <values>H4sIAAAAAAAA/9VUS2/bMAz+K4HOhmHHXdDmNmDIbS2wbr10nUBbTENUllU90mRB/vso2+m6bgGCYT0shwCiPvF7SPTtTpASczErsXh3Uc6aqqyqaVFMz8/KelbV5VRVgHgmMmGgRUYGqDXKfpGJNeiYihvpbLDyoQvwMP5DVBRkcECagYq81bC9ORXfrEgrh0bMb+8yYcExX0An5rtXW2FrUWqoUXPbz0nb5HLQdqqvXw4f8ZlYXtc6p5KgIhO4CWgUMt8StMdMtGAUhM5txTy4yAWHoK6M3j4jVmQCNxQJu/H0nbufFwm3RLbW4LDXrDpq8MoG6sxQ6RWMm52Orbkc1KaIcQlRh0PEXIkepUKbtCW2kXp5veqePh2IFmR6G+Om7hrQzysIwVEdA/oUPGpsuZFswVoy99K6bk39YdbS5veaF/lSd09M6une5NAk4TlHAfmC6x/68g04Si4+chs+vO9dy8eYeAcfo2I5mGaAbxzZ8J7brXEUt88OL1dhcXH0hsv65432j9W/eLUNcECkvsaiqNRu98WyUlSyzJvoOJyQj4D9/luysqawHbAcGuiJw8dIrs9kch3rlrxP9/TbY38rmr+cEWxZXMDJIC87OcVDgwWhVv4PsR6GZCSQ65FgHJTyXw1KOSv63xuPyyDoP5uWF1+oI3Nz9wN9Bojp8wUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b233022c47425290e9ddbf66706d438d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b233022c47425290e9ddbf66706d438d^sys_idNOT IN07454e2447825290e9ddbf66706d4307,0b454e2447825290e9ddbf66706d4308,6f370ea847825290e9ddbf66706d43df,83454e2447825290e9ddbf66706d4306,83454e2447825290e9ddbf66706d4309,8f454e2447825290e9ddbf66706d4307,ad7db4a24706d2d0e9ddbf66706d4319,ef370ea847825290e9ddbf66706d43e0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cf454e2447825290e9ddbf66706d4306</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>4b65f1af-3701-472d-8650-cf5511196a0f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>07454e2447825290e9ddbf66706d4307</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>ca40362b-2679-4cdd-8bba-85198a28f2ba</ui_id>
+        <values>H4sIAAAAAAAA/+VUQW7bMBD8iqGzLVCS5SS+BS0CFGhrIA5yaQNhRa5sohSpkJQd1/Dfu5SsJEgcNGh7602cXe7MLAfaR6b1Tevdjbl0Tq50NP92N46kDhh97yMNNUbziBstpJdGFx0wjjag2lC4xvtWWqxR+9HSg2/dSLrRokFNTUK6RsHu9j29fC2VsHhU0IAlHo82mu9flPyuwUJBiYpGLr2VekXXpaBTxaBKLnjCs3SWpYyl59OknGVlkooMEDLqGy5+GAyNPnfI+E2ngY9wNzAZK4KshI0jfPCoBRJ1BcrhOKpBC/DG7h4RiyAWWj0Ba6k9jYtC84OTP2l2muehsULyyLEv8rWRHBdNUNIjHko1FI1qa/21Fxz2jBW0yg97JqR1WAhsgrpAd+SulmuzvR6IrqTunByLynBQjyfw5LdsPbrwAqi6VytqaBraQtFYs5HdZdJSxytFh7hSZkukIUYx8CA8pmVAfEX4xw6+BSuDiy80hi73Mktwkhdd5Gict2Th0K2juG+DoN7g0UrRb4MaHLey8ZfEs8Gj6sP4dV6fRXW/n5azvEqgmmRnLJlMz1IxOZ/lbMKrPE+S5GIGrIqlxzp2XTwPh+8tY5lYvM7y3w37F2G/gLzKE5afDvt0dirsJ2L+dsLT3yQ8PNU7A84Y+08TLl3RJ/XorSP/44DfhTT3DK4PiEAuHQm5Cdin4b8dCjt6acmfQ1tjfwQLT9jhF/J7RJ4BBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c3454e2447825290e9ddbf66706d4308</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>0b454e2447825290e9ddbf66706d4308</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>1156989c-a56d-43ed-9103-de19ce3c29de</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8FYNnQdAjNhrfghYBCrR10QS5tIGwIlc2UYpkScqOa/jfu9QjCRobfaC33szZx8ysBj4w0wXbBX9rrryXa82Wn+8TJnXE6PeBaWiRLRk3Wsggja56IGFbUF0srCzqmfSzjw496kAVIb1VsL8728A3UgmHI5cFRxsDOrY8/FQKe4uVghoV7bkJTuo1jUtBryaDJr/kOS+LRVlkWfHqIq8XZZ0XogSEkvqmwdeT9Nm7HknOeop8hPuJyTgRZeVZwvAhoBZI1A0ojwlrQQsIxu0fEYcgVlo9ARtJdpeMxeYHL7/T7mI+j40NkkeOQ5FvjOS4slHJgASo1VQ0qmv1h0FwPC420KkwHZeQzmMl0EZ1kW7kbm42ZvdpIrqWuncyFpXhoB5fEMhv3QX08QugwpYWVS1YS1eorDNb2Q+TljZdK3qkjTI7Io2BSYFH4SkdA9Jrwt/08B04GV28pzU0PMiswUte9eGidcGRhWN/jupbFwUNBkcr1XANavDcSRuuiGeLo+pj8jKZz0J5OPQKt6OI1NDOigNJsEMKj8cvXZaVotfwIrJ/Ov4vAn0J82aeZ/PTgb5YnAr0iSifT3HxixRHL78Z4izL/tMUS18NaRy99eR/HeL7mNiBwQ8BEcilJyG3EXs7/QvHwp6+tOTPoZ1xX6OFJ+z4AzOBT63PBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e3370ea847825290e9ddbf66706d43df</block>
+        <comment/>
+        <connected_to>1156989c-a56d-43ed-9103-de19ce3c29de</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:52:15</sys_created_on>
+        <sys_id>6f370ea847825290e9ddbf66706d43df</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>7f8c1efa-18bd-4ca2-bd0c-d0bbd3e585d8</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0b454e2447825290e9ddbf66706d4305</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>83454e2447825290e9ddbf66706d4306</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>4b65f1af-3701-472d-8650-cf5511196a0f</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj/aJM6twFCgh61AW/QyFAYt0YkwWVIlOalr+L+Piu106HEni4/ke480B2a6YLvgX8yd9/Kg2f7324pJHTF6D0xDi2zPZMDWsxU7gepiPAyiaGqx49s1NjVf35Q7vt7xMlvncLtNsxQ5bCF5Qm6c8ONIrUJ6q6B//X8GfpRKOJxNWnDkLaBj++FbKvQWKwU1KhKaGahfCgqzUjRllpa8yDdFnqb57iarN0Wd5aIAFBuqWzof5qG/7SCyU+iuvPSJLvJ0xfAjoBZIQg0ojyvWghYQjOvZPriOAIcgHrXqrxVHqQPRsVj74eUncWdpGgsbpIk4Tkl+NJLjow3S6AkJUKslaVTX6l+Tz7hrbKBTYdk1IZ3HSqCN5qLcrN08H835aRG6l/oyyJxUhoO6RhCCk3UX0Md9o8KWiKoWrJX6UFlnTvLSTF7a5KAoSBplziQa7yoBHo0ntAtI7gn/cYFfwck4xU+ioebxMnX13kXdaY7ZcTUNTQWeO2nDHdGdcDY3vsXDnJj8dAECufQk+BKxh+WcY6Knvyn5v9DZuD/R6hc2/gWEztS3GAMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4f454e2447825290e9ddbf66706d4308</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>1156989c-a56d-43ed-9103-de19ce3c29de</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>83454e2447825290e9ddbf66706d4309</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>07944302-711d-4562-9622-e1aed36cc9ba</ui_id>
+        <values>H4sIAAAAAAAA/+VUyW7bMBD9FVVnQdASG41vQYoABdqmSNJcmoCgyJFNlCIZLnZcw//eoZbEaB20CHLrxRDfLO/N8NG7VAdvgnc3+sw5sVTp4vt9lgoVMfzepYp2kC5SphUXXmhFeiBL11SGGDinDhLn6RIS4RKlffIVMFUtkyt4CMJCB8q7BH8DVnHhjKTb21cVs5WQ3MKo0VCLSjzYdLH7LeS3BoikDUjkuPYWG2K54HhqC9qWp6xkdTWvq6Ko3p+UzbxuyorXFGiNeVPh+TRy8qlHshd3EfkQdxOTtjzKKosshUePEwFSt1Q6yNKOKk69ttsnxALll0o+AyuhPLZLY/KjEz+xdzWbxcQWcEYGQ5CttGBwaaKSAfG0kVNQy9CpL4PguHhoaZB+WjwiwQHhYKK6SDdyt9crvbmaiC6E6icZg1IzKp9O1OO8TfDg4g2A7C+LdNQY3AIxVq9FX4xaunwp8ZC3Um+QNBotpywKz3EZNL9A/EMP31Ir4hSfsQ0WDzIb6gQjvSmxnbc4wr5fB3kIUdAw4DgKGbaBCY5ZYfwZ8qxhVL3P/nT0gZl3u28GBQEnZc6CxR34nKFHieB5IP1X79b9/t1dKIqam8GuxB7YlRz3+pv2founcEpn7awsZsefwsn82FM48ghe9n/1F//Hi/xH+xdF8Z/6Xzgy+HicrSd/tf3vo9cHBjcYhAMTDoXcROzj9L8fA1u8acEOoY22P+IIz9j+F1Jgh3lBBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b454e2447825290e9ddbf66706d4307</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned>open_case_present</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>ca40362b-2679-4cdd-8bba-85198a28f2ba</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>8f454e2447825290e9ddbf66706d4307</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>ddb0d469-0a2b-43a0-9381-4792c1b99b6d</ui_id>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K5WfgaWQhIa3ahVSpW1IG+vLVEU39g1Yc2zXdqAM8d93TZKyVVN/wNSn2Od+nXt8r3Jkpg22DX5tbr2XG80WPx5HTOqI0fnINDTIFsxY1CUHj6V16FEHNmI7UG20XdNZSG8VHB56KDj6jBjfSiUc9lktOEoW0LHF8ZUpHCyWCipUFLym4A9LUD6mkIIQPk+zBKdpOr+ZZtMiwUKIqs7zeZKLdIYp+Q3BKyJ69ZGIXl2IvtFDLEymyhiFoAkwTkSCyYjhc0AtkOrXkcuINaAFBOMOL4hDECutLsBWUtYFY9H52ctflDtNol+N1CvHzsa3RnJc2SCN7pAAlRqMRrWN/tJRjspiDa0Kg7J1r0sP3/2t+2BtqUmBNvKPhHp29bet2X8duCylPrfaG5XhoF5uEIKTVRvQx8dq5fq1Th306V9PhgobKls2YK3UG1Lb7OS5FDXXTDaKLpNamT1RjDM3AR6VmJC4MFkSfneGH8DJKMtnSkPBseR3LZ9avI8jgWmRXxeQjtMkz8apmFZjyGA2LuYwzeaYzSC/Yaez9OVTGzvrxOw1KTvlycFzJ224JQo77Ns/Pcbh7qp3W3Cewrcn6X0b3rfhv90GgVx6YrWOFO6Hv0M0HGicJP8T2hv3M/ZzwU6/AUpOzCxnBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">257db4a24706d2d0e9ddbf66706d4319</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-26 09:37:45</sys_created_on>
+        <sys_id>ad7db4a24706d2d0e9ddbf66706d4319</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>06752930-e842-4ade-ae1e-77987588c7fd</ui_id>
+        <values>H4sIAAAAAAAA/+VUy04bMRT9lcjr0WgeJCrZISqkSm2RgMKiRaM79h1i1WMb25OQRvn3Xs8DUAktqrrrLj73cc65c5QdM12wXfBX5sR7eafZ8uttwqSOGP3eMQ0tsiXjRgsZpNFVDyRsDaqLhQu8n/kAofMz6Wc3INcoqCyktwq217/v4iuphMOR1YKj3QEdW+5+KYWtxUpBjYqWXQYn9R2NS0GvJoMmP+Y5L4tFWWRZ8e4orxdlnReiBISS+qbB08nE7GOPJK+6i3yE+4nJOBFl5VnC8CGgFiR/2YDymLAWtIBg3PYRcQjiXKsnYCV1oHUsNj94+YN2F/N5bGyQPHIcinxlJMdzG5UMSIBaTUWjulZ/HgTHC2MDnQrThQnpPFYCbVQX6Ubu5nJlNhcT0ZnUvZOxqAwH9fiCQH7rLqCPXwAVtrSoasFaukJlnVnLfpi0tOmdokfaKLMh0hidFHgUntIxID0j/H0PX4OT0cUnWkPDg8wavORVHzNaFxxZ2PfnqO67KGgwOFqphmtQg+dO2nBCPGscVe+Tlxl9Fs/d7oslQSiqPOWdoxuEdAjifv+ty7JS3LxM69uG/kV4j2HezPNsfji8R4tD4T0Q29cTW/whsfH0bwxslmX/aWKlr4bkjd568r8O7G1M58Dgh4AI5NKTkKuIfZj+e2NhS19a8ufQxrjv0cITtv8JV3vjhsUFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ab370ea847825290e9ddbf66706d43e0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f8c1efa-18bd-4ca2-bd0c-d0bbd3e585d8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:52:15</sys_created_on>
+        <sys_id>ef370ea847825290e9ddbf66706d43e0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <ui_id>4612698c-0231-4f5e-999a-2ecb3bc87356</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8FVdnQZCs2Gh8C1IEKNA2QJ3HoQ2IFbmyiVKkyocd1/C/d6lHEjQOGhS59SbOLndmlgPtExN8G7y7MmfOyZVOFt/u0kTqiNH3PtHQYLJIuNFCemk064A02YAKsXAODidLDyucSDfRxk+ubye3xv6oUPM1NQrpWgW7m9f287VUwuKgpAVLfB5tstj/UfK7FpmCChWNXXor9YquS0GnOoe6OOUFL6fzcprn0/cnRTUvq2IqSkAoqW+8eD4am3zqkPRFx5GPcDcyGSuirCJPE7z3qAUSdQ3KYZo0oAV4Y3cPiEUQl1o9AmupPY1LYvO9k79o9nQ2i401kkeOfZGvjeR42UYlPeKhUmPRqNDoL73guGusISg/7pqQ4JAJbKO6SDdw18u12X4diS6k7pwMRWU4qIcTePJbBY8uvgAqbGgQa6BtaQustWYju8ukpclWig5ZrcyWSGOcMuBReEbLgOyC8A8dfANWRhefaQxd7mVW4CRnXfRonLdk4dCtg/0MUVBvcLDC+m1Qg+NWtv6MeDY4qD6kz3P7JLL7/XVLglCwIuPB0g58ximWTIossO7LxYAeDu++hzwvRdiy7ZhQRv7D81i/ycy3iP4pzOpZkc+OR/9kfiz6R0L/ct6nf8l7fLhXxj3P8/8079KxPreDt478n+N+F7PdM7g+IAK5dCTkKmIfx795LOzopSV/CsUYRguP2OE3QeForxcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b233022c47425290e9ddbf66706d438d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b233022c47425290e9ddbf66706d438d^sys_idNOT INc7450e2447825290e9ddbf66706d43e4"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e49619a4-4065-4d2b-a5a3-97a257e53a68</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>open_case_present</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Open Case present</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</model>
+        <model_id>b233022c47425290e9ddbf66706d438d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_b233022c47425290e9ddbf66706d438d</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:46</sys_created_on>
+        <sys_id>c7450e2447825290e9ddbf66706d43e4</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:09:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d^sys_idNOT IN43450e2447825290e9ddbf66706d43d0,4f450e2447825290e9ddbf66706d43cc,c7450e2447825290e9ddbf66706d43df"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:45</sys_created_on>
+        <sys_id>43450e2447825290e9ddbf66706d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:43:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:45</sys_created_on>
+        <sys_id>4f450e2447825290e9ddbf66706d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:43:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:43:45</sys_created_on>
+        <sys_id>c7450e2447825290e9ddbf66706d43df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:43:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b233022c47425290e9ddbf66706d438d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b233022c47425290e9ddbf66706d438d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b233022c47425290e9ddbf66706d438d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Changing the Case Stage and audit the activities in Audit Trail</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>change_in_requirement_mapping_status__kotak</internal_name>
+        <label_cache>[{"name":"Updated_1.current.sys_updated_by","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Updated by","reference":"","reference_display":"Updated by","type":"string","base_type":"string","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"sys_updated_by","usedInstances":{"86af6a2a-438b-461f-b728-c6711aee4865":["activity"]}},{"name":"Updated_1.current.requirement_id.requiremnt_id","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Requirement Id➛Requiremnt Id","reference":"","reference_display":"Requiremnt Id","type":"string","base_type":"string","parent_table_name":"x_rptp_kotak_requirements","column_name":"requiremnt_id","usedInstances":{"86af6a2a-438b-461f-b728-c6711aee4865":["activity"]}},{"name":"Updated_1.current.status","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Status ","reference":"","reference_display":"Status ","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"O","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Received","image":"","reference":false,"rawLabel":"Received","selected":false,"missing":false,"value":"R","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Waived","image":"","reference":false,"rawLabel":"Waived","selected":false,"missing":false,"value":"W","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}}],"usedInstances":{"06752930-e842-4ade-ae1e-77987588c7fd":["condition"]}},{"name":"Updated_1.current.case_id","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Case Id","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"case_id","usedInstances":{"d3fbd8c7-efbc-498c-8c91-2a57010eca7a":["conditions"],"4cb4e9fa-ff2a-4625-812b-121e3d97e717":["record"],"45ae6d7a-cabf-4571-aab6-7b4944adab86":["case_id"],"c26f74cc-454a-4bd9-9c92-43a9898f8dcb":["record"],"249b3959-ddde-4468-9ff4-f939159dd8da":["case_id"],"ed3007d2-d3f7-43cc-9a47-e1653c4dc10f":["case_id"],"86af6a2a-438b-461f-b728-c6711aee4865":["case_id"]}},{"name":"d3fbd8c7-efbc-498c-8c91-2a57010eca7a.Records","label":"3 - Look Up Records➛x_rptp_kotak_requirement_mapping Records","reference":"x_rptp_kotak_requirement_mapping","reference_display":"KLI Requirement Mapping","type":"records","base_type":"records","usedInstances":{"4b65f1af-3701-472d-8650-cf5511196a0f":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4b65f1af-3701-472d-8650-cf5511196a0f.item.status","label":"4 - For Each➛KLI Requirement Mapping Record➛Status ","reference":"","reference_display":"Status ","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"status","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Open","image":"","reference":false,"rawLabel":"Open","selected":false,"missing":false,"value":"O","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Received","image":"","reference":false,"rawLabel":"Received","selected":false,"missing":false,"value":"R","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}},{"used":false,"label":"Waived","image":"","reference":false,"rawLabel":"Waived","selected":false,"missing":false,"value":"W","parameters":{"name":"x_rptp_kotak_requirement_mapping","dependent_values":[""]}}],"usedInstances":{"ca40362b-2679-4cdd-8bba-85198a28f2ba":["condition"]}},{"name":"flow_variable.open_case_present","label":"Flow Variables➛Open Case present","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"1156989c-a56d-43ed-9103-de19ce3c29de":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e49619a4-4065-4d2b-a5a3-97a257e53a68"}},{"name":"Updated_1.current.case_id.u_case_stage","label":"trigger - Record Updated➛KLI Requirement Mapping Record➛Case Id➛Case Stage","reference":"","reference_display":"Case Stage","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"u_case_stage","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Pending Requirements menu","image":"","reference":false,"rawLabel":"Pending Requirements menu","selected":false,"missing":false,"value":"pending_requirements_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"UW Workbench menu","image":"","reference":false,"rawLabel":"UW Workbench menu","selected":false,"missing":false,"value":"uw_workbench_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"UW decision in assessment sheet","image":"","reference":false,"rawLabel":"UW decision in assessment sheet","selected":false,"missing":false,"value":"uw_decision_in_assessment_sheet","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"Groups Operations Workbench","image":"","reference":false,"rawLabel":"Groups Operations Workbench","selected":false,"missing":false,"value":"groups_operations_workbench","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{"07944302-711d-4562-9622-e1aed36cc9ba":["condition"],"4612698c-0231-4f5e-999a-2ecb3bc87356":["condition"]}}]</label_cache>
+        <master>true</master>
+        <name>Change in Requirement Mapping Status - Kotak</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Change in Requirement Mapping Status - Kotak">b233022c47425290e9ddbf66706d438d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68978ae847825290e9ddbf66706d43a8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:03</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=68978ae847825290e9ddbf66706d43a8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=68978ae847825290e9ddbf66706d43a8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=68978ae847825290e9ddbf66706d43a8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=68978ae847825290e9ddbf66706d43a8^sys_idNOT IN2c978ae847825290e9ddbf66706d43a9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>68978ae847825290e9ddbf66706d43a8</id>
+        <name>Change in Requirement Mapping Status - Kotak</name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_id>2c978ae847825290e9ddbf66706d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:53:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2c978ae847825290e9ddbf66706d43a9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=68978ae847825290e9ddbf66706d43a8^sys_idNOT IN2c978ae847825290e9ddbf66706d43dc,bc97cae847825290e9ddbf66706d438f,e097cae847825290e9ddbf66706d433e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</model>
+        <model_id>68978ae847825290e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_id>2c978ae847825290e9ddbf66706d43dc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2c978ae847825290e9ddbf66706d43dc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</model>
+        <model_id>68978ae847825290e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_id>bc97cae847825290e9ddbf66706d438f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc97cae847825290e9ddbf66706d438f"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">c93e354947e13110237dd902516d4382</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</model>
+        <model_id>68978ae847825290e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_id>e097cae847825290e9ddbf66706d433e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e097cae847825290e9ddbf66706d433e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=68978ae847825290e9ddbf66706d43a8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=68978ae847825290e9ddbf66706d43a8"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=68978ae847825290e9ddbf66706d43a8^sys_idNOT IN3097cae847825290e9ddbf66706d43e0"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>3097cae847825290e9ddbf66706d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:53:43</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VaW2/bNhT+K4KeNsAbJMuXOHvKclmDpQ3geN1DEQgUSdlEZUolKaVu0f++Q11sWRfHF2VJX5JYpHi+c/id7xOtfPpuBsijgXluzpAXULNnMq6o4CiYrSIKl5W+7HK01GNLxAlSoViZ50rEtGeGglBhnts9M0FBTB9W8pbATTA1vSO/3cyH4fNXV0Qqcj+HCn12Bf0SM0GXlCt3iaKI8TlMJUxGAVp9zO/4++7WmG4mGu/XE/GCBURQbp5/euyZERIQUmk43ytDTGOyCUF2n1rYsZ1+37L6ZwPbGzme3ScOougMFqyWopKDaqjIpgD0q6KcUAjlo0DShmIJisg9D1alGV8l+wZrnll61KeAGNOsfngRMkzvI8VCnl3JYGSDYRAv+YcMni4Z9VEcqKJkcCWW1CU00oi4Wgf0Hxbh07QIdMN4Cj4fDEKMgvUnpJRgXqyo1PX0WQCVdbPUZRiLFOb0+vJ+euX+ezG7fHc9dafXD7Pp7eXs+sr8kebjfon1ihnCHIubpfNjvc83jAZ6f+RKurBRPVNiwSJ1gRVLaA7nR2/D08uQE5ZWpcZVXAzJba7mKRV7ZVmtdMWlxQvKSoVULD9e3F2+u/jw1/XDwczzvAkiFLUwbzQuMa+cXAMk1ZBnOatdHMyvtJNwYFkvTcOsD45m4TIkNLjaLGfC4HwOvGQ8ipUuRlEAN4yo0InDfeZm6/7If99M798Xf8/u4b4nxJV0VegiQtxSeXUIyOU5Omc1qXP6eTaLmMMS7nrj6pxON2C9E3dMQuKfoCOLKqdLwrh/ly85jbkRwg7DDwPHQmjRLCTMv12ieb43/gMNKFYltvj/yPKn90xKrbQb1OugaVVqMdfhgHVGkVIWW54Y/PHIhq7XN6nUrWI3B3f3CBN74I1H1lj3tm05nm9bY2uIfOJY1sQpdXcdTCtKVdn9Dru8pcdlSqtgDxJVK5hjs8q83osQyTabihz1ZudSctkNNLsjaH0NrSKJzkGauGZddvlqm3y7UuvY0RFJENxB9pU4PWEPLfOD8Ank+Agd8xD+PBdhzElVWPSaBuPGZobxS16/XzvUND8UdDeA7RmvpGabChccRXzVgY4NKCbj0WBkgXw5oFzecDLxMOr7/ng0phap6NgGRiO2t6Bfz/AmaSJem5Y1UiBpYs4BKnYCwJqiHQzwdC3LedeoZNnYz6FZTwvKXYAq3ECrUk265gEjtBg7um9rUZJNp57au45/RobD8RiP4XQBvesPqIfsQX+IJuORQ0eV3q1B2QVTNRThBc8c+hiow7+5I/BLkk9SpbLvNA51TQ6Pjek9KAtSci5dcSOVhlAYH0L+2+1mnvFAwZDSM2VX9rkPClhMGC8LwwvVoubfEPpPuL4VWj/3tVTlNQ8rFT4k22mdbPJnzmRIfKdZKMb9JqHYgGmH+dp2vyfXk9auafL9fambNHZAq1EfQcYKC8oOvuMRo6ui2J0Xpf9yRXFOfqwpWq31hHYM2J/IjFLzP8WRdEzqhn5Zhq9CAwYMCGIw38i/t4MDt7cy1IJCSQN4foWAho5+qv6W/aAOZc3g/xdI9kRc8yW4bOTPO69qOZVd7/Zsif2JRyZOy/PpsP35tN17KsOvbUAH8ztpapedLnTYutU1G32oRL7tDd/TYTrNutlmTsu60Wiey/p0C9l1Mm5A8fbNQYOeZdtwhCWEHFfOBLjLlxExZ19i6uIF4vPsRUMR6AbqTBFeGNkUI5vSpagHT2glzaq7AGl1X+Rf4cIF6BCeCVVXkWlCxaqWq75oxBGo26lZ7jaUHS/881dyUgkAMV+VmqyAfKB32JNh3yFn2LEnTv29vV3yjm2WtgNqNYtnXuO3mcWCpW8jS+HznVBsSVPFWr9SNJZI4QWVPQO2K/2qPxU0JqRKZ/9uHnP4weV3H3m3NXlJaz8kba3Uqs07KJ5Um6NJjBvoWuVJWY53HnN2pG93kn6/i/Sd49IfnOxGeUWa7SivXrcWdMS/f5jNHvT4HyU2mVuiJAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=68978ae847825290e9ddbf66706d43a8^sys_idNOT IN7097cae847825290e9ddbf66706d43dd,7097cae847825290e9ddbf66706d43de,7097cae847825290e9ddbf66706d43df,7497cae847825290e9ddbf66706d43db,7897cae847825290e9ddbf66706d43de,7897cae847825290e9ddbf66706d43df,867df4a24706d2d0e9ddbf66706d4324"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>07944302-711d-4562-9622-e1aed36cc9ba</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7097cae847825290e9ddbf66706d43dd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:48</sys_updated_on>
+        <ui_id>4cb4e9fa-ff2a-4625-812b-121e3d97e717</ui_id>
+        <values>H4sIAAAAAAAA/+VVy2oiQRT9lVBrabrVSOJuiAgDmQSSmWwyobhWXbVI9SP10Djiv8+t7vKBJhmFbMK4EOq+6pzT93Q/LpmSrM+6KNPsMuuJTtbptNO0fdHNRr3OKGvLDiBmrMUKyJEqDYrSSDrPQPsQWC5/VRIcSp4lwhuDhUsEWORKrlZUJ5WtNCweYjlFxFRpSXWs//jUYhUYmuzQsP5yL3UsNA0j1FR6t8a2j9UtqnCWpfA54SNoMXgdOwcxc/Z9QBlqCnCytMXw1WEhkYCMQVtssRwKYluaBes74ylgEORtoRebiqkqXEM0h1er/tDN3TTUjZGYiSjC5vgTRhoHjUhNajwAB/c0XThvNpqVSqBtdJE4Bq/d1W6sKbitnCqLpsWFwbG71D4vbhpV2GbAzjPx9MAkVoFrQN9QG99Py/ndGuhQFbUskaYuBejNCZwzauRdgLNkqLHWOYeqUsWEV6acqbqZoOTJRNMhGetyTndaNSkSEAF3QspCMqT4oA4/gFGBxA8aQ82rFrMLe6XB2i0V0pG/+ICkIRYp8FqFWgJeb0NoFkZV7htdNcMIfNWKBhidf7Rl4nK7VDsztyZ45aZyFX8uHTxzP+fBAIe7/07VaX44AunaD/VqvYM8WuIgdr3be3bTJKIhzj/NEBdfzRCRypd3xL98kLY/fNvubFO9+nbHA77eZ24dTPC3T9OODDcHsgZfvDK1AJbTvz+0xmnNpznmCE5rxwwVamnfILm2C+aE2iFvSO9ZJibPHmJy8x35NN9kvbT+fTH3/Defk6e/jNTgAlEJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>07944302-711d-4562-9622-e1aed36cc9ba</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7097cae847825290e9ddbf66706d43de</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:48</sys_updated_on>
+        <ui_id>45ae6d7a-cabf-4571-aab6-7b4944adab86</ui_id>
+        <values>H4sIAAAAAAAA/9VUXWvbQBD8K+KehZCi1CR+KzZ+apOStH5JU7HSrewjJ+lyH45d4//ePZ3smDSmKZRC/CC43dnbmbFGd1smOBuzUYbph8tsVOVZnp+l6dnFeVaO8jI74zkgnrOYtdAgIS2UEov+ELMVSOeL60Irq4qHzsLD8ATHhS2sBiEJyIVREjbzt+KrpZBcY8vGd/cxU6Bpn0XNxtsXrbeyl1CiJOhXT/+EGrtRr9Y+Hc9GV6HRae75pDHDtcWWIxGpQRqMWQMtB9vpDRtb7aigEfh1KzcHxFK0li5kHrs24ietvUg9rkZSVmHoHY794mmwMLTqKVi4pdsr6/QAr5adqNAEXzjW4KSdHNcC4FpZ0bVhpJc6THfSNe1VsIUdLtj/Y1RxBguOymv17Acp9e2ye7rZM52JtrdlaMquAnk4gbValM56PluGEhu6qGhAKdEuCqW7leiHiUuTLCQdklp2T7TUiEWbQOWJJ2QtJDOqT/vyHLTwKj7TNTS8i5nZmIkEY561kJHFo/NMgrJBQxFs8COVFsp+pAUrHOju4n00OKaXJ1+urHx+mfo0mKNYVECWCf7dpWnOt9tvirgjL7KkcprssskA2O1+eHErYTcBO6F61HQr5JHtoi9ElxyKbvDRCd27ZiJ6ut+D9R82/mU0/+zePpozgZKbV+zc5xIbkmqxCPa+yObQjOZDc8hn9q/ymY3S/vfOUhoEvvuQHn2TT8T1/hc7bEVeywYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>4612698c-0231-4f5e-999a-2ecb3bc87356</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7097cae847825290e9ddbf66706d43df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:49</sys_updated_on>
+        <ui_id>c26f74cc-454a-4bd9-9c92-43a9898f8dcb</ui_id>
+        <values>H4sIAAAAAAAA/+VVyW7bMBD9lYBnQ5DsxEh8K2IYKJAmQNL6kgbEiBzbRKilXLzU8L93KNELkiZ1gFyM6sbZ+N7TPOlxzZRkA3aOMs2usr7oZb1eN027l+dZ3u/lWVf2ADFjHVZCgVRpUFRG0nkO2ofAev2jluBQ8iwR3hgsXSLAIldys6E6qWytYTWO5RQRM6Ul1bHB41OH1WBoskPDBusXqWOhachRU+n9FttLrG5Vh7OshC8IH0GLwZvYOYyZs69DylBTgJOlHYZLh6VEAjIBbbHDCiiJbWVWbOCMp4BBkHelXu0qZqp0LdECllb9ppvP01A3QWImogi743fINQ5bkdrUZAgOHmi6cN7sNKuUQNvqInECXrvrw1hbcFc7VZVtiwuDY3elfVHetqqw3YCDd+LphUmsA9eAvqU2eZhVi/st0JEqG1kiTV0J0LsTOGdU7l2As2aosdG5gLpW5ZTXppqrppmgFMlU0yGZ6GpBd1o1LRMQAXdCykIyoviwCY/BqEDiG42h5k2H2ZW91mDtngrpyH/5gKQlFinwRoVGAt5sQ2gWRtXuC101xwh804kGyC/e2zJxtV+qg5l7Eyy5qV3NnysHz9wveDDA691/o+pjfjgC6dYPzWq9gTxa4lXs5rD37LZNRENcfJohLk/NEJHKyTviXz5Iu+9+bQ+2qVl9e+AB3+wztw6m+NOnaU/Sii8q85yTVjNO9P1rSxzX9DGHHMFh65CRQi3tX0ht7YEFoXXIW5IvLBKTZ+OY3P03Ps0nWT9tnhNzy3/z+3j6A84n7NRBCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7497cae847825290e9ddbf66706d43db</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:48</sys_updated_on>
+        <ui_id>d3fbd8c7-efbc-498c-8c91-2a57010eca7a</ui_id>
+        <values>H4sIAAAAAAAA/+VXW0/bMBT+K1WeoyqhpTDeJiqkSVwkYLxsyHJsp7VwnWA7LaXqf99x7KRZG1gjFQm0R5+Lz3cu34nzaxVwGpwFp+kwinB8fHoSRYNBFI1GA4LjJBmMSBIlwyQIA4lnDCwNTgSD4xyLwp5fkMpNjp4yg5+QYs8FV2zGpEEznOdcTsCUcp0LvHzY34NMuaCKyeDs12MY5FhBbMNUcLbaUu0LXuCECTC99+i3kjHLvD6iUudkl0233rVTZIpaKFEYsBfDJGWAIcVCszCYYUmxydSyliiG6Y0UG8GUSwM3Btb4RfNXiHsaWbuUQVaEOV19LCOPXQGdKh1jg++MKogplDcn04wTpl1NKEtxIcx5U+YMbnLDM+lcXOrOOxPFTF67kgT1BVW/QFJohijLbbIWvU8lvZtmi9sK6QWXZV28UmQEi/qEjVE8KYzFswqY+KvhKFfZnJfOgGXWnwg49FORLSCo5hPZx8QC70Ntcf8C5ONS/IAVt1lcwTXgDIC4gClBro06K1RZzjkiotClQmGp3V3BOgz0Up8LrPUmcyg7ei4sblcHnzFyRbMuRPHcfIcr5swntw734tBxtBk7kknKLQrdIBLBUGROfxfgTVernzlkyyiK+6RQUGDT9wbr9S6lOvkeklxlVhW5zptptaXqabYju2y7wNMsPhjNII+vRjQI/vl41p05rgT/oA85eXfQjjczpTNlkKtlgz+7rOg863tAqGb9xk5nL1m+hcqPesqZoG1flAur2PqiHP2/X5RPOegAiCLXQS4Fl+UTAYB+FAOi91ftt61ZK0dsM/+lDGuyywPcM1nvtTMb9oBTseEOYvfuHZ4WiNXeL0dme+dXQk+CwcFIMDg6HAlWdap1MVvqXr0MbUcr+1drj7ftYQwbDvG6jWSdYsZdYx6td0k86MTi5sA5zfiNuTvw8/ENVoYfuQam4OrjIcdhtOB0wswmemVFM7PA4qlN74mJqkaV6X3AU3T4LnVH8YamwBb4B9PQvOZbNIan0u4eiUMn7rZG9sBSleMKv/RuazCtCP0qAbazSdmb5i75UUv9kA8P+Hj81F/UqmGtPKz69iX+4g5Hhsc/SqIoud0QAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>7f8c1efa-18bd-4ca2-bd0c-d0bbd3e585d8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7897cae847825290e9ddbf66706d43de</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:48</sys_updated_on>
+        <ui_id>ed3007d2-d3f7-43cc-9a47-e1653c4dc10f</ui_id>
+        <values>H4sIAAAAAAAA/9VUTW/aQBD9K2jPlmXjFCXcqiBObSKVlkuaWmPvGFZZ25v9ILiI/95ZryEoDWoqtYdwQNqZNzvvPfv5bscEZ1M2STH5cJVOyizNsnGSjC8v0mKSFemYZ4B4wSLWQI2EtFBIzPtDxDYgnS9uc62syh9aCw/DPzgubG41CElALoyS0C3fii/XQnKNDZve3UdMgaZ9FjWb7l603speQoGSoF89/TNqbKderX06nR3dhEarueeTRAy3FhuORKQCaTBiNTQcbKs7NrXaUUEj8NtGdkfEWjSWLmQeuzXiJ629TDyuQlJWYugdj/3iWbAwtKoZWFjQ7aV1eoCX61aUaIIvHCtw0l6f1gLgVlnRNmGklzpMt9LVzU2whR0vODwxqjiDOUfltXr2g5RqsW6fvhyYzkXT2zI0ZVuCPJ7AWi0KZz2fHUOJNV2U16CUaFa50u1G9MPEpY5Xkg5xJdsnWmrEqomh9MRjshbiOdVnfXkJWngVn+kaGt5HzHTmWoIxz1rIyPzReSZB2aAhDzb4kVILZT/Sgg0OdPfRIRock6uzL1daPL9MfRrMSSxKIMsE/+6SJOO73TdF3JHnaVw6TXbZeADs9z+8uI2wXcCSjSBHGh+d0L1Lo4UramGMf3K/pel/rfnLEP7Zp0MI5wIlN68Yd0gg1qTPYh6MfJHCoTlaDs0hiem/SmI6SfrfO8tjEPju43jy9T0TzPtfYEnbzLUGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>4612698c-0231-4f5e-999a-2ecb3bc87356</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7897cae847825290e9ddbf66706d43df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:49</sys_updated_on>
+        <ui_id>249b3959-ddde-4468-9ff4-f939159dd8da</ui_id>
+        <values>H4sIAAAAAAAA/9VUwW7aQBD9FWvPlmXjFCXcKhCnNpGahhzS1Bp7x7Bi7XV31wQX8e+d9RqC0qCmUnuID0g782bnvWc/HnZMcDZh4wTjD1fJuEiTNB3F8ejyIsnHaZ6MeAqIFyxkNVRISAu5xKw/hGwDsnXFbaYb22RrZWE9/ELLhc2sBiEJyIVpJHSLt+KLlZBcY80mD48ha0DTPouaTXYvWm9lLyFHSdCvjv4ZNbZrXq19Op0Nrn1Dae74xCHDrcWaIxEpQRoMWQU1B6t0xyZWt1TQCPymlt0RsRK1pQuZw26N+ElrL2OHK5GUFeh7x2O/eOYt9K1yBhZu6fbCtnqAFyslCjTeF44ltNJOT2secNNYoWo/0ksdppVsq/ra28KOFxzeGFVagxnHxml17Acp5e1KPX05MJ2LurdlaEpVgDyewFot8tY6PjuGEiu6KKugaUS9zBqtNqIfJi5VtJR0iEqpnmipEcs6gsIRj8haiOZUn/XlBWjhVHyma2h4HzLTmakEY561kJHZj9Yx8coGDZm3wY0UWjT2Iy3Y4EB3Hx6iwTG+OvtxJfnzx9SnwZzEogCyTPBvbRynfLe7a4g78iyJilaTXTYaAPv9dyduI2znsVOqB5XaIA+sCu7ug3ul1zkZvPo9S/9nyV8G8M8eHQI4Fyi5ecW0Q/qwInUWM2/iiwQOzWAxNIcUJv8qhck47p93lkUv8N1H8eSf90woH38BTdNtjrEGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>06752930-e842-4ade-ae1e-77987588c7fd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-26 09:37:47</sys_created_on>
+        <sys_id>867df4a24706d2d0e9ddbf66706d4324</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:37:47</sys_updated_on>
+        <ui_id>86af6a2a-438b-461f-b728-c6711aee4865</ui_id>
+        <values>H4sIAAAAAAAA/9VVy27bMBD8FYFnVZDs1Eh8K2IYKNAmQNK6hyQVVuLaJkI9wodj1dC/dynKD6Q2mgK92AcD3J1dzgzJ1cOGCc7GbJRg/PEqGeXDZDgcxPHg8iLJRsMsGfAhIF6wkJVQICENZBLTbhGyFUjrgutU1aZOnysDz/0/WC5MahQISUAudC2hmb0Xny+F5ApLNn54ClkNivYzqNh48yb1XvYSMpQE/ebon1Bjmvpo7MthbXDjE5Xijk8cMlwbLDkSkTlIjSEroORgKtWwsVGWAgqB35ay2SGWojTUkDnsWotftO1l7HBzJGU5+txu2W088Rb61HwCBu6pe26s6uH5shI5au8LxzlYaa4PYx5wWxtRlb6kk9pXV9IW5Y23he0abE+MIlZjyrF2Wh37Xsr8flm93m2ZTkXZ2dInZZWD3K3AGCUyaxyfDUOJBTVKC6hrUS7SWlUr0RUTlyJaSFpEc1m90qZaLMoIckc8ImshmlJ80oVnoIRT8ZXaUHEbMt3oawla77WQkemLdUy8sl5D6m1wJbkStflEG6ywp9uG26fBMb46ebmSbH+ZutegD55FDmSZ4I82jod8s/leE3fkaRLlVpFdJuoBbfvTiVsJ03jsHb5YoTp/gs+T4ENwrFjtQdRjt+xWbRssQQcZYhn8AFLFg6w52oXcSm0fzZq2/fOxnqmKfxwhfz/l7QiZCpRcHzn27fzAguwzmPpr8GaG9Mlg1if7OZL8rzmSjOLud2bTxAs8+2Fy8O04MVaefgND1OUQcwcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=68978ae847825290e9ddbf66706d43a8"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=68978ae847825290e9ddbf66706d43a8^sys_idNOT IN3497cae847825290e9ddbf66706d43da,7497cae847825290e9ddbf66706d43d7,7897cae847825290e9ddbf66706d43d9,8a7df4a24706d2d0e9ddbf66706d4326,b897cae847825290e9ddbf66706d43af,bc97cae847825290e9ddbf66706d43d8,f097cae847825290e9ddbf66706d43d6,f097cae847825290e9ddbf66706d43d8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ab370ea847825290e9ddbf66706d43e0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f8c1efa-18bd-4ca2-bd0c-d0bbd3e585d8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>3497cae847825290e9ddbf66706d43da</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:03</sys_updated_on>
+        <ui_id>4612698c-0231-4f5e-999a-2ecb3bc87356</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FZdnQZDsOGhyCxwEKJA2QPM6tAGxIlc2UZpU+bDjGv73LiX5gcZFEyDH3sRZcndmyIHWzMbQxODv7IX3amrY+benjCmTMPpeMwNzZOdMWCNVUNbwFsjYAnRMhQl4HNwGmOJA+YGxYXD/OHi07keFRsxoo1S+0bB6eO1+MVNaOuyZNOBoXkDHztd/lJSkdnUBdXkmSjEano6GRTH8eFJWp6OqHMoRIIyooYYKdZq8lTC4bpHsr9rCqkm4D06Zab++7rvcbkHrZGJVFhnD54BGIvGpQXvM2ByMhGDdaoc4BHlj9B6YKROoHUubn736RQOH43HaWCNJFNgVd8s7qDRedl52pfoSAhCdKEJ0/XYxs0qg7wySWEPUYXKIdRtumiS3OxJS4/601XFuvnSusF2D7dUREj1yiU1Sm+j3WurbmV1+3TK9UqZ1pi9qK0DvVhDIvyqGxGfNUOOcGvE5NA25yhtnF6o9TFzm+VTTIq+1XdLQ9DpzEIl4TuZCfkX4ZQs/gFNJxWdqQ4c7mhV4JXj7kqkd2YRskzG/8hMN3u9FksP8Z0wUO8m9ON75k44Ip5pwQZMX2OvYZC+DcZCJ9fq+IYooeZmL6MiVkAt691zJPPL2y6cEbDYfvseiGMm45MttBDg5El/m5l16vi1bZzCux2UxPp6tk9Nj2TqSqjcGaviPQKWbfGWeiqL4H6h3CZTyvItBr60d/o55ekrh6WbuvBbKE7X2mj5t/0epsKIHpsQhlN55ErXHNr8Bm5X9x9kGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b454e2447825290e9ddbf66706d4307</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned>open_case_present</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>ca40362b-2679-4cdd-8bba-85198a28f2ba</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7497cae847825290e9ddbf66706d43d7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:02</sys_updated_on>
+        <ui_id>ddb0d469-0a2b-43a0-9381-4792c1b99b6d</ui_id>
+        <values>H4sIAAAAAAAA/+1VUW/aMBD+K5WfA0shgcJbBUKqtA1pZX2ZKnSxL2DNsVPbgTLU/75zYqCrpr3tjafY32ffffedTzky0/i68W5l7p2TG82mP54TJnXAaH1kUrApYwnTUCGtTI16zcHhurboUHuidqCawN3SWkhXKzg8Rchb+iSMb6USFmP0GiwF82jZ9PiBarPxcZanOMiy8d0gH0xSnAhRlKPROB2JbIgZBVRQoKKjS5JzMyM5Nxc5/1DqD3WgCmMUgo7A5xhrRVo/LUC5oNhYEfSlCcNXj1ogCSsDl7AKtABv7OGMWASx1OoCbCWla22r4NXJX5Q0S8O5EqlUjh133q6gUDjvnOuocg4eHsk97hsbj/OtkRxdZ5TAEhrlZ++x7sCy9tLo7ooPgeNto5pKf+28YecAp0aVse4Iz/9s44ltyE2BdfAjFBirLR+3Zv/tVMxC6ta6SCrDQZ134L2VReOD5CNr5OpjQzrory1BhRWlXVdQ11JvqK1mJ9tUVFzV3yja9Etl9iQxPOU+8OBEn5oF/QXh8xZ+AiuDLV8oDF0OKb9r+dLgQ3h7mE1GtxPIelk6ynuZGBQ9yGHYm4xhkI8xH8Lojr0lzB3cTIFzF0Opm+uXJtTa2RtdWne9CFe4lbW/J1E7jIa8PYfp6fRcx+06btdx++/jJpBLRzrbR/Bw+s8F4kAvWfL30N7Yn6HCC/b2G0AipesxBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e3370ea847825290e9ddbf66706d43df</block>
+        <comment/>
+        <connected_to>1156989c-a56d-43ed-9103-de19ce3c29de</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>7897cae847825290e9ddbf66706d43d9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:03</sys_updated_on>
+        <ui_id>7f8c1efa-18bd-4ca2-bd0c-d0bbd3e585d8</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">257db4a24706d2d0e9ddbf66706d4319</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-26 09:37:47</sys_created_on>
+        <sys_id>8a7df4a24706d2d0e9ddbf66706d4326</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:02</sys_updated_on>
+        <ui_id>06752930-e842-4ade-ae1e-77987588c7fd</ui_id>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYNnQdASG41vgY0ABdIGSNLk0AbCiKRsopSocLHjCv73DkV5QeK2CZBjb+ab7b3RPLgjytnWWXOnLowRi4ZMvz9GRDQew98daaDmZEqoapiwQjVFD0RkBdL5wA1/GhkL1pmRMKMHECvOMMyEaSVs7v+eRZdCMs2HqS1o7G25JtPuRUgwbFIlUKXnNKV5NsmzJMk+naXlJC/TjOXAIceGEkouMXW2ozu66pHojzrspvW4sVo0i+F9NXS53YFKM88qTSLCny1vGLKfViANj0gNDQOr9GaPaA7supEHYCkai+2IT3424hcOzMZjn1hxlEh5CO6fd1BKPg8bDKFqDhaQjqPW6SGdLpWg3IQFMV6Bk3Z2jIWE69bLDSXWNx6qlXR18zVshewb7D4YIs7wgvHWq/X0By3V7VKtb3ZML0XTb2YISkVB7l9gcX+ls55PR7jkNTYqamhb3GrRarUSfTFyqeOFxEdcSbXGof4SY6CeeIzLhfgS8XkP34MWXsUXbIPFgWYJRtCiv1psh2viZBsRszEzCcYcROKGiyfnKQbJg7gi7MeXUC1ae4GTV3zQsY1em+Do/rvuW4sUOSvSmDqNW7FxuPTt9odLkpw9vLbD24re545zGFfjNBmfdsfZ5JQ7TvjinZbI/mEJ/y3e6IgkSf5b4kMsIUwRDnnQ1g//QEc8+vMPM/e7psIgtf4zfd79e/jABg9M0GNorfRPL+qAbX8DvdZGJ4cGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0b454e2447825290e9ddbf66706d4305</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>b897cae847825290e9ddbf66706d43af</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:02</sys_updated_on>
+        <ui_id>4b65f1af-3701-472d-8650-cf5511196a0f</ui_id>
+        <values>H4sIAAAAAAAA/51TwW7bMAz9F50Tw3baJM6taFCgQLcCadHLUAS0RCfCZMmT5KSe4X8fFTlu0eNOFh/Jx/couWem9U3r3au5c04eNNv8ep8xqQNG555pqJFtmPRYOzZjJ1BtiPteLKpSrPlqjlXJ5zfFms/XvMjmOdyu0ixFDitIdsiNFW4YqFVI1yjo3v6fgR+lEhZHkQ1Y0ubRsk3/LSUFDcgKURVZWvBFvlzkaZqvb7JyuSizXCwAxZIIFZSoqPRxdPfNrO+aENooYQSexp7dhNIniMjTGcMPj1ogja9AOZyxGrQAb2zHNt62BFgE8axVN1UcpfZEx0Lth5N/aWKWpqGwQjLEMSan8BVKhdu4y5iqtuDhhei5b+1Yzo9GcnRxHQIraJW//4rFgufGS6Njiw/EY7dRba1/xm2wieB6dYS0DvcCm2A2yB+9VC9Hc95dlT5IfVnMmFSGg5oi8N7KsvVBT89QYU1E+xqaRurDvrHmJC/NpKVODoqCpFLmTEPDM02AB+EJ7RaSB8K3F/gNrAwufhANNQ8z5jp3r8C5Ty+0yP2fNiiJzkYP+7iG0MKtbPwdDTjhKHd4Dy8/ck875dKRhMt1PF7/l5Do6BVJ/hU6G/s7iP/Ehn/zBmxTeQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4f454e2447825290e9ddbf66706d4308</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>1156989c-a56d-43ed-9103-de19ce3c29de</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>bc97cae847825290e9ddbf66706d43d8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:03</sys_updated_on>
+        <ui_id>07944302-711d-4562-9622-e1aed36cc9ba</ui_id>
+        <values>H4sIAAAAAAAA/+1VXU8bMRD8K1c/n053CUGFNwRCqkRLBZSXgqyNvZdYdezDH0Aa5b93fb6EqE3VUvHYl+g8613PjD3KitkYuhj8jT3xXs0MO/56XzJlEkbfK2ZggeyYCWukCsoa3gMlewQdU+EUPBY+wAwL5QtjQ/EZaauZFVf4EJXDBZrgC/qN1CWV7zQsb/+pWcyVlg4Hjh04YhLQsePVTyUlaXZbQ9sciUaMR4fjUV2P3h8008PxtBnJMSCMaaCGKepEYyOuuOiR8reqw7JLuA+OSA7ri2HK9Qa0TiZWTV0yfA4kCIlPC9pjyRZgJATrllvEIchLo1+AuTKBxrG0+dmr73TgaDJJG1skiQJzcbu8ganGs2xsLrVnEIDoRBGiG7aLuVUCfTZIYgtRh9NdLG+47JLc3BLS4KHb6rgwn7IrbDtgc4+ERI9cYpfUJvqDlvZ6bp+uNkzPlemdGYraCtDbFQTybxpD4rNiqPu75wvoOnKVd84+qr6ZuCyqmaZF1Wr7RIemd1uBSMQrMheqc8LPevgWnEoqPtIYas40p+CV4P0bp3FkE7J1yfzSn2rw/kUkOcwfYqKYJQ/iePYntQinunBCJz/ioGNd/hqZnbSsVl86ooiSN5WIjlwJlaAQcCWryPuvPg7r9bu7WNdj2eU8cLeTB74/TG86+3VZO4JJO2nqyf6sHRzuy9qelL0yYKM/BCzd7F/mq67r/wF7k4Apz3MsBm394W+Yr/sUpnzm1muhPFHrr+nD5p8rFZb0wJTYhZ6s+5ZEvWDrH++ns/cDBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cf454e2447825290e9ddbf66706d4306</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>4b65f1af-3701-472d-8650-cf5511196a0f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>f097cae847825290e9ddbf66706d43d6</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:02</sys_updated_on>
+        <ui_id>ca40362b-2679-4cdd-8bba-85198a28f2ba</ui_id>
+        <values>H4sIAAAAAAAA/+1VTU/bQBD9K9GeHWttxwFyQyCkSrSRAHFpkTXeD7Lqem32A0ij/PfO2k5AQFVQOfbmfTM7897sPHlD2uC74N1Ve+ycujVk8f0mIcpEDL83xEAjyIKw1nDlVWuqHkjIPegQAxfiLigrGmH85NKDD26i3GTZCYNJXLlOw/r6PblspTS3YmTQgcU+Xliy2LwIKY6lJAWZHbGMFfm8yCnND2dZPS/qLOcFCCiwoIZaaEw92VGfnPdI8kdNft1F3HmrzO14Ph+rXO7A1vLIKqMJEY9eGC6QjwTtREIaMBx8a9d7xArgS6OfgJUyHsuRmPzo1C9smJdlTJQCJTIxBPfHK6i1OB3mOITkKXhAOoH5YMd0tmoVE24YEBcSgvYnz7EhYdlFucMVHwuPt1sdGvNtmArZF9g9GyLBiYqLLqqN9Ect8nLVPlzsmJ4p009mDOqWgd6fwOP86uAjnw0Rul+CqoGuw6lWnW3vVX8ZuTTprcZDKnX7gE3jVqbAIvEUhwvpGeKnPXwNVkUVX7EMXh5o1uAUq/oNxnI4JkG2CXFrd6LBuSeROOHqLkSKg+RRXDXMJ15hVnX+GDvfi1HHNnltiGde2Gxm9byUGchpcUCz6ewg59PDeUmnTJZllmVHc6AyVV40qev3f7v9ESgt+PK1Wf6t2MfcdASlLDNavu2m2fwtN73how9aKP+LheLbvdNBlNL/FvoUCylXDYs/auubf6KDbqJdhp77WTPlkFr/TF92f54YWOOCKfYcemjtzyjqCdv+BgoZKAHDBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c3454e2447825290e9ddbf66706d4308</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>f097cae847825290e9ddbf66706d43d8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:03</sys_updated_on>
+        <ui_id>1156989c-a56d-43ed-9103-de19ce3c29de</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0XPxthxE9a8lYTCoFvGWvqyFXMtyYmYLGmSnDQz+e+7spwP1pQt0Me9Red+nXN9D+mIbr1pvXvUt86JpSLTb88JESpg+LsjChpOpoRqxYQXWpU9kJA1yDYEFoarK+GuvljuuPIYYcIZCdunNxPoSkhm+TDLgMWOnlsy7f4ICYb1dQZ1fkNzWowmxSjLRh+u82pSVPmIFcChwIYSKi4xdbYneXXfI8mb7P3WBNx5K9RyeN8PXR72oLYssMqzhPAXzxXjyKcG6XhCGlAMvLbbA2I5sIWSR2AlUO2UkJD84sQvHDgaj0NizVEi5TF4eD5CJfk8Li+G6jl4QDot9a0d0ulKC8pdXBDjNbTSz06xmLAwQW4s8aHxUK1l26jPcSvk0GD/rRBpHS8ZN0FtoD9oqR9WevN1z/ROqH4zQ1BqCvLwAo/7q1of+HSES95go7IBY3CrpbF6Lfpi5NKkS4mPtJZ6g0PD/aVAA/EUlwvpHeLzHn4CK4KKT9gGiyPNCpygZX+r2A7XxMkuIW7rZhKcO4rEDZc/20AxSh7ElXE/oYRaYfwtTl7zQccueX36J1ffdT3n9UAr1dizpICkTDzz3e57m2UF61m98sSl5Zc55gbG9TjPxucdcz0555gzXrnQJqO/2CRI+UeXZFn23ybvYhPhynjcg7Z++Du65DlYIs487JoKh9T6z/Rx/z8SAls8MEFPoY22P4KoI7b7Dc3ws0mRBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=68978ae847825290e9ddbf66706d43a8"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=68978ae847825290e9ddbf66706d43a8^sys_idNOT INf497cae847825290e9ddbf66706d43aa"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e49619a4-4065-4d2b-a5a3-97a257e53a68</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>open_case_present</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Open Case present</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Change in Requirement Mapping Status - Kotak">68978ae847825290e9ddbf66706d43a8</model>
+        <model_id>68978ae847825290e9ddbf66706d43a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_68978ae847825290e9ddbf66706d43a8</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:43</sys_created_on>
+        <sys_id>f497cae847825290e9ddbf66706d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:53:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8^sys_idNOT IN2c97cae847825290e9ddbf66706d433b,7497cae847825290e9ddbf66706d4394,f497cae847825290e9ddbf66706d438d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_id>2c97cae847825290e9ddbf66706d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:53:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_id>7497cae847825290e9ddbf66706d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:53:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:42</sys_created_on>
+        <sys_id>f497cae847825290e9ddbf66706d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:53:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_68978ae847825290e9ddbf66706d43a8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_68978ae847825290e9ddbf66706d43a8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_68978ae847825290e9ddbf66706d43a8"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b233022c47425290e9ddbf66706d438d</sys_id>
+        <latest_snapshot>68978ae847825290e9ddbf66706d43a8</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b233022c47425290e9ddbf66706d438d^sys_idNOT IN05970ee847825290e9ddbf66706d430a"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"05970ee847825290e9ddbf66706d430a","name":"plan","plan_signature":null}}</plan>
+        <plan_id>b233022c47425290e9ddbf66706d438d</plan_id>
+        <snapshot>68978ae847825290e9ddbf66706d43a8</snapshot>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 09:53:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05970ee847825290e9ddbf66706d430a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:10:04</sys_updated_on>
+        <trigger display_value="">85970ee847825290e9ddbf66706d4308</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b233022c47425290e9ddbf66706d438d"/>
+</record_update>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_rptp_kotak_requirements" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_rptp_kotak_requirements</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 07:02:09</sys_created_on>
+            <sys_id>1f2dd1d2477d9a10e9ddbf66706d438a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_choice_x_rptp_kotak_requirements_type</sys_update_name>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 07:02:09</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical</label>
+            <language>en</language>
+            <name>x_rptp_kotak_requirements</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 07:02:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>612dd912477d9a10e9ddbf66706d4326</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 07:03:02</sys_updated_on>
+            <value>medical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non Medical</label>
+            <language>en</language>
+            <name>x_rptp_kotak_requirements</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-11-13 07:02:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f2d11d2477d9a10e9ddbf66706d438e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-11-13 07:02:54</sys_updated_on>
+            <value>non_medical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non Medical Medical</label>
+            <language>en</language>
+            <name>x_rptp_kotak_requirements</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-11-27 05:56:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>796495b247ca56d0e9ddbf66706d436c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-11-27 05:56:28</sys_updated_on>
+            <value>Non Medical+Medical</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1209260000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>kotak_case_create</internal_name>
+        <label_cache>[{"name":"b66e3547-deb7-40b8-84aa-cdf7b8a96407.Record.sys_id","label":"8 - Look Up Record➛Requirements Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_requirements","column_name":"sys_id","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["requirement_id"]}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.RaisedDate","label":"7 - For Each➛Requirements_object➛RaisedDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["raised_date"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.Status","label":"7 - For Each➛Requirements_object➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["status"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.ReqCode","label":"7 - For Each➛Requirements_object➛ReqCode","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["requirement_id"],"b66e3547-deb7-40b8-84aa-cdf7b8a96407":["conditions"]},"attributes":{}},{"name":"605362c0-35d2-4525-b418-3e2a66c084c3.record.sys_id","label":"6 - Create Record➛x_rptp_kotak_uw_case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sys_id","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["case_id"]}},{"name":"62c1b7da-ad38-4c22-a910-2ac3b9c18e0b.res.cases","label":"1 - kotak case➛res➛cases","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"e283c839-b77c-4d55-acf3-7315c5ce58fb":["items"],"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["country"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.name","label":"2 - For Each➛cases_object➛member➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["name"],"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["name","fso_date_of_birth","first_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.loan_account_number","label":"2 - For Each➛cases_object➛loan➛loan_account_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["loan_number"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.type","label":"2 - For Each➛cases_object➛loan➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["loan_type"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.date_of_disbursement","label":"2 - For Each➛cases_object➛loan➛date_of_disbursement","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["start_date"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.borrower","label":"2 - For Each➛cases_object➛loan➛borrower","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["borrower"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.co-borrowerjointlife","label":"2 - For Each➛cases_object➛loan➛co-borrowerjointlife","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["co_borrower"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.rider_term","label":"2 - For Each➛cases_object➛policy➛rider_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["rider_term"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.master_policy_number","label":"2 - For Each➛cases_object➛policy➛master_policy_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["master_policy_name","policy_no"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.master_policy_name","label":"2 - For Each➛cases_object➛policy➛master_policy_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["master_policy_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.cover_applied","label":"2 - For Each➛cases_object➛policy➛cover_applied","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["cover_applied"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.coverage_term","label":"2 - For Each➛cases_object➛policy➛coverage_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["cover_term"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.product_name","label":"2 - For Each➛cases_object➛policy➛product_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["product_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.rider_name","label":"2 - For Each➛cases_object➛policy➛rider_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["values","rider_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.rider_sum_assured","label":"2 - For Each➛cases_object➛policy➛rider_sum_assured","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["rider_sum_assured"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.reinsurer_name","label":"2 - For Each➛cases_object➛policy➛reinsurer_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["reinsurer_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.clientID","label":"2 - For Each➛cases_object➛member➛clientID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["borrower"],"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["member_client_id"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.dob","label":"2 - For Each➛cases_object➛member➛dob","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["fso_date_of_birth"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.number","label":"2 - For Each➛cases_object➛member➛number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["member_number"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.gender","label":"2 - For Each➛cases_object➛member➛gender","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["gender"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.nationality","label":"2 - For Each➛cases_object➛member➛nationality","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["nationality"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.country","label":"2 - For Each➛cases_object➛member➛country","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["country"]},"attributes":{}},{"name":"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0.record.sys_id","label":"3 - Create Record➛KLI Consumer Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kli_consumer","column_name":"sys_id","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["borrower"],"605362c0-35d2-4525-b418-3e2a66c084c3":["consumer_id"]}},{"name":"90f68a58-4265-4a80-a5c2-16d426c00c18.record.sys_id","label":"4 - Create Record➛x_rptp_kotak_kotak_loan_table Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kotak_loan_table","column_name":"sys_id","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["loan_number"]}},{"name":"fe135306-1429-4020-865a-5c9ae6ace5b0.record.sys_id","label":"5 - Create Record➛x_rptp_kotak_kil_policy Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kil_policy","column_name":"sys_id","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["policy_id"]}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.bre_failure_reason","label":"2 - For Each➛cases_object➛bre_failure_reason","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["bre_failure_reason"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.bre_decision","label":"2 - For Each➛cases_object➛bre_decision","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["bre_decision"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.Requirements","label":"2 - For Each➛cases_object➛Requirements","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"207b2134-954f-4804-aac4-6c51c0125af9":["items"],"00a56da6-57e1-486a-9818-e2dd3a5bbe2c":["items"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.RaisedBy","label":"7 - For Each➛Requirements_object➛RaisedBy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["raised_by"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.ReceivedBy","label":"7 - For Each➛Requirements_object➛ReceivedBy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["recieved_by"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.ReceivedDate","label":"7 - For Each➛Requirements_object➛ReceivedDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["recieved_date"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.UploadDate","label":"7 - For Each➛Requirements_object➛UploadDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["upload_date"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.Classification","label":"7 - For Each➛Requirements_object➛Classification","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["classification"]},"attributes":{}},{"name":"605362c0-35d2-4525-b418-3e2a66c084c3.record","label":"6 - Create Record➛x_rptp_kotak_uw_case Record","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","usedInstances":{"6d05399d-d73c-4afc-92c2-f14881ae5d6d":["case_id"],"16aee16c-e733-4afb-82e4-fadf97602fd0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>6411d96847061290e9ddbf66706d434c</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Kotak Case create</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b411d96847061290e9ddbf66706d4394</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 06:52:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>41a4226647311250e9ddbf66706d4336</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Kotak Case create</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_hub_flow_41a4226647311250e9ddbf66706d4336</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:48:25</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=41a4226647311250e9ddbf66706d4336"/>
+    <sys_variable_value action="delete_multiple" query="document_key=41a4226647311250e9ddbf66706d4336"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2024-11-20 05:55:36</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b411d96847061290e9ddbf66706d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:36</sys_updated_on>
+        <time>1969-12-31 18:30:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:b411d96847061290e9ddbf66706d4394^sys_idNOT IN3c11d96847061290e9ddbf66706d4394"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:b411d96847061290e9ddbf66706d4394</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Rushith">8a1cb70347a7351055784a02516d434b</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2024-11-20 05:55:36</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('b411d96847061290e9ddbf66706d4394');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:36</sys_created_on>
+        <sys_id>3c11d96847061290e9ddbf66706d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:36</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">b411d96847061290e9ddbf66706d4394</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=41a4226647311250e9ddbf66706d4336"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=41a4226647311250e9ddbf66706d4336"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=41a4226647311250e9ddbf66706d4336^sys_idNOT IN4da4226647311250e9ddbf66706d4336"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>41a4226647311250e9ddbf66706d4336</id>
+        <name>Kotak Case create</name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 06:52:51</sys_created_on>
+        <sys_id>4da4226647311250e9ddbf66706d4336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-14 06:52:51</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4da4226647311250e9ddbf66706d4336"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=41a4226647311250e9ddbf66706d4336"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=41a4226647311250e9ddbf66706d4336"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=41a4226647311250e9ddbf66706d4336"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=41a4226647311250e9ddbf66706d4336^sys_idNOT IN6a0e9fe247791250e9ddbf66706d4327"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 11:03:38</sys_created_on>
+        <sys_id>6a0e9fe247791250e9ddbf66706d4327</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-14 11:27:26</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STU/kMAz9Kyjn2SqdARZ6W2k10h4ACRAXhCo3cWcsuUlI04Eu4r/jtAXtjqhysZ/9Pqw+vimGBllV6p46VCtFLmF0wPdjQOnumCzWacY6cBaSj6OqUhxwpXy0GFVVar1SB+AB78b+j5U1GXbQZYJldUKlLC9/6h+6lHeidTU9Qc2e2EZ0qnp8WqkAUXZTZn47giiTb8CeojXabNbyab2+OC2b801Tru0GEM+E8CjU/17SN9H+TYKvCZ1FkWqBe/wmd0SwN47Hr4m9nG2O3cFrT39xoYrYopg3OINm78ngTUjk3dxJ0PAn6Hno3PVsVWqLLQycHpbLSWfosbYYsrkst2i3d3v/cvsptCU3JVlA9gb4q4KUIjVDwj6fFhk7Iao7CIHcrg7RH2haFi9dMd2naNm/iGhPO1eAycYLuQUUW+n/ntoPECmnuBIaWX6fUtfPQ9adcyyO6zm0DFjqA8O4JeTlb+lNpJB+icABF7vvTx99auB7ngIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=41a4226647311250e9ddbf66706d4336^sys_idNOT IN17732f6247b91250e9ddbf66706d439e,2011d96847061290e9ddbf66706d430d,21dd57e247791250e9ddbf66706d4353,6ddd57e247791250e9ddbf66706d4351,b4b99fb247799250e9ddbf66706d4313,c3b90bae47751250e9ddbf66706d43be,d7732f6247b91250e9ddbf66706d439c,e4bdd5a8470a1290e9ddbf66706d4394,f9afdbb247b99250e9ddbf66706d4310"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 11:27:26</sys_created_on>
+        <sys_id>17732f6247b91250e9ddbf66706d439e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>605362c0-35d2-4525-b418-3e2a66c084c3</ui_id>
+        <values>H4sIAAAAAAAA/+1V22rcMBD9leDntZGvsfetUPLWBNqSlzQ1Y2mcFZEvleRNtsv+e0e+pLmWEFpKoX4xmss5Z2bk8cXek8Jbe1mILC3CjMdhHEeMRXkSVllchZGIATHxVl4LDVKkhUphOR5W3hbU4Iy3pe5tX153Fq7L4abkYJxbSNMr2J3/OopvpBIaW299cbnyetCEbVF76/0jl931WCqoUBHYZ6fj6HTS8doaHiS/UJNjeWzrtHCC2MrDW4utQOKrQRlceQ20Amynd97a6oEMGkGctWp3F7GRrSVAz8XeGvmd0HPm4mqk0jhOPr7pJMez3squnSyjgtnZqaFpTye1rrFYw6Ds0liyDAZLgb3T5thm6vrTprv5uBCdyHYsY3aqjoO6O4G1WlaDReMajwobAiob6HvZXpW97rZyTCYtTXCl6BDUqrshUiOv2gC4Ex5QKyA4Ifv70XwOWroqPhAMJR/Gqstvg+Od6pgVl1PRFGC4lr19R3BbnMUdVsstFciKFyccVj8nOl5Mc++G9p2SfFdK8WVgLBb7fY1hnMYs88MkKvyERczPsxT8lBeAGXBMKxZo5DT6wOwMZR4OX1UHbdkOTYV6wSlYneWQ5n4SZamfQM58SHnkh5kgC2eMh/kTHN61ZmhQP9BTZAli5icIBMbrzK+O69SPKiiSIiqy6Bk9lXZT59JQ7xcgjPKY53FB6cfcT0Sa+sDr2D+Ow5SnVFdeV4G02AT3s2ewGqQa6E2X2LwV8iHG4fB0Efwfxt8cxhv3LTY0QotH0xBXr/4iF4ATiUqYZz7RZeHOBOV2JpiXbvi7lm6YsfH5w6t3EvSPbd57f7sXdvDlD0XN6EorCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:34</sys_created_on>
+        <sys_id>2011d96847061290e9ddbf66706d430d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>6d05399d-d73c-4afc-92c2-f14881ae5d6d</ui_id>
+        <values>H4sIAAAAAAAA/9VUXW/TMBT9K5GfQEqjfLRR1zcE6hvbNKa9jBHd2LetVcfOHKddqfrfuU7SMQaVKgQS5MGS79c5517f3O+ZFGzG8gTjyUWS8yzJsjSO0+k4KfOsTFKRAeKYhUxDhRTpoFRYdJeQbUC13vhU2NrVxdo4WA8ntEK6wlmQigKFbGoFu7tz4/lKKmFRs9n9Q8hqsITn0LLZ/pXL7WosFJSoqOyt5xZc9tzO1fVD8gmdHuW1zVjhCcUhwyeHWiDhLUA1GLIKtABn7I7NnG3JYBHElVa754iV1I4KMh/71MivVH0a+7gFkjSOvY+vjOR4VTtpdG/pGAxOo9pKX/ZsfYtxAa1yxxaTpW2wEFh7bh5tgF58WpntzRFoLnUnY3Aqw0E938A5K8vWYeMbjworKlRUUNdSL4vamo3skolLFS0VXaKFMlsCbeRSR8A98YhaAdGc7B868x1Y6VV8pDKUfOhUF4+tx+11DIyLXjQFNNzK2r2jchscyB3C48sVGF+cnHBSfp9o91ibF6+WAzVIis9tHGdiv8/jSZanPB5lE5GOxpN0MirHyXSUYQp5zuPpmGeRRU6DPxy+eHEb6XZ99nsqFWyhCW6QI7EUgdHBrQW+pk4F18Y6UMEbqYNr0uZNFh9babuGBnS0b39ekn+N3m/uJFYkymHQywrPntqxwFyiEs0vxnhcygGg2AwAw2Imf2oxkzzuvr+8nj2h/2w7X/wRT+zpwzdNUOAPYwYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 11:02:45</sys_created_on>
+        <sys_id>21dd57e247791250e9ddbf66706d4353</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>fe135306-1429-4020-865a-5c9ae6ace5b0</ui_id>
+        <values>H4sIAAAAAAAA/+2WS2/bMAyA/0qhs2PYcV7NbcDQ21pgG3rpOkGW6ESIbHmSnCYL8t9H+ZGm7YIVc3YYkJxCivr4MGnzYUekIHMyiSEaX8cTnsRJMoyi4WwUp5MkjYciYQAjEpCC5YCWjqUKaC0EZM1U5ZUbakpX0pV2bEVXUtFSK8m3aCGkLRXb3v/RkC+lEgYKMn94DEjJDHpwYMh89+rIbUugiqWgkPfVR3N120Tz3kxeXD6RmffyWqeN8AFFAYGNg0IA+suYshCQnBWCOW22ZO5MhQoDTNwVanuwWMrCIZB4242VP5E+i7xdBpgah+aML7XkcFc6qYtGU0fQHmpV5cVtE62vLWSsUq6rLWoqC1RA6WPz3lrX2ZelfvrcObqRRZ1Ge6g0Z+ogMeeMTCsH1hceFOQIojkrS1ksaGn0WtaXMZY8XCgUwkzpJ3Rq5aIIGfeBh1gKFt6g/mOtvmdG+iw+IQYv7+us6Y/K+23yaCOmTdJoYLmRpfuAuDW0we2DrlcFRNcnn3CcPj/Ruj3tUZ/udjCcJXyWXA/S6ZQPRmI8HjCeJYNpEo/5mMN4lqWhdJCHTWeGxidcd8B+//1Z+FZFUSLOw7NVTpm1lQHRE3tEOtBxiPKeWI9AXs4s/mtHtl8V3qKQ30n6XNgqT8EgmOs1arH7lOxR4heUA7VXeWsEW0BXYRwwUXHXr7bHEN8FIAvfEX379gVmv3/7br8M12W4LsN1ruH6y30IchxJB1fNUAbv/mJ2gBsJStjffEK7hah1QNetg3Ypis+1FMWTqP7949WoCeg/24yOttETO9LjLywLE+DRCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 11:02:45</sys_created_on>
+        <sys_id>6ddd57e247791250e9ddbf66706d4351</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>90f68a58-4265-4a80-a5c2-16d426c00c18</ui_id>
+        <values>H4sIAAAAAAAA/+1V22rcMBD9laBn2/ie9b4VSt6aQFvykqZClsZZNbLlSvIm22X/vSNfkjRtICwttNB9WNBo5pwzF42v9kQKsiZlAnFRJSXPkixL4zhd5UldZnWSiowB5CQgHWsBPR2rFdDxEJAtU4M33lPTu57easdu53+lWUdHZ/QT0vaK7S5f6c43UgkDHVlfXQekZwbZHBiy3j+7crseqGI1KET96KNPzidlr83qh+AXsvQsz23aCC8oDgjcO+gEIF/DlIWAtKwTzGmzI2tnBjQYYOKiU7sHj43sHAIS73tv5TdEX8XerwFMjcN0xzdacrjondTdZJnqM11qNbTd+aTWVxgaNii3VBgtgwUqoPfaPNtM3XzY6Lv3C9GZ7MY05kulOVMPJ+ackfXgwPrCg4IWgWjL+l52N7Q3eivHYNTSRjcKD1Gj9B2SWnnTRYx74RGWgkVnaH87mi+ZkT6LdwiDwYcxa/p18LxTHrNiOiWNDpYb2bs3CLeFWdwhWOZWQFy92OGkfuzoOKr2yczW2hh9B+bTEMeZ2O8bqMocoAxzYKsw500Z1qdNEaY1q/Iqrcq0jiMDHDsf2Z2lUhwOn7mmz3EgXWV8lVUYfcrDXBRFyHiThadZUvCCQ7Fq6kg6aCM/8xHX4YLwReNcKNkAAlvHjKNYPDgS14dS3VB8evVg7Ng8xJ3eGQ70kbA+dIHphrY+Ou8RgXGuB+z1hHQ4/Lwq/nfpr+zSkRsaWuytg5Opu8Gr3/ACcCZBCfuLR72s6JmAbmeCeU0nv2tNJ2U8/v7wsp4E/WO7+sn38YWtff0dy1UjQW8IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>00a56da6-57e1-486a-9818-e2dd3a5bbe2c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-15 05:23:09</sys_created_on>
+        <sys_id>b4b99fb247799250e9ddbf66706d4313</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>60253d2e-e75a-499b-84ae-268f7997a3fd</ui_id>
+        <values>H4sIAAAAAAAA/+1WTU/cMBD9KyjnJHI+N7u3tohbQYKWC6XRxJ6wFs4HtrOQrva/106yLGyLBKtWaiVy83jmzXszI0+u1g5nzsJJAyTJPEhpFERRSEiYxUGRRkUQsggQY8d1aqjQeGooBObDwXVWIDprfMhlq9v8ttFwm0u867jECmudV9C2vL4xroyrVkB/+foIuuSCSaydxdW167QgTU6N0lms965032IuoEBhgL9YfkenI7/XansW/IJWm2Xf1khmCRHXwQeNNUOTrwSh0HUqqBnoRvbOQsvOGCQCO6tF/+ix5LU2gI71fVD8h0HPiPUr0UijON7RZcMpnrWaN/VoGRhMl43oqvp0ZGuLjCV0Qm+LbCydwpxha7nZbFPq8mLZ3J9vE53wepAxXYqGgng8gdaSF51GZQuP4lmX8lY2Kz4EGy6VfyPMwS9Fc2+SKn5T+0Atcd+UAvwTYz8ezJcguVXx2cCY4M2gOr/rbN5Rx8Q4H0UbB0Ulb/UHA7fCidzG3U4vQzJ/scNBsevoMLDqyeRSMAXi7FtHSMTW65QkURpS4kUJC704CROviIPMizCENKUki2nkS6Sm8b7qlYncbL4/Hd8dVJGmGCXxzGNYzLyYFJmXxQAeZeWsyGCexmTmn+9BKQ26U1sIQiBJGaReMsPAi7MUvHlm2GDIjLCkKDCkPtdY+RdDnOUCXCHLTb3x7SjnQ/Cxid0hFf2hOB/7oTaU4+pQHKRo2r2HdKC2CWtS17WigUOxvg7BExIVoBQvOQU76W8H+/QsfrP59a18n9H3Gf3nZvTA7YyVmWyNR+Nsu69+v7cAJxwFU7950LfreUqQr6YE04oO/tSKDlIyfH95UY+E/rM9/eTf6IWNff0TRmdI5HEKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="kotak case">65958be247751250e9ddbf66706d43ae</action_type>
+        <action_type_parent display_value="kotak case">b92566a647311250e9ddbf66706d4368</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>65958be247751250e9ddbf66706d43ae</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 09:34:55</sys_created_on>
+        <sys_id>c3b90bae47751250e9ddbf66706d43be</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 18:30:14</sys_updated_on>
+        <ui_id>62c1b7da-ad38-4c22-a910-2ac3b9c18e0b</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 11:27:26</sys_created_on>
+        <sys_id>d7732f6247b91250e9ddbf66706d439c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0</ui_id>
+        <values>H4sIAAAAAAAA/+1WS4vbMBD+K4vOjrHjvG+FJdBDd6Ete9luhSyNExFZcmU5mzT4v3dkO9lHGxrc9lDYXILm8X3fjAaN7w9ECrIgkxii8Tye8CROkmEUDWejOJ0kaTwUCQMYkYBolgNGOpYqoM0hIFumKm/cUVu4gm6MYxu6UZJyo8sqB4sxQpaFYvu7C0L5WiphQZPF/UNACmaRxaFncXjlcvsCqGIpKET87BVd3bSKLq3mRfKZ6jzLa5uxwguKAgI7B1oA8mVMlRCQnGnBnLF7snC2QoMFJm612p8i1lI7BCQ+dlfK74g+i3xcBlgah9bH10ZyuC2cNLq1NAo6p1FVrm9atb67kLFKuWN30VKVQAUUXptn66izT2vz+PFItJS6KaNzKsOZOp2Yc1amlYPSNx4U5AhEc1YUUq9oYc1WNsmoJQ9XCg9hpswjkpZypUPGvfAQW8HCJdqvG/Mds9JX8QFhMLluqqbfKs/b1tEppm3RGFByKwv3DuG20Imrg+O8CojmZ284Tp9utBnR8tmsZtKWrrnOL1UUJeJwgOEs4bNkPkinUz4YifF4wHiWDKZJPOZjDuNZlobSQR7mkKdgQ59c11+z0lAsE6jJaCqtW/cGFCZFvPZAuZK+D1L0hmsR3l8/YerK//UvuElHuJW/pP44bTriaOaHhCnp9n9wCycMROSm0s72R+vy6/rnJ+ttYt4m5jcT03NzQY5z5uCqnbTg4rftCLCUoET5i8fuuLo6ArrtCLr1Ff+t9RVPoub3j5dYK+g/22HPvhvObLOHH8QNvqB/CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 06:50:45</sys_created_on>
+        <sys_id>e4bdd5a8470a1290e9ddbf66706d4394</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>16aee16c-e733-4afb-82e4-fadf97602fd0</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnWaCecHwrYBjooQmQFrmkAUGRa5sIRSkU6UcN/3tJSnKcpEldIz0UqA4CuNzdmdkd8G4XcBZMggwYii/jgqZxmiYIJeMsLou0jBOWEoA4CANJKrCZCmitmD2viDAusNsVKE+LhKJRmrNklOVJPiqzeDxKISFFQdE4o2nU1e33tpLxthFke9s3sBG65IIpkMHk7j4MGqIslgYVTHYvrvS2ASxICcIWTmtqKpD64vPU9jhVx1B9Mwh5Kcxh2DPru2PugvbK8YlRGMBGg2Rg4eZEtBAGFZGM6Fptg4lWxgYUEHYtxfaQseRSd0orsmn5D9s/Qy5vDlYaPUyh5hSuG81r2UU0KcVwWQtTyauOqxsizIkR+miIpgXMoHHcHFpHZf51Wa9vBpwZl15GT0vUlIjDiWiteGk0tG7uIMCrr0jTcLnAjapX3BdbKlW0EPYQzUW9tpgtX8iIUMc7spMg0czGpz58SxR3Ir7YNrZ470XjR+NwOxk9Yew1e8HYb8SmtlTxRn+yjVfQ09yHvWPL/L1N08unxR71fHLtBqtGN/ih1uQBmzWmpIXX1nwj6zy7fnM8Lq46HqdqeFb8hqbesM9ivV/zD/Pr+G/7tYf+xwz7O5ui5N0H6Wil3pntkUWNtxtuNVnAd4NQyhyyk6bg0XDl5bbY/s1r5/5Z8ZmGhspCarjoQMOTFQ8NZhwEa38xgsHRPQBe9QCHV/jDbB0XyH//H+NzHuP7n2q4IqRACAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>00a56da6-57e1-486a-9818-e2dd3a5bbe2c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-15 05:49:10</sys_created_on>
+        <sys_id>f9afdbb247b99250e9ddbf66706d4310</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-27 06:22:53</sys_updated_on>
+        <ui_id>b66e3547-deb7-40b8-84aa-cdf7b8a96407</ui_id>
+        <values>H4sIAAAAAAAA/9VYW2/iOhD+K1GegU0IkNC3o1ZIK53dSt2efelWlhNPilVjp47TG+K/n3EuQLmXUqn7mPFcvpn5ZuLkZupy5p65bOgN0+GwH4WeFwSeNxgECfXjOBgksRfTnttyJZ0AahoaC8DHRyoK+/xMdGYycq8MvScaHgquYQLS5KjDeJ4J+vL7ANVkzAXTIN2zm9uWm1GN0Qxo92y6cmReMiCCxiDQ47UF4/y0yFoHJ/LGeD0xG6B5JLJyrTSzWLyWC88GJAMMlVKRQ8udUMmoUfplLtFA2aUUC8GYS4MeXav8nPNXdB95Vi8FTCuB6iwZK57AZWa4kpWkQlQdKlFM5M8Kqa0spLQQpqksSoocCIPMgrPR6tDpr7F6umoCjbgs86gPhUqomD9RYzSPCwO5LTqIsjVkQrOMyzuSafXIS2PEMuncCXzopEI9YdCc38kOTSzwDtaCdkYovyjFv6nmNosf6AaNERAX2FZSVTdXhS7TfySJKPLyQFOZV77cWVkj8lBYlFXWdX6kKhEq5InmmfkHDR6hTmXWakjd38mF4aL3iZKM25j5ErMbhmI4zv4U6INNp55H+wNGB+1+CH67Fw1oexj5URu6jAW0H8fQTTrcwKRzBQ/nisFstj4IJ/R83NycL+d7aK02Gm8qYD1Bb2T1BPknm6Ce5332DBldfL0R2jcUVcJ7JsNnO7vNFo3NlTakqtzSaKxT+mgqjjgI9maFHwCuMb60rHLil214ayamNsbKLu/+Pbv8S/IQATFSFZZLwWX5zkSgpyFofycHYn+l4WWfF/QsZTRP1mlKHaOc1+P3ZtnXhqgHgGwMfyEi57pCuQF4szEb9zVHg5NxNOhu4Sgy5GY6hzkvz4ZKNncg26NG/9Xq01V9pNGSgT+7nXP8/LiY/ntjdm3MlSEM3jWFyxSqTi62MOnEF68tU9X6zDEeo2kdj1RTSZ44uwOziN5oMWWeqLjfdF6P2nxYyvQ+fInzd17o46VLHE/JBPvEM7xZakiQCjmhGkiqCslIfadc0Mb2LeU6N7Xy+rK4AlNo6SicLceMwSm1nbn2KVbIAdk1ht9Tp0mvxpA7mJ5TpufM03tfMbYsnt4Jr2kHLZ4R5aKsMX4EZEtNAq2V3rJ89rRnR58P3EwHgvJPCurjq2sTsTeusD1Y/4ovyo+ulwRo3OvSQRj4vuf5Hgu9KAz9aBCnAxr20sVEEZLLBPcfek6RGOieNERouuqv75B6PR75ewONv43KNdo6GG5jfKGk/bTshsaxeLHNToN3f0b1XoiVEkDlgp39z18MX+UPSMGvV4tQif7d1J3PejsX/D/JHwr4brsfgdeNfJa0o9AP272UDdpDRvttOoz7YcAg6aXHv3Bv/wf7HMoNDBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=41a4226647311250e9ddbf66706d4336"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=41a4226647311250e9ddbf66706d4336^sys_idNOT IN8f7de7aa47f91250e9ddbf66706d431d,cfb90bae47751250e9ddbf66706d43bf"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b7de7aa47f91250e9ddbf66706d431d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 12:11:07</sys_created_on>
+        <sys_id>8f7de7aa47f91250e9ddbf66706d431d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:47:11</sys_updated_on>
+        <ui_id>00a56da6-57e1-486a-9818-e2dd3a5bbe2c</ui_id>
+        <values>H4sIAAAAAAAA/61SyW7jMAz9F50Tw0ud7VZgUKCHtkCm6GVQGLJEJ8LIkqolqcfwvw/lJR30PCebj+R7jxR7ooM3wbtXfe+cOCly+PW+IkJFDP97omgL5ECEh9aRFblQGWLc95DvCrYr9ut6u2XrO16Wa8qaYr0tspKVDMpdUyexLTnCRxAWWlDeDQOScOGMpN3b/+BiZyG5hdm4oRb9erDk0H9L+c5AJWkNEiWPwLTlcSDBMcz2vNln6Z4V+abI0zTf3WX1pqiznBcU+Abrls7HeRHf9hLZMbQ3XvxEF3m6IvDpQXFAoYZKByvSUsWp17YjB28DAhYof1Gyu1WchfJIR2LtpxN/kDtL01jYAE7EYEqysxYMXowXWk2Ip7VcklqGVj1PPuPWoaFB+mXriAQHFQcTzUW5Wbv5edbX4yL0INQ4yJyUmlF5i6j3VtTBg4v7Bjm+S9VSY4Q6Vcbqixib0UubnCQGSSP1FUXjrSWUReMJ7oImD4j/GOE3akWc4glpsHkYp64+QtSd5pgdV9PQWOCYFcbfI90FZnPDezzWiclNF8CBCYeCrxF7XE48Jjp8TcH+ha7a/o5Wv7DhLxtq9TMsAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">47b90bae47751250e9ddbf66706d43bf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-11-14 09:34:55</sys_created_on>
+        <sys_id>cfb90bae47751250e9ddbf66706d43bf</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:47:11</sys_updated_on>
+        <ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</ui_id>
+        <values>H4sIAAAAAAAA/6VSS2/bMAz+Lzonhh9FluRWYCjQw1agK3oZCoOW6ESYLGmSnNQz8t9HxnZW9LpTzI/k92A0Ctcn36f44u5j1Acr9j/fVkJbxuh7FBY6FHuhE3ZRrMQJTM/1OG5KWTRfFKxBVdv1nSzLNeyKfF2CrJqdLLaYN1nAmEmIGC8XWlY6egPD6/9wyKM2KuBs1EMgfwmD2I+fWmnwWBto0JDUM0oXFAfQispip1rS2cmq3FRlnpfbu6LZVE1RqgpQbWhu2Xycg3+6A7NTGW689MMuynwl8D2hVUhCLZiIK9GBVZBcGMQ+hZ6AgKCerBluE0dtE9EJnn2P+g9xF3nOgy1SIolTUx6dlvjkk3Z2QhI0Zmk603f2++STr40t9CYt1yakj1gr9GyO5Wbt9sfRnZ8XoQdtr0HmpnESzK2ClIJu+oSR740GOyKqO/Be20Ptgzvp6zJ56bKDoSJrjTuTKL+tDCQbz+gWkD0Q/vUKv0LQnOIb0dDy5Zq6/t2z7pRjdlxPoWkgyqB9uie6E87mLm/8OCemOL0AhVJHEnxh7HF50twY6N/U8iN0duEXW/2HXf4C3vs1iRwDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=41a4226647311250e9ddbf66706d4336"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=41a4226647311250e9ddbf66706d4336"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_41a4226647311250e9ddbf66706d4336"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_41a4226647311250e9ddbf66706d4336"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_41a4226647311250e9ddbf66706d4336"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_41a4226647311250e9ddbf66706d4336"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>kotak_case_create</internal_name>
+        <label_cache>[{"name":"b66e3547-deb7-40b8-84aa-cdf7b8a96407.Record.sys_id","label":"8 - Look Up Record➛Requirements Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_requirements","column_name":"sys_id","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["requirement_id"]}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.RaisedDate","label":"7 - For Each➛Requirements_object➛RaisedDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["raised_date"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.Status","label":"7 - For Each➛Requirements_object➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["status"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.ReqCode","label":"7 - For Each➛Requirements_object➛ReqCode","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["requirement_id"],"b66e3547-deb7-40b8-84aa-cdf7b8a96407":["conditions"]},"attributes":{}},{"name":"605362c0-35d2-4525-b418-3e2a66c084c3.record.sys_id","label":"6 - Create Record➛x_rptp_kotak_uw_case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sys_id","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["case_id"]}},{"name":"62c1b7da-ad38-4c22-a910-2ac3b9c18e0b.res.cases","label":"1 - kotak case➛res➛cases","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"e283c839-b77c-4d55-acf3-7315c5ce58fb":["items"],"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["country"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.name","label":"2 - For Each➛cases_object➛member➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["name"],"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["name","fso_date_of_birth","first_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.loan_account_number","label":"2 - For Each➛cases_object➛loan➛loan_account_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["loan_number"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.type","label":"2 - For Each➛cases_object➛loan➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["loan_type"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.date_of_disbursement","label":"2 - For Each➛cases_object➛loan➛date_of_disbursement","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["start_date"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.borrower","label":"2 - For Each➛cases_object➛loan➛borrower","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["borrower"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.loan.co-borrowerjointlife","label":"2 - For Each➛cases_object➛loan➛co-borrowerjointlife","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["co_borrower"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.rider_term","label":"2 - For Each➛cases_object➛policy➛rider_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["rider_term"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.master_policy_number","label":"2 - For Each➛cases_object➛policy➛master_policy_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["master_policy_name","policy_no"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.master_policy_name","label":"2 - For Each➛cases_object➛policy➛master_policy_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["master_policy_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.cover_applied","label":"2 - For Each➛cases_object➛policy➛cover_applied","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["cover_applied"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.coverage_term","label":"2 - For Each➛cases_object➛policy➛coverage_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["cover_term"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.product_name","label":"2 - For Each➛cases_object➛policy➛product_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["product_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.rider_name","label":"2 - For Each➛cases_object➛policy➛rider_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["values","rider_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.rider_sum_assured","label":"2 - For Each➛cases_object➛policy➛rider_sum_assured","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["rider_sum_assured"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.policy.reinsurer_name","label":"2 - For Each➛cases_object➛policy➛reinsurer_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe135306-1429-4020-865a-5c9ae6ace5b0":["reinsurer_name"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.clientID","label":"2 - For Each➛cases_object➛member➛clientID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["borrower"],"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["member_client_id"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.dob","label":"2 - For Each➛cases_object➛member➛dob","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["fso_date_of_birth"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.number","label":"2 - For Each➛cases_object➛member➛number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["member_number"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.gender","label":"2 - For Each➛cases_object➛member➛gender","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["gender"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.nationality","label":"2 - For Each➛cases_object➛member➛nationality","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["nationality"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.member.country","label":"2 - For Each➛cases_object➛member➛country","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0":["country"]},"attributes":{}},{"name":"fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0.record.sys_id","label":"3 - Create Record➛KLI Consumer Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kli_consumer","column_name":"sys_id","usedInstances":{"90f68a58-4265-4a80-a5c2-16d426c00c18":["borrower"],"605362c0-35d2-4525-b418-3e2a66c084c3":["consumer_id"]}},{"name":"90f68a58-4265-4a80-a5c2-16d426c00c18.record.sys_id","label":"4 - Create Record➛x_rptp_kotak_kotak_loan_table Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kotak_loan_table","column_name":"sys_id","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["loan_number"]}},{"name":"fe135306-1429-4020-865a-5c9ae6ace5b0.record.sys_id","label":"5 - Create Record➛x_rptp_kotak_kil_policy Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kil_policy","column_name":"sys_id","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["policy_id"]}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.bre_failure_reason","label":"2 - For Each➛cases_object➛bre_failure_reason","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["bre_failure_reason"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.bre_decision","label":"2 - For Each➛cases_object➛bre_decision","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"605362c0-35d2-4525-b418-3e2a66c084c3":["bre_decision"]},"attributes":{}},{"name":"e283c839-b77c-4d55-acf3-7315c5ce58fb.item.Requirements","label":"2 - For Each➛cases_object➛Requirements","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"207b2134-954f-4804-aac4-6c51c0125af9":["items"],"00a56da6-57e1-486a-9818-e2dd3a5bbe2c":["items"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.RaisedBy","label":"7 - For Each➛Requirements_object➛RaisedBy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["raised_by"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.ReceivedBy","label":"7 - For Each➛Requirements_object➛ReceivedBy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["recieved_by"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.ReceivedDate","label":"7 - For Each➛Requirements_object➛ReceivedDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["recieved_date"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.UploadDate","label":"7 - For Each➛Requirements_object➛UploadDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["upload_date"]},"attributes":{}},{"name":"00a56da6-57e1-486a-9818-e2dd3a5bbe2c.item.Classification","label":"7 - For Each➛Requirements_object➛Classification","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"60253d2e-e75a-499b-84ae-268f7997a3fd":["classification"]},"attributes":{}},{"name":"605362c0-35d2-4525-b418-3e2a66c084c3.record","label":"6 - Create Record➛x_rptp_kotak_uw_case Record","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","usedInstances":{"6d05399d-d73c-4afc-92c2-f14881ae5d6d":["case_id"],"16aee16c-e733-4afb-82e4-fadf97602fd0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Kotak Case create</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Kotak Case create">41a4226647311250e9ddbf66706d4336</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6411d96847061290e9ddbf66706d434c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:47:14</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6411d96847061290e9ddbf66706d434c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6411d96847061290e9ddbf66706d434c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6411d96847061290e9ddbf66706d434c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6411d96847061290e9ddbf66706d434c^sys_idNOT INe811d96847061290e9ddbf66706d434d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6411d96847061290e9ddbf66706d434c</id>
+        <name>Kotak Case create</name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>e811d96847061290e9ddbf66706d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e811d96847061290e9ddbf66706d434d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6411d96847061290e9ddbf66706d434c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6411d96847061290e9ddbf66706d434c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6411d96847061290e9ddbf66706d434c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6411d96847061290e9ddbf66706d434c^sys_idNOT INb411d96847061290e9ddbf66706d4356"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>b411d96847061290e9ddbf66706d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STU/kMAz9Kyjn2SqdARZ6W2k10h4ACRAXhCo3cWcsuUlI04Eu4r/jtAXtjqhysZ/9Pqw+vimGBllV6p46VCtFLmF0wPdjQOnumCzWacY6cBaSj6OqUhxwpXy0GFVVar1SB+AB78b+j5U1GXbQZYJldUKlLC9/6h+6lHeidTU9Qc2e2EZ0qnp8WqkAUXZTZn47giiTb8CeojXabNbyab2+OC2b801Tru0GEM+E8CjU/17SN9H+TYKvCZ1FkWqBe/wmd0SwN47Hr4m9nG2O3cFrT39xoYrYopg3OINm78ngTUjk3dxJ0PAn6Hno3PVsVWqLLQycHpbLSWfosbYYsrkst2i3d3v/cvsptCU3JVlA9gb4q4KUIjVDwj6fFhk7Iao7CIHcrg7RH2haFi9dMd2naNm/iGhPO1eAycYLuQUUW+n/ntoPECmnuBIaWX6fUtfPQ9adcyyO6zm0DFjqA8O4JeTlb+lNpJB+icABF7vvTx99auB7ngIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6411d96847061290e9ddbf66706d434c^sys_idNOT IN05bd19a8470a1290e9ddbf66706d4381,f411d96847061290e9ddbf66706d4352,f411d96847061290e9ddbf66706d4353,f411d96847061290e9ddbf66706d4354,f411d96847061290e9ddbf66706d4355,fc11d96847061290e9ddbf66706d4352,fc11d96847061290e9ddbf66706d4353,fc11d96847061290e9ddbf66706d4354,fc11d96847061290e9ddbf66706d4355"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 06:50:46</sys_created_on>
+        <sys_id>05bd19a8470a1290e9ddbf66706d4381</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 06:50:46</sys_updated_on>
+        <ui_id>16aee16c-e733-4afb-82e4-fadf97602fd0</ui_id>
+        <values>H4sIAAAAAAAA/+VVy07jMBT9FeR1W+XRRKW7EVWlkRiQYMSGQdaNfdtaOA/8KHSq/vvYiVsiGJgisUGTRSXfl885uae53RLByZSMkUfxaZyzNE7TJIqSyTgu8rSIE54CYkwGpIISXaVCVivuzmuQ1ge22zzK0jxh0TDNeDIcZ0k2LMbxZJhiAnnOosmYpaOub7dznVzoRsLmJgxwEbYSkiusyPT2bkAaUO4ug4pMty9Sx4KVUKB0pVd7tC/Rm03jz7xmtsTKULEPnofOWcicfJ+5jGvycOJoQPDJYMXRAVmA1DggJVQcTK02ZGqUdQGFwC8ruTlUrERlOqIlPGnx2908jnzdAh0zFkQ4HH9CIXHWidSlFjMwcO2mM2PVQbNaMNSdLhwXYKU568e6gsvGiLrqWowfHLpracvqolOFHAb03onVSDk2nqtH31FbXK/qx6s90LmoWlkCTVkzkIcTGKNEYY2HsyUosdW5hKYR1ZI2ql6LttlBKUdL6Q6jhawf3Z1aLKsRMI975JSF0dzFZ234BpTwJH64Ma55NyB6o88kaP1MxelIH6xH0hELFGirQisBbbfBNzMlGvPNXbXGAHw3CJYosve2jJ0+L1Vv5rMtnqhqTEPvawP31D5SBhpf7/4bVR/zwxFI935oV+sN5MESr2Ln/d6Tiy4RDJF9miEmX80QgcqXd8S/fBAl7/7b9rapXX3d84Bt95lqA0v8ZaMo5f5mT1bhgxWqFUBT92tfW+NjzR9zzBGc9o6ZC5Rc/4Xk3i5YOtQGaUf6hWVC8uQmJA/fkU/zTZxH7fPF3PPffE7u/gBBzOGvYwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="kotak case">65958be247751250e9ddbf66706d43ae</action_type>
+        <action_type_parent display_value="kotak case">b92566a647311250e9ddbf66706d4368</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>65958be247751250e9ddbf66706d43ae</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>f411d96847061290e9ddbf66706d4352</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <ui_id>62c1b7da-ad38-4c22-a910-2ac3b9c18e0b</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>f411d96847061290e9ddbf66706d4353</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <ui_id>90f68a58-4265-4a80-a5c2-16d426c00c18</ui_id>
+        <values>H4sIAAAAAAAA/+1VS0/cMBD+K8jnJMqbzd4qEKcWpFJxoRA59oR1ceLUcYDtav97x3GyrCioFPVQpO5hJc/jm/nmkbncEMHJkuQRhFkR5SyJkiQOw3iRRlWeVFHMEwqQEo+0tAG0NLSSUI4Pj9xROVjhQ6k705W3ytDb6V8q2pajMdpx0XeSri9eac5WQnINLVleXnmkoxqjGdBkuXmiem3uklYg0fTLFOA5LmbdPSv7uO97cOoUSnObT+gReDDQcsBEaip78EhDW06N0muyNHpAgQbKz1q53lmsRGsQkFjbh178wLCL0NrVgMwYON3uOQY+dhV0qvqYGnqO6MwMejJnKyUY9K4uHGo6SHO0L3MGZ50RqnUurtzOW8mhaU9dWcgOYG4YSoYeSg6d5Wqzn6jU5yt1/3nO9ES0Y1kmpVSMyt2LGqNFNRibz4aAhAaByoZ2nWhvyk6rOzE6Yy5NcCPxEdRS3WPQXty0AWU28QBLS4MTlB+P4guqhWXxCWHQeeuRft0fSdr3j1ywkOX3wWbimE0cSlcG68K06MwHDHAHU7pbb14MDmHx4nBF1eMwjbvQ7y1FpbRW96C/DmGY8M2mhiJPAXI/BbrwU1bnfnVYZ35c0SIt4iKPqzDQwHC2AmRRCr7dXjNVPsWBeJGwRVKg9yHzU55lPmV14h8mUcYyBtmirgJhoAnsUgVM+TPCN4WTJ0UNCNwbqk2J5YQ34lrXUtUl7nY16H5sJ+K6Rca9eSOsdZ1h2qGp3sx7RKCMqQF77ZC221+/Rf+79E926Q9PwO+3dD4BJwIk759Z2/n7Dw2OBxbNrfGTGzApDy4m5XQHor91B6I8HH/v7Bo4gu/+GOzd/hfOwtVP9dqEcDEJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>f411d96847061290e9ddbf66706d4354</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <ui_id>605362c0-35d2-4525-b418-3e2a66c084c3</ui_id>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBnS6DWSL4VCXJqE6ApcklTYUSOYiLUUpJK4hr+944s2XG2bihQBKhunOXxveHM6HLFlGRzlgbIkzxIRRREUch5mMVBmUZlEMoIEGM2Yw3USJEOSo3F5jBjt6D7wXhfmM51xU3r4Kbo7woBdnBLZTsNy4sfR4mF0tJgw+aXVzPWgSFsh4bNV09cv8pUQ4maQj8NVF9h7pbdi7b3+7kHp6OjNXLgw2cM7x02EolIBdrijNXQSHCtWbK5Mz0ZDII8a/RyF7FQjSNANsTeW/WNrs34EFchKRM4+nbHzcXHY+FGV3UMDs4JXbjeTOFi0SqBdqyLxAp67Y72bWPAWedU24wpG6lTdqv7ujkdy8J2ANt3IktvsZDYDVoH9pOU6nzR3n3cMj1RzaYsk1O3AvTuBM4ZVfZu4LNiqLEmoKKGrlPNddGZ9lZtkolL7V9rOviVbu/oUquuGx/EQNyn0oJ/QvbjjfkCjBpUfCAYSl7PmF3aIw3WPmihQhZf+4HJqGzSUIxlGFKEUZ17Rxfc4kR3PduOgUSev9pcQfnQTJvOt3sj0LVaiWWh5Oee80iuVhUGURLx1AviMPdiHnIvSxPwEpEDpiAwKblvUFBz+SSDMtfrL7qFpmj6ukSzxcl5lWaQZF4cpokXQ8Y9SEToBakki+BcBNkzHNE2tq/RPOKTpzFi6sUIBCaq1CsPq8QLS8jjPMzT8AU+pRn6QChLr7EFwjCLRBbllH4ovFgmiQeiirzDKEhEQrqyqvSVw9rfz57AKlCaurigMbF/CvkYY71+vmn+P8a/fIzfXOg/n7ntQj9RqKV9YQi32xxr6gKHxTiUTzb65Dy4mJzTVg/+1lYPUr753thuHwW++dW+9yd/ZclffQd28jvg7QgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>00a56da6-57e1-486a-9818-e2dd3a5bbe2c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>f411d96847061290e9ddbf66706d4355</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <ui_id>60253d2e-e75a-499b-84ae-268f7997a3fd</ui_id>
+        <values>H4sIAAAAAAAA/+1WS0/cMBD+K8jnTeQ8N7u3FsSpBQlaLpRGE3vCWjgPHGdhu9r/XjvJPtiCCqseikRunpnv83zjcTzXSyI4mZLYQxpNvJgFXhD4lPpJ6GVxkHk+DwAxJCNSQoEmUkMmMe0WIzIH2VrjY6pqXad3lYa7VOF9KxQWWOq0gLoW5a0J5aKpJSyuXo9gMyG5wpJMr29GpAZl9tSoyHS553qtAgkZShP6zUp4QZFe1M/avuxij856R6W4zYeOCD5qLDmaRHKQDY5IASUHXakFmWrVGoNC4OelXGwiZqLUhpDY2MdG/DLbJtTG5WiUMex9m2W38UlfxN6Vn4CGS8POdKuGcDarBMOmrwvHHFqpj3dtfcB5rUVV9pBO6oCuZFuUZ31ZyIZgfWbG0jaYcqytVpv9ICW/nFUPF+tMT0XZlWVwyoqB3KxAayWyVtt8lgTlk0NPa1XNRQc2uRTurTQLN5fVg9m0EbelC8wm7prSgntq7Ced+QqUsCq+GhoDXo1Is2iOJTTNVospZHrf2kx6ZYOGtC+DhTAlav3JbDDHId3VaH09ONLJi83lZdtm6m5Es3M1GJiSCf6jpTTgy2VMoyD2GXWCiPtOGPmRk4Ve4gToQxwzmoQscBUy01quEWGQq9XP3fuxpcriGIMoHDscs7ET0ixxkhDAYTwfZwlM4pCO3Ys9qkaDbps1BaUQxRxiJxqj54RJDM4kMdmgz42wKMvQZ67QWLiXHc7mAqJBnpoTwLezXHRg07e4ZcoWh/J8XnS1YQLnh/IgQ3Pce0wHahu4BnVtLSs4lOt7Bx6YmG1kkQsGtvffTnb8BL9a/fkz/ujRjx7973r0jc//3//Q6+f/VKDkzTO/7PXbj4W5HBrT/he+9/4PzqOrwTnMAN6/mgG8mHbfO5sEeoHvfhDYmfteGAlufgMMlkqpMwsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>fc11d96847061290e9ddbf66706d4352</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <ui_id>fe964ee6-4ea8-4cf6-b7f5-2ba9492962b0</ui_id>
+        <values>H4sIAAAAAAAA/+1WXU/bMBT9K8jPaZQ0tJS+TVRIkzaQxsQLA8uxb1oLx85sB+iq/vddx2mpGAjW7QWJvlS+H8fnXF/75mpFpCBTMs4hGx3nY17kRTHMsuHkMC/HRZkPRcEADklCNKsBIz0rFdBukZA7ptpgfKC28Q29NZ7d0lslKTfatTVYjBHSNYotL98QyhdSCQuaTK+uE9Iwi7t49ExXT1xv5axYCQpDvwfSL2jwy+ZZ25fd3IOz6DBWBD5ZQuDBgxaARCqmHCSkZlowb+ySTL1t0WCBiXOtltuIhdQeAUmIfXDyF247yUJcBaiMQ/Rtl93Gs1i96KpmzLMLROe+tX04XxjJwcW6CKhYq/zJri0GnDdeGh1TOql9tlFtrc9iWcgWYHNYaGkdUAFN0BrY91Kqi4W5/7Zheip1V5beqQxnarti3ltZtj7wWRFQUCMQrVnTSD2njTV3sktGLnU6V7hIK2XucVMn5zplPBBPsbQsPUX7rDNfMiuDiq8Ig8nrhLilO1HMuUctWEj6sw1MorJeA41lCCncysZ/wg3uoKe7TjYXQkB2/GJz5eVjM3V3wO1chkpa57tO+tFmWSFWKxhOCj4pjgfl0REfHIrRaMB4VQyOinzERxxGk6pMpYc6raEuwaYheb2+qZyhKByoqWgprV/sDShMiXhxQbmSoQ5S7A0XET7PHjF1G/72F9ylI9w8HNL+ODEdcTQLbcOU9Mt/OIUtBiJy02pv90fr89frP9/Ej4756JhXOuYvR+Prr9dmNJ5KUMI985xt5iLU2KrYUfF5ezIbe+fBZe/s52P+v+ZjPs663zubklHgux+SO99EL4zL6983zAk2QQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>fc11d96847061290e9ddbf66706d4353</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <ui_id>fe135306-1429-4020-865a-5c9ae6ace5b0</ui_id>
+        <values>H4sIAAAAAAAA/+1WTW/iMBD9K5XPIUpIoZTbqlVPu620XfXS7UaOPQELJ87aDi2L+O87jhOgX+quwqUSnJgPP795zOC5XxPByZSMY4hG5/GYJXGSDKNoODmNs3GSxUOeUIBTEpCSFoCZlmYS0sYIyJLK2jmfUl3ZKl0oSxfpQsi0UlKwFWZwYSpJV3cfJrK5kFxDSab3DwGpqMYbLGgyXb8I/StfSTOQmPrDEX6Hv11Vb/q+7p89ufYBpbnjEwUEniyUHJBITqWBgBS05NQqvSJTq2t0aKD8ppSrbcZclBYBict9MuIPXjuJXF4OWBkDH9uazcWXXjsfyi+ppbeIzmyt23Q2V4KB8bpwyGkt7cW+zyfcVFao0h9pSm1PK1kX5bWXhWwBup8KPbWBlEPlanXs21Ly27l6/N4xvRJlI0sblIpRubWotVpktXV81gQkFAiUFrSqRDlLK62WojmMXIpwJtEIc6ke8VIjZmVImSMeorQ0vEL/ZeO+o1q4Kr4hDB7eBMSszIWkxuxqQSHT37Vj4itra0i9DO4I06KyX/CCJbR0N0E3DByi83ebK852zdT0v9kbhPUahpOETZLzQXZ2xganfDQaUJYng7MkHrERg9Ekz0JhoQh964faSdA032bza2f8rKMo4YfBM3WRojzYN7wn7B7SFh2ntOgJ6yAQr6AGv7X/Cf1UeA2F+J2lDgVbFxloBGZqiV7sRyl6SPwMZYvaS94Ggs6gUxhHjuM/SD9t90FcF4AoXUf07dtnMJvN68fjOFzH4ToO16GG6z8Xro/fxG7huhIguXnjkey2LShwqi2k/tF8sXG1wZO7NthuXfGhtq54HDWfT7Z7+QI//eq1t2m/s4Q9/AX2KWF/kwwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>00a56da6-57e1-486a-9818-e2dd3a5bbe2c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>fc11d96847061290e9ddbf66706d4354</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-20 05:55:35</sys_updated_on>
+        <ui_id>b66e3547-deb7-40b8-84aa-cdf7b8a96407</ui_id>
+        <values>H4sIAAAAAAAA/+VYXW/qOBD9K1GegU0IJNC3VRHSle7eSm33vty9spzYKVaNndpOvxD/fSdxEhCkQLQgtdpHj8eeMzPnTAy/Vi4j7pVLpt40nU7Hk8jzgsDzwjBIsB/HQZjEXoxHbs8VeEnB0+CYU1g+Y54X61ekMpOhR2nwI1L0KWeKLqkwGnwI0xnHbz9PcE0WjBNFhXv163fPzbCCaIYq92q1s3UqXI5jysH1vsK7A9+8Zc0SlXvW9n37mPPDbkhFCihez6WvhgpCAUOKuaY9d4kFwUaqt8aiKCY3gm8MCyYM3OgWzq+avUPciVf4pRSySqjda5Zl5JmtnN1KZ9jgO6PyxOSqck8WkiVU25oQmuKcm+ttm3W4yQyTwh6xqdvTkudL8cOWxG0uqBsFllxTRGhWJFugr1JJ7xby5bZGOmeirEu1yWWCebPCxigW56bAs3IpLzuNljjLmHhAmZLPrDwMWJaDBw6LQcrlCwTV7EEMcFIAH0Bt8WAO9llp/okVK7L4C66BwwCIcWAJsm3UMldlOZ9RwnNdbigstL3LXfdc/aavOdZ6kzmUHT3lBW5bhypjZItWHEkUy8yfcMUzrZJb92rVjA/ScLqhXSIFYQUKvSWdWgIQjpF/criDrFaeh8chwWF/HFG/P5qEuD+d+JM+HRIS4HEc02EyYIYuB7f06VoSul7vK+2MN3cU5vGK1MK83i5JW5kqie7ZvrddUEnUP5tER5731UQKwT+fRrurzpbgiPR8cpBoZMMpLZVBtpZb2tvXTGeunwCh5vpNwU4nfvsIVUX1lFFO2r5G82Jj52s0/P9+jT4l0QEQQbaDTHAmyucFAL2UAsYH6Rf7O1wrKbbhf2nDOtnXAXaMdN47q+EEOLUa7iC2c2/xtECs535Jmd2ZXxsrEQRnE0EwPJ8IVk2qTTFb6l6/KouO1v7vhT/e9Qcabh3w120i6xTT7xpzuN4XcdBJxduEszuzD3h35qfnB6rsXXIMLOBoFQ9ZDaMXRh6o2USvvYg0L5g/tu1XwkR1o8r0LvCM9Q/+moq3nrEsRUvoHMvgta1oAuTQCCuKUpkLgqp39oZIRSdTprSpnPeHzS0F/QhHgjgds6BO6e003h0/yMfzqEv5LXXqRKpo2oFEnDIRp0mkW9pdBtfojA/VSwyuOWa87Aj8jMq2WkqVkuqD4XWkmQdYceJkOxGUf1ZQ/330tcmgdQQewfolfpOffzwlFMejIQ6jwPc9z/dI5E2iyJ+EcRriaJRudIqQFglMVLg5BarA9aimRt1nf38GVQO326w5AVTNwJkUxU/wYWScAhW016lRHcddzZRYSk6x2Bkq94D8j3n5VWjoOv6Ug+VL/EmVs/vdaltTa70v9XzI2d+CPeX0W0GzCfWGE58k/UnkR/1RSsL+lOBxH0/jcRQQmozSc74Ifv8LkitsZxAWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>fc11d96847061290e9ddbf66706d4355</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:47:14</sys_updated_on>
+        <ui_id>6d05399d-d73c-4afc-92c2-f14881ae5d6d</ui_id>
+        <values>H4sIAAAAAAAA/9VUXU/bMBT9K5GfNimt8tFGpW8TiKcNEKC+MBbd2LfUwvnAdkq7qv9913FaKkY1Ju1h5CGS75fPOfbx3YZJwaYsizEan8QZT+M0TaIomYziIkuLOBEpII5YyCookSotFArzbhGyJajWBVe5bmyTP9YWHvs/tELa3GqQigqFNI2C9ey99XwhldBYsendfcga0LSfRc2mm1ep96JXUKCi0lsH/wgbu27ejH097A0ufKLWwuGJQoYri5VAAjIHZTBkJVQCbK3XbGp1SwGNIC4rtd5XLGRlaSBztSsjf9K2k8jVzZGYcfS5/bLb+MxL6FPzM7BwQ9O5bXVfzhe15Gi8LgLn0Cp7ehjzBZeNlXXlWzqqfXet2rK68LKw/YDdiVGkNZgLbBxXh76nMr9Z1M/XO6Tnsupk6ZOq5qD2K7BWy6K1Ds+GocKSBuUlNI2sHvJG10vZNROWcvigaDGcq/qZNjXyoRoCd8CHJC0Mzyl+1oVnoKVj8Y3GUPM2ZGZtThUY88KFhMyfWofEM+s55F4G18K1bOwX2mCJPdxtuLOGwOjk6OWKi5fL1LnBHNiCA0kmxfc2ilKx2WTROM0SHg3SsUgGo3EyHhSjeDJIMYEs49FkxNOhRk5Xa7v94egupV377lMaFTyDCa6RI6EUQV0Ftxr4I2kXXNXaggo+ySq4Im4upPGplbqTOKBf+/l3F/5v8P7S9H8+l53pzyUqYd44qJ3jsSRdLOb+4F65vk8Gsz7ZOz/+V86Ps6j7Ppj/PcEPb/+D1/7IQ3D/C65XKcUlBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6411d96847061290e9ddbf66706d434c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6411d96847061290e9ddbf66706d434c^sys_idNOT IN7011d96847061290e9ddbf66706d4352,f011d96847061290e9ddbf66706d4351"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b7de7aa47f91250e9ddbf66706d431d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>7011d96847061290e9ddbf66706d4352</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:47:14</sys_updated_on>
+        <ui_id>00a56da6-57e1-486a-9818-e2dd3a5bbe2c</ui_id>
+        <values>H4sIAAAAAAAA/61Ty27jMAz8F50Tw4/meSsaFCjQboG06GVRBLREJ8LKkqtHUq+Rf18qdtyi5z3ZHJLD4UjqmAm+Cd69mlvn5F6z9e/3CZM6YvTfMQ01sjWTHmvHJuwIKsS46zBfFnxZrKblYsGnN2I2mwKviumiyGZ8xnG2rMoktiVb/AjSYo3au/OZSIR0jYL27X9w8YNUwuIgvAFLej1atu5+pKSgUdlKVKssXfEinxd5mubLm6ycF2WWiwJQzIlQQYmKSh+GjX8Y4Nsmhha5seIKPA492xGlTxSRpxOGnx61QBpfgXI4YTVoAd7Ylq29DQRYBPGsVTtWHKT2RMdi7aeTf2lilqaxsEJaiGOfHMNXKBVuelf7VLUBDy9Ez32wQzk/GMnR9XYIrCAof/cd6wueGy+N7lt8JB66jQq1/tW7wUaC6yESEhzuBDZx2Sh/2KV6OZjT9qr0XuqLMUNSGQ5qjMB7K8vgo56Ooboc866GppF6v2usOcpLM2mpk72iIKmUOdHQeHUT4FF4Qt5Cck/45gK/gZVxiyeioebzhLnW3Slw7msXMnL3EaKSfrNhh11vQ2zhVjb+lgYccZB7fo+voecePeXSkYTLcTxc31BMtHSLJP8OnYz9E8V/Yed/kbYECI0DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">47b90bae47751250e9ddbf66706d43bf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case create">6411d96847061290e9ddbf66706d434c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:35</sys_created_on>
+        <sys_id>f011d96847061290e9ddbf66706d4351</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:47:14</sys_updated_on>
+        <ui_id>e283c839-b77c-4d55-acf3-7315c5ce58fb</ui_id>
+        <values>H4sIAAAAAAAA/6VTTW/bMAz9Lzo7hj+KLMmtaFCgwLYCbdHLUBi0RCfCZMnTR1LP8H8fFTtu0etOFh/Jx/coeWAm+C5492JunZMHzXa/3hImdcToPDANLbIdkx5bxxJ2AhViPAzrguf1NwErEOVmdcOLYgXbPFsVwMt6y/MNZnVq0aUcHLpxpGYhXaegf/0fDn6USlichXZgSZ9Hy3bDl5QUNCLfioYIt7ws1mWRZcXmJq/XZZ0XogQUayJUUKOi0ofZ4RfDvu9iaJEbK67A97nnaUHpE0UUWcLw3aMWSOMbUA4T1oIW4I3t2c7bQIBFEI9a9UvFUWpPdCzWvjv5lybmWRYLGyRDHKfkEr5ArXA/bXNKNXvw8Ez03Ac7l/OjkRzdtA6BDQTl7z5jU8Fj56XRU4uPxHO3UaHVP6dtsIXgenmEBIeVwC6ajfJnL83z0Zyfrkrvpb4sZk4qw0EtEXhvZR181DMwVNgSUdVC10l9qDprTvLSTFra9KAoSBtlzjQ0PtUUeBSe0m4hvSd8f4Ffwcro4gfRUPOYMNe7OwXOfXihRVZ/QlQyOZs9VNMaYgu3svO3NOCEs9zxLb7+iXvZKZeOJFyu4+H6z8RET69I8s/Q2djfUfwHNv4D1UksLH0DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6411d96847061290e9ddbf66706d434c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6411d96847061290e9ddbf66706d434c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6411d96847061290e9ddbf66706d434c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6411d96847061290e9ddbf66706d434c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6411d96847061290e9ddbf66706d434c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6411d96847061290e9ddbf66706d434c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>41a4226647311250e9ddbf66706d4336</sys_id>
+        <latest_snapshot>6411d96847061290e9ddbf66706d434c</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=41a4226647311250e9ddbf66706d4336^sys_idNOT IN3c11d96847061290e9ddbf66706d43a3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3c11d96847061290e9ddbf66706d43a3","name":"plan","plan_signature":null}}</plan>
+        <plan_id>41a4226647311250e9ddbf66706d4336</plan_id>
+        <snapshot>6411d96847061290e9ddbf66706d434c</snapshot>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-20 05:55:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c11d96847061290e9ddbf66706d43a3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-11-28 06:47:14</sys_updated_on>
+        <trigger display_value="">b411d96847061290e9ddbf66706d4394</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=41a4226647311250e9ddbf66706d4336"/>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_loan_id_audit</field>
+        <global>false</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Populating Member Number for AUDIT if 1</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (newValue === '') {
+
+        //Clearing and hiding 1 field
+        g_form.clearValue("u_member_number_dependent_number");
+        g_form.setDisplay("u_member_number_dependent_number", false);
+        return;
+    }
+
+    g_form.setDisplay("u_member_number_dependent_number", true);
+    g_form.clearValue("u_member_number_dependent_number");
+
+    var policySys = g_form.getValue("u_master_policy_number_audit");
+
+    var ga = new GlideAjax('x_rptp_kotak.kotak_validations');
+    ga.addParam('sysparm_name', 'getMemberSys_client');
+    ga.addParam('policySys', policySys);
+    ga.addParam('loanSys', newValue);
+    ga.getXML(getResponse);
+
+    function getResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+
+        var trimmedString = answer.replace('sys_idIN', '');
+        var sysIdArray = trimmedString.split(',');
+
+        if (sysIdArray != "") {
+            var sysIdCount = sysIdArray.length;
+
+            if (sysIdCount == 1) {
+                g_form.setValue("u_member_number_dependent_number", sysIdArray);
+            }
+        }
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-04 10:24:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0bd49649ff96529019a8ffda7c4fd99b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Populating Member Number for AUDIT if 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_0bd49649ff96529019a8ffda7c4fd99b</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-04 10:55:41</sys_updated_on>
+        <table>x_rptp_kotak_uw_case</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view>audit_search</view>
+    </sys_script_client>
+</record_update>

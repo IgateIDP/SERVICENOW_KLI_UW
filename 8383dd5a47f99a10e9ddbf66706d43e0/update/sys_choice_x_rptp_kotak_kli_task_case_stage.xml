@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="case_stage" table="x_rptp_kotak_kli_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>case_stage</element>
+            <name>x_rptp_kotak_kli_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:44:18</sys_created_on>
+            <sys_id>6fc9725d475a9210e9ddbf66706d43d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>case_stage</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_choice_x_rptp_kotak_kli_task_case_stage</sys_update_name>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:44:18</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Requirements menu</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_task</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:44:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ba9ba5d475a9210e9ddbf66706d4339</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:48:46</sys_updated_on>
+            <value>pending_requirements_menu</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UW Workbench menu</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_task</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:44:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ebc97e1d475a9210e9ddbf66706d433e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:48:49</sys_updated_on>
+            <value>uw_workbench_menu</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Groups Operations Workbench</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_task</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:45:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77e9ba9d475a9210e9ddbf66706d43bd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:48:53</sys_updated_on>
+            <value>groups_operations_workbench</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Integrated to GA</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_task</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:46:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d21af29d475a9210e9ddbf66706d433c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:48:57</sys_updated_on>
+            <value>integrated_to_ga</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

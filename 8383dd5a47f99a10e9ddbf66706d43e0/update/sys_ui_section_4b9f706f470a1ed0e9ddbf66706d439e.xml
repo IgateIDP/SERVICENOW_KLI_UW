@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Profile" section_id="4b9f706f470a1ed0e9ddbf66706d439e" sys_domain="global" table="x_rptp_kotak_uw_case" version="3" view="kotak_uw_case">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumer_id.name</element>
+            <position>0</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>0840c1ef470a1ed0e9ddbf66706d4391</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumer_id.fso_date_of_birth</element>
+            <position>1</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4440c1ef470a1ed0e9ddbf66706d4392</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumer_id.age</element>
+            <position>2</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4392</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumer_id.gender</element>
+            <position>3</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4440c1ef470a1ed0e9ddbf66706d4393</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4393</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.borrower</element>
+            <position>5</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4440c1ef470a1ed0e9ddbf66706d4394</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_number.co_borrower</element>
+            <position>6</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4394</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumer_id.nationality</element>
+            <position>7</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4440c1ef470a1ed0e9ddbf66706d4395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumer_id.country</element>
+            <position>8</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
+            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Profile</caption>
+            <header>false</header>
+            <name>x_rptp_kotak_uw_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-29 12:21:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b9f706f470a1ed0e9ddbf66706d439e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_uw_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_4b9f706f470a1ed0e9ddbf66706d439e</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-29 12:21:04</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Kotak_uw_case" name="kotak_uw_case">efacc49c47465e50e9ddbf66706d4376</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

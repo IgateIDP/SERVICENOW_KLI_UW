@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="requirement_ids" label="Requirement IDs" language="en" table="x_rptp_kotak_uw_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>requirement_ids</element>
+            <help/>
+            <hint/>
+            <label>Requirement IDs</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <plural>Requirement IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-02 09:42:43</sys_created_on>
+            <sys_id>e4283f1847925614e9ddbf66706d43a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Requirement IDs</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_uw_case_requirement_ids_en</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-02 09:42:43</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

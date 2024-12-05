@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=288000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>62e57f8e474212d0e9ddbf66706d433f</copied_from>
+        <copied_from_name>Calculating Ageing 3 for Require</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>calculating_consent_ageing_for_case__kotak</internal_name>
+        <label_cache>[{"name":"ad06d0a4-2497-4c6d-9d21-3b9745091a28.Records","label":"1 - Look Up Records➛x_rptp_kotak_uw_case Records","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"records","base_type":"records","usedInstances":{"40059a96-fd13-483a-873e-31e92a2558e2":["items"],"02922946-528b-41fa-9375-1ca2907cb652":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40059a96-fd13-483a-873e-31e92a2558e2.item","label":"2 - For Each➛Case Record","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","usedInstances":{"5903244a-ac10-4072-a73e-6c46cebdb673":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"40059a96-fd13-483a-873e-31e92a2558e2.item.case_id","label":"2 - For Each➛Case Record➛Case Id","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"case_id","usedInstances":{"dbbe9241-74db-431b-b112-b66fc9af2d14":["record"],"6b522e91-3d3a-4227-8d25-0e7519eb3360":["conditions"]}},{"name":"5903244a-ac10-4072-a73e-6c46cebdb673.record.ageing_3","label":"3 - Update Record➛x_rptp_kotak_requirement_mapping Record➛Ageing 3","reference":"","reference_display":"Ageing 3","type":"string","base_type":"string","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"ageing_3","usedInstances":{"dbbe9241-74db-431b-b112-b66fc9af2d14":["req_pending_ageing"],"7fd66d3a-a620-43ff-9d26-bfc374bbffaa":["reqageing-0"]}}]</label_cache>
+        <master_snapshot>7c5250ec47d65614e9ddbf66706d43db</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Calculating Consent Ageing for Case - Kotak</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>0d5250ec47d65614e9ddbf66706d43ec</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:33:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6071142c47d65614e9ddbf66706d43f0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Calculating Consent Ageing for Case - Kotak</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_hub_flow_6071142c47d65614e9ddbf66706d43f0</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:38:07</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2024-12-02 11:37:09</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0d5250ec47d65614e9ddbf66706d43ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:37:09</sys_updated_on>
+        <time>1969-12-31 18:30:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:0d5250ec47d65614e9ddbf66706d43ec^sys_idNOT INc15250ec47d65614e9ddbf66706d43ed"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:0d5250ec47d65614e9ddbf66706d43ec</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Rushith">8a1cb70347a7351055784a02516d434b</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2024-12-02 11:37:09</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('0d5250ec47d65614e9ddbf66706d43ec');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:09</sys_created_on>
+        <sys_id>c15250ec47d65614e9ddbf66706d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:37:09</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">0d5250ec47d65614e9ddbf66706d43ec</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6071142c47d65614e9ddbf66706d43f0^sys_idNOT IN6c71142c47d65614e9ddbf66706d43f0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6071142c47d65614e9ddbf66706d43f0</id>
+        <name>Calculating Consent Ageing for Case - Kotak</name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:33:18</sys_created_on>
+        <sys_id>6c71142c47d65614e9ddbf66706d43f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:33:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6c71142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6071142c47d65614e9ddbf66706d43f0^sys_idNOT INf871542c47d65614e9ddbf66706d4315"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">6071142c47d65614e9ddbf66706d43f0</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:33:18</sys_created_on>
+        <sys_id>f871542c47d65614e9ddbf66706d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:33:18</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STU/kMAz9Kyjn2SqdARZ6W2k10h4ACRAXhCo3cWcsuUlI04Eu4r/jtAXtjqhysZ/9Pqw+vimGBllV6p46VCtFLmF0wPdjQOnumCzWacY6cBaSj6OqUhxwpXy0GFVVar1SB+AB78b+j5U1GXbQZYJldUKlLC9/6h+6lHeidTU9Qc2e2EZ0qnp8WqkAUXZTZn47giiTb8CeojXabNbyab2+OC2b801Tru0GEM+E8CjU/17SN9H+TYKvCZ1FkWqBe/wmd0SwN47Hr4m9nG2O3cFrT39xoYrYopg3OINm78ngTUjk3dxJ0PAn6Hno3PVsVWqLLQycHpbLSWfosbYYsrkst2i3d3v/cvsptCU3JVlA9gb4q4KUIjVDwj6fFhk7Iao7CIHcrg7RH2haFi9dMd2naNm/iGhPO1eAycYLuQUUW+n/ntoPECmnuBIaWX6fUtfPQ9adcyyO6zm0DFjqA8O4JeTlb+lNpJB+icABF7vvTx99auB7ngIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6071142c47d65614e9ddbf66706d43f0^sys_idNOT IN3471542c47d65614e9ddbf66706d4315,7071542c47d65614e9ddbf66706d4314"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">6071142c47d65614e9ddbf66706d43f0</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>40059a96-fd13-483a-873e-31e92a2558e2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:33:18</sys_created_on>
+        <sys_id>3471542c47d65614e9ddbf66706d4315</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:37:08</sys_updated_on>
+        <ui_id>5903244a-ac10-4072-a73e-6c46cebdb673</ui_id>
+        <values>H4sIAAAAAAAA/+1WTW/bOBD9K4ROdtaWJcv22s4pgDfYHtoAzaKXOBAocWRzK5FaknLiGv7vO6Q+4rhtmi3aQ4HVReZo5s17nEfCdwePM2/pTYAF4SKcpVEYReMgGM8nYTKLknDMIgoQegNP0AIwU0EqFcP1juaVDRwOkyCYLuhiNsxYGA0n84gO579HMIxCWIzpeDqdw9jnBorjEesY12VO9x+acoykW54zBcJb3t0PvJIq7GRAecvD2SezLyHOaQI5Fq5kWhUgDHmzQozXqmir37cyzmXZHrhmDXrMbRA/WT5hMPDg0YBggO0ymmsYeAUVjBqp9t7SqAoDCii7Efm+y9hyYWqlBX3U/BPiTwKblwFKS7tdkDyFm9JwKeqIoUnefpR5VYh3NVe7iZDRKjcnm1hpiBmUlpvtVlPJbrfy4X3b55oLJ6OhlcuU5t2KGqN4UhnQdt8hB6e+oGXJxSYuldxxV4xUCn+T48LPcvmAPTXfCJ+mlrePO0H9a4yvXPgDVdyKeIswWHx0ouN/Ktu3ltEQjp1mJzh2E8FUnSpemisE3kFD8zho/JpMX5p0unga7Anmk2cfY1WaMv4oDf0YVw9xSjV8bs2vZH2fXf+yPMi7msdrNTwr/oqmxrDPYo1fpz/Mr/Of7dem9S9m2G/ZNBi/eCGdjNQ5U59YNJVC2z50A6hnXQVBxDI2rLsB+9yt3y74TuNCgW0MkLrR4NXKWoBrDjnTX5DaOrdpEO+aBt1t+8PsG84C9/x/6f63S7cWVMecTZ55zEZeyvdGF2txcXGVpqA1sQRHV44xsYxJpRGDmC2QjMUuIpO/ITU+uXUApKi0IQpMpQShxLnDJxbxxhqEiKpI8MU1kVmmwZBkT34LCRfkD6WkIn+iU3Lb4hbqfXJkdpTn7iqWbuiaNMeIVCUSKxVStTVrz197hGZ4Plp6thweKZoVlshGEb2VyuCep6Q+bW2ij0PdbED5aaXQA8Z3iXZoThd2vbRYjbIOxQZHa7EWDhtHtLKn7gw6HsdxJlUMNN26/1R+OxNbYXPg8gTDtPUCHojF67XA/cs6yUiG4s+z+h2I4QWseJa1KXX+0IF3SQwTVnSvu6S2aER6eIwDckGimXuNJzX0aHRe85aarU8T3XM/lKwE67U5fVtEbBWe7dMivMQ0vBHmKdOh84z0nuOnJOiTA4Lgc9552Aaw9mjLv0jtjJFv5C3OWWyavTqvadc+uoubnvNT/y64d8nN6E/64rnUdAesu1yOx+P9vxA1VhaeCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">6071142c47d65614e9ddbf66706d43f0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:33:18</sys_created_on>
+        <sys_id>7071542c47d65614e9ddbf66706d4314</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:38:06</sys_updated_on>
+        <ui_id>ad06d0a4-2497-4c6d-9d21-3b9745091a28</ui_id>
+        <values>H4sIAAAAAAAA/9VX207jMBD9lSrPUZWQUljeVrBIPEBXUCGtUNdyHLe1cO2s7fQC4t93HMdp6Y1SigQvlTwXz5mZMxP34TlgWXAWnPZbUYTj49OTKEqSKGq3E4LjNE3aJI3SVhqEgcAjCpYGp5zCcYx5Yc9TpHKTo0dp8CMqJohgbdUZ0znHs/vtVmTIeKaoCM4eemGQYwUxDFXB2fOSysxyijhOKYfLuhZC48biCXeG/8p5NR0bwB+RcFdLlVksURjQqaEioxCqj7mmYTDCIsNGqlktURRnHcHngiETBm4MrPFUsye4/jSydn0KaRHqdGQoGaGd3DApnMQhckrJi5G4cUhtUWkfF9z4ooKk0BRlNLfgbLQqdP9uKCe3PtAlE2UelZJLgnl9wsYolhaGalt0yukILkIjnOdMDFCu5JiVzoBl1BxwODT7XE4gqGYD0cTEAm9CLXDzEuQXpfgeK2azuIZrwBkAMQ5tRa66WhaqTH+MCC90qVBYaHdX8FLWCP0rLEqXdZUfciUCA00Uy81PcBjTKpWXcCcqH0fz3hMpMmZj6gU+g1DbWPCTIciLXt3ddLq/rn93//z1OkUJhcheXypXOf+Bm/abi/PFfHatxVrndQWqJuSVrJqQ+GATAnA/e0aMKr7eiLxFepfwG8wnJ1u7fTxvrJbKIFe5BeqvUnhvKl4yyrNXK3oHcN65Y1nVSGeb8FZM7NsYS7v66Pvs6i/JQwCUIVdYJjgT5TcRgB6GoNH2dfRjqeFln+f0LGVYk1Wa4oaRjaf992bZV0/UHUB6xztA1Og6lGuA+43pr684mhyMo8nRBo4CQx6ea5h1edZU0r9xbI+8/ZO1x8v2QKMFh/ilV3P8fL+Y8XtjHtmYS0OYvGsKFynkNBcbmHTgh9WGqQo/c4yH4FrFQ24q0YRlA2rm0b1VJs0E88d1+mrU6mEp0/vwI621dcja8XyggOzwStLQqsVXWgzvhNU9EIdOvN8auBKGDsri7QrRe17jaeO2xrgWeLULWB2j4nTrgE+ng36wfIXXjokv9Lf4+7EvV3v/AfCMMlIdDwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6071142c47d65614e9ddbf66706d43f0^sys_idNOT IN7471542c47d65614e9ddbf66706d4313"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">15e55c9e47c612d0e9ddbf66706d434e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">6071142c47d65614e9ddbf66706d43f0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:33:18</sys_created_on>
+        <sys_id>7471542c47d65614e9ddbf66706d4313</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:38:06</sys_updated_on>
+        <ui_id>40059a96-fd13-483a-873e-31e92a2558e2</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhr/m1rkVGAr00Bboil6GwqAlOhEmS5okJ/UM//dRsZMOPe5k8ZF875HmxMwQ7BD8q7nzXu412/183zCpI0bviWnoke2YDNh7tmFHUEOMpwlEWokUym1e1jfbkldiW4s82xZtfVN+S+sM8tvkBblxws8ztQrprYLx7f8Z+EEq4XA1acGRt4CO7aYvqTBabBS0qEhoZaB+KSjMatHVWVrzIq+KPE3z2zJrq6LNclEAiorqLp0P69BfdhDZKXRXXvpEF3m6YfgRUAskoQ6Uxw3rQQsIxo1sF9xAgEMQz1qN14qD1IHoWKz98PIPcWdpGgs7pIk4Lkl+MJLjsw3S6AUJ0KpL0qih10+Lz7hr7GBQ4bJrQgaPjUAbzUW5Vbv7cTCnl4vQvdTnQdakMhzUNYIQnGyHgD7uGxX2RNT0YK3U+8Y6c5TnZvLSJ3tFQdIpcyLReFcJ8Gg8oV1Ack/49zP8Bk7GKR6Jhprn89TN7yHqLnOsjptlaCrw3Ekb7ojuiKu5+T0e5sLklwsQyKUnwdeIPVzOOSZG+puS/wudjPsVrX5i8186DJA0GAMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6071142c47d65614e9ddbf66706d43f0"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=72658000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>62e57f8e474212d0e9ddbf66706d433f</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>calculating_consent_ageing_for_case__kotak</internal_name>
+        <label_cache>[{"name":"ad06d0a4-2497-4c6d-9d21-3b9745091a28.Records","label":"1 - Look Up Records➛x_rptp_kotak_uw_case Records","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"records","base_type":"records","usedInstances":{"40059a96-fd13-483a-873e-31e92a2558e2":["items"],"02922946-528b-41fa-9375-1ca2907cb652":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40059a96-fd13-483a-873e-31e92a2558e2.item","label":"2 - For Each➛Case Record","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","usedInstances":{"5903244a-ac10-4072-a73e-6c46cebdb673":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"40059a96-fd13-483a-873e-31e92a2558e2.item.case_id","label":"2 - For Each➛Case Record➛Case Id","reference":"x_rptp_kotak_uw_case","reference_display":"Case","type":"reference","base_type":"reference","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"case_id","usedInstances":{"dbbe9241-74db-431b-b112-b66fc9af2d14":["record"],"6b522e91-3d3a-4227-8d25-0e7519eb3360":["conditions"]}},{"name":"5903244a-ac10-4072-a73e-6c46cebdb673.record.ageing_3","label":"3 - Update Record➛x_rptp_kotak_requirement_mapping Record➛Ageing 3","reference":"","reference_display":"Ageing 3","type":"string","base_type":"string","parent_table_name":"x_rptp_kotak_requirement_mapping","column_name":"ageing_3","usedInstances":{"dbbe9241-74db-431b-b112-b66fc9af2d14":["req_pending_ageing"],"7fd66d3a-a620-43ff-9d26-bfc374bbffaa":["reqageing-0"]}}]</label_cache>
+        <master>true</master>
+        <name>Calculating Consent Ageing for Case - Kotak</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Calculating Consent Ageing for Case - Kotak">6071142c47d65614e9ddbf66706d43f0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7c5250ec47d65614e9ddbf66706d43db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:38:07</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7c5250ec47d65614e9ddbf66706d43db^sys_idNOT INf85250ec47d65614e9ddbf66706d43dc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7c5250ec47d65614e9ddbf66706d43db</id>
+        <name>Calculating Consent Ageing for Case - Kotak</name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:08</sys_created_on>
+        <sys_id>f85250ec47d65614e9ddbf66706d43dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:37:08</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f85250ec47d65614e9ddbf66706d43dc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=7c5250ec47d65614e9ddbf66706d43db^sys_idNOT INb85250ec47d65614e9ddbf66706d43e1"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">7c5250ec47d65614e9ddbf66706d43db</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:08</sys_created_on>
+        <sys_id>b85250ec47d65614e9ddbf66706d43e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:37:08</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STU/kMAz9Kyjn2SqdARZ6W2k10h4ACRAXhCo3cWcsuUlI04Eu4r/jtAXtjqhysZ/9Pqw+vimGBllV6p46VCtFLmF0wPdjQOnumCzWacY6cBaSj6OqUhxwpXy0GFVVar1SB+AB78b+j5U1GXbQZYJldUKlLC9/6h+6lHeidTU9Qc2e2EZ0qnp8WqkAUXZTZn47giiTb8CeojXabNbyab2+OC2b801Tru0GEM+E8CjU/17SN9H+TYKvCZ1FkWqBe/wmd0SwN47Hr4m9nG2O3cFrT39xoYrYopg3OINm78ngTUjk3dxJ0PAn6Hno3PVsVWqLLQycHpbLSWfosbYYsrkst2i3d3v/cvsptCU3JVlA9gb4q4KUIjVDwj6fFhk7Iao7CIHcrg7RH2haFi9dMd2naNm/iGhPO1eAycYLuQUUW+n/ntoPECmnuBIaWX6fUtfPQ9adcyyO6zm0DFjqA8O4JeTlb+lNpJB+icABF7vvTx99auB7ngIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=7c5250ec47d65614e9ddbf66706d43db^sys_idNOT INb45250ec47d65614e9ddbf66706d43e0,f05250ec47d65614e9ddbf66706d43e1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">7c5250ec47d65614e9ddbf66706d43db</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:08</sys_created_on>
+        <sys_id>b45250ec47d65614e9ddbf66706d43e0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:38:07</sys_updated_on>
+        <ui_id>ad06d0a4-2497-4c6d-9d21-3b9745091a28</ui_id>
+        <values>H4sIAAAAAAAA/+VXbW/aMBD+KyifI5QUSrt+m8oqVWrLVNCkqeosx3HAqkky2+GliP++sx2HCFIGGpVa7QuS786+5+6exzFPK4/F3pV3mXSDAIfnlxdB0OkEQa/XITiMok6PREHUjTzfS/GUQqTCEaewnGFe6PUCiVzl6CVT+AUVc0Sw1O6YyZzj5Y/9UWTCeCxo6l09PftejgXkUFR4V6st16EgOY4oh9BRiXILtFrm1RIZn7Xd1be1HqwjE7GGEvgeXSiaxhQwJJhL6ntTnMZYZWJZWQTF8SDlG8OEpQpO9HTwQrJXyHsZ6LiEQlWEWl+1NJn7tmnWlfSxwkMlCqIKUYaTScYIlbYnMU1wwdV13WYDBrliWWq32NLt7owX0/TBtsSrDnAzAkshKYpprovV6MtSkuEkmz86pDcsNX0pnTwjmFcrrJRgUaE0npVHOZ3CQWiK85ylY5SLbMbMZsAybY85LNoJz+aQVLJx2sZEA29Db3H7Bux9Y/6BBdNV3MMxsBkAMQ4sQXaMMiuEaecMEV5I4xA4lfYsb+17cimvOZZyUzm0Hf0uNG7bh7JiZJumtxDBcvUVjpjRsri1f5BWzoMN7UiWxkyjkDXBgFHqXPATI6iU3g4fBqNv999HP385n6CEQmbnN85dUf3DSacUnqnYCe+6XnJTG0oJ7tjumg4oJRieTIJQx2cTIST/eBo8XlW2BX+RFrnYS7TzDadkJhSyvaxpa1cjR3P9AAiO6wPNzla0fAtVSfWEUR43fW1utGPra3P2/35tPiTRAVCM7ARZyllqng8A9L0UEOy/ar9scc1QbMN/Y8OS7OoAt1TWej1aDQfAcWoYQu7WyOJpgOjufUOZ7TvfGUsRdE4mgs7Z6USwqkqtmtnQd/dq1BN18a86Hm/HAw1rG8J1k8iOyhkem/NsvSvizlEqrhPOevpv8O7ET8s3VOm/5zUwga1lPmQ1jOYsHlO1ye6i4kzNMX9p8pfCRG5Qprx3eKZ290q3F25kCmqBd6KE4dXfqSE8lXbvkdC35uOukQOwuHbc40XrsQLTiLC8SkDtdGxmU79LbitrSfLuCR+PH/qL6gbWqEM3t0/xD+90Ynj+A2nDFWrhEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">7c5250ec47d65614e9ddbf66706d43db</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>40059a96-fd13-483a-873e-31e92a2558e2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:08</sys_created_on>
+        <sys_id>f05250ec47d65614e9ddbf66706d43e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:37:08</sys_updated_on>
+        <ui_id>5903244a-ac10-4072-a73e-6c46cebdb673</ui_id>
+        <values>H4sIAAAAAAAA/+VWTW/bOBD9K4ROdtaWJcv22s4pqDfYAm0DNItc4kCgxJHNrURqSSqJ1/B/3yH1Eddp0xToJVhfHA7nPb4ZzqNzu/c485beBFgQLsJZGoVRNA6C8XwSJrMoCccsogChN/AELQAzFaRSMVzf07yygf1+EgTTBV3MhhkLo+FkHtHh/PcIhlEIizEdT6dzGPvcQHE4II5xXeZ0d9PAMZJuec4UCG95ezfwSqrwJAPKW+5Ptl4rNacJ5Jj6udV6qt3sSrtmMq0KECbmbfBDg1w1O+T9CncQZOWEwcCDRwOCAQrJaK5h4BVUMGqk2nlLoyoMKKDsSuS7LmPLhakLLeij5v/iyZPA5mWAlaVNE7rlXzTJYVU3qd7KVtTQa2RPTaW6nkmegq77wiCjVW7eHcfqhKvScClqiLHEDVrmVSE+1V3xOoKjO6k0xAxKW6tVX5eWXW/lw+dW6CUXri1NmblMad6tqDGKJ5WxcvYe5OD6XNCy5GITl0recwdGKYW/yXHhZ7l8wDM13wifpla3j52l/iXGVy58QxW3RXxEGgQfBp7e6Xc51fqpFOxj/E9lldSFNSXErguuBbGbBgtOFS/NBR51D43ww6AxRDJ9acrSxdNQHXE+meIxVqUp4y/S0C9x9RCnVMPz2f9O1s/54RVKWz+40fqO8sYSz2IfjrHkU73RGGL6ywwxf2uGaEp58474kQ+C8Yuv7dE0udHXRx5IpdD2HLoBrHBdBUHEMjasTwP23A4/BvycM16hvXXGJYec6W8U09oCClRqIK6LO7FGs0lums3u9+KX+SOcBe7zxlzyP/jZqEusY24OvxpiG3kp3xudrcXZ2UWKF6CJlTy6cDUQWwOpNHIQswWSsdhFZPI3pMYn146AFJU2RAFesCCUuOH0iWW8siNIRFUk+MU1kVmmwZBkR34LCRfkD6WkIn/iLOb2iGuoO+fE3FOeu9deujHQpPEpqUoUViqUajFrz197hGZowFaehcMjRTvAEtUoordSGbyFlNR2bhN9vObNBpSfVgqnwvgu0V6jqwtPPbdcTWUdiw2O1mItHDde0cra7oQ6HsdxJlUMNN26fzv99k4swubA+RGHafECHojl67XE/fM6yUiGxZ9m9TsSwwt0Xpa1KXX+0JF3SQwTVnSnu6QWNCI9fCgCckaimfsaT2rq0egU85GarU8T3XN/KFkJ1mtz+hZELApfj2MQvpIa3gvzlOnYeUZ6X/OnJOiTPZLg5/TkYRtA7MHCvyntRJFvJD4/OCpNr04x7drH6eKm5+apfxvcueTm6o/ORV9qeg+se24Oh8PdfwCR8hTBDAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7c5250ec47d65614e9ddbf66706d43db^sys_idNOT IN305250ec47d65614e9ddbf66706d43e0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">15e55c9e47c612d0e9ddbf66706d434e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Calculating Consent Ageing for Case - Kotak">7c5250ec47d65614e9ddbf66706d43db</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:08</sys_created_on>
+        <sys_id>305250ec47d65614e9ddbf66706d43e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:38:07</sys_updated_on>
+        <ui_id>40059a96-fd13-483a-873e-31e92a2558e2</ui_id>
+        <values>H4sIAAAAAAAA/51TwW7bMAz9F50dw3Yyt86taFCgwLYCadHLUAS0RCfCZMmT5KSekX8fFTlu0eNOFh/Jx/coeWSm913v3Yu5c07uNVv/ekuY1AGj88g0tMjWTHpsHUvYEVQf4nEEkZUig9WiWFU3ixUvxaISRb5Y1tXN6ltW5VDcplvkxgp3PlOrkK5TMLz+PwM/SCUsTiI7sKTNo2Xr8UtKChqQV6Kp8qziy6JcFllW3K7yulzWeSGWgKIkQgU1Kip9nNx9MeuHLoQ2SpiA71PPdkbpE0QUWcLw3aMWSOMbUA4T1oIW4I0d2NrbngCLIJ60GuaKg9Se6FiofXfyL03MsywUNkiGOMbkHL5ArXATdxlTzQY8PBM9972dyvnBSI4urkNgA73y95+xWPDUeWl0bPGBeOo2qm/1z7gNNhNcr46Q3uFOYBfMBvmTl+b5YE7bq9IHqS+LmZLKcFBzBN5bWfc+6BkZKmyJaNdC10m933XWHOWlmbS06V5RkDbKnGhoeKYp8CA8pd1C+kD45gK/gpXBxQ+ioeZzwtzg7hU49+GFFrn70wcl0dnkYRfXEFq4lZ2/owFHnOSe38LLj9zzTrl0JOFyHY/X/yUkBnpFkn+GTsb+DuI/sPM/XsZFCnkDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7c5250ec47d65614e9ddbf66706d43db"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>6071142c47d65614e9ddbf66706d43f0</sys_id>
+        <latest_snapshot>7c5250ec47d65614e9ddbf66706d43db</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6071142c47d65614e9ddbf66706d43f0^sys_idNOT IN815250ec47d65614e9ddbf66706d43ef"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>6071142c47d65614e9ddbf66706d43f0</plan_id>
+        <snapshot>7c5250ec47d65614e9ddbf66706d43db</snapshot>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-02 11:37:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>815250ec47d65614e9ddbf66706d43ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-02 11:37:09</sys_updated_on>
+        <trigger display_value="">0d5250ec47d65614e9ddbf66706d43ec</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6071142c47d65614e9ddbf66706d43f0"/>
+</record_update>

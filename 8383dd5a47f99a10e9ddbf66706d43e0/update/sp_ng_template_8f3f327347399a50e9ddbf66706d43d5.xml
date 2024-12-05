@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>KotakVariableLayouts.xml</id>
+        <sp_widget display_value="Form Component for Kotak Application">b82e7ebf47f59a50e9ddbf66706d43f4</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-18 06:01:27</sys_created_on>
+        <sys_id>8f3f327347399a50e9ddbf66706d43d5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>KotakVariableLayouts.xml</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_ng_template_8f3f327347399a50e9ddbf66706d43d5</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-04 06:47:49</sys_updated_on>
+        <template><![CDATA[<div ng-repeat="container in containers" class="custom-form-container" ng-show="paintForm(container)" 
+
+     ng-attr-role="{{(container.caption || container.captionDisplay) ? 'group' : undefined}}" 
+
+     ng-attr-aria-labelledby="{{(container.caption || container.captionDisplay) ? 'container_' + container.id : undefined}}">
+ 
+  <!-- Section Caption -->
+<!--<div ng-if="container.caption || container.captionDisplay" id="container_{{container.id}}" class="custom-caption">
+
+    {{container.caption || container.captionDisplay}}
+</div>
+-->
+ 
+  <div class="custom-container-content">
+<div ng-repeat="column in container.columns" class="custom-column">
+ 
+      <!-- Field Loop -->
+<div ng-repeat="f in ::column.fields" ng-if="formModel._fields[f.name].isVisible()" class="custom-form-element">
+ 
+        <!-- Label Container -->
+<div class="custom-label-container">
+<strong><label class="custom-label" ng-bind="formModel._fields[f.name].label"></label></strong>
+<!-- Field Value -->
+<div class = 'value_container'>
+<div class="custom-field-value">
+
+              {{formModel._fields[f.name].displayValue || '-'}} 
+</div>
+</div>
+ 
+ 
+        </div>
+ 
+      </div>
+</div>
+</div>
+</div>
+ 
+<script>
+ 
+</script>
+ 
+ 
+<style>
+ 
+  .custom-caption{
+
+    padding: 15px 0px;
+
+    font-size: large;
+
+    font-weight: 700;
+
+    color: #003366;
+
+  }
+ 
+  /*.value_container{
+
+    background-color :yellow;
+
+  }
+
+  */
+ 
+ 
+  .custom-form-container {
+
+    font-family: 'Arial', sans-serif;
+
+    margin: 0 auto;
+
+    padding: 10px 50px;
+
+    margin-top:2rem;
+
+  }
+ 
+  .custom-container-caption {
+
+    display: block;
+
+  }
+ 
+  .custom-heading {
+
+    font-size: 24px;
+
+    color: #333;
+
+    margin-bottom: 10px;
+
+    text-align:center;
+
+  }
+ 
+  .custom-container-content {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6rem;
+
+  }
+ 
+  .custom-column {
+
+    flex: 1;
+
+    min-width: 250px;
+
+  }
+ 
+  .custom-form-element {
+
+    // margin-bottom: 20px;
+
+  }
+ 
+  .custom-label-container {
+
+    margin-bottom: 15px;
+
+    display : flex;
+
+  }
+ 
+  .custom-label {
+
+    font-weight: 600;
+
+    color: #003366;
+
+    font-size: 16px;
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    min-width : 28rem;
+
+  }
+ 
+ 
+  .custom-label-separator {
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 10px 0;
+
+  }
+ 
+  .custom-form-field,
+
+  .custom-variable-container,
+
+  .custom-checkbox-container,
+
+  .custom-widget,
+
+  .custom-request-for {
+
+    #border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    //padding: 10px;
+
+    height: 70px;
+
+    display: flex;
+
+    border-radius: 4px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+  }
+ 
+  .custom-separator {
+
+    border: none;
+
+    border-top: 1px solid #eee;
+
+    margin: 20px 0;
+
+  }
+ 
+  .custom-form-inline {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+  }
+ 
+  /* Add some basic form control styles */
+
+  input[type="text"],
+
+  input[type="email"],
+
+  input[type="number"],
+
+  select,
+
+  textarea {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+ 
+  }
+ 
+  /* Style for buttons */
+
+  button {
+
+    background-color: #007bff;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+  }
+ 
+  button:hover {
+
+    background-color: #0056b3;
+
+  }
+</style>
+
+ ]]></template>
+    </sp_ng_template>
+</record_update>

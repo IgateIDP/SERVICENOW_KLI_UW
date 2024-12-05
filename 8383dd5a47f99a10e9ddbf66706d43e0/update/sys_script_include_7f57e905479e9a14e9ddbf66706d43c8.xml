@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_rptp_kotak.kotak_validations</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>kotak_validations</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var kotak_validations = Class.create();
+kotak_validations.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    loan_number_records: function(policySys) {
+
+        var lnRecords = [];
+
+        var uwCase = new GlideRecord("x_rptp_kotak_uw_case");
+        uwCase.addQuery("policy_id", policySys);
+        uwCase.query();
+
+        while (uwCase.next()) {
+            lnRecords.push(uwCase.getValue("loan_number"));
+        }
+
+        return 'sys_idIN' + lnRecords;
+    },
+
+    getLoanSys_client: function() {
+
+        var policySys = this.getParameter('policySys');
+        return this.loan_number_records(policySys);
+    },
+
+    member_dep_records: function(policySys, loanSys) {
+
+        var memRecords = [];
+
+        var uwCase = new GlideRecord("x_rptp_kotak_uw_case");
+        uwCase.addQuery("policy_id", policySys);
+        uwCase.addQuery("loan_number", loanSys);
+        uwCase.query();
+
+        while (uwCase.next()) {
+            memRecords.push(uwCase.getValue("consumer_id"));
+        }
+
+        return 'sys_idIN' + memRecords;
+    },
+
+	getMemberSys_client: function() {
+
+        var policySys = this.getParameter('policySys');
+		var loanSys = this.getParameter('loanSys');
+        return this.member_dep_records(policySys,loanSys);
+    },
+
+    type: 'kotak_validations'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-04 07:06:27</sys_created_on>
+        <sys_id>7f57e905479e9a14e9ddbf66706d43c8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>kotak_validations</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_include_7f57e905479e9a14e9ddbf66706d43c8</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-04 10:28:21</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>7f57e905479e9a14e9ddbf66706d43c8</id>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-04 07:06:27</sys_created_on>
+        <sys_id>cf87ad05479e9a14e9ddbf66706d43be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-04 07:06:27</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function(spUtil,$rootScope,$scope) {
+  /* widget controller */
+  var c = this;
+	
+	  $rootScope.$on('CaseId', function(event, sysId) {
+		//	console.log("recieved "+ sysId)
+			if(sysId){
+				  $scope.receivedSysId = sysId;
+			
+			spUtil.get('kotak_form', {
+				table: 'x_rptp_kotak_uw_case',
+				view: 'coverage_details',
+				sys_id: $scope.receivedSysId 
+			}).then(response => {
+				c.widgetinstance = response;
+			});
+			}
+			else{
+				
+				c.widgetinstance = false;
+			}
+	});
+				
+			
+  
+  
+	
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.widget-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #03428E;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+  margin-bottom : 2rem;
+}
+
+.widget-title:hover {
+  background-color: #e9e9e9;
+}
+
+.widget-title i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.widget-title .exit-icon {
+  margin-right: 10px;
+}
+
+.widget-title .content {
+  flex-grow: 1; /* This ensures the content takes up available space */
+  display: flex;
+  justify-content: left; /* Centers the heading */
+}
+
+.widget-title .chart-icon {
+  margin-left: 10px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>kotak_audit_view</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Kotak Form View</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-22 11:04:06</sys_created_on>
+        <sys_id>f9ca281d47cad690e9ddbf66706d43fe</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Kotak Form View</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_widget_f9ca281d47cad690e9ddbf66706d43fe</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-03 10:01:24</sys_updated_on>
+        <template><![CDATA[<div class="widget-title" ng-if = 'c.widgetinstance'>
+  <div class="content" >
+
+    <span>Coverage Details</span>
+
+  </div>
+</div>
+
+<div ng-if="c.widgetinstance">
+    <sp-widget widget="c.widgetinstance"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f9ca281d47cad690e9ddbf66706d43fe</id>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-22 11:04:04</sys_created_on>
+        <sys_id>87dae0d947cad690e9ddbf66706d4348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-22 11:04:04</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

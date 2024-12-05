@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <access_method>btree</access_method>
+        <col_name_string>requirement_name,requiremnt_id</col_name_string>
+        <index_col_name>4b9c55de473d9a10e9ddbf66706d43f9,82d1a11247bd9a10e9ddbf66706d4314</index_col_name>
+        <logical_table_name>x_rptp_kotak_requirements</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-11-27 05:54:49</sys_created_on>
+        <sys_id>ed04557247ca56d0e9ddbf66706d431f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_requirements</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_index_x_rptp_kotak_requirements_requirement_name_requiremnt_id</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-11-27 05:54:49</sys_updated_on>
+        <table display_value="KLI Requirements" name="x_rptp_kotak_requirements">d86c9912477d9a10e9ddbf66706d43cc</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

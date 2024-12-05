@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="UW Case Page">c48f0176478a56d0e9ddbf66706d4303</macroponent>
+        <name>Close Tab Script</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+   if(api.data.decision_side_panel.sysId!=-1){
+       helpers.timing.setTimeout(() => helpers.screen.updateStatus({status:"closed"}), 2000);
+   }
+  
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-03 10:31:42</sys_created_on>
+        <sys_id>493b4df847d21a14e9ddbf66706d43cf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Close Tab Script</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_client_script_493b4df847d21a14e9ddbf66706d43cf</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-03 11:43:21</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

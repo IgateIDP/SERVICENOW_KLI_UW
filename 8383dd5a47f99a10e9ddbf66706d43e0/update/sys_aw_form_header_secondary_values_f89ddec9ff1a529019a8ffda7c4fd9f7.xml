@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_form_header_secondary_values">
+    <sys_aw_form_header_secondary_values action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions/>
+        <field>loan_number.loan_number</field>
+        <form_header display_value="x_rptp_kotak_uw_case">dadb5e45ff1a529019a8ffda7c4fd9a6</form_header>
+        <order>200</order>
+        <roles/>
+        <sys_class_name>sys_aw_form_header_secondary_values</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-04 11:02:29</sys_created_on>
+        <sys_id>f89ddec9ff1a529019a8ffda7c4fd9f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>loan_number.loan_number</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_aw_form_header_secondary_values_f89ddec9ff1a529019a8ffda7c4fd9f7</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-04 11:02:29</sys_updated_on>
+    </sys_aw_form_header_secondary_values>
+</record_update>

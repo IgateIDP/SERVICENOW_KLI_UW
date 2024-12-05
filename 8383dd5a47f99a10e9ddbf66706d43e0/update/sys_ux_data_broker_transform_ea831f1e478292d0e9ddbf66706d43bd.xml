@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result>[]</acl_failure_result>
+        <api_name>x_rptp_kotak.Get Fields of a Table from a view</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Fields of a Table from a view</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "description": "Table to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "table_name",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "view",&#13;
+  "label": "View",&#13;
+  "description": "view to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "String",&#13;
+  "mandatory": true&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Table",
+  "comment" : ""
+}, {
+  "message" : "Table to look up",
+  "comment" : ""
+}, {
+  "message" : "View",
+  "comment" : ""
+}, {
+  "message" : "view to look up",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var results = [];
+
+    if (!input.table) {
+        return results;
+    }
+
+    // Query sys_ui_element for fields in the given view
+    var grUiElement = new GlideRecord('sys_ui_element');
+    grUiElement.addQuery('name', input.table); // Query for the specific table
+    if (input.view) { // Check for the view name
+        grUiElement.addQuery('view', input.view);
+    }
+    grUiElement.query();
+
+    var visibleFields = [];
+    while (grUiElement.next()) {
+        visibleFields.push(grUiElement.getValue('element')); // Get field names
+    }
+
+    // Query sys_dictionary for field details
+    var grSysDict = new GlideRecord('sys_dictionary');
+    grSysDict.addEncodedQuery('name=' + input.table + '^internal_type!=collection^internal_typeISNOTEMPTY');
+    grSysDict.query();
+
+    while (grSysDict.next()) {
+        var fieldName = grSysDict.getValue("element");
+
+        // Skip fields not in the specified view, if provided
+        if (input.view && !visibleFields.includes(fieldName)) {
+            continue;
+        }
+
+        results.push({
+            column_label: grSysDict.getValue("column_label"), // Field label
+            element: fieldName,                              // Field name
+            type: grSysDict.getValue("internal_type"),       // Field type (e.g., string, integer)
+            reference: grSysDict.getValue("reference"),      // Reference table (if applicable)
+            display: grSysDict.getValue("display"),          // Display flag (true/false)
+        });
+    }
+
+    return results;
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 01:56:36</sys_created_on>
+        <sys_id>ea831f1e478292d0e9ddbf66706d43bd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get Fields of a Table from a view</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_ea831f1e478292d0e9ddbf66706d43bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 12:09:57</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=ea831f1e478292d0e9ddbf66706d43bd"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ea831f1e478292d0e9ddbf66706d43bd</id>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 01:56:20</sys_created_on>
+        <sys_id>a6d35b5e478292d0e9ddbf66706d4334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 01:56:20</sys_updated_on>
+        <table>sys_ux_data_broker_transform</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

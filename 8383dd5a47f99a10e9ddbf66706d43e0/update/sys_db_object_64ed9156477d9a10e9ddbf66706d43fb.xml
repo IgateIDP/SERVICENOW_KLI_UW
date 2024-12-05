@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
         <access>public</access>
-        <actions_access>true</actions_access>
-        <alter_access>true</alter_access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
         <caller_access/>
-        <client_scripts_access>true</client_scripts_access>
-        <configuration_access>true</configuration_access>
-        <create_access>true</create_access>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
-        <delete_access>true</delete_access>
+        <delete_access>false</delete_access>
         <is_extendable>false</is_extendable>
-        <label>KLI UW Case</label>
+        <label>KLI Requirement Mapping</label>
         <live_feed_enabled>false</live_feed_enabled>
-        <name>x_rptp_kotak_uw_case</name>
-        <number_ref/>
+        <name>x_rptp_kotak_requirement_mapping</name>
+        <number_ref display_value="1,000">53f5a0a347061ed0e9ddbf66706d43e2</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="Case" name="sn_customerservice_case">51be390d4736395055784a02516d4346</super_class>
+        <super_class/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>Ajmal.akram</sys_created_by>
-        <sys_created_on>2024-11-13 09:59:09</sys_created_on>
-        <sys_id>3e95861e47f1da10e9ddbf66706d4313</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>KLI UW Case</sys_name>
+        <sys_created_on>2024-11-13 07:05:51</sys_created_on>
+        <sys_id>64ed9156477d9a10e9ddbf66706d43fb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>KLI Requirement Mapping</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sys_db_object_3e95861e47f1da10e9ddbf66706d4313</sys_update_name>
+        <sys_update_name>sys_db_object_64ed9156477d9a10e9ddbf66706d43fb</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-11-28 07:16:25</sys_updated_on>
-        <update_access>true</update_access>
+        <sys_updated_on>2024-11-29 10:29:08</sys_updated_on>
+        <update_access>false</update_access>
         <user_role display_value="x_rptp_kotak.user" name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>

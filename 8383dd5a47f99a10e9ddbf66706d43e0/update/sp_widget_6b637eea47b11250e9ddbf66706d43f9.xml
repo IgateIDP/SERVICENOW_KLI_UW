@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, spModal,$location,$rootScope) {
+	var c = this;
+	 $rootScope.$on('Senddata1', function(event, data) {
+        filter = data || ''; // Ensure filter is a string
+        console.log('Received filter:', filter);
+    });
+	
+	$scope.filter1='';
+	$scope.filter='';
+	
+	// Global variables to keep count and track errors
+	var updatedCount = 0;
+
+	var errorMessage = "";
+	var errorReason = "";
+	var failedCount = 0;
+
+	$scope.ShowModal = false;
+
+	// Download details
+	$scope.downloadLink = "/path/to/template.xlsx"; // Update with the actual path
+	$scope.downloadFileName = "Template.xlsx";
+
+	$scope.openModal = function () {
+		$scope.ShowModal = true;
+	};
+
+	$scope.closeModal = function () {
+		$scope.ShowModal = false;
+	};
+
+	$scope.triggerFileUpload = function() {
+		document.getElementById('fileInput').click();
+	};
+$rootScope.$on('Senddata', function(event, data) {
+			$scope.filter1 = data || ''; // Ensure filter1 is a string
+			console.log('Received filter1:', filter1);
+		});
+		// Listen for Senddata1 (filter)
+		
+	 $rootScope.$on('Senddata1', function(event, data) {
+        $scope.filter = data || ''; // Ensure filter is a string
+        console.log('Received filter:', filter);
+    });
+	$scope.download = function() {
+		console.log($scope.filter);
+		
+		var selectedFilter = $scope.filter
+
+
+		var updatedJsonString = selectedFilter
+		.split('^')
+		.map(function(condition) {
+			if (condition.trim() === '') return ''; // Skip empty conditions
+			if (condition.startsWith('case_id.')) return condition; // Skip if already prefixed
+			return 'case_id.' + condition; 
+		})
+		.filter(Boolean) 
+		.join('^');
+
+		console.log('Updated JSON String:', updatedJsonString);
+		c.server
+			.get({
+			action: 'sendemail',
+			val: updatedJsonString
+		})
+			.then(function(res) {
+			console.log('Server response:', res);
+		});
+
+		// Open modal to confirm email was sent
+		spModal.open({
+			title: 'Email Confirmation',
+			message: 'Excel has been sent via Email',
+			buttons: [{ label: 'OK', value: true, primary: true }],
+			widgetInstance: $scope,
+			size: 'md',
+			backdrop: 'static'
+		});
+	};
+
+	c.uploadFile = function(inputElement) {
+		failedCount =0;
+		updatedCount =0;
+		var file = inputElement.files[0];
+		c.fileName = file.name;
+		if (file) {
+			$scope.DataUploaded = false;
+			var reader = new FileReader();
+
+			reader.onload = function(event) {
+				var data = event.target.result;
+				var workbook = XLSX.read(data, { type: 'binary' });
+				var sheet = workbook.Sheets[workbook.SheetNames[0]];
+				var excelData = XLSX.utils.sheet_to_json(sheet);
+
+				var completedRequests = 0; 
+
+				excelData.forEach(function(record, index) {
+					CallSubflow(record, function() {
+						completedRequests++;
+						if (completedRequests === excelData.length) {
+							/*	console.log("Total Count: " + excelData.length);
+							console.log("Count of Total Uploads: " + completedRequests);
+							console.log("Successful Count: " + updatedCount);
+							console.log("Failed Count: " + failedCount);
+							console.log("Error Message on Failed Uploads: \n" + errorMessage);
+*/
+							// Prepare the data to be sent to the server
+							var summaryData = {
+								totalCount: excelData.length,
+								totalUploads: completedRequests,
+								successfulCount: updatedCount,
+								failedCount: failedCount,
+								errorMessage: errorMessage,
+								errorReason: errorReason
+							};
+							$scope.exceldata = summaryData;
+
+							// Send the summary data to the server
+							c.server.get({
+								action: 'create',
+								value: summaryData
+							}).then(function(response) {
+								// Handle the server response if needed
+								console.log("Server response: ", response);
+								$scope.id = response.data.jobID;
+								$scope.time = response.data.time;
+								$scope.DataUploaded = true;
+							});
+						}
+
+					});
+				});
+			};
+
+			reader.readAsBinaryString(file);
+		} else {
+			console.error("No file selected.");
+		}
+	};
+
+	function CallSubflow(record, onComplete) {
+		var excelkey = [
+			'Master Policy Number',
+			'Requirement Status',
+			'Loan Account Number',
+			'Requirement (Test) code',
+			'Member Number_Dependent Number'
+		];
+
+		// Initialize the final object
+		var finalobject = {
+			loan_number: null,
+			member_dependent_number: null,
+			policy_number: null,
+			requirement_code: null,
+			requirement_status: null
+		};
+
+		console.log("-------------------------------");
+		console.log(finalobject);
+
+		// Process the record to populate finalobject
+		for (var key in record) {
+			for (var i = 0; i < excelkey.length; i++) {
+				if (key === excelkey[i]) {
+					switch (key) {
+						case 'Loan Account Number':
+							finalobject.loan_number = record[key].toString();
+							break;
+						case 'Member Number_Dependent Number':
+							finalobject.member_dependent_number = record[key].toString();
+							break;
+						case 'Requirement (Test) code':
+							finalobject.requirement_code = record[key].toString();
+							break;
+						case 'Requirement Status':
+							finalobject.requirement_status = record[key];
+							break;
+						case 'Master Policy Number':
+							finalobject.policy_number = record[key].toString();
+							break;
+					}
+				}
+			}
+		}
+
+		// Call the server-side subflow
+		c.server.get({
+			action: 'callsubflow',
+			data: finalobject
+		}).then(function(res) {
+			var updatedBoolean = res.data.updated;
+			var errorMsg = res.data.error_message;
+
+			// Update counts and error messages based on the server response
+			if (updatedBoolean === false) {
+				failedCount++;
+				errorMessage += failedCount +". Loan Number - " + record["Loan Account Number"] +", Policy Number - " + record["Master Policy Number"] +", Member Dependent Number - " + record["Member Number_Dependent Number"] + ", for the requirement ID - "+record["Requirement (Test) code"] +", has not been updated,\n\n<div style='color:red;'>Error Message:</div>"+ errorMsg + "\n";
+				errorReason += failedCount +". Loan Number - " + record["Loan Account Number"] +", Policy Number - " + record["Master Policy Number"] +", Member Dependent Number - " + record["Member Number_Dependent Number"] + ", for the requirement ID - "+record["Requirement (Test) code"] +", has not been updated,\n\nError Message:\n"+ errorMsg + "\n";
+			} else {
+				updatedCount++;
+			}
+
+			onComplete();
+		});
+	}
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.upload-summary-container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.summary-title {
+  color: #0073e6;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.summary-divider {
+  border: 1px solid #0073e6;
+  margin-bottom: 10px;
+}
+
+.upload-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.upload-summary-table th,
+.upload-summary-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.upload-summary-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.failed-uploads {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+
+
+.upload-container {
+  max-width: 400px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  right: 3rem;
+}
+
+.upload-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+
+
+}
+
+.upload-button {
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.upload-button i {
+  margin-right: 10px;
+}
+
+input[type="file"] {
+  display: none; /* Hide the file input field */
+}
+.upload-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .download-button {
+    justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  }
+
+  .download-button:hover, .upload-button:hover {
+    background-color: #0056b3;
+  }
+
+  .upload-button input[type="file"] {
+    display: none;
+  }
+
+.upload-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.file-name {
+  color: #333;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background: #45a049;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.file-modal-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.cancel-button {
+  background: #f44336;
+  color: white;
+}
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>excel_upload</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Excel Upload</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+if(input && input.action == 'sendemail'){
+	//gs.addErrorMessage(());
+	var filter = input.val; // Use 'd' based on your preference
+var gr = new GlideRecord('sys_report');
+
+gr.addQuery('sys_id', 'e94cba7b47f59a50e9ddbf66706d43fc');
+gr.query();
+
+if (gr.next()) {
+    // Ensure a separator '^' if needed and append the new filter
+    var existingFilter = 'status=O'; // Handle null or undefined gracefully
+    var newFilter = existingFilter ? existingFilter + '^' + filter : filter;
+
+    gr.filter = newFilter;
+ //   gs.addErrorMessage(JSON.stringify(gr.filter));
+
+    gr.update();
+}
+
+	  var reportId = "8a6cfebb47f59a50e9ddbf66706d4371";
+        var userId = gs.getUserID();
+
+
+        var result = new global.kotak_report().sending_report_dynamically(reportId, userId);
+
+}
+	if(input && input.action == 'callsubflow'){
+
+try {
+		var inputs = {};
+			inputs.loan_number =  input.data.loan_number; // String 
+			inputs.member_dependent_number =  input.data.member_dependent_number; // String 
+			inputs.policy_number =  input.data.policy_number; // String 
+			inputs.requirement_code =  input.data.requirement_code; // String 
+			inputs.requirement_status =  input.data.requirement_status; // String
+ 
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.kotak__updating_requirement_status').inBackground().withInputs(inputs).run();
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+		var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.kotak__updating_requirement_status').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+ 
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		data.error_message = outputs['error_message']; // String
+		data.updated = outputs['updated']; // True/False
+//	gs.addErrorMessage(data.error_message);
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+	}
+
+	}
+	
+if (input && input.action == 'create') {
+    var excelrequirement = new GlideRecord('x_rptp_kotak_upload_excel');
+    var currentDateTime = new GlideDateTime(); // Get the current date and time
+
+    excelrequirement.initialize(); 
+    excelrequirement.setValue('date_time_of_upload', currentDateTime); // Set the current date and time
+    excelrequirement.setValue('count_of_total_uploads', input.value.totalUploads);
+    excelrequirement.setValue('successful', input.value.successfulCount);
+    excelrequirement.setValue('failed', input.value.failedCount);
+    excelrequirement.setValue('reason', input.value.errorMessage);
+		excelrequirement.setValue('error_reason', input.value.errorReason);
+    excelrequirement.insert();
+	data.jobID =excelrequirement.getValue('number');
+	data.time = excelrequirement.getValue('date_time_of_upload');
+}
+
+	
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-14 07:58:43</sys_created_on>
+        <sys_id>6b637eea47b11250e9ddbf66706d43f9</sys_id>
+        <sys_mod_count>200</sys_mod_count>
+        <sys_name>Excel Upload</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_widget_6b637eea47b11250e9ddbf66706d43f9</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-05 10:16:43</sys_updated_on>
+        <template><![CDATA[<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+
+
+<div class="upload-summary-container" ng-if="DataUploaded">
+  <h3 class="summary-title">Excel Upload Summary</h3>
+  <hr class="summary-divider">
+  <table class="upload-summary-table">
+    <thead>
+      <tr>
+        <th>Job ID</th>
+        <th>Date & Time of upload</th>
+        <th>Count of Total Uploads</th>
+        <th>Successful Uploads</th>
+        <th>Failed Uploads</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{id}}</td>
+        <td>{{time}}</td>
+        <td>{{exceldata.totalUploads}}</td>
+        <td>{{exceldata.successfulCount}}</td>
+        <td class="failed-uploads">{{exceldata.failedCount}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+<div class="upload-container">
+  <!-- File Name Display -->
+  <p class="file-name" ng-if="c.fileName">{{ c.fileName }}</p>
+
+
+
+  <!-- Download Button -->
+  <div ng-click="download()" class="download-button">
+    <i class="fas fa-file-download"></i> Download
+  </div>
+
+
+
+  <!-- Upload Button -->
+  <label class="upload-button" ng-click="openModal()">
+    <i class="fas fa-file-excel"></i> Upload File
+  </label>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal-overlay" ng-if="ShowModal">
+  <div class="file-modal-container">
+    <h3 class="modal-title">File Upload & Download</h3>
+
+
+
+    <!-- Upload Section -->
+    <div class="form-row">
+      <div class="form-group">
+        <p class="file-name" ng-if="c.fileName">{{ c.fileName }}</p>
+        <label class="upload-button" for="fileInput">
+          <i class="fas fa-file-excel"></i> Upload File
+        </label>
+        <input type="file" id="fileInput" accept=".xls,.xlsx" onchange="angular.element(this).scope().c.uploadFile(this)">
+      </div>
+
+
+
+      <!-- Download Section -->
+      <div class="form-group">
+         <a
+           class="download-link"
+           href="{{data.url}}"
+           target="_blank" 
+           download="document.xlsx"
+           >
+          <i class="fas fa-download"></i> Download Template
+        </a>
+      </div>
+    </div>
+
+
+
+    <!-- Modal Buttons -->
+    <div class="button-group">
+      <button class="button cancel-button" ng-click="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6b637eea47b11250e9ddbf66706d43f9</id>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-14 07:58:42</sys_created_on>
+        <sys_id>a1b37a2e47b11250e9ddbf66706d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-14 07:58:42</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
