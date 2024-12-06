@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>2ec75dc147da9a14e9ddbf66706d4340</sys_id>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>f5b1c571ff5ad69019a8ffda7c4fd985</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
             <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>case_id</element>
             <position>1</position>
             <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>62c7910547da9a14e9ddbf66706d434f</sys_id>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>35b1c571ff5ad69019a8ffda7c4fd986</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
             <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>short_description</element>
             <position>2</position>
             <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>6ac7910547da9a14e9ddbf66706d434f</sys_id>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>3db1c571ff5ad69019a8ffda7c4fd986</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
             <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>assignment_group</element>
             <position>3</position>
             <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>62c7910547da9a14e9ddbf66706d4350</sys_id>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>35b1c571ff5ad69019a8ffda7c4fd987</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
             <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>assigned_to</element>
             <position>4</position>
             <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>6ac7910547da9a14e9ddbf66706d4350</sys_id>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>3db1c571ff5ad69019a8ffda7c4fd987</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
             <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,69 +74,55 @@
             <element>state</element>
             <position>5</position>
             <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>62c7910547da9a14e9ddbf66706d4351</sys_id>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>35b1c571ff5ad69019a8ffda7c4fd988</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
             <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>case_id.case_status</element>
-            <position>6</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>6ac7910547da9a14e9ddbf66706d4351</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>case_id.u_case_stage</element>
-            <position>7</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-04 05:57:36</sys_created_on>
-            <sys_id>62c7910547da9a14e9ddbf66706d4352</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-04 05:57:36</sys_updated_on>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>case_status</element>
-            <position>8</position>
-            <sys_created_by>samarth.n</sys_created_by>
-            <sys_created_on>2024-12-05 05:52:28</sys_created_on>
-            <sys_id>4130621947969210e9ddbf66706d4329</sys_id>
+            <position>6</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>3db1c571ff5ad69019a8ffda7c4fd988</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
-            <sys_updated_by>samarth.n</sys_updated_by>
-            <sys_updated_on>2024-12-05 05:52:28</sys_updated_on>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>case_stage</element>
-            <position>9</position>
-            <sys_created_by>samarth.n</sys_created_by>
-            <sys_created_on>2024-12-05 05:53:09</sys_created_on>
-            <sys_id>9350aa1947969210e9ddbf66706d43e1</sys_id>
+            <position>7</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>35b1c571ff5ad69019a8ffda7c4fd989</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
-            <sys_updated_by>samarth.n</sys_updated_by>
-            <sys_updated_on>2024-12-05 05:53:09</sys_updated_on>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>is_uw_is_present</element>
+            <position>8</position>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-12-06 12:16:36</sys_created_on>
+            <sys_id>3db1c571ff5ad69019a8ffda7c4fd989</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_task" sys_domain="global" view="Default view">b1e4402847565614e9ddbf66706d4375</sys_ui_section>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-12-06 12:16:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

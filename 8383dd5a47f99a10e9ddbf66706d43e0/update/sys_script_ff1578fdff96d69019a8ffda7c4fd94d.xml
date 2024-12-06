@@ -3,9 +3,9 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -15,12 +15,13 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_rptp_kotak_requirement_mapping">requirement_id.type=medical^EQ<item display_value="Medical" endquery="false" field="requirement_id.type" goto="false" newquery="false" operator="=" or="false" value="medical"/>
+        <filter_condition table="x_rptp_kotak_requirement_mapping">statusVALCHANGES^requirement_id.type=medical^EQ<item display_value="-- None --" endquery="false" field="status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item display_value="Medical" endquery="false" field="requirement_id.type" goto="false" newquery="false" operator="=" or="false" value="medical"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Populating Req ids in UW Case - Insert</name>
+        <name>Populating Req ids in UW Case - Update</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -59,32 +60,21 @@
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>rushith</sys_created_by>
-        <sys_created_on>2024-11-29 11:20:44</sys_created_on>
+        <sys_created_on>2024-12-06 11:21:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c69b64a347461ed0e9ddbf66706d433c</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Populating Req ids in UW Case - Insert</sys_name>
+        <sys_id>ff1578fdff96d69019a8ffda7c4fd94d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Populating Req ids in UW Case - Update</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sys_script_c69b64a347461ed0e9ddbf66706d433c</sys_update_name>
+        <sys_update_name>sys_script_ff1578fdff96d69019a8ffda7c4fd94d</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-06 11:18:38</sys_updated_on>
+        <sys_updated_on>2024-12-06 11:21:34</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=c69b64a347461ed0e9ddbf66706d433c"/>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>c69b64a347461ed0e9ddbf66706d433c</id>
-        <sys_created_by>rushith</sys_created_by>
-        <sys_created_on>2024-11-29 11:20:43</sys_created_on>
-        <sys_id>c3c1f06347861ed0e9ddbf66706d4379</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-11-29 11:20:43</sys_updated_on>
-        <table>sys_script</table>
-        <use_es_latest>true</use_es_latest>
-    </sys_es_latest_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ff1578fdff96d69019a8ffda7c4fd94d"/>
 </record_update>
