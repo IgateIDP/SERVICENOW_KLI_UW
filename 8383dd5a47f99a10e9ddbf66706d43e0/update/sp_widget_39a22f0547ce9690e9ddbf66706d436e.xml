@@ -335,8 +335,7 @@
 
 		c.server.get({'action': 'Search', 'value': searchObject}).then(function(res) {
 			console.log("Response from server:", res.data.sysId);
-
-
+			
 			var auditdata = res.data.sysId;
 
 			if(auditdata){
@@ -658,9 +657,7 @@
 	// populate the 'data' variable
 	data.attachmentUploadSuccessMsg = gs.getMessage("Attachment upload was successful");
 	data.recordAddedMsg = gs.getMessage("Record Added");
-	data.updatedMsg = gs.getMessage("Record Updated");
 	data.exportPDFMsg = gs.getMessage("Export to PDF");
-	data.exportPDFLandMsg = gs.getMessage("Export to PDF (landscape)");
 	data.addAttachmentMsg = gs.getMessage("Add an attachment");
 	data.supportedAttachmentExtensions = gs.getProperty("glide.attachment.extensions", '');
 	data.maxAttachmentSize = parseInt(gs.getProperty("com.glide.attachment.max_size", 1024));
@@ -683,18 +680,21 @@
 		//	gs.addErrorMessage(JSON.stringify(input.value))
 		cases.addQuery('policy_id.policy_no',input.value.masterPolicy);
 		cases.addQuery('loan_number.loan_number', input.value.loanId);
-		cases.addQuery('consumer_id.member_number', input.value.memberNumber);
+		//cases.addQuery('consumer_id.member_number', input.value.memberNumber);
 
 		//.addOrCondition('consumer_id.member_number', input.value.memberNumber);
 		//	cases.addQuery('consumer_id.member_number', input.value.memberNumber);
 
 		cases.query();
+		
+		var caseSysIds = [];
 
-		if(cases.next()){
-			data.sysId = cases.getValue('sys_id');
+		while(cases.next()){
+			
+			caseSysIds.push(cases.getValue('sys_id'));
 		}
-
-
+		
+		data.sysId = caseSysIds;
 
 	}
 
@@ -914,14 +914,14 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-22 05:48:36</sys_created_on>
         <sys_id>39a22f0547ce9690e9ddbf66706d436e</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>Kotak Audit Form View</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_39a22f0547ce9690e9ddbf66706d436e</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-04 06:39:21</sys_updated_on>
+        <sys_updated_on>2024-12-09 10:37:15</sys_updated_on>
         <template><![CDATA[<div class="customcontainer">
   <!-- Section Header -->
   <!-- <div class="section-header" ng-click="data.isFormExpanded = !data.isFormExpanded">
