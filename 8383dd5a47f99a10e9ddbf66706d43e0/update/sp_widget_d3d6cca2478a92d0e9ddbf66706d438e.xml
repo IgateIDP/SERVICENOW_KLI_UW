@@ -702,27 +702,64 @@ $scope.cancel = function() {
 	};
 
 
-	$rootScope.$on('searchCriteriaChanged', function(event, data) {
-		var filter;
-		
+$rootScope.$on('searchCriteriaChanged', function(event, data) {
+		console.log('Received Data:', data);
+		console.log('Current Filter:', $scope.data.filter);
 
+		// Split the filter string into individual conditions
+		var conditions = $scope.data.filter.split('^');
+		var groupedConditions = {};
 
-		/*   if (data === "") {
-        filter = 'u_rm_makerDYNAMIC90d1921e5f510100a9ad2572f2b477fe';
+		// Process each condition and group by field
+		conditions.forEach(function(condition) {
+			var separator = condition.includes('LIKE') ? 'LIKE' : '=';
+			var [field, value] = condition.split(separator);
 
-    } else {
-        filter = data;
+			// Skip empty or malformed conditions
+			if (value) {
+				// Always update the field with the latest value, even if the field already exists
+				groupedConditions[field] = { separator: separator, value: value };
+			} else {
+				// If value is empty, remove the field from the groupedConditions
+				delete groupedConditions[field];
+			}
+		});
 
-    }
-		*/
-		
+		// Now, add the new data (which comes from 'data') to the groupedConditions
+		var newConditions = data.split('^');
+		newConditions.forEach(function(condition) {
+			var separator = condition.includes('LIKE') ? 'LIKE' : '=';
+			var [field, value] = condition.split(separator);
 
-		$scope.data.filter = data;
+			// If value is empty, remove that field from the groupedConditions
+			if (value) {
+				groupedConditions[field] = { separator: separator, value: value };
+			} else {
+				delete groupedConditions[field];
+			}
+		});
 
+		// Rebuild the filter string with the updated conditions
+		var updatedConditions = Object.keys(groupedConditions).map(function(field) {
+			var cond = groupedConditions[field];
+			return  field + cond.separator + cond.value;
+		});
+
+		// Join all conditions with AND
+		$scope.data.filter = updatedConditions.join('^');
+
+		// Debug log the updated filter string
+		console.log('Updated Filter:', $scope.data.filter);
+		$rootScope.filter=$scope.data.filter;
+		$rootScope.$broadcast('Senddata1',$scope.data.filter);
+
+		// Trigger update and re-initialize record watcher
 		spUtil.update($scope).then(function() {
 			initRecordWatcher($scope.data.table, $scope.data.filter);
+			console.log('wwwwww:', $scope.data.filter);
 		});
 	});
+
 
 
 
@@ -1468,51 +1505,51 @@ tbody &gt; tr:nth-of-type(odd) {
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-26 05:39:13</sys_created_on>
         <sys_id>d3d6cca2478a92d0e9ddbf66706d438e</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>group ops filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_d3d6cca2478a92d0e9ddbf66706d438e</sys_update_name>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-11-27 07:22:21</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-09 09:40:13</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <div class="modal-overlay" ng-if="ShowModal">
-   <div class="customer-consent-container">
-     <h3 class="modal-title">Customer Consent</h3>
+  <div class="customer-consent-container">
+    <h3 class="modal-title">Customer Consent</h3>
     <div class="form-row">
-        <div class="form-group">
-            <label for="uw-decision">UW Decision</label>
-            <input type="text" id="uw-decision" class="input-field" ng-model="decision">
-        </div>
-        <div class="form-group">
-            <label for="consent-send-date">Consent Send Date</label>
-            <input type="date" id="consent-send-date" class="input-field" ng-model="date1" >
-        </div>
+      <div class="form-group">
+        <label for="uw-decision">UW Decision</label>
+        <input type="text" id="uw-decision" class="input-field" ng-model="decision">
+      </div>
+      <div class="form-group">
+        <label for="consent-send-date">Consent Send Date</label>
+        <input type="date" id="consent-send-date" class="input-field" ng-model="date1" >
+      </div>
     </div>
     <div class="form-row">
-        <div class="form-group">
-            <label for="consent-received-date">Consent Received Date</label>
-            <input type="date" id="consent-received-date" class="input-field" ng-model="date2">
-        </div>
-        <div class="form-group">
-            <label for="remark">Remark</label>
-            <input type="text" id="remark" class="input-field" ng-model="remarks">
-        </div>
+      <div class="form-group">
+        <label for="consent-received-date">Consent Received Date</label>
+        <input type="date" id="consent-received-date" class="input-field" ng-model="date2">
+      </div>
+      <div class="form-group">
+        <label for="remark">Remark</label>
+        <input type="text" id="remark" class="input-field" ng-model="remarks">
+      </div>
     </div>
-        <div class="button-group">
-        <button class="button submit-button" ng-click="submitReason(remarks,date2,date1)">Submit</button>
-        <button class="button cancel-button"  ng-click="cancel()">Cancel</button>
+    <div class="button-group">
+      <button class="button submit-button" ng-click="submitReason(remarks,date2,date1)">Submit</button>
+      <button class="button cancel-button"  ng-click="cancel()">Cancel</button>
     </div>
-        
-</div>
-  
+
   </div>
+
+</div>
 
 <div class='main'>
   <div class="panel panel-{{options.color}} b" ng-class="{'data-table-high-contrast': accessibilityModeEnabled}">
     <div class="panel-heading form-inline" ng-hide="options.hide_header">
-    <span class="dropdown m-r-xs">
+      <span class="dropdown m-r-xs">
         <button aria-label="{{data.title || data.table_plural}} ${Context Menu}" class="btn dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="optionsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
         <ul class="dropdown-menu" aria-labelledby="optionsMenu">
           <li ng-repeat="t in ::exportTypes">
@@ -1522,30 +1559,30 @@ tbody &gt; tr:nth-of-type(odd) {
         </ul>
       </span>
       <h2 class="panel-title" style="display:inline ;    font-weight: bold;"><i ng-if="options.glyph" class="fa fa-{{options.glyph}} m-r"></i>{{data.title || data.table_plural}}<span class="sr-only">${table} - ${page} {{data.p}}</span></h2>
-<h2 class="panel-title2"> 
-  <span class="sr-only"></span>
-  
-   <!-- <i class="fas fa-sync-alt" ng-click="reset()"></i>  -->
-</h2>
+      <h2 class="panel-title2"> 
+        <span class="sr-only"></span>
+
+        <!-- <i class="fas fa-sync-alt" ng-click="reset()"></i>  -->
+      </h2>
 
 
       <!--<button name="new" role="button" class="btn btn-primary btn-sm m-l-xs" ng-click="newRecord()" ng-if="options.show_new && data.canCreate && !data.newButtonUnsupported" aria-label="${Create new record}">${New}</button>-->
       <div class="pull-right" ng-if="options.show_keywords">
-		<form ng-if="data.hasTextIndex" ng-submit="setSearch(true)">
-        <div class="input-group" role="presentation">
-          <input type="text" name="datatable-search" ng-model="data.keywords" ng-model-options="{debounce:250}" class="form-control" placeholder="${Keyword Search}" aria-label="${Keyword Search}">
-          <span class="input-group-btn">
-            <button name="search" class="btn btn-default" type="submit" aria-label="${Search}" data-original-title="{{::c.data.searchMsg}}" data-toggle="tooltip" data-placement="bottom"><span class="glyphicon glyphicon-search"></span></button>
-          </span>
-        </div>
+        <form ng-if="data.hasTextIndex" ng-submit="setSearch(true)">
+          <div class="input-group" role="presentation">
+            <input type="text" name="datatable-search" ng-model="data.keywords" ng-model-options="{debounce:250}" class="form-control" placeholder="${Keyword Search}" aria-label="${Keyword Search}">
+            <span class="input-group-btn">
+              <button name="search" class="btn btn-default" type="submit" aria-label="${Search}" data-original-title="{{::c.data.searchMsg}}" data-toggle="tooltip" data-placement="bottom"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
         </form>
       </div>
       <div class="clearfix"></div>
     </div>
     <!-- body -->
     <div class="panel-body">
-   <!--   <div ng-if="options.show_breadcrumbs && (data.filter || data.enable_filter)" class="filter-breadcrumbs">
-	    		<sp-widget widget="data.filterBreadcrumbs"></sp-widget>
+      <!--   <div ng-if="options.show_breadcrumbs && (data.filter || data.enable_filter)" class="filter-breadcrumbs">
+       <sp-widget widget="data.filterBreadcrumbs"></sp-widget>
       </div>
 -->
 
@@ -1565,7 +1602,11 @@ tbody &gt; tr:nth-of-type(odd) {
               <i class="fa" ng-if="field == data.o" ng-class="{'asc': 'fa-chevron-up', 'desc': 'fa-chevron-down'}[data.d]"></i>
             </th>
             <th ng-show='{{data.show_toggle}}'><a class="text-nowrap" ng-class='asc' >Toggle State</a></th>
+            <!--
             <th ng-show='{{data.show_sub_button}}'><a class="text-nowrap" ng-class='asc'>{{buttonName}}</a></th>
+            -->
+            <th ng-show='{{data.show_sub_button}}'><a class="text-nowrap" ng-class='asc'>{{buttonName}}</a></th>
+
             <th ng-show='{{data.show_sub_button__1}}'><a class="text-nowrap" ng-class='asc'>{{buttonName1}}</a></th>
             <th ng-if="data.isAgentTable"><a class="text-nowrap" ng-class='asc'>Certification Remainder</a></th>
             <!-- <th ng-if="!data.isAgentTable" ng-show='{{data.show_sub_button}}'><a class="text-nowrap" ng-class='asc'>Delete</a></th>  -->
@@ -1589,7 +1630,9 @@ tbody &gt; tr:nth-of-type(odd) {
               </button>
             </td>
 
-            <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)'>{{buttonName}}</button></td>
+            <!-- <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)'>{{buttonName}}</button></td>-->
+             <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)'>Click Here</button></td>
+
             <!-- <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirectSub(item)'>{{buttonName}}</button></td>-->
             <td class='columns' ng-show='{{data.show_sub_button__1}}'><button class="btn btn-primary" ng-click='redirect1(item)'>{{buttonName1}}</button></td>
 
