@@ -2,40 +2,46 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[api.controller = function($scope, spUtil, $rootScope) {
-  var c = this;
+	var c = this;
 
- 
-  c.selectedField = c.data.fields && c.data.fields.length > 0 ? c.data.fields[0].name : '';
-  c.searchText = '';
-  c.previousSearchText = ''; 
+
+	c.selectedField = c.data.fields && c.data.fields.length > 0 ? c.data.fields[0].name : '';
+	c.searchText = '';
+	c.previousSearchText = ''; 
 	var searchQuery;
 
- 
-  c.onSearchChange = function() {
-		console.log(c.searchText)
-    if (c.selectedField) {
-			 $rootScope.$broadcast('searchCriteriaChanged', c.selectedField + 'LIKE' +c.searchText);
-     
-   /*   if (c.searchText == '') {
+
+	$scope.Selectinputchange = function(){
+		c.searchText = "";
+		$rootScope.$broadcast('searchCriteriaChanged', c.selectedField + 'LIKE' +c.searchText);
+
+	}
+
+
+	c.onSearchChange = function() {
+		if (c.selectedField) {
+			$rootScope.$broadcast('searchCriteriaChanged', c.selectedField + 'LIKE' +c.searchText);
+
+			/*   if (c.searchText == '') {
         $rootScope.$broadcast('searchCriteriaChanged', '');
       } 
-     
+
       else if (c.searchText.length < c.previousSearchText.length) {
 
          searchQuery = c.selectedField + 'LIKE' + c.previousSearchText;
         $rootScope.$broadcast('searchCriteriaChanged', searchQuery);
       } 
-     
+
       else {
          searchQuery = c.selectedField + 'LIKE' + c.searchText;
         $rootScope.$broadcast('searchCriteriaChanged', searchQuery);
       }
 			*/
 
-      // Update the previous search text after broadcasting
-      c.previousSearchText = c.searchText;
-    }
-  };
+			// Update the previous search text after broadcasting
+			c.previousSearchText = c.searchText;
+		}
+	};
 };
 ]]></client_script>
         <controller_as>c</controller_as>
@@ -109,7 +115,7 @@
     // Add the field object with name and label
     data.fields.push({
       name: field,
-      label: field.split('.')[1].toUpperCase().replace('_',' ') || field.split('.')[0].toUpperCase() // Use field name as fallback if label is not found
+      label: field.split('.')[1].toUpperCase().replace('_',' ') || field.split('.')[0].toUpperCase().replace('_',' ') // Use field name as fallback if label is not found
     });
   });
 })($sp);
@@ -119,16 +125,16 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-15 11:28:03</sys_created_on>
         <sys_id>592d2c4347b5d250e9ddbf66706d43c5</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>KLI Search</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_592d2c4347b5d250e9ddbf66706d43c5</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-11-22 11:45:29</sys_updated_on>
+        <sys_updated_on>2024-12-10 05:20:16</sys_updated_on>
         <template><![CDATA[<div class="search-widget d-flex align-items-center">
-  <select id="fieldDropdown" ng-model="c.selectedField" ng-options="field.name as field.label for field in c.data.fields" class="form-control me-2">
+  <select id="fieldDropdown" ng-model="c.selectedField" ng-options="field.name as field.label for field in c.data.fields" class="form-control me-2" ng-change = 'Selectinputchange()'>
   </select>
   
   <input type="text" ng-model="c.searchText" placeholder="Search..." ng-change="c.onSearchChange()" class="form-control"/>

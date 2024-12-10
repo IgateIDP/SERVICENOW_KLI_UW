@@ -12,37 +12,6 @@
 			}).then(response => {
 				c.widgetinstance = response;
 			});
-
-	$scope.SearchParameters = function() {
-		$scope.overlay = true;
-		var searchObject = {
-			masterPolicy: $scope.masterPolicy,
-			loanId: $scope.loanId,
-			memberNumber: $scope.memberNumber
-		};
-
-		c.server.get({'action': 'Search', 'value': searchObject}).then(function(res) {
-			console.log("Response from server:", res.data.sysId);
-
-
-			var auditdata = res.data.sysId;
-
-			if(auditdata){
-				setTimeout(function () {
-					$scope.overlay = false;
-					$rootScope.$broadcast('CaseId', auditdata);
-				}, 3000);
-
-
-			}
-			else{
-				$scope.overlay = false;
-				alert("No record found. Please validate the entered details.");			}
-
-		}).catch(function(error) {
-			console.error("Error occurred during server call:", error);
-		});
-	};
 };
 ]]></client_script>
         <controller_as>c</controller_as>
@@ -63,79 +32,6 @@
   border-radius: 10px;
 }
 
-/* Labels container styling */
-.labels-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  flex: 1;
-}
-
-.labels-container label {
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 15px;
-}
-
-/* Inputs container styling */
-.inputs-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-}
-
-.inputs-container input[type="text"] {
-  padding: 8px;
-  border: 1px solid #000; /* Black border for inputs */
-  border-radius: 5px;
-  font-size: 14px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-/* Button container styling */
-.button-container {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.search-button {
-  background-color: #003366; /* Navy blue button */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  background-color: #002244; /* Darker navy blue on hover */
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.overlay-content {
-  text-align: center;
-  font-size: 18px;
-  color: #333;
-}
 </css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -156,22 +52,6 @@
 	/* populate the 'data' object */
 	/* e.g., data.table = $sp.getValue('table'); */
 
-	if(input && input.action == 'Search'){
-		var cases = new GlideRecord('x_rptp_kotak_uw_case');
-		cases.addQuery('policy_id.policy_no',input.value.masterPolicy);
-		if (input.value.loanId) {
-			cases.addQuery('loan_number.loan_number', input.value.loanId);
-		} else if (input.value.memberNumber) {
-			cases.addQuery('consumer_id.member_number', input.value.memberNumber);
-		}
-
-		cases.query();
-
-		if(cases.next()){
-			data.sysId = cases.getValue('sys_id');
-		}
-
-	}
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -179,68 +59,23 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-22 05:17:10</sys_created_on>
         <sys_id>616bdf41478e9690e9ddbf66706d4384</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name>Audit Search</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_616bdf41478e9690e9ddbf66706d4384</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-03 08:15:54</sys_updated_on>
+        <sys_updated_on>2024-12-10 05:56:49</sys_updated_on>
         <template><![CDATA[<div class="outer-container">
   <div class="form-container">
-    <!--<div class="labels-container">
-      <label for="masterPolicy">Master Policy Number:</label>
-      <label for="loanId">Loan ID:</label>
-      <label for="memberNumber">Member/Dependent Number:</label>
-    </div>
-    <div class="inputs-container">
-      <input
-        type="text"
-        id="masterPolicy"
-        ng-model="masterPolicy"
-        placeholder="Enter Master Policy Number"
-      />
-      <input
-        type="text"
-        id="loanId"
-        ng-model="loanId"
-        ng-disabled="memberNumber"
-        placeholder="Enter Loan ID"
-      />
-      <input
-        type="text"
-        id="memberNumber"
-        ng-model="memberNumber"
-        ng-disabled="loanId"
-        placeholder="Enter Member/Dependent Number"
-      />
-    </div>
-  </div>
--->
+
     <div ng-if="c.widgetinstance">
       <sp-widget widget="c.widgetinstance"></sp-widget>
     </div>
- <!--   <div class="button-container">
-      <button
-              class="search-button"
-              ng-click="SearchParameters()"
-              ng-disabled="!(masterPolicy && (loanId || memberNumber) || (loanId && memberNumber))"
-              >
-        Search
-      </button>
-    </div>
--->
-
-    <!-- Overlay Section -->
-    <div class="overlay" ng-if="overlay">
-      <div class="overlay-content">
-        <p><strong>Processing Your Request</strong></p>
-        <p>Your details are being verified. This might take a moment. Please wait...</p>
-        <p><i class="fa fa-spinner fa-spin"></i></p>
-      </div>
-    </div>
   </div>
+
+</div>
 ]]></template>
     </sp_widget>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
