@@ -1296,14 +1296,14 @@ data.filter = $sp.getParameter('filter');
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-19 07:10:28</sys_created_on>
         <sys_id>3398dc10470a5e50e9ddbf66706d43ee</sys_id>
-        <sys_mod_count>73</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>Copy of KLI List Filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_3398dc10470a5e50e9ddbf66706d43ee</sys_update_name>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-11-27 06:08:36</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-10 09:26:08</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <div class="modal-content" ng-if="ShowModal">
@@ -1399,7 +1399,7 @@ data.filter = $sp.getParameter('filter');
               </button>
             </td>
 
-            <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)' ng-disabled = 'item.status.display_value !== "Open"'>{{buttonName}}</button></td>
+            <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)' ng-disabled = "!(item.status.display_value === 'Open' && item.classification.display_value === 'Additional')">{{buttonName}}</button></td>
             <!-- <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirectSub(item)'>{{buttonName}}</button></td>-->
             <td class='columns' ng-show='{{data.show_sub_button__1}}'><button class="btn btn-primary" ng-click='redirect1(item)'>{{buttonName1}}</button></td>
 
