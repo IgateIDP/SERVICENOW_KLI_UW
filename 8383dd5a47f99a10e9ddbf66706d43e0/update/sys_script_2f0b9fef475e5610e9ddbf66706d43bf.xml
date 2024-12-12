@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rptp_kotak_requirement_mapping</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Stage change</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    var sys = current.case_id;
+    var gr = new GlideRecord('x_rptp_kotak_requirement_mapping');
+    gr.addQuery('case_id', sys);
+    gr.query();
+
+    var allStatusValid = true; 
+    while (gr.next()) {
+      
+        if (gr.getValue('status') !== 'R' && gr.getValue('status') !== 'W') {
+            allStatusValid = false;
+            break;
+        }
+    }
+
+    
+    var gr1 = new GlideRecord('x_rptp_kotak_uw_case');
+    if (gr1.get(sys)) { 
+        if (allStatusValid) {
+            gr1.setValue('u_case_stage', 'uw_workbench_menu'); 
+            gr1.setValue('case_status', '1'); 
+        } else {
+            gr1.setValue('u_case_stage', 'pending_requirements_menu'); 
+        }
+        gr1.update(); 
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-12 09:56:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f0b9fef475e5610e9ddbf66706d43bf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Stage change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_2f0b9fef475e5610e9ddbf66706d43bf</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-12 10:25:26</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f0b9fef475e5610e9ddbf66706d43bf"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2f0b9fef475e5610e9ddbf66706d43bf</id>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-12 09:56:28</sys_created_on>
+        <sys_id>232b9323479e5610e9ddbf66706d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-12 09:56:28</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

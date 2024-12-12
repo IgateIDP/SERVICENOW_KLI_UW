@@ -48,7 +48,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,case_id.policy_id.policy_no,case_id.policy_id.master_policy_name,case_id.loan_number.loan_number,case_id.consumer_id.member_number,case_id.consumer_id.member_client_id,case_id.consumer_id.age,case_id.consumer_id.gender,case_id.consumer_id.customer_name,case_id.case_type,case_id.consumer_id.mobile_phone,requirement_id.requirement_name,requirement_id.requiremnt_id,requirement_id.description,requirement_id.type,classification,status,waiver,reason_for_waiver,recieved_by,raised_date,recieved_date,upload_date,ageing_1,ageing_2</field_list>
-        <filter table="x_rptp_kotak_requirement_mapping">status=O^<item display_value="Open" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="O"/>
+        <filter table="x_rptp_kotak_requirement_mapping">status=O^case_id.consumer_id.customer_nameLIKEkumar<item display_value="Open" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="O"/>
+            <item endquery="false" field="case_id.consumer_id.customer_name" goto="false" newquery="false" operator="LIKE" or="false" value="kumar"/>
         </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -109,14 +110,14 @@
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-11-18 05:48:31</sys_created_on>
         <sys_id>e94cba7b47f59a50e9ddbf66706d43fc</sys_id>
-        <sys_mod_count>96</sys_mod_count>
+        <sys_mod_count>97</sys_mod_count>
         <sys_name>Kotak Pending Requirements</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_report_e94cba7b47f59a50e9ddbf66706d43fc</sys_update_name>
-        <sys_updated_by>Surya.Prathap</sys_updated_by>
-        <sys_updated_on>2024-12-05 10:16:50</sys_updated_on>
+        <sys_updated_by>nanditha.br</sys_updated_by>
+        <sys_updated_on>2024-12-12 10:56:03</sys_updated_on>
         <table>x_rptp_kotak_requirement_mapping</table>
         <title>Kotak Pending Requirements</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
