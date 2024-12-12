@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="a17c0257ff56921019a8ffda7c4fd940" sys_domain="global" table="x_rptp_kotak_uw_case" version="3" view="group_ops">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_number</element>
+            <position>0</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
+            <sys_id>baac8657ff56921019a8ffda7c4fd9ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>uw_decision</element>
+            <position>1</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
+            <sys_id>b2ac8657ff56921019a8ffda7c4fd9ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consent_send_date</element>
+            <position>2</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
+            <sys_id>baac8657ff56921019a8ffda7c4fd9ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consent_received_date</element>
+            <position>3</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
+            <sys_id>b2ac8657ff56921019a8ffda7c4fd9ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consent_ageing</element>
+            <position>4</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
+            <sys_id>baac8657ff56921019a8ffda7c4fd9ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consent_start_date</element>
+            <position>5</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
+            <sys_id>b2ac8657ff56921019a8ffda7c4fd9ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_rptp_kotak_uw_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2024-12-11 09:34:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a17c0257ff56921019a8ffda7c4fd940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_uw_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_a17c0257ff56921019a8ffda7c4fd940</sys_update_name>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:34:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="group ops" name="group_ops">307cce93ff56921019a8ffda7c4fd9a9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

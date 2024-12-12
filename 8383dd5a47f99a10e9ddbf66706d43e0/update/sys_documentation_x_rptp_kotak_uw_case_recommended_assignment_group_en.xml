@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="recommended_assignment_group" label="Recommended Assignment Group" language="en" table="x_rptp_kotak_uw_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>recommended_assignment_group</element>
+            <help/>
+            <hint/>
+            <label>Recommended Assignment Group</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <plural>Recommended Assignment Groups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-12-11 09:58:41</sys_created_on>
+            <sys_id>961212d3475e9210e9ddbf66706d4303</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Recommended Assignment Group</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_uw_case_recommended_assignment_group_en</sys_update_name>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-12-11 09:58:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

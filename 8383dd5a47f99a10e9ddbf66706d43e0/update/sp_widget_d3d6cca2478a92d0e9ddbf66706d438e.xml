@@ -14,7 +14,15 @@
 	  	$scope.redirect = function(item) {
 					c.server.get({action:'fetch', recordId : item.sys_id}).then(function(res){
 		$scope.decision=res.data.val;
-						//alert(res.data.val)
+						$scope.date1 = new Date(res.data.senddate);
+$scope.date2 =new Date(res.data.revdate);
+
+
+
+
+
+
+					
 		})
 			$scope.ShowModal = true;
 	/*	var p = $scope.data.pageName;
@@ -1193,6 +1201,13 @@ tbody &gt; tr:nth-of-type(odd) {
 		if(gr.next())
 		{
 			data.val=gr.getValue('uw_decision');
+		 if(gr.getValue('consent_send_date')){
+			 data.senddate=gr.getValue('consent_send_date');
+			// gs.addErrorMessage(gr.getValue('consent_send_date'))
+		 }
+			 if(gr.getValue('consent_received_date')){
+			 data.revdate=gr.getValue('consent_received_date');
+		 }
 		}
 
 	}
@@ -1505,14 +1520,14 @@ tbody &gt; tr:nth-of-type(odd) {
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-26 05:39:13</sys_created_on>
         <sys_id>d3d6cca2478a92d0e9ddbf66706d438e</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>group ops filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_d3d6cca2478a92d0e9ddbf66706d438e</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-09 09:40:13</sys_updated_on>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-11 06:59:51</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <div class="modal-overlay" ng-if="ShowModal">
   <div class="customer-consent-container">
@@ -1520,7 +1535,7 @@ tbody &gt; tr:nth-of-type(odd) {
     <div class="form-row">
       <div class="form-group">
         <label for="uw-decision">UW Decision</label>
-        <input type="text" id="uw-decision" class="input-field" ng-model="decision">
+        <input type="text" id="uw-decision" class="input-field" ng-model="decision" readonly >
       </div>
       <div class="form-group">
         <label for="consent-send-date">Consent Send Date</label>

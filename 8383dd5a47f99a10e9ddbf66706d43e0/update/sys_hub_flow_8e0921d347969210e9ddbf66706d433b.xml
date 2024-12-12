@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2234000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>validate_uw_decision_subflow</internal_name>
+        <label_cache>[{"name":"flow_variable.decision","label":"Flow Variables➛decision","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"7061d896-a209-43e1-8d97-37e133b264b5":["decision_result-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"747a4eb2-1932-45c3-bb29-845c6400693f"}},{"name":"subflow.caserecord.case_status","label":"input➛caseRecord➛Case Status","reference":"","reference_display":"Case Status","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"case_status","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"label":"UW pending","reference":false,"image":"","selected":false,"missing":false,"rawLabel":"UW pending","value":"1","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"Secondary UW required","reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Secondary UW required","value":"2","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"Senior UW required","reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Senior UW required","value":"3","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{"3334906f-7b0f-49cf-af01-22b23766fcef":["condition"],"065f8ab4-98f0-4986-9f64-736f76448c22":["condition"],"2dc2d2d3-d61e-4bed-b3ab-8fb3daca819a":["condition"]}},{"name":"subflow.caserecord.assignment_group.u_uw_decision_limit_max","label":"input➛caseRecord➛Assignment group➛UW Decision Limit(Max)","reference":"","reference_display":"UW Decision Limit(Max)","type":"integer","base_type":"integer","parent_table_name":"sys_user_group","column_name":"u_uw_decision_limit_max","usedInstances":{"942884bc-1c89-4b14-bd6d-bb998f695bde":["condition"]}},{"name":"subflow.caserecord.assignment_group.u_uw_decision_limit_min","label":"input➛caseRecord➛Assignment group➛UW Decision Limit (Min)","reference":"","reference_display":"UW Decision Limit (Min)","type":"integer","base_type":"integer","parent_table_name":"sys_user_group","column_name":"u_uw_decision_limit_min","usedInstances":{"942884bc-1c89-4b14-bd6d-bb998f695bde":["condition"]}},{"name":"subflow.caserecord.sum_assured","label":"input➛caseRecord➛Sum Assured","reference":"","reference_display":"Sum Assured","type":"integer","base_type":"integer","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sum_assured","usedInstances":{"942884bc-1c89-4b14-bd6d-bb998f695bde":["condition"]}},{"name":"subflow.caserecord.assignment_group.u_uw_processing_limit_min","label":"input➛caseRecord➛Assignment group➛UW Processing Limit (Min)","reference":"","reference_display":"UW Processing Limit (Min)","type":"integer","base_type":"integer","parent_table_name":"sys_user_group","column_name":"u_uw_processing_limit_min","usedInstances":{}}]</label_cache>
+        <master_snapshot>fc2ea99347d69210e9ddbf66706d437c</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Validate UW Decision Subflow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 06:59:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e0921d347969210e9ddbf66706d433b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Validate UW Decision Subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_hub_flow_8e0921d347969210e9ddbf66706d433b</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:31</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_8e0921d347969210e9ddbf66706d433b^id=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8e0921d347969210e9ddbf66706d433b^sys_idNOT INce0921d347969210e9ddbf66706d433c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8e0921d347969210e9ddbf66706d433b</id>
+        <name>Validate UW Decision Subflow</name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 06:59:15</sys_created_on>
+        <sys_id>ce0921d347969210e9ddbf66706d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 06:59:15</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ce0921d347969210e9ddbf66706d433c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8e0921d347969210e9ddbf66706d433b^sys_idNOT INa02ce91f47969210e9ddbf66706d43b3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=da1d22ea-afe3-47de-9869-48711f43d342</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_rptp_kotak_uw_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>caserecord</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>caseRecord</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</model>
+        <model_id>8e0921d347969210e9ddbf66706d433b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8e0921d347969210e9ddbf66706d433b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_rptp_kotak_uw_case">x_rptp_kotak_uw_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:48</sys_created_on>
+        <sys_id>a02ce91f47969210e9ddbf66706d43b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:12:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a02ce91f47969210e9ddbf66706d43b3"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8e0921d347969210e9ddbf66706d433b^sys_idNOT INe42ce91f47969210e9ddbf66706d43ba"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fcb68f03-50a4-4903-9cb7-3e1a0acd9ce3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision_result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Decision Result</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</model>
+        <model_id>8e0921d347969210e9ddbf66706d433b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_8e0921d347969210e9ddbf66706d433b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>e42ce91f47969210e9ddbf66706d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:12:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e42ce91f47969210e9ddbf66706d43ba"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8e0921d347969210e9ddbf66706d433b^sys_idNOT IN642ce91f47969210e9ddbf66706d43e3,682ce91f47969210e9ddbf66706d43e1,682ce91f47969210e9ddbf66706d43e4,6c2ce91f47969210e9ddbf66706d43e5,702ce91f47969210e9ddbf66706d43e7,e02ce91f47969210e9ddbf66706d43e5,e82ce91f47969210e9ddbf66706d43e2,ec2ce91f47969210e9ddbf66706d43e3,f42ce91f47969210e9ddbf66706d43e6"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">202ce91f47969210e9ddbf66706d43e3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned>decision</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>942884bc-1c89-4b14-bd6d-bb998f695bde</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>642ce91f47969210e9ddbf66706d43e3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>24bc0807-91d0-4305-a476-766bc1dbc86d</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8F55tVZZUufItQGAgQNsArZtLEQgUubKJUKRCkXZcw//eXT0SN80PBMiNml3uzA4HOjEbfBt8t7FXXae2hq1+38+YMoTh+cQMb4CtmAShOmUNm7E914GgBZ6l6lrNj3cXkNgpLR2Mk1rucIAHx1anVyV/bKHUvAKNNzcuwKc11x3gCCURSeJEQLGos2WRF8kihkLKqs7zZZzLLJUc+6bLF+L+l0s0iFTWauAEWCdJTjxj8OTBSEC2mphnrOFGcm/d8RlxwOWt0S/AThmP4xg1P3XqD85OE+qrATcTMNTEzioBt60nDSuWkg5e6alqdWjM90EquQg1D9pPLtajDSN8/a/HMVZCB6WElsSTmlFa/XNnDz8mIWtl+j3HoraC6+cv7r1TVfDQ0bsEtXlt0gB9fet1QEODtGXD21aZbdk6u1c9FS7WRFuNH1Gt7QElUqQiLsiGCJ3l0Rrx6x6+406RJd9wDF4myl9GPQa4oddfZkueQZXMF0WazLPPIp1XVVLMv+Axz+I4L9KanXvfy8dAmw1Gjp6Uve3U0AmnWn+FEvYwrn++pxAP7EPI+8C9mZ6PsH+E/d2HfQrIhiTcTP92KhwxQkpcQgfrHmifF+z8FyYUp6wlBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ec2ce91f47969210e9ddbf66706d43e0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>682ce91f47969210e9ddbf66706d43e1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>3334906f-7b0f-49cf-af01-22b23766fcef</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8lUJnQdAjMhrfghYBCrQN0AS5tIGwIlc2UYpU+bDjGvr3LvWwjcZBk6K33sRZ7s7McqB9pL3rvLN3+spasVLR8utDHAkVMPreRwpajJYR04oLJ7SqBiCONiB9KNAnF7aTsLs/ImwtJDc4TevAUI9DEy33v5XcrsNKQo2SGm+dEWpF7YLTqUmhyS5Zxop8UeRpmr+9yOpFUWc5LwChoHtz47tZ3JuPAxI/qzrwEW5nJm14kJWlcYSPDhVHom5AWoyjFhQHp83ugBgEfqPkEVgL5UbHLTxa8ZNm52UZLjZIHtlhHVowvOmCkhFxUMu5qKVv1edRcNgmNuClO9mmt1hx7IK6QDdxN7drvf0yE10LNTiZilIzkIcTOPJbe4c2vABKbGlQ1ULX0RaqzuiNGJpJS5usJB2SRuotkYZIJMCC8ISWAck14e8H+B6MCC4+0RhqHmXWYAWrhvjQOGfIQj+so/rhg6DR4GSlGrdBFywzonNXxLPBSXUfP83eSez2e+vrIDJhYGkFjF5y+KysA+dt33/zaVrw7Gk+X9P6L4J8CWVTZml5PsgXi3NBPhPh59Ob/yG94RleGN40Tf/T9ApbjSmcvA3kfx3eh5DUkcGOAeHIhCUhdwH7MP9fQ2FHLy3YKbTV5nuwcMT6X7+EE9epBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">242ce91f47969210e9ddbf66706d43e4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned>decision</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>e83076b2-ca22-43cd-bee4-5910962b4d8d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>682ce91f47969210e9ddbf66706d43e4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>1e6ba27a-295a-4e42-b09b-4dfc0a91dc29</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8F55tVZZUufItQGAgQNIArZtLEQgUubKJUqRCkXZcw//eXT0SI8kPFMiNml3uzA4HOjEbfBt8t7FXXae2hq1+P86YMoTh+cQMb4CtmAShOmUNm7E914GgGM9Sda3mx4cLSOyUlg7GSS13OMCDY6vTm5I/tlBqXoHGmxsX4Mua6w5whJKIJHEioFjU2bLIi2QRQyFlVef5Ms5llkqOfdPlC3Hv5RINIpW1GjgB1kmSE88YPHswEpCtJuYZa7iR3Ft3fEEccHlv9CuwU8bjOEbNz536i7PThPpqwM0EDDWxs0rAfetJw4qlpINXeqpaHRrzfZBKLkLNg/aTi/Vowwhfv/c4dFBKaEk8qRml1T939vBjErJWpt9zLGoruH754t47VQUPHb1LUJu3Jg3Q7UevAxoapC0b3rbKbMvW2b3qqXCxJtpq/IhqbQ8okSIVcUE2ROgsj9aIX/fwA3eKLLnDMXiZKH8Z9RTghl5/mS15BlUyXxRpMs++inReVUkx/4bHPIvjvEhrdu59L58CbTYYOXpS9rZTQyecav0VStjDuP75kUI8sA8h7wP3YXo+w/4Z9v8+7FNANiThZvq3U+GIEVLiEjpY94f2ecXO/wCjMK+OJQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">282ce91f47969210e9ddbf66706d43e5</block>
+        <comment/>
+        <connected_to>3334906f-7b0f-49cf-af01-22b23766fcef</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>6c2ce91f47969210e9ddbf66706d43e5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>2dc2d2d3-d61e-4bed-b3ab-8fb3daca819a</ui_id>
+        <values>H4sIAAAAAAAA/+VUTW/UMBD9KyjnKMoHrWBvFagSElCJVr1AZU3sya6FYwd/7HaJ8t8Z52N3RVvRcuDCLX7jmffe+Cl9YoLvgnc35sI5udbJ6utdmkgdMfruEw0tJquEGy2kl0azEUiTLagQC/QppOsU7G+PCN9IJSzO0zqw1OPRJqv+t5Lfd8gU1Kio8dpbqdfULgWdmhya4i0veFWeV2Wel29eF/V5VRelqAChpHtL47tF3KuPI5I+qTryEe4WJmNFlFXkaYL3HrVAom5AOUyTFrQAb+z+gFgEcaXVEdhI7SfHLdw7+ZNml2dn8WKD5JEf1mEkx6suKpkQD7VaikaFVn+eBMdtYgNB+ZNtBodMYBfVRbqZu7nemN2XhehS6tHJXFSGgzqcwJPfOnh08QVQYUuDWAtdR1tgnTVbOTaTljZbKzpkjTI7Io2RyIBH4RktA7JLwt+P8C1YGV18ojHUPMmswUnOxvjQOG/JwjCug/0IUdBkcLbCpm3QBcet7PwF8WxxVj2kD7N3Eru+d6GOIjMOjlbA6SXHT+Y8+OCG4VvI80pUD/P5ktZ/EOTisSA/EuGn01v+Ib3xGZ4Z3jzP/9P0SsemFM7eRvK/Du9dTOrE4KaACOTSkZCbiH1Y/q+xsKeXlvwU2hn7PVo4YsMvy2NEjqkFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3c2ce91f47969210e9ddbf66706d43e6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>decision_result</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>702ce91f47969210e9ddbf66706d43e7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:29</sys_updated_on>
+        <ui_id>7061d896-a209-43e1-8d97-37e133b264b5</ui_id>
+        <values>H4sIAAAAAAAA/41U204bMRD9FcuPNCwbkoYmPEWiqEhtkUrKS1OtvPZs4tZrL74EUpR/78xeAKG26tOuz4znnDMe+5G7FJsUw8otQ9AbyxffHrlWfMFheiphPq6mZ/PZ/HScw1ypsprNzvKZmk5KwUfcihowU4HUQTtbeAjJRAzshEkUyfFf6dAYsb/toUqYAAjLrTbKAxF+H/FGeKwVwfPF46tQ3DdQGFGCwd0rn+Dksi/xvzKHzRe9TvZl0PlXA0SKgdI5A8Ii4LwiceMRh4cIVgFyt1ZGvBZWiej8/gnxINS1Nc/AVtuI5TglPwT9C2tPc8qrAH1K6GJy67SE6yailA6JojRD0JlU28+dYGorVAK1Dm1FJAUoFDQkjth66upm6+6/DESX2rY++qBxUpinlYjR6zJFCHQKSa9eN6GDPv7pLMBAjbRFLZpG203ReLfTLRUqr7ONwUVWGXePEmnOMiHJZoadE9kl4hctfCu8Js+fsAxuJsqvVt8luKKzrmQ5e1flk+O3uZgeT+f4N5fl2fEExiIXUs0lTPih7Wtxl8hZ16m+J0XXVkwI0usmLlHCDh1GNDJg5Pz1OCD0rw385Ghtj46WUkIIjLycLFtzjMyxFLAfLG6BVapoEVf+ABkzdtMWYHUKkXmIyVsmWHt1MkYVr2nmmE11iR8dmKuqAJGVe/ZmzLRl7713nn3A8TNEcQNdS1sxO6ENNZK5dpwC668hSw0Ka9BZK2vNszVnosKbN8ij7fAg6sbAAtV4FrbORzweydYpzydqSMxwWjYb8JlMHocrZm0inW/rC1nPqVbv7KkKgSdr28NDrXY0kC0bmn/OD4cDXn9t6XnqnoJdPx39ckhdEXb1Ik/t8WJr+RK6d/4ncTxjh98fjyR6/AQAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ac2ce91f47969210e9ddbf66706d43e4</block>
+        <comment/>
+        <connected_to>3334906f-7b0f-49cf-af01-22b23766fcef</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>e02ce91f47969210e9ddbf66706d43e5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>065f8ab4-98f0-4986-9f64-736f76448c22</ui_id>
+        <values>H4sIAAAAAAAA/+VUTW/UMBD9K8jnKMoHrWBvFagSElCJVr1AFU3sya6FYwd/7HaJ8t8Z52N3RVvRcuDCLX7jmffe+Ck9M8F3wbsbc+GcXGu2+nqXMKkjRt8909AiWzFutJBeGl2NQMK2oEIs0KeQrlOwvz0ifCOVsDhP68BSj0fLVv1vJb/vsFJQo6LGa2+lXlO7FHRqMmjytzznZXFeFllWvHmd1+dlnReiBISC7i2N7xZxrz6OSPKk6shHuFuYjBVRVp4lDO89aoFE3YBymLAWtABv7P6AWARxpdUR2EjtJ8ct3Dv5k2YXZ2fxYoPkkR/WYSTHqy4qmRAPtVqKRoVWf54Ex21iA0H5k20Gh5XALqqLdDN3c70xuy8L0aXUo5O5qAwHdTiBJ7918OjiC6DClgZVLXQdbaHqrNnKsZm0tOla0SFtlNkRaYxECjwKT2kZkF4S/n6Eb8HK6OITjaHmSWYNTvJqjA+N85YsDOM6qh8hCpoMzlaqaRt0wXErO39BPFucVQ/Jw+ydxK7vXaijyJSDoxVwesnxs3IefHDD8C1kWSmKh/l8Ses/CHL+WJAfifDT6S3+kN74DM8Mb5Zl/2l6paumFM7eRvK/Du9dTOrE4KaACOTSkZCbiH1Y/q+xsKeXlvwU2hn7PVo4YsMvAiItG6kFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a42ce91f47969210e9ddbf66706d43e2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>3334906f-7b0f-49cf-af01-22b23766fcef</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>e82ce91f47969210e9ddbf66706d43e2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>942884bc-1c89-4b14-bd6d-bb998f695bde</ui_id>
+        <values>H4sIAAAAAAAA/+VV224TMRD9lcjP0WovTUTzVoEqVQIq0aovUKxZ72xi4bUXX5KGaP+d8V7aiqZQAU/wlpwZzzlnPJ49MBN8G7y7NmfOybVmq4+3cyZ1xOj3gWlokK2YMLqSXhrNe2DOtqBCDFzUswqFdBSaSTcjWFYUrqRrFexvfp4lNlJVFkfWFizV9mjZ6vBDyO9b5ApKVFTsylup13ScaqxYnUKdnYpMFPmyyNM0f3WSlcuizPKqAISC8qaDrycTs7c9Mn/WXeQj3E1MxlZRVpbOGd551BUSdQ3K4Zw1oCvwxu7vEYtQXWr1AGyk9lSOxeQ7J79R7XyxiIk1kkeBQ1BsjBR42UYlA+KhVFPQqNDo94Pg2GGsISg/dZiQ4JBX2EZ1kW7krq82ZvdhIjqXuncyBpURoO7/gSe/ZfDo4g2gwoYK8QbalrrAW2u2sj9MWppkTVeISa3Mjkjj6CQgovCEmgHJOeFvevgGrIwu3lEZOjzILMFJwfsxo3LekoWubwf/GqKgweBohQ/doAQnrGz9GfFscVTdzZ/O6KPxPBxcKKPIRICjFgi6ycSFhoNzwWLVdZ9CmhbiaB70T6Jvwtqa0CaBh+h2GGSuZCNje+667vMLefAPeKTuuqcv698z+DeWwiks6kWWLo4vhZPlsaVwZB08vwnyX2yCONIvXARpmv6nm0A6Przo0VtP/tuL4Da++oHBDQMyDdh1xC6mb1oM7OmmpXgM7Yz9Ei08YN13Vrfb6B0HAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a82ce91f47969210e9ddbf66706d43e3</block>
+        <comment/>
+        <connected_to>942884bc-1c89-4b14-bd6d-bb998f695bde</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>3334906f-7b0f-49cf-af01-22b23766fcef</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>ec2ce91f47969210e9ddbf66706d43e3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>e83076b2-ca22-43cd-bee4-5910962b4d8d</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a02ce91f47969210e9ddbf66706d43e6</block>
+        <comment/>
+        <connected_to>3334906f-7b0f-49cf-af01-22b23766fcef</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>f42ce91f47969210e9ddbf66706d43e6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <ui_id>3c3d2005-d65e-4db9-9f3e-780cb4c5ce2f</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8e0921d347969210e9ddbf66706d433b^sys_idNOT IN202ce91f47969210e9ddbf66706d43da"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=747a4eb2-1932-45c3-bb29-845c6400693f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>decision</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</model>
+        <model_id>8e0921d347969210e9ddbf66706d433b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_8e0921d347969210e9ddbf66706d433b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>202ce91f47969210e9ddbf66706d43da</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_8e0921d347969210e9ddbf66706d433b^sys_idNOT INa02ce91f47969210e9ddbf66706d43b8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>caserecord</element>
+        <help/>
+        <hint/>
+        <label>caseRecord</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8e0921d347969210e9ddbf66706d433b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>a02ce91f47969210e9ddbf66706d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:12:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8e0921d347969210e9ddbf66706d433b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_8e0921d347969210e9ddbf66706d433b^sys_idNOT INa82ce91f47969210e9ddbf66706d43d6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>decision_result</element>
+        <help/>
+        <hint/>
+        <label>Decision Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_8e0921d347969210e9ddbf66706d433b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:12:49</sys_created_on>
+        <sys_id>a82ce91f47969210e9ddbf66706d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:12:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8e0921d347969210e9ddbf66706d433b"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>validate_uw_decision_subflow</internal_name>
+        <label_cache>[{"name":"flow_variable.decision","label":"Flow Variables➛decision","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"7061d896-a209-43e1-8d97-37e133b264b5":["decision_result-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"747a4eb2-1932-45c3-bb29-845c6400693f"}},{"name":"subflow.caserecord.case_status","label":"input➛caseRecord➛Case Status","reference":"","reference_display":"Case Status","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"case_status","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"label":"UW pending","reference":false,"image":"","selected":false,"missing":false,"rawLabel":"UW pending","value":"1","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"Secondary UW required","reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Secondary UW required","value":"2","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"used":false,"label":"Senior UW required","reference":false,"image":"","selected":false,"missing":false,"rawLabel":"Senior UW required","value":"3","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{"3334906f-7b0f-49cf-af01-22b23766fcef":["condition"],"065f8ab4-98f0-4986-9f64-736f76448c22":["condition"],"2dc2d2d3-d61e-4bed-b3ab-8fb3daca819a":["condition"]}},{"name":"subflow.caserecord.assignment_group.u_uw_decision_limit_max","label":"input➛caseRecord➛Assignment group➛UW Decision Limit(Max)","reference":"","reference_display":"UW Decision Limit(Max)","type":"integer","base_type":"integer","parent_table_name":"sys_user_group","column_name":"u_uw_decision_limit_max","usedInstances":{"942884bc-1c89-4b14-bd6d-bb998f695bde":["condition"]}},{"name":"subflow.caserecord.assignment_group.u_uw_decision_limit_min","label":"input➛caseRecord➛Assignment group➛UW Decision Limit (Min)","reference":"","reference_display":"UW Decision Limit (Min)","type":"integer","base_type":"integer","parent_table_name":"sys_user_group","column_name":"u_uw_decision_limit_min","usedInstances":{"942884bc-1c89-4b14-bd6d-bb998f695bde":["condition"]}},{"name":"subflow.caserecord.sum_assured","label":"input➛caseRecord➛Sum Assured","reference":"","reference_display":"Sum Assured","type":"integer","base_type":"integer","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sum_assured","usedInstances":{"942884bc-1c89-4b14-bd6d-bb998f695bde":["condition"]}},{"name":"subflow.caserecord.assignment_group.u_uw_processing_limit_min","label":"input➛caseRecord➛Assignment group➛UW Processing Limit (Min)","reference":"","reference_display":"UW Processing Limit (Min)","type":"integer","base_type":"integer","parent_table_name":"sys_user_group","column_name":"u_uw_processing_limit_min","usedInstances":{}}]</label_cache>
+        <master>true</master>
+        <name>Validate UW Decision Subflow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc2ea99347d69210e9ddbf66706d437c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fc2ea99347d69210e9ddbf66706d437c^id=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fc2ea99347d69210e9ddbf66706d437c^sys_idNOT IN0d2ea99347d69210e9ddbf66706d437d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fc2ea99347d69210e9ddbf66706d437c</id>
+        <name>Validate UW Decision Subflow</name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:35</sys_created_on>
+        <sys_id>0d2ea99347d69210e9ddbf66706d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:21:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0d2ea99347d69210e9ddbf66706d437d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fc2ea99347d69210e9ddbf66706d437c^sys_idNOT IN012ea99347d69210e9ddbf66706d437f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=da1d22ea-afe3-47de-9869-48711f43d342</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_rptp_kotak_uw_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>caserecord</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>caseRecord</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</model>
+        <model_id>fc2ea99347d69210e9ddbf66706d437c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fc2ea99347d69210e9ddbf66706d437c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_rptp_kotak_uw_case">x_rptp_kotak_uw_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:35</sys_created_on>
+        <sys_id>012ea99347d69210e9ddbf66706d437f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:21:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=012ea99347d69210e9ddbf66706d437f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=fc2ea99347d69210e9ddbf66706d437c^sys_idNOT IN192ea99347d69210e9ddbf66706d43cd"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fcb68f03-50a4-4903-9cb7-3e1a0acd9ce3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision_result</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Decision Result</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</model>
+        <model_id>fc2ea99347d69210e9ddbf66706d437c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_fc2ea99347d69210e9ddbf66706d437c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>192ea99347d69210e9ddbf66706d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:21:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=192ea99347d69210e9ddbf66706d43cd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fc2ea99347d69210e9ddbf66706d437c^sys_idNOT IN112ee99347d69210e9ddbf66706d4332,152ee99347d69210e9ddbf66706d432b,192ee99347d69210e9ddbf66706d432c,1d2ee99347d69210e9ddbf66706d432e,512ee99347d69210e9ddbf66706d432e,552ee99347d69210e9ddbf66706d4331,992ee99347d69210e9ddbf66706d4330,d12ee99347d69210e9ddbf66706d432d,d52ee99347d69210e9ddbf66706d432f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3c2ce91f47969210e9ddbf66706d43e6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>decision_result</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>112ee99347d69210e9ddbf66706d4332</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>7061d896-a209-43e1-8d97-37e133b264b5</ui_id>
+        <values>H4sIAAAAAAAA/41UXU/bMBT9K5YfWUlT2pW1PFUwNCQ2JNrxsk6VY9+0Ho4d/FHoUP/7rp2kIPahPSU5vh/nnHudZ2qCr4N3CzNzTq41nX57plLQKYXRCYfJoBydTsaTk0EOEyGKcjw+zcdiNCwY7VHNKsBIAVw6afTKggvK48GWqRBPcnwX0tWK7e5aqGTKAcJ8I5WwEBt+79GaWazlwdIpttf4opm6lvoeM34L/l96ihWgMPSi5UduO35/Je53dTwojFHAdAtct3UWNkD/suVvrIhsBz0KTx60ACSVtPVoxbRg3tjdAbHAxI1WL8AGNTbSKvbk5E9sOspjXAkok0NzdvhcsELBRWNkc1ReMM/m3gbug4XOJSM5uMYkASVDTeevsSbgpvaouUnxsXCbbVSo9JfGGXoo0M0NkeBgJaCOYiP7Vko535jH247ppdTJl/ZQGc7U4Yt5b2URfOTzTINcvHW7gf7oNyiosO2qYnUt9XpVW7OVqRUyr7K1wo+sVOYRKcZFzhiPMjOcBMsuEb9I8B2zMmr+jGUwObb8quVDgKu4VCUvxh/KfHj8Pmej49EE3ya8OD0ewoDljIsJhyHd96jbuXPFnHtxC0e1eghRa+Nd69KqMTqmcCtrP0NSW0zBwUGHRS/ebiJC/0qg/aOlPjqacRytI1Fdf5bkkiiXBIcOEb8BUopVQkzxA7jPyDwVIFVwnljA1dGEkXRbMxIr3sStJjpUBT6kI6YsHXhS7Mi7AZGafLTWWPIJF1zFFnNoTE5ktkyqaC0xacEcaW8+CTUSq1FZorWk2ZISVuId7+jFdHhiVa1gimwscRtjPQ6Mk2XI86HoAjPcn/UabMaDxXXzWQqME0+6sOtZrNUqO1SJYH+pW7irlZYFu2Wd+Wd0v9/H/4uOf8TmymzbfTncqiY0XcirV3Fih/8UyV9Dj8bexx4v2P4Xlm2y3G8FAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ec2ce91f47969210e9ddbf66706d43e0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>152ee99347d69210e9ddbf66706d432b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>3334906f-7b0f-49cf-af01-22b23766fcef</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPJvijCWveSkJh0K2wlr5sxVxLciImS54+kmYm/31XluOENmML9HFv1pHu1TlH9+COaO9a7+yjvrFWrBSZf3tOiFABw++OKGg4mROqFRNOaFX2QEI2IH3YwE8mbCth93RE6FpIZvjQrQWDNY4bMu9ebQmGBXUKdXZNM1rksyJP0/zjVVbNiirLWQEcCmwooeISjy4OND7c9UjyR35u1wbcOiPUaljfDV0eDqA2LLDK0oTwF8cV48inBml5QhpQDJw2uxExHNi9kkdgLZSLght4seIXXphPp+FgzVEiHdwYl49QSb6MbsWtegkOkI6nzpvRPC0ot9Egxmvw0i1OsXjgvg1yY4kLjYdqLX2jvkRXyNjg5HG85SXjbVAb6A9a6oe13n49ML0Vqndm2JSaghxX4NC/yrvApyNc8gYblQ20LbpatkZvRF+MXJrJSuJiUku9xUvDhE2ABuITNBcmt4gve/gJjAgqPmMbLI40K7CClv00Yju0iZN9QuzOLiRYexSJDpc/faAYJQ/iyuhPKKFGtO4Gb97wQcc+eTvcJ3PdddZXgfaEgkVTKM5K/1laB87b/f67T9OCZW8DcEnpZUm5hmk9zdLp+aRczc4l5UxGLoxH/pd4hHf5x3Skafo/Hu8SD2HLONSDtv7yd0zHc4hCvHP0mgqL1Ppn+nT4Q4SNHQ6YoKfQVpsfQdQR2/8GllvSMGsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a42ce91f47969210e9ddbf66706d43e2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>3334906f-7b0f-49cf-af01-22b23766fcef</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>192ee99347d69210e9ddbf66706d432c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>942884bc-1c89-4b14-bd6d-bb998f695bde</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQZCt2Gh8C2wECJA2QBPk0qbCiqRsohSp8uFHDf17l6L8QOO2CZpT0Zs5u9ydGS3XO6K9a7yzD/rKWrFQZPrpKSFCBQx/74iCmpMpoVox4YRWRQckZAXSh8BNNWCcCouhgbADhAXDMBO2kbB9/H0WXQrJDO+7NmCwtuOGTHc/hTB7SqoMquElHdJ8NMlHWTZ6dzEsJ3k5HLEcOORYUELJJabO9nQHtx2S/FKH2zYBt84ItejPt32V+z2oDQushllC+MZxxTjyqUBanpAaFAOnzfaAGA7sTskjsBTKYTkSkjdWfMeGo/E4JFYcJVIeg4fjA5SSz6ODMVTNwQHS8dR506fTpRaU22gQ4xV46WanWEy4a4LceMWFwv1tLX2tPkRXyKHA/oMh4i0vGG+C2kC/11LdL/X6457ptVCdM31QagrycAKH/pXeBT47wiWvsVBRQ9Ogq0Vj9Ep0l5FLnS5wInhaSb3GpmESU6CBeIrmQnqN+LyDH8GIoOI9lsHLkWYJVtCim1oshzZx0ibEbu1MgrVHkehw8c0HilFyL66I/oQr1IjGXWHnFe91tMnzR3Ay/7ud9WWgnVKwaArFWUmtrwtsjJ+Kte1nn2U5PZsH3ZvrbFkY7ZvUFz7ojy+lkKIWwbBN2355YR/+F32EatvnT/ffE/i6rXMJ42o8zMbnt87F5NzWObNvXrlqRn9YNWHGX7hpsiz7v2reZNUIW8QF0Wvrmr/hpnkKayX2PHgdJ7j7TDf7f+UQ2OKACXoKrbX5GkQdsfYHRKA+NN8HAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">242ce91f47969210e9ddbf66706d43e4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned>decision</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>e83076b2-ca22-43cd-bee4-5910962b4d8d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>1d2ee99347d69210e9ddbf66706d432e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>1e6ba27a-295a-4e42-b09b-4dfc0a91dc29</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/iMBD9Lz4DG5Js2HCripAqdbfSlu1lVaGJPQGrjp36A8oi/vvaiYGW7nGP3Jw39sx7b2aUPVHOts6ahboxhq8kmf5+HhAuA+bPe8IZmRIyIBIa9CeGlBuupEc2IFyAEn9m3LQCdk8RqkEY9DBdc8E0xqwtaJ/EoibT/UWoq5ImKcVyXOeTsijTcYIlY1VdFJOkYHnGwCcUUKH4SOMzMbtrA1IpJRCOwH18udAOv8wjP6VZYJMMCL5ZlAw9jY77gDQgGVildydEI7AHKc7Amkvbm9PAm+F/fNEsDfdq9MIo9rHT5wIqgbPeqD5Uz8DCo9WOWqfjdbpWnKLpbWFYgxP29j3WX3hobRA7JVnQFzLH50q4Rv7oPSGnDJeNifDsY9tCJ53BJcM2mBHURan141ptfx6VzLnsfItBoSiI0xdYq3nlbOC7J44vLrvRQ//sBwpsfNllA23L5WrZarXhXSkvrBmthP8Y1UJtPcUwrSOgwYaR7xSM5h6fdfATaB4s+e7T+Meh5C/JXx3ehTGb5BPIsUqH4zJLh/lXmg2rKi2H3/yxyJOkKLOaHAbE7MytAGPOZvpWLl9d0NpbG11ado3onlDNW3vjSW0wGnJ4DpvS87lu1HWjrhv1PzbqOJvdBNwd/1YhsPPTy+l7aKv0S1B4xg5/AWItvWH3BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a82ce91f47969210e9ddbf66706d43e3</block>
+        <comment/>
+        <connected_to>942884bc-1c89-4b14-bd6d-bb998f695bde</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>3334906f-7b0f-49cf-af01-22b23766fcef</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>512ee99347d69210e9ddbf66706d432e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>e83076b2-ca22-43cd-bee4-5910962b4d8d</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a02ce91f47969210e9ddbf66706d43e6</block>
+        <comment/>
+        <connected_to>3334906f-7b0f-49cf-af01-22b23766fcef</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>552ee99347d69210e9ddbf66706d4331</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>3c3d2005-d65e-4db9-9f3e-780cb4c5ce2f</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">282ce91f47969210e9ddbf66706d43e5</block>
+        <comment/>
+        <connected_to>3334906f-7b0f-49cf-af01-22b23766fcef</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>992ee99347d69210e9ddbf66706d4330</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>2dc2d2d3-d61e-4bed-b3ab-8fb3daca819a</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxvhjLVveSkJh0K2wlr5sxVxLciImS54+knom/31XluOEtmMr5HFv1pHu1TlH9+CBaO867+y9vrJWrBVZfHtMiFABw++BKGg5WRCqFRNOaFWNQEK2IH3YwE8mbCehfzgidCMkM3zq1oHBGscNWQzPtgTDgiaDJv9Ic1oWl2WRZcWH93l9WdZ5wUrgUGBDCTWXeHR5oPHuZkSSP/JzfRdw64xQ62l9M3W5O4DasMAqzxLCnxxXjCOfBqTlCWlBMXDa9DNiOLBbJY/ARigXBbfwZMUvvLC4uAgHG44S6eTGvLyHWvJVdCtuNStwgHQ8dd7M5mlBuY0GMd6Al255isUDt12QG0tcaDxVa+lb9SW6QuYGJ4/jLa8Y74LaQH/S0txt9O7rgem1UKMz06bUFOS8Aof+1d4FPgPhkrfYqGqh69DVqjN6K8Zi5NKma4mLtJF6h5eGCUuBBuIpmgvpNeKrEX4AI4KKz9gGiyPNGqyg1TiN2A5t4mSfENvbpQRrjyLR4eqnDxSj5ElcFf0JJdSIzl3hzVs+6dgnL4f7ZK6Hwfo60E4pWDSF4qyMn5V14Lzd77/7LCtZ+TIAbyk9a1Ly15LySkbeGI/iL/EI7/KP6ciy7H88zhIPYas41JO28fIzpuMxRCHeOXtNhUVq4zN9OvwhwkaPAyboKbTT5kcQdcT2vwGE5w47awYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">202ce91f47969210e9ddbf66706d43e3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned>decision</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>942884bc-1c89-4b14-bd6d-bb998f695bde</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>d12ee99347d69210e9ddbf66706d432d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>24bc0807-91d0-4305-a476-766bc1dbc86d</ui_id>
+        <values>H4sIAAAAAAAA/+1VTY/aMBD9Lz4HGpI0NNxWi5BWartSl+6lWqGJPQGrjp21HViK+O8dJwH2o8ceOcV+Y8+898ajHJhpfdN6tzQ3zsm1ZrNfTxGTOmC0PjAp2IyxiGmokVYCuXTSaEK2oNoATWgtpGsU7B8HyFv6RIxvpBIWh6QNWMrh0bLZ4V2oK5LECcdiUmXTIi+SSYyFEGWV59M4F1kqgBIqKFG9ZfGRl983ASmNUQgn4Otwc0nMPi1AucDPWBHYxBHDF49aINGoQixiNWgB3tj9GbEI4l6rC7CR2vfe1PDi5B8qmibhXIUkjGMfO2+XUCqc9z71oWoOHh7IK+5bOxznGyM5ut4WgRW0yt++xvoD940PYmcsDfpC5uG6UW2tv/eesHOGU1+qQfgAz992LaZI63AlsAlmBHWD1OphY3Y/TkoWUne+DUFlOKjzDry3smx94HtgrVy+70YP/bMfqLCmsqsamkbq9aqxZiu7UiSsHq8VbcaVMjuiGB7rGHiwYUydgvGC8HkHP4KVwZJvlIYuh5I/tXxu8S48s2k2hQzLZDQp0mSUfebpqCyTYvSFlnkWx3mRVuwYMbd3twqcu5hJrVw9t0Frb+3g0qprRHeFW9n4GyK1xcGQ41MYlJ7PdaCuA3UdqP8wUKe32b2Au9O/KgT29Holfw3tjP0dFF6w41/4lhAg9QYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ac2ce91f47969210e9ddbf66706d43e4</block>
+        <comment/>
+        <connected_to>3334906f-7b0f-49cf-af01-22b23766fcef</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>d52ee99347d69210e9ddbf66706d432f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:30</sys_updated_on>
+        <ui_id>065f8ab4-98f0-4986-9f64-736f76448c22</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxvhjLVveSkJh0K2wlr5sxVxLciImS54+knom/31XluOEtmMr5HFv1pHu1TlH9+CBaO867+y9vrJWrBVZfHtMiFABw++BKGg5WRCqFRNOaFWNQEK2IH3YwE8mbCehfzgidCMkM3zq1oHBGscNWQzPtgTDgiaDJv9Ic1oWl2WRZcWH93l9WdZ5wUrgUGBDCTWXeHR5oPHuZkSSP/JzfRdw64xQ62l9M3W5O4DasMAqzxLCnxxXjCOfBqTlCWlBMXDa9DNiOLBbJY/ARigXBbfwZMUvvLC4uAgHG44S6eTGvLyHWvJVdCtuNStwgHQ8dd7M5mlBuY0GMd6Al255isUDt12QG0tcaDxVa+lb9SW6QuYGJ4/jLa8Y74LaQH/S0txt9O7rgem1UKMz06bUFOS8Aof+1d4FPgPhkrfYqGqh69DVqjN6K8Zi5NKma4mLtJF6h5eGCUuBBuIpmgvpNeKrEX4AI4KKz9gGiyPNGqyg1TiN2A5t4mSfENvbpQRrjyLR4eqnDxSj5ElcFf0JJdSIzl3hzVs+6dgnL4f7ZK6Hwfo60E4pWDSF4qyMn5V14Lzd77/7LCtZ8TIAbyk9a1Ly15LySkbeGI/iL/EI7/KP6ciy7H88zhIPYas41JO28fIzpuMxRCHeOXtNhUVq4zN9OvwhwkaPAyboKbTT5kcQdcT2vwEuHQNUawYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fc2ea99347d69210e9ddbf66706d437c^sys_idNOT IN552ea99347d69210e9ddbf66706d43f4"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=747a4eb2-1932-45c3-bb29-845c6400693f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>decision</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Validate UW Decision Subflow">fc2ea99347d69210e9ddbf66706d437c</model>
+        <model_id>fc2ea99347d69210e9ddbf66706d437c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_fc2ea99347d69210e9ddbf66706d437c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>552ea99347d69210e9ddbf66706d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:21:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fc2ea99347d69210e9ddbf66706d437c^sys_idNOT IN1d2ea99347d69210e9ddbf66706d43c9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>caserecord</element>
+        <help/>
+        <hint/>
+        <label>caseRecord</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fc2ea99347d69210e9ddbf66706d437c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>1d2ea99347d69210e9ddbf66706d43c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:21:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fc2ea99347d69210e9ddbf66706d437c^sys_idNOT IN592ea99347d69210e9ddbf66706d43eb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>decision_result</element>
+        <help/>
+        <hint/>
+        <label>Decision Result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_fc2ea99347d69210e9ddbf66706d437c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_id>592ea99347d69210e9ddbf66706d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:21:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fc2ea99347d69210e9ddbf66706d437c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>8e0921d347969210e9ddbf66706d433b</sys_id>
+        <latest_snapshot>fc2ea99347d69210e9ddbf66706d437c</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix3b-11-14-2024_11-25-2024_0807.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8e0921d347969210e9ddbf66706d433b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8e0921d347969210e9ddbf66706d433b^sys_idNOT INa92ee99347d69210e9ddbf66706d436d"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@79996174</plan>
+        <plan_id display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</plan_id>
+        <snapshot>fc2ea99347d69210e9ddbf66706d437c</snapshot>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 07:21:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a92ee99347d69210e9ddbf66706d436d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 07:36:31</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

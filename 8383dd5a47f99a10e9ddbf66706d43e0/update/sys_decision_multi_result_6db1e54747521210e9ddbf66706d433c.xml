@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="UW Assignment Group Decision Table">33489d43ff12121019a8ffda7c4fd994</decision_table>
+        <label>UW Decision Group: Underwriter Band2</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-10 11:48:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6db1e54747521210e9ddbf66706d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UW Decision Group: Underwriter Band2</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_decision_multi_result_6db1e54747521210e9ddbf66706d433c</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-10 11:48:48</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=6db1e54747521210e9ddbf66706d433c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>6db1e54747521210e9ddbf66706d433c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-10 11:48:48</sys_created_on>
+        <sys_id>61b1e54747521210e9ddbf66706d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-10 11:48:48</sys_updated_on>
+        <value>fba65dc7479e5610e9ddbf66706d437c</value>
+        <variable display_value="UW Decision Group">59b1a54747521210e9ddbf66706d43ee</variable>
+    </sys_variable_value>
+</record_update>

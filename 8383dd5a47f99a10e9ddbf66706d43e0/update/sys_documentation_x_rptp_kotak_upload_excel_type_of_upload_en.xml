@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="type_of_upload" label="Type of Upload" language="en" table="x_rptp_kotak_upload_excel">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>type_of_upload</element>
+            <help/>
+            <hint/>
+            <label>Type of Upload</label>
+            <language>en</language>
+            <name>x_rptp_kotak_upload_excel</name>
+            <plural>Type of Uploads</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-12-12 07:04:11</sys_created_on>
+            <sys_id>37b3fe6f47d65610e9ddbf66706d43d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Type of Upload</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_documentation_x_rptp_kotak_upload_excel_type_of_upload_en</sys_update_name>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-12-12 07:04:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
