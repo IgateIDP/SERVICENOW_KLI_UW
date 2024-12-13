@@ -10,7 +10,7 @@
         <create_access_controls>true</create_access_controls>
         <delete_access>true</delete_access>
         <is_extendable>false</is_extendable>
-        <label>KLI Requirement Excel</label>
+        <label>KLI File Upload</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_rptp_kotak_upload_excel</name>
         <number_ref display_value="10,000">630babfaffb5129019a8ffda7c4fd9b7</number_ref>
@@ -22,14 +22,14 @@
         <sys_created_by>samarth.n</sys_created_by>
         <sys_created_on>2024-11-15 06:33:57</sys_created_on>
         <sys_id>1c89a77affb5129019a8ffda7c4fd937</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>KLI Requirement Excel</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>KLI File Upload</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_db_object_1c89a77affb5129019a8ffda7c4fd937</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-12 08:13:13</sys_updated_on>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-13 09:58:54</sys_updated_on>
         <update_access>true</update_access>
         <user_role display_value="x_rptp_kotak.user" name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</user_role>
         <ws_access>true</ws_access>
