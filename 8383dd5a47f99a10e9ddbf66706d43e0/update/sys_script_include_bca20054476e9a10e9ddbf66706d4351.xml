@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_rptp_kotak.KotakUWWorkbench</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>All the Server side requirements on the Workspace of UW are dumped here</description>
+        <mobile_callable>false</mobile_callable>
+        <name>KotakUWWorkbench</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var KotakUWWorkbench = Class.create();
+KotakUWWorkbench.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    fetchLatestDecisionRecord: function() {
+        var case_id = this.getParameter('sysparm_case_id'); // Correct method to get parameters
+        var decTab = new GlideRecord('x_rptp_kotak_underwriter_decision');
+        decTab.addQuery('case_id', case_id);
+        decTab.orderByDesc('sys_created_on'); // Fetch the latest record
+        decTab.query();
+        if (decTab.next()) {
+            // Return all the field values as a JSON string
+            var result = {
+                emr_decision: decTab.getValue('emr_decision'),
+                per_millie: decTab.getValue('per_millie'),
+                remarks: decTab.getValue('remarks'),
+                emr: decTab.getValue('emr'),
+                reason: decTab.getValue('reason'),
+                final_remarks: decTab.getValue('final_remarks'),
+                reduced_cover_term: decTab.getValue('reduced_cover_term'),
+                comments: decTab.getValue('comments'),
+                hold_internal_requirement: decTab.getValue('hold_internal_requirement'),
+                reduced_sum_assured: decTab.getValue('reduced_sum_assured')
+            };
+            return JSON.stringify(result); // Return JSON string
+        }
+        return null; // No record found
+    },
+    type: 'KotakUWWorkbench'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-14 02:06:44</sys_created_on>
+        <sys_id>bca20054476e9a10e9ddbf66706d4351</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>KotakUWWorkbench</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_include_bca20054476e9a10e9ddbf66706d4351</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-14 02:11:40</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>bca20054476e9a10e9ddbf66706d4351</id>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-14 02:06:44</sys_created_on>
+        <sys_id>02d24410476e9a10e9ddbf66706d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-14 02:06:44</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
