@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Prefill Previous Decision</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    // Check if case_id is available
+    var case_id = g_form.getValue('case_id');
+    if (!case_id) {
+        g_form.addErrorMessage('Case ID not found on the form.');
+        return;
+    }
+
+    // Use GlideAjax to fetch the latest decision record
+    var ga = new GlideAjax('x_rptp_kotak.KotakUWWorkbench');
+    ga.addParam('sysparm_name', 'fetchLatestDecisionRecord');
+    ga.addParam('sysparm_case_id', case_id);
+	//alert(case_id)
+
+    ga.getXMLAnswer(function(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+		alert(result)
+        if (result) {
+			
+            var recordData = JSON.parse(result);
+
+            // Populate form fields if they exist
+            if (g_form.hasField('emr_decision')) g_form.setValue('emr_decision', recordData.emr_decision);
+            if (g_form.hasField('per_millie')) g_form.setValue('per_millie', recordData.per_millie);
+            if (g_form.hasField('remarks')) g_form.setValue('remarks', recordData.remarks);
+            if (g_form.hasField('emr')) g_form.setValue('emr', recordData.emr);
+            if (g_form.hasField('reason')) g_form.setValue('reason', recordData.reason);
+            if (g_form.hasField('final_remarks')) g_form.setValue('final_remarks', recordData.final_remarks);
+            if (g_form.hasField('reduced_cover_term')) g_form.setValue('reduced_cover_term', recordData.reduced_cover_term);
+            if (g_form.hasField('comments')) g_form.setValue('comments', recordData.comments);
+            if (g_form.hasField('hold_internal_requirement')) g_form.setValue('hold_internal_requirement', recordData.hold_internal_requirement);
+            if (g_form.hasField('reduced_sum_assured')) g_form.setValue('reduced_sum_assured', recordData.reduced_sum_assured);
+        } else {
+            console.log('No record data returned for case ID: ' + case_id);
+        }
+    });
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-14 02:08:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5130018476e9a10e9ddbf66706d431c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Prefill Previous Decision</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_e5130018476e9a10e9ddbf66706d431c</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-14 06:51:23</sys_updated_on>
+        <table>x_rptp_kotak_underwriter_decision</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

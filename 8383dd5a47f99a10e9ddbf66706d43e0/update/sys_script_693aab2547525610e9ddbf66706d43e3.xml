@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rptp_kotak_underwriter_decision</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Display Latest Decision Record in CR</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+if (current.isNewRecord()) {
+        var caseId = current.case_id; // Replace with your field name
+        if (!caseId) {
+            return; // Exit if no case_id is provided
+        }
+
+        // Query the table for the latest matching record by case_id
+        var gr = new GlideRecord(current.getTableName()); // Adjust table if needed
+        gr.addQuery('case_id', caseId);
+        gr.orderByDesc('sys_created_on'); // Sort by most recent
+        gr.setLimit(1); // Fetch only the latest record
+        gr.query();
+
+        if (gr.next()) {
+            // Dynamically copy all fields from gr to current
+            var fieldsToSkip = ['sys_id', 'sys_created_by', 'sys_created_on', 'sys_updated_by', 'sys_updated_on'];
+
+            // Iterate through all fields in the `current` object
+            var fieldNames = Object.keys(current);
+            fieldNames.forEach(function (fieldName) {
+                if (!fieldsToSkip.includes(fieldName) && gr.isValidField(fieldName)) {
+                    current.setValue(fieldName, gr.getValue(fieldName));
+                }
+            });
+        }
+		gs.addErrorMessage('success')
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-06 06:06:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>693aab2547525610e9ddbf66706d43e3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Display Latest Decision Record in CR</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_693aab2547525610e9ddbf66706d43e3</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-14 06:06:17</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=693aab2547525610e9ddbf66706d43e3"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>693aab2547525610e9ddbf66706d43e3</id>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-06 06:06:45</sys_created_on>
+        <sys_id>801d2b2d47525610e9ddbf66706d4312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-06 06:06:45</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

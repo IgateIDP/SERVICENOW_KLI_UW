@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1168000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>find_senior__second_uw</internal_name>
+        <label_cache>[{"name":"subflow.case.u_case_stage","label":"input➛case➛Case Stage","reference":"","reference_display":"Case Stage","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"u_case_stage","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"-- None --","value":"-- None --"},{"image":"","label":"Pending Requirements menu","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Pending Requirements menu","value":"pending_requirements_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"UW Workbench menu","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"UW Workbench menu","value":"uw_workbench_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Groups Operations Workbench","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Groups Operations Workbench","value":"groups_operations_workbench","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Integrated to GA","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Integrated to GA","value":"integrated_to_ga","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{}},{"name":"subflow.case.case_status","label":"input➛case➛Case Status","reference":"","reference_display":"Case Status","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"case_status","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"-- None --","value":"-- None --"},{"image":"","label":"UW pending","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"UW pending","value":"1","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Secondary UW required","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Secondary UW required","value":"2","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Senior UW required","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Senior UW required","value":"3","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{"af8e988e-4791-4acd-9464-7670f78b9cf5":["condition"]}},{"name":"subflow.case.sum_assured","label":"input➛case➛Sum Assured","reference":"","reference_display":"Sum Assured","type":"integer","base_type":"integer","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sum_assured","usedInstances":{"5812ae59-10ad-4d84-b97b-00449e197c50":["conditions"]}},{"name":"5812ae59-10ad-4d84-b97b-00449e197c50.Records","label":"2 - Look Up Records➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","usedInstances":{"fb6037bc-d010-4e86-a485-ef3be3c560a4":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb6037bc-d010-4e86-a485-ef3be3c560a4.item","label":"3 - For Each➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"084ef935-4d96-41a3-9369-2f8a32bd581c":["conditions"],"e24dcadb-e397-4d7b-9640-a3110dafadd6":["user-0"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.case.assignment_group","label":"input➛case➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_rptp_kotak_uw_case","column_name":"assignment_group","usedInstances":{"084ef935-4d96-41a3-9369-2f8a32bd581c":["conditions"]}},{"name":"084ef935-4d96-41a3-9369-2f8a32bd581c.status","label":"4 - Look Up Record➛Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"eac6878b-139c-493e-b302-b4103a8a4660":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}}]</label_cache>
+        <master_snapshot>88268b2cffaa1e1019a8ffda7c4fd961</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Find Senior / Second UW </name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:38:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>76a183a0ffaa1e1019a8ffda7c4fd949</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Find Senior / Second UW </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_hub_flow_76a183a0ffaa1e1019a8ffda7c4fd949</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:25</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_variable_value action="delete_multiple" query="document_key=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=76a183a0ffaa1e1019a8ffda7c4fd949^sys_idNOT INb6a183a0ffaa1e1019a8ffda7c4fd94c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>76a183a0ffaa1e1019a8ffda7c4fd949</id>
+        <name>Find Senior / Second UW </name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:38:55</sys_created_on>
+        <sys_id>b6a183a0ffaa1e1019a8ffda7c4fd94c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:38:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b6a183a0ffaa1e1019a8ffda7c4fd94c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=76a183a0ffaa1e1019a8ffda7c4fd949^sys_idNOT IN73168b2cffaa1e1019a8ffda7c4fd914"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=58bb55b5-dbbf-4e16-960b-e14d3ff5cab3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_rptp_kotak_uw_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</model>
+        <model_id>76a183a0ffaa1e1019a8ffda7c4fd949</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_76a183a0ffaa1e1019a8ffda7c4fd949</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_rptp_kotak_uw_case">x_rptp_kotak_uw_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>73168b2cffaa1e1019a8ffda7c4fd914</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73168b2cffaa1e1019a8ffda7c4fd914"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=76a183a0ffaa1e1019a8ffda7c4fd949^sys_idNOT IN00268b2cffaa1e1019a8ffda7c4fd92f,c0268b2cffaa1e1019a8ffda7c4fd92d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>fb6037bc-d010-4e86-a485-ef3be3c560a4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>00268b2cffaa1e1019a8ffda7c4fd92f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <ui_id>084ef935-4d96-41a3-9369-2f8a32bd581c</ui_id>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPtleyZMnO26KBgQK7DdB2+5LNEpRI2cRSpEpSSR3D/96hLr7f4jhF+khyLmdmzoxI3c9dRtwbl4y8UTYaDYax5wWB50VRkGI/SYIoTbwEh27HFTinIGlwwiksHzEv7VrPNCo1VWiicponVMEZYbrgePbtiEg6ZZwoKtyb+4eOW2AF1g2c3My3jsysoIjjhHKw9NU6dz5ZJJ2zgW8o7wZiHbRLJGrTUhGLxeu49IehglBwlWGuacfNsSDYSDVb7iiKyZ3gq40pEwYsulb4h2bPYH7oWbmMQlgprc/SqWQpvSsMk6LeqRHVh5KXufhUI7UZpRkuuWkzCjuQUERoYcFZb43r7MtUPn1uHY2ZqOJoDrlMMV+usDGKJaWh2iadcpqDIZTjomBiggolH1mlDFjy3oTDopdx+QRONZuIHk4t8B7kAvfGsH9bbX/Ditko/gYzVZ0zxqGsqM6ulqWqwn9EKS91daCw0LUtd1HlCH0vLco66iY+VKcIBHSqWGH+BIVH2oSy6LQkHhzlwmhV+1QKwqxPvcZkS9F/S1Al83mWRF4QJ2mXeL7XDekw6uJwOOjSLEhokA4iD4c9Zmi+WPw3UbIsWkVdJjZLvRRr2sPa5qTKayW0WOw2xy/yelm/fVjP07k53qu8L/FN523sNZ3nX63zQs97694zqnx/rXeqmeqAT3SUT45Wm6wKq6UyqM7cWkvt0v1iKo4Z5WRj9J8BrlW+s6xyktkhvA0TM+tj6xvQ/32+Aa/kYUZQnQAmOBPVNxEMgpt3TNDBUQ4k/lbBqzqv3V3sHtbpLk2xY6TzfPncrOraEvUMkK3iF0DkfK1R7gHeTszWfMPR4GocDfoHOAoMuZ8vYS7TsyeT7d3J1qiVf7byeFse2LKm4C8elhz/cJlP/6U++9bnVhMGL+rCdQrVJ7cHmHTlC9sv7taOdTgF1cYfqrsSPTEyoWblvZUi0jxh/v++86bVls1Shffqy59/9CGQrF3+WIZyqBMr4EaqaApU0AgrijJZCoKau+jGtRAyrbRphHeHxWdqSiUcCb3lmCl1KmlnKX2NEXJGdK3ix8xpw2swaAfCc6rwnGV4L0vGgcETXvGadtbgGWPGqxzD46FYKxJVSqoDw+dEeY7U+czJdCYo/6qgXj+69hF77wg7gfW3eIm+drykFCdhH0dx4PsevM5I7A3j2B9GSRbhOMxWHYWQFinMP7CcATHAPGqJ0FbV350hzXi88LcIKP8xrsZo52y4rfKtFPYZ2Y+NY/FCmZ0W7+mImrmQSMkpFit2Dt5+MLyXPycls/e1v/aV4q0+xbXLjbyX7B/Bvpf0o63+kHr9oU/S7jD2426Ykag7InjQxaNkEAeEpmF2+Qf34ScfWBPKNBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>af8e988e-4791-4acd-9464-7670f78b9cf5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>c0268b2cffaa1e1019a8ffda7c4fd92d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <ui_id>5812ae59-10ad-4d84-b97b-00449e197c50</ui_id>
+        <values>H4sIAAAAAAAA/9VX30/bMBD+V6o8R1VCS2G8TTAkHqATVEgTY5YTO601x8n8o6VU/d93jpM0tAFK6SZ4qeQ73913d99d3LuFx4h34h0n/SDA4eHxURD0ekEwGPRiHEZRbxBHQdSPPN8TOKVwU+OIUzhOMTf2rOYKGUUliAhTOcfz201NPGGcSCq8k7t738uxBF8aNCeLNZWe5xRxHFEODkY2VOfKxvW3hvnEeBO2DVAdkXCuM0kslsD36IOmglAIlWCuqO+lWBCsMzmvJZJiMhR8JZgwocGjZy8/KPYI7o8Dey+hkFZMnS6eZCymw1yzTDiJQ+SUGTepuHJIbSFpgg3XVSFBAnVEhOYWnI1Whk5uJtnsugp0zkSRR6nkWYx5fcJaSxYZTZUtOuU0BUcoxXnOxBjlMpuywhiwpN0xh0M34dkMgio2Fl0cW+BdqAXunoP8rBDfYslsFpfgpuhzwji0FbnqqszIIv0pirlRhUJioZwvb1nUCP0xFqXLuswPuRLBBRVLluuvYDClZSpLfyvKHgar3seZIMzGVA3eGqSoVSAzu7i5Go6+XX4f/fjVkP404JcWv2SxUCay9ejGWNGuMinCShlJyXK5Sfx9ut5tck6bGW9brVbjthKWM/REVs5QuLcZArj/eoq0NB9viF4bC5fwK7MRH73Y7cNVY1UmNXKVawzHJqd3puI5o5w8WeJbgKuMh5ZVnWj+HN6SiYmNsbbNDz7PNn8nDxOCXAGY4EwUXzdwCGE+MEGDl9fRl7WGF31uvDmsDKt4k6a4o7PO4+57s+hrRdQtQFaGN4CoM3IoW4BXG7NyX3K0tzeO9g6e4Sgw5G5Rw6zL01LJ6hVke1Tdf7T38fp9YEvDIFze1xw/3S1m+NaYBzbm2hD23jSFTQo5zdkzTNrz0+s/T6tvA07AtIyH3FSiGSNjqlfRq1sk0zPMf7fpy1Grh6VI793PuP6LQzYIVwMFZEeSKmhV8x0Xwjthcw+EvhPvtgYuhKbjonjbQqwsL/FD57rG2Aq83AWsjlFyur/Hp9NeP1hVhVvHpCr0p/iDsitX7/8CRm04+CcPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=76a183a0ffaa1e1019a8ffda7c4fd949^sys_idNOT IN0c268b2cffaa1e1019a8ffda7c4fd92f,84268b2cffaa1e1019a8ffda7c4fd930,88268b2cffaa1e1019a8ffda7c4fd92e,c4268b2cffaa1e1019a8ffda7c4fd92c"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4268b2cffaa1e1019a8ffda7c4fd92f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>fb6037bc-d010-4e86-a485-ef3be3c560a4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>0c268b2cffaa1e1019a8ffda7c4fd92f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <ui_id>eac6878b-139c-493e-b302-b4103a8a4660</ui_id>
+        <values>H4sIAAAAAAAA/+VUXYvbMBD8K0XPiZHtOMR5O1oOCm0Pese9tIdZS3IiKkuuJCeXhvz3rvyRhF6OhqNvfbNntTszq7H3xLS+ab17MDfOyZUmy29PEyJ1wPB5TyQnS1JRqOKcxSxN5mlCabKYxeU8LeOEpyAgJROioRZ4khnNpZdGFx0wIRtQbSjgI5euUbB7PCFsLRW3YmBtwGKPF5Ys93+U/K4RhYJSKGy891bqFbZfq21sfD+Ke/epQ15XHfgQdyOTsTzIiumEiGcvNBdIXYFyYkJq0By8sbsjYgXwO61OwFpq3zuu4dnJXzg7ybJwsBLokR3XYSQTd01Q0iMeSjUWjWpr/aUXHLYpKmiVP9tm60TBRRPUBbqBu7pfm+3XkehW6s7JUFSGgTq+gUe/ZeuFCzcglKhxUFFD0+AWisaajeyaUUsdrRS+RJUyWyQN0YmABeERLgOiW8Q/dPAjWBlcfMYx2NzLLMFJVnQxw3HeooVDt47iZxsE9QYHK0W/DTzgmJWNv0GejRhUHyZDRnPIqiym2eUczOYXbvssnvs9XcxElafZdMbz+XQWQzrN03k+TaoFpEnJs0XMIufBt+5w+N5SmnL6MtRvnvMvPoUrVvDiU7i8llfyn/wl/+Eir4w/pfQ/zb90RZ/jwVtH/ub4P4UM9wyuDwgXTDoU8hCwj+OfPBR2eNOSnUNbY38ECyfs8BugpXMzEwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40268b2cffaa1e1019a8ffda7c4fd930</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</flow>
+        <flow_variables_assigned>user</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>eac6878b-139c-493e-b302-b4103a8a4660</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>84268b2cffaa1e1019a8ffda7c4fd930</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <ui_id>e24dcadb-e397-4d7b-9640-a3110dafadd6</ui_id>
+        <values>H4sIAAAAAAAA/82QzQqDMBCE3yVnLSn+VLx57F16KR7ys7ZLYyJJVER89yZgaR+ht5lvGWbYjZjJj5N3rWmcw4cm9b1LCOrIgt4ISlITkhDNBghqcmCDm5maot22npc0u3CRSnqmaQ5VmbK8KlLoMw6ZKErK8hN6GPY95CS6UbH1dsQDEU9U0sJR7ITF0TfC4xzuPVMO9i7WWWRcwR9NkiDQodFt3HX9/Cse1rALxS9ajH31yixftr8BKtxWSXkBAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">44268b2cffaa1e1019a8ffda7c4fd92e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>af8e988e-4791-4acd-9464-7670f78b9cf5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>88268b2cffaa1e1019a8ffda7c4fd92e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <ui_id>fb6037bc-d010-4e86-a485-ef3be3c560a4</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhu04aZxbgaFAD1uBruhlKAxaohNhsqRJclLP8H8fFdvp0NOwU8xH8n0wGpjpgu2CfzH33sujZocfbysmdcToe2BSsAPLStGUWVryTb7b5Gma74us3m3qLBcbQLFjK6ahRZqUAVtP5RlUF+th2O6zHHBbrrMUxLoQ+2Jdl3f1Ok2LosSsvOPbNHlGbpzw40irQnqroH/9fwZ+kko4nMNYcOQtoGOH4VMr9BYrBTUqEpoZaP9fMy+bj3PoTzeI7FS6Gy/9RBd5umL4HlALJKEGlMcVa0ELCMb17BBcR4BDEE9a9beJk9SB6FicfffyN3FnaRoHG6REHKcmPxnJ8ckGafSEBKjV0jSqa/W3yWe8NTbQqbDcmpDOYyXQRnNRbtZuvp/M5XkRepD6GmRuKsNB3SoIwcm6C+jjvVFhS0RVC9ZKfaysM2d5XSYvbXJUVCSNMhcSje8vAR6NJ3QLSB4I/3KFX8HJmOIr0dDyeE1d/eqi7pRjdlxNoWnAcydtuCe6M87mxrf4MCcmP70AgVx6EnyJ2OPy7GOjp39T8r+hi3E/o9UPbPwDX2AmlEADAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">84268b2cffaa1e1019a8ffda7c4fd91f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>c4268b2cffaa1e1019a8ffda7c4fd92c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <ui_id>af8e988e-4791-4acd-9464-7670f78b9cf5</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvbMBT9K0HPxvijCWveSkdhsK3Qdt3DVsy1dJ2IyZIryUkzk/++K3+0ZU1YGHvbi7HP1b3nnKuDO2Za37Te3ZkL5+RKs+W3h4hJHTB675gUbMmqBKr0nKc8zxZ5liTZu7O0XORlmokcEHIWMQ010klutJBeGl30QMQ2oNpQuMVQmn35OrvBR8KFdI2C3f2RMl9LJSyOehqwNM2jZcvut5LfNVgoKFGFKd5KvaL2U1VPjZeT7NnHHjnuJ/AR7iYmY0WQlSYRwyePWiBRV6AcRqwGLcAbu3tGLIK41uoFWEvtaRwLh5+c/Emzs/k8HKyQPHIcinxtJMfrJigZEA+lmopGtbX+PAgOq8UKWuWn1RLSOiwENkFdoBu5q9u12d5MRFdS907GojIc1PMXePJbth5duAFUWNOgooamoS0UjTUb2TeTljpeKfqIK2W2RBpCFQMPwmNaBsRXhL/v4XuwMrj4RGOoeZBZgpO86ANI47wlC/t+HcVjGwQNBkcrxbANOuC4lY2/IJ4Njqr30Zjec5hX8zSZH87B2eLAbb8Kbte5tgxmYg4O+0fhPPjW7fff2yTJRfY2zqc1/YuQn2DuTcgPGz6S7OwPyQ5XdGKwkyT5T5MtXTEkdPTWk/91sB9COgcGNwREIJeOhNwF7MP09w6FHd205K+hrbE/goUXbP8LBSgDEAcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=76a183a0ffaa1e1019a8ffda7c4fd949^sys_idNOT INee648368ffaa1e1019a8ffda7c4fd9df"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e0d3de53-2544-4db7-aa5b-e5de38dd90af</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>user</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</model>
+        <model_id>76a183a0ffaa1e1019a8ffda7c4fd949</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_76a183a0ffaa1e1019a8ffda7c4fd949</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:50:55</sys_created_on>
+        <sys_id>ee648368ffaa1e1019a8ffda7c4fd9df</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:50:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_76a183a0ffaa1e1019a8ffda7c4fd949^sys_idNOT INfb168b2cffaa1e1019a8ffda7c4fd918"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_76a183a0ffaa1e1019a8ffda7c4fd949</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:23</sys_created_on>
+        <sys_id>fb168b2cffaa1e1019a8ffda7c4fd918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>find_senior__second_uw</internal_name>
+        <label_cache>[{"name":"subflow.case.u_case_stage","label":"input➛case➛Case Stage","reference":"","reference_display":"Case Stage","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"u_case_stage","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"-- None --","value":"-- None --"},{"image":"","label":"Pending Requirements menu","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Pending Requirements menu","value":"pending_requirements_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"UW Workbench menu","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"UW Workbench menu","value":"uw_workbench_menu","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Groups Operations Workbench","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Groups Operations Workbench","value":"groups_operations_workbench","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Integrated to GA","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Integrated to GA","value":"integrated_to_ga","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{}},{"name":"subflow.case.case_status","label":"input➛case➛Case Status","reference":"","reference_display":"Case Status","type":"choice","base_type":"choice","parent_table_name":"x_rptp_kotak_uw_case","column_name":"case_status","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"-- None --","value":"-- None --"},{"image":"","label":"UW pending","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"UW pending","value":"1","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Secondary UW required","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Secondary UW required","value":"2","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}},{"image":"","label":"Senior UW required","used":false,"reference":false,"selected":false,"missing":false,"rawLabel":"Senior UW required","value":"3","parameters":{"name":"x_rptp_kotak_uw_case","dependent_values":[""]}}],"usedInstances":{"af8e988e-4791-4acd-9464-7670f78b9cf5":["condition"]}},{"name":"subflow.case.sum_assured","label":"input➛case➛Sum Assured","reference":"","reference_display":"Sum Assured","type":"integer","base_type":"integer","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sum_assured","usedInstances":{"5812ae59-10ad-4d84-b97b-00449e197c50":["conditions"]}},{"name":"5812ae59-10ad-4d84-b97b-00449e197c50.Records","label":"2 - Look Up Records➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","usedInstances":{"fb6037bc-d010-4e86-a485-ef3be3c560a4":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb6037bc-d010-4e86-a485-ef3be3c560a4.item","label":"3 - For Each➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"084ef935-4d96-41a3-9369-2f8a32bd581c":["conditions"],"e24dcadb-e397-4d7b-9640-a3110dafadd6":["user-0"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.case.assignment_group","label":"input➛case➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_rptp_kotak_uw_case","column_name":"assignment_group","usedInstances":{"084ef935-4d96-41a3-9369-2f8a32bd581c":["conditions"]}},{"name":"084ef935-4d96-41a3-9369-2f8a32bd581c.status","label":"4 - Look Up Record➛Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"eac6878b-139c-493e-b302-b4103a8a4660":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}}]</label_cache>
+        <master>true</master>
+        <name>Find Senior / Second UW </name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88268b2cffaa1e1019a8ffda7c4fd961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_variable_value action="delete_multiple" query="document_key=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=88268b2cffaa1e1019a8ffda7c4fd961^sys_idNOT IN48268b2cffaa1e1019a8ffda7c4fd962"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>88268b2cffaa1e1019a8ffda7c4fd961</id>
+        <name>Find Senior / Second UW </name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_id>48268b2cffaa1e1019a8ffda7c4fd962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=48268b2cffaa1e1019a8ffda7c4fd962"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=88268b2cffaa1e1019a8ffda7c4fd961^sys_idNOT IN4c268b2cffaa1e1019a8ffda7c4fd963"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=58bb55b5-dbbf-4e16-960b-e14d3ff5cab3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_rptp_kotak_uw_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</model>
+        <model_id>88268b2cffaa1e1019a8ffda7c4fd961</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_88268b2cffaa1e1019a8ffda7c4fd961</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_rptp_kotak_uw_case">x_rptp_kotak_uw_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_id>4c268b2cffaa1e1019a8ffda7c4fd963</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4c268b2cffaa1e1019a8ffda7c4fd963"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=88268b2cffaa1e1019a8ffda7c4fd961^sys_idNOT IN10268b2cffaa1e1019a8ffda7c4fd984,14268b2cffaa1e1019a8ffda7c4fd985"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>af8e988e-4791-4acd-9464-7670f78b9cf5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:25</sys_created_on>
+        <sys_id>10268b2cffaa1e1019a8ffda7c4fd984</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:25</sys_updated_on>
+        <ui_id>5812ae59-10ad-4d84-b97b-00449e197c50</ui_id>
+        <values>H4sIAAAAAAAA/+VXbW/aMBD+KyifI5QUSrt+m8oqVWrLVFClqessJ3bAmkkyv0Ap4r/vbCchgrQDKZVa7QuS787n5+6exzGPa48R78I7T/pBgMPT87Mg6PWCYDDoxTiMot4gjoKoH3m+l+I5hUiFI05hucBcm7VcSaQlFWAiTOYcrx72PfGMcSJo6l08PvlejgXkUuC5WO+4DgXDcUQ5hE4KNDvg1Cqvlsj6nO2mvq1z5xyZIAZK4Hv0WdGUUMCQYC6p781xSrDKxKqyCIrJKOVbw4ylCjJ6JvhZshc49zwwcQmFqmLqfNXSnjx0jXKuZIgVHiuhY6VFER7PMhZT6XpCaII1V5d1mwsY5YplqdviSne7M67n6Z1riVclKOcCFhgLIjQ3xRr0RSnJeJYt70ukVyy1fSmcPIsxr1ZYKcEirQyetUc5nUMiNMd5ztIpykW2YHYzYJl3pxwW3YRnSzhUsmnaxbEB3oXe4u4V2IfW/IAFM1XcQhpLm4RxYAlyY5SZFradCxRzLa1D4FS6XN7GN4S75FjKbeXQdvRHG9yuD0XFyDXNbIkFy9VXSLGgRXEb/yBNnAZb2sVZSphBIWvC0EhS40B6eT2+G02+3X6f/PhVs/7UkJfaX7JeSx2ZDnVjLGlX6jmCQoAPZLPZV1abqduUpu1JKc3LelOaGlWIdM9205SgEGnYmkihjs8mUzj846n0eN25FvxDfPHZm0Q73XJKZkIh18ua+vZFczTXD4BQcn1k2NmJVq+hKqieMMpJ0/foyjh2vkcn/+/36EMSHQAR5CbIUs5S+8AAoO+lgODtq/bLDtcsxWrPMmPDMt7XAe6orPNytBoOgFOqYQxndyYOTwPE8t63lNm980tjIYJeayLonbQngnVVatXMhr6X70oz0TL+xcTj3XigYW1DuGkS2VFnhseeebLZF3HvKBXXCec8w1d41/Lj8xVV+u95Dcxga3EechpGS0amVG1PL6NIppaY/27yF8JE5aBsee/wkO2/Kd1BuJUpqAUJKmF49ZdsCE+l/Xsk9J35uGvkACxlO27xc+e+AtOIsLhKQO10amdTv0uuK2tB8n6Lj8cP/UUtB9aow3Jun+I/YHtiePoLXK5YJusQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>fb6037bc-d010-4e86-a485-ef3be3c560a4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:25</sys_created_on>
+        <sys_id>14268b2cffaa1e1019a8ffda7c4fd985</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:25</sys_updated_on>
+        <ui_id>084ef935-4d96-41a3-9369-2f8a32bd581c</ui_id>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsIEOjbqqjSSntbadvbl709y7EdsM7YWdtpt0X89xvHCXBAgWjpqdU9xjO2v5n5vskk35Yhp+FVSCfRJJ9MhuM0ipIkikajhOA4y5IRyaIMD8JOKPGCgafFmWDw+IBF6Z7Nk0GlYRrN9IItMqbBRrkpBH76esSFzLmgmsnw6tv3TlhgDadbsFwtd0znwhM4YwJc72t8O3DtU7F+RJXNr33a3hZ89galqYMSdUL20zJJGWDIsTCsEy6wpNgq/bRe0QzTWyk2C3MuLZwYOuefhj/DvePI+eUMoiLM29aP1c1TnzFvyqfY4jurS2JLXbuTueKEGZ8TynJcCnu9veYdbgvLlfRbfOh+txLlQn72KQnXBzQFghWoD6KscME69HUo+d1cPX5pkN5wWeWlNgpFsFg/YWs1z0rr8CxDJtgCDkILXBRczlCh1QOvNgOWRW8m4KGXC/UIlxo+kz1MHPAe5Bb3bmB9Wi1/xZq7KH6HYyra5FwAS5Avo1GlrtL5gIgoTWXQWBp/VrjqOOZdC2zMJnJIO/pROtw+D3XEyCfNbSGaF/YDHPHA6uBWnUYlw6M0nGxoR5Sk3KEwW1JxGvizhK10ucyzUZSkGenSKI66AzYedfFgPOyyPMlYQoajCA963LLFavXXTKuyaDaaMnN56xFsWA9CgyxVma6cVqt99f1Ht7YU9OlMNoK+3k7lofTW0t5b+3TogFra8cWkPYii9yZuuPztabu9Wn0KTkg2pkeJRjecMkpb5HO5pdl9PbXm+hkQGq7fOnYG2dNLqGqq55wJeugtduMMO2+x/v/3LfYmiQ6AKPIV5FJwWY0lAPS1FDA8Sr8s3uFaRbGt8c6tYUP2dYADq4Ln1mo4A06jhju4O7j3eA5AbPp+RZndnt8s1iJILiaCpH85ESzXoa6TeSDvzTTqKtr4Pzt/vOsPNNzaEK8OiazVnXHbO/urfREnrVS8TThvmb7AuwuPrC+osvOabWAOW+v7kNcweuR0xuzm9saLKvuIxd+H7LUwUVOoKrxXGH/jo19h2db4y3O0gMrxAqZ0zQiQwyCsGcpVKSmq5/N/DcaQe21s7bzfbL4w0I8MFIgzsHMWVN7B2rvlC/l0HE0qP+ZBE0h9mwkgkKAKJFgH0i7sNo1rcMFB9TUa1w3moqoIfH4VWyVlWiv9QvM6UcwjrDizs50JKr4oqF9vfYdkcLAFnsD6Lr7lL9+eCMPZoI9HaRLHEXzf0jQap2k8HmX5CKeDfKNThIwk0FHh5ByoAsejhhpNneP9HlQ33Ha95gxQDQOnSrrP7X5qA4cKyhs0qE7jrntKppRgWO40lXtA/ttN9VZY03X4JhvLu/i5VfL73Wz7pYP5fq3xoeR/SP6jZB8dzcYs6o9jSrrjNE67g5yOuhOKh108yYZpQhkZ5JecCL7/A9AMnm44FgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=88268b2cffaa1e1019a8ffda7c4fd961^sys_idNOT IN58268b2cffaa1e1019a8ffda7c4fd97f,5c268b2cffaa1e1019a8ffda7c4fd980,98268b2cffaa1e1019a8ffda7c4fd982,dc268b2cffaa1e1019a8ffda7c4fd981"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">84268b2cffaa1e1019a8ffda7c4fd91f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_id>58268b2cffaa1e1019a8ffda7c4fd97f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+        <ui_id>af8e988e-4791-4acd-9464-7670f78b9cf5</ui_id>
+        <values>H4sIAAAAAAAA/+1VW2vbMBT+K0XPxvjShDVvJaEw6FZouu5hK+ZYkhMx2XJ1SZqZ/PcdWc6FNWUp9HEvIfrORd93dD7cEeVs66x5UNfGiEVDJj+eIiIaj+H/jghGJqRKoEqvaErzbJxnSZJ9ukzLcV6mGcuBQ04i0kDNMZOqhgkrVFP0QERWIJ0PzLkPXXz7fnHPnxFnwrQSNo9vhOlSSKb5wKcFjd0s12TS/RU6l5+EkktMne4IXtz2yNvM7ab1uLFaNIvhfDt0me9ApZlnlSYR4S+WN4wjnwqk4RGpoWFgld7sEc2B3TXyACxFY7Ed8ckvRvzGC7PRyCdWHCVSHoL74wOUks/C6EKomoEFpOOodXpIp0slKDdhQIxX4KSdHmMh4a71ckOJ9Y2HaiVd3XwNUyH7BruXQsQZXjDeerWe/qClmi/V+n7H9EY0/WSGoFQU5P4EFudXOuv5dIRLXmOjooa2xakWrVYr0RcjlzpeSDzElVRrvNTvaAzUE49xuBDfID7r4UfQwqv4gm2wONAswQha9PuM7XBMnGwjYjZmKsGYg0iccPHsPMUgeRBXhPn4EqpFa6/x5hUfdGyjwR5XMKpGaTI6vX6X4xNLduSMrjOu9PJiCob3P4WxYJ3Zbn+6JMlZ9tov5xW9z0VnyHjlotPS3mOd7B/W8W92pnOSJPlvnQ+xjjBFWPhBW3/5Bzrnya9/uHM/ayoMUuuf6fPu++MDG1wwQY+htdK/vKgDtv0D1HGUxMkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">44268b2cffaa1e1019a8ffda7c4fd92e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>af8e988e-4791-4acd-9464-7670f78b9cf5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_id>5c268b2cffaa1e1019a8ffda7c4fd980</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+        <ui_id>fb6037bc-d010-4e86-a485-ef3be3c560a4</ui_id>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L35OEJCPhrxVjSpV6l2ltOrLqYoWe0msGpuzTVIO5b/fOia06tPpnmBnd8czg+mZaX3Tevdibp2Te83Wv94mTOqA0XvPpGBrlhWiKrK04LN8OcvTNF/Ns3I5K7NczADFkk2YhhppUnqsHZVHUG2o+36xynLARTHNUhDTuVjNp2VxU07TdD4vMCtu+CJNtsiNFe58plUhXaOge/1/Bn6QSlgczDRgSZtHy9b9t9a/mlNQoqLRh8HdN7O+a0Jpo4QBeBx2tiNKjyAiTycMPzxqgXR8BcrhhNWgBXhjO7b2tiXAIognrbpx4iC1JzoWZj+c/EMnZmkaBiskQxxjcyxfoFS4iVnGVrUBD89Ez31rh3F+MJKji3EIrKBV/u4rFgeeGi+Njis+EA/bRrW1/hnTYCPB9dMR0jrcCWyC2SB/8FI9H8xpe1V6L/UlmKGpDAc1VuC9lWXrg56eocKaiHY1NI3U+11jzVFelklLnewVFUmlzIkODdc5AR6EJ5QtJPeEby7wK1gZXPwgGlo+T5jr3J0C5z69UJC7321QEp0NHnYxhrDCrWz8LR1wxEHu+S3c/Mg9ZsqlIwmXz/Fw/a9Co6NbJPlX6GTsexD/iZ3/Aj4dYVuhAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40268b2cffaa1e1019a8ffda7c4fd930</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</flow>
+        <flow_variables_assigned>user</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>eac6878b-139c-493e-b302-b4103a8a4660</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:25</sys_created_on>
+        <sys_id>98268b2cffaa1e1019a8ffda7c4fd982</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:25</sys_updated_on>
+        <ui_id>e24dcadb-e397-4d7b-9640-a3110dafadd6</ui_id>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9F54lQY7k9RbEMBCgbYDGyaUIhBE5tIlSS7jYcQ3/e4eSYjttzz3lRr7Z3rzhgEfWeNd6Z9fNrbVqU7PFj5eIqTpgdD4yJdiCsYjVUCGdvEVDtx1oH67HoywnaTYteSzSURrnOJvEkM/GMcqsxIyPJynkiXJYnU4UJ5RtNRyeh3BC+FZpYXAo3IKhOo5qLI5/mDoiiJN8lk1mUgKMcJSO5kBnAVOeSzEXkhJqKFFfmH7k7Q5tuBmUSIk5DtCXIeb7Fd4YEWikEcM3h7VAqi9BW4xYBbUA15jDGTEI4qHWF2Cratc3WMGbVb+oanYTXRVeMHuwxUDrDK+h1LjsRSKXp94sl+Dg0RnPnTdn3RrF0fbaCJTgtbu7xnqHh9appu5DXEj+sTBvtK/qb71G7Jzoaj7kWAhsgwCho6E9+bht9me1VqrutBqMuuGgr1wRDN+uFOowQamMdUU3lYiBc0aV3gXOR+bV+u/x9OC/BoQaK+JUVNC2qt4UrWl2quNBbVXJRtMlkbrZE//wtBPgQYuERgfJivBlBz+DUUGYr5Sm08Srp1q9erzvHlwqMoHjLL4Z53mci3IaA4zLGMcCs5kQ8xQkO0VB0zsN1l6kpCaKVx+E6IUdJCz6aYQQblTrbonUDge1Ti9htXo+n+v3uX6f6/ff108gV5Z4dk/h/v0fDIYDqab4NbRvzM/Q4QU7/QawDJ0AUQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4268b2cffaa1e1019a8ffda7c4fd92f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>fb6037bc-d010-4e86-a485-ef3be3c560a4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_id>dc268b2cffaa1e1019a8ffda7c4fd981</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+        <ui_id>eac6878b-139c-493e-b302-b4103a8a4660</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFHHOK8lYTCoFthLX3ZirmW5ERMtjxLTpqZ/PddWY4T1oylo497s4507z3nSAd3RLWmbo1+VDdai3VFFl+fPSIqi+F3RwQjC1IEUIQpDWkczeIoCKL5NMxncR5GLAYOMfFIBSXHk1RVTBihqqwHPLIF2doN/GRC1xL2TyeEboRkDR+m1tBgjeENWXS/bV3LQkLOJR5dHml8uOuRP/Mz+9ri2jSiWg/ru6HLwxFUDbOswsAj/MXwinHkU4DU3CMlVAyMavYj0nBg95U8ARtRGSe4hBctfuLAKEnswYKjRDq4MS4fIZd85dxyW8UKDCCdlpq2Gc1TgnLtDGK8gFaa5TnmDtzXVq4rMbbxUK1kW1afnStkbHB2Oa3mGeO1VWvpD1qKh43afTkyvRVV78ywKRUFOa7AoH95ayyfjnDJS2yUlVDX6GpWN2or+mLkUvpriQu/kGqHQ+1L9IFa4j6aC/4t4qsefoJGWBWfsA0WO5o5aEGz/tViO7SJk4NH9F4vJWh9EokOZz9aS9FJHsRlzh9bQhtRmxucvOWDjoM3hCCFpEjCILn8/KazC4/s7P13XTCf8iKNk8mUpbPJNIR4ksazdBIVc4ijnCXzkPragGn14fCtDYKYBa9T88993pa1K8S+ytplA94SsOgvAbM3e2W+giD4H7B3CZjQmYvFoK0f/o75erYhcTNHr6nQSK2/po/Hf5Hd2OMDE/Qc2qnmuxV1wg6/AJlpm8PVBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=88268b2cffaa1e1019a8ffda7c4fd961^sys_idNOT IN5c268b2cffaa1e1019a8ffda7c4fd978"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e0d3de53-2544-4db7-aa5b-e5de38dd90af</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>user</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Find Senior / Second UW ">88268b2cffaa1e1019a8ffda7c4fd961</model>
+        <model_id>88268b2cffaa1e1019a8ffda7c4fd961</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_88268b2cffaa1e1019a8ffda7c4fd961</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_id>5c268b2cffaa1e1019a8ffda7c4fd978</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_88268b2cffaa1e1019a8ffda7c4fd961^sys_idNOT IN54268b2cffaa1e1019a8ffda7c4fd971"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_88268b2cffaa1e1019a8ffda7c4fd961</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:24</sys_created_on>
+        <sys_id>54268b2cffaa1e1019a8ffda7c4fd971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_88268b2cffaa1e1019a8ffda7c4fd961"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>76a183a0ffaa1e1019a8ffda7c4fd949</sys_id>
+        <latest_snapshot>88268b2cffaa1e1019a8ffda7c4fd961</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=76a183a0ffaa1e1019a8ffda7c4fd949"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=76a183a0ffaa1e1019a8ffda7c4fd949^sys_idNOT IN5c268b2cffaa1e1019a8ffda7c4fd9a2"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@7b22aadc</plan>
+        <plan_id display_value="Find Senior / Second UW ">76a183a0ffaa1e1019a8ffda7c4fd949</plan_id>
+        <snapshot>88268b2cffaa1e1019a8ffda7c4fd961</snapshot>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-15 10:58:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c268b2cffaa1e1019a8ffda7c4fd9a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-15 10:58:25</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
