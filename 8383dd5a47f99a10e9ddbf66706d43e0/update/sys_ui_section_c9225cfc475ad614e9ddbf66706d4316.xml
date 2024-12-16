@@ -4,13 +4,13 @@
             <element>u_master_policy_number_audit</element>
             <position>0</position>
             <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-03 10:05:30</sys_created_on>
-            <sys_id>90f6cd7847921a14e9ddbf66706d4351</sys_id>
+            <sys_created_on>2024-12-16 07:14:15</sys_created_on>
+            <sys_id>6a6c933cff62de1019a8ffda7c4fd96f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="8022d0fc475ad614e9ddbf66706d4362">c9225cfc475ad614e9ddbf66706d4316</sys_ui_section>
             <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-03 10:05:30</sys_updated_on>
+            <sys_updated_on>2024-12-16 07:14:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,27 +18,13 @@
             <element>u_loan_id_audit</element>
             <position>1</position>
             <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-03 10:05:30</sys_created_on>
-            <sys_id>dcf6cd7847921a14e9ddbf66706d4351</sys_id>
+            <sys_created_on>2024-12-16 07:14:15</sys_created_on>
+            <sys_id>a66c933cff62de1019a8ffda7c4fd970</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="8022d0fc475ad614e9ddbf66706d4362">c9225cfc475ad614e9ddbf66706d4316</sys_ui_section>
             <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-03 10:05:30</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_member_number_dependent_number</element>
-            <position>2</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-03 10:05:30</sys_created_on>
-            <sys_id>d4f6cd7847921a14e9ddbf66706d4352</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="8022d0fc475ad614e9ddbf66706d4362">c9225cfc475ad614e9ddbf66706d4316</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-03 10:05:30</sys_updated_on>
+            <sys_updated_on>2024-12-16 07:14:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

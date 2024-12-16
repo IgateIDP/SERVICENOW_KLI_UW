@@ -3,196 +3,210 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>reason</element>
             <position>0</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>3e8c54c8472e1a10e9ddbf66706d43f4</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>2d8d0338ffee9e1019a8ffda7c4fd947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>emr</element>
             <position>1</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>7a8c54c8472e1a10e9ddbf66706d43f5</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>698d0338ffee9e1019a8ffda7c4fd948</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>reduced_sum_assured</element>
             <position>2</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>728c54c8472e1a10e9ddbf66706d43f6</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>618d0338ffee9e1019a8ffda7c4fd949</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>comments</element>
             <position>3</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>7a8c54c8472e1a10e9ddbf66706d43f6</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>698d0338ffee9e1019a8ffda7c4fd949</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>hold_internal_requirement</element>
             <position>4</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>3a8c94c8472e1a10e9ddbf66706d4303</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>618d0338ffee9e1019a8ffda7c4fd94a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_underwriter</element>
+            <position>5</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>698d0338ffee9e1019a8ffda7c4fd94a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>328c94c8472e1a10e9ddbf66706d4304</sys_id>
+            <position>6</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>718d0338ffee9e1019a8ffda7c4fd94b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>decision</element>
-            <position>6</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>3a8c94c8472e1a10e9ddbf66706d4304</sys_id>
+            <position>7</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>798d0338ffee9e1019a8ffda7c4fd94b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>per_millie</element>
-            <position>7</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>328c94c8472e1a10e9ddbf66706d4305</sys_id>
+            <position>8</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>718d0338ffee9e1019a8ffda7c4fd94c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>reduced_cover_term</element>
-            <position>8</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>3a8c94c8472e1a10e9ddbf66706d4305</sys_id>
+            <position>9</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>798d0338ffee9e1019a8ffda7c4fd94c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>remarks</element>
-            <position>9</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>328c94c8472e1a10e9ddbf66706d4306</sys_id>
+            <position>10</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>718d0338ffee9e1019a8ffda7c4fd94d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>final_remarks</element>
-            <position>10</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>3a8c94c8472e1a10e9ddbf66706d4306</sys_id>
+            <position>11</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>798d0338ffee9e1019a8ffda7c4fd94d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>case_id</element>
-            <position>11</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>328c94c8472e1a10e9ddbf66706d4307</sys_id>
+            <position>12</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>718d0338ffee9e1019a8ffda7c4fd94e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>activity</element>
-            <position>12</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>3a8c94c8472e1a10e9ddbf66706d4307</sys_id>
+            <position>13</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>798d0338ffee9e1019a8ffda7c4fd94e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>user</element>
-            <position>13</position>
-            <sys_created_by>Ajmal.akram</sys_created_by>
-            <sys_created_on>2024-12-13 09:20:31</sys_created_on>
-            <sys_id>328c94c8472e1a10e9ddbf66706d4308</sys_id>
+            <position>14</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-12-16 06:09:12</sys_created_on>
+            <sys_id>718d0338ffee9e1019a8ffda7c4fd94f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="Default view">8c982dd247fd9a10e9ddbf66706d4341</sys_ui_section>
-            <sys_updated_by>Ajmal.akram</sys_updated_by>
-            <sys_updated_on>2024-12-13 09:20:31</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-12-16 06:09:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

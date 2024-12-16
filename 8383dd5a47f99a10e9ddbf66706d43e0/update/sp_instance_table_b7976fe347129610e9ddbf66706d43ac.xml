@@ -5,7 +5,7 @@
         <color>default</color>
         <css/>
         <display_field/>
-        <field_list>policy_id.master_policy_name,policy_id.policy_no,consumer_id.member_number,consumer_id.customer_name,consumer_id.age,loan_number.loan_number</field_list>
+        <field_list>policy_id.master_policy_name,policy_id.policy_no,consumer_id.member_number,consumer_id.customer_name,consumer_id.age,sum_assured,risk_term,loan_number.loan_number</field_list>
         <filter/>
         <glyph/>
         <id/>
@@ -23,14 +23,14 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-12-12 10:50:49</sys_created_on>
         <sys_id>b7976fe347129610e9ddbf66706d43ac</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_instance_table_b7976fe347129610e9ddbf66706d43ac</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-12 11:02:08</sys_updated_on>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-16 07:51:01</sys_updated_on>
         <table>x_rptp_kotak_uw_case</table>
         <title/>
         <url/>

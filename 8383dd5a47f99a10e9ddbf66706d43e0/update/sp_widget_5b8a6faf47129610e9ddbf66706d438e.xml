@@ -6,8 +6,11 @@
 	$rootScope.$on('CaseId', function(event, sysId) {
 		$scope.arr = [];
 	})
+	
+		var sys = '';
 	$rootScope.$on('AuditSysId', function(event, sysId) {
-		var sys = sysId;
+		sys = sysId;
+		$scope.visible = true;
 		c.server.get({'action': 'fetch', 'value': sys})
 			.then(function(res) {
 			$scope.receivedSysId = true;
@@ -15,6 +18,14 @@
 		})
 
 	});
+	
+			$scope.DownloadPDF=function(){
+		
+	c.server.get({'action':'create','value' : sys}).then(function(res){
+		//	console.log(res.data.recordId)
+		})
+}
+	
 };
 ]]></client_script>
         <controller_as>c</controller_as>
@@ -112,6 +123,28 @@ span.section-title {
     color: #222;
     margin-top: 10px;
 }
+
+
+.button-container {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.search-button {
+  background-color: #003366; /* Navy blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #002244; /* Darker navy blue on hover */
+}
+
 </css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -142,11 +175,26 @@ span.section-title {
 				comments: gr.getValue('comments'),
 				remarks: gr.getValue('remarks'),
 				user: gr.getValue('sys_created_by'),
-				date: gr.getValue('sys_created_on') // Fixed typo in 'getValue'
+				date: gr.getValue('sys_created_on'), // Fixed typo in 'getValue'
+				underwriter : gr.getDisplayValue('u_underwriter')
 			};
 			data.arr.push(obj);
 		}
 	}
+
+
+	if (input && input.action == 'create') {
+		var DecisionSysId1 = new GlideRecord('x_rptp_kotak_kotak_audit_trail');
+		DecisionSysId1.initialize();
+
+		DecisionSysId1.setValue('activity', 'Case Sheet of the Case was sent via Email');
+		DecisionSysId1.setValue("case_id", input.value);
+		DecisionSysId1.setValue('user',gs.getUserID());
+		DecisionSysId1.insert();
+
+		gs.addInfoMessage("Case Sheet pdf has been sent to your Email");
+	}
+
 	//gs.addErrorMessage(JSON.stringify(data.arr)); // Moved outside of loop to avoid multiple messages
 })();
 ]]></script>
@@ -155,54 +203,57 @@ span.section-title {
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-12-12 11:03:38</sys_created_on>
         <sys_id>5b8a6faf47129610e9ddbf66706d438e</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>78</sys_mod_count>
         <sys_name>Case sheet</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_5b8a6faf47129610e9ddbf66706d438e</sys_update_name>
-        <sys_updated_by>Surya.Prathap</sys_updated_by>
-        <sys_updated_on>2024-12-13 05:25:57</sys_updated_on>
-        <template><![CDATA[  <div ng-show='arr && arr.length > 0' class="header">
-        Case Sheet By {{arr[0].user}} On {{arr[0].date}}
-    </div>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-16 09:04:36</sys_updated_on>
+        <template><![CDATA[<div ng-show='arr && arr.length > 0' class="header">
+  Case Sheet <!--By {{arr[0].user}} On {{arr[0].date}}-->
+</div>
 
 <div ng-repeat="i in arr">
 
-  
-    <div class="case-sheet">
-        <div class="section">
-            <div class="row">
-                <span class="section-title">User ID:</span>
-                <span class="section-content">{{i.user}}</span>
-            </div>
-            <div class="row">
-                <span class="label">Date & Time:</span>
-                <span class="value">{{i.date}}</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Primary UW Decision:</div>
-            <div class="section-content">{{i.decision}}</div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Additional Requirement:</div>
-            <div class="section-content">{{}}</div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Primary UW Comments:</div>
-            <div class="section-content">{{i.comments}}</div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Primary UW Remarks:</div>
-            <div class="section-content remarks">{{i.remarks}}</div>
-        </div>
+  <div class="case-sheet">
+    <div class="section">
+      <div class="row">
+        <span class="section-title">User ID:</span>
+        <span class="section-content">{{i.user}}</span>
+      </div>
+      <div class="row">
+        <span class="label">Date & Time:</span>
+        <span class="value">{{i.date}}</span>
+      </div>
     </div>
 
+    <div class="section">
+      <div class="section-title">{{i.underwriter}} Decision:</div>
+      <div class="section-content">{{i.decision}}</div>
+    </div>
+
+   <!--<div class="section">
+      <div class="section-title">Additional Requirement:</div>
+      <div class="section-content">{{}}</div>
+    </div>-->
+
+    <div class="section">
+      <div class="section-title">{{i.underwriter}} Comments:</div>
+      <div class="section-content">{{i.comments}}</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">{{i.underwriter}} Remarks:</div>
+      <div class="section-content remarks">{{i.remarks}}</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="button-container" ng-if = 'visible'>
+  <button class="search-button"  ng-click = "DownloadPDF()">Download</button>
 </div>
 ]]></template>
     </sp_widget>
