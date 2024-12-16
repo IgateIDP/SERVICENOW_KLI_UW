@@ -571,6 +571,44 @@ function createEncodedQuery(filterObj) {
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>
+.panel-subheading {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #f9f9f9; /* Light gray background for visibility */
+  border: 1px solid #ddd; /* Subtle border to separate the section */
+  border-radius: 4px; /* Rounded corners for better design */
+  font-size: 14px;
+  color: #333; /* Darker text color for readability */
+  display: flex;
+  flex-wrap: wrap; /* Wrap content for responsive design */
+  gap: 20px; /* Space between items */
+}
+
+.info-item {
+  flex: 1 1 30%; /* Ensures even distribution of items */
+  min-width: 150px; /* Minimum width for responsiveness */
+  margin-bottom: 10px; /* Spacing between rows */
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555; /* Subtle color for labels */
+  margin-right: 5px;
+}
+
+.info-value {
+  color: #007bff; /* Highlighted color for values */
+}
+
+@media (max-width: 768px) {
+  .panel-subheading {
+    flex-direction: column; 
+    gap: 10px;
+  }
+  .info-item {
+    flex: 1 1 100%;
+  }
+}
 
 .panel-title2{
   display:inline;
@@ -941,6 +979,16 @@ tbody &gt; tr:nth-of-type(odd) {
 	
 	
 data.filter = $sp.getParameter('filter');
+	 var case_id = data.filter.split('=')[1];
+	//gs.addErrorMessage(case_id)
+	var gr =new GlideRecord('x_rptp_kotak_uw_case')
+	gr.addQuery('sys_id',case_id);
+	gr.query()
+	if(gr.next()){
+data.policy=gr.getDisplayValue('policy_id')
+	//	gs.addErrorMessage(data.policy)
+	data.member=gr.getDisplayValue('consumer_id')
+	data.loan=gr.getDisplayValue('loan_number.loan_number')}
 
 	if(input && input.action == 'notifyAgent'){
 		var agentTable = new GlideRecord("x_rptp_insureme_sp_branch");
@@ -959,7 +1007,9 @@ data.filter = $sp.getParameter('filter');
 		if(uwreq.next()){
 		//	gs.addErrorMessage(input.comment);
 			uwreq.setValue('reason_for_waiver',input.comment)
+			uwreq.setValue('status','W');
 			uwreq.setValue('waiver',true);
+			
 			uwreq.update();
 			gs.addInfoMessage("The selected Requirement has been Waived successfully");
 }
@@ -1187,7 +1237,7 @@ data.filter = $sp.getParameter('filter');
 			continue;
 
 		data.column_labels[field] = getFieldName(field);
-
+//gs.addErrorMessage(JSON.stringify(data.column_labels))
 		data.column_types[field] = ge.getED().getInternalType();
 	}
 
@@ -1296,14 +1346,14 @@ data.filter = $sp.getParameter('filter');
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-19 07:10:28</sys_created_on>
         <sys_id>3398dc10470a5e50e9ddbf66706d43ee</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name>Copy of KLI List Filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_3398dc10470a5e50e9ddbf66706d43ee</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-10 09:26:08</sys_updated_on>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-16 05:25:57</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <div class="modal-content" ng-if="ShowModal">
@@ -1338,6 +1388,17 @@ data.filter = $sp.getParameter('filter');
     <i class="fas fa-sync-alt" ng-click="reset()"></i>
 </h2>
 
+  <div class="panel-subheading">
+    <span>
+      <strong>Loan Number:</strong> {{data.loan}}
+    </span>
+    <span style="margin-left: 15px;">
+      <strong>Policy Number:</strong> {{data.policy}}
+    </span>
+    <span style="margin-left: 15px;">
+      <strong>Member:</strong> {{data.member}}
+    </span>
+  </div>
 
       <!--<button name="new" role="button" class="btn btn-primary btn-sm m-l-xs" ng-click="newRecord()" ng-if="options.show_new && data.canCreate && !data.newButtonUnsupported" aria-label="${Create new record}">${New}</button>-->
       <div class="pull-right" ng-if="options.show_keywords">
@@ -1399,7 +1460,7 @@ data.filter = $sp.getParameter('filter');
               </button>
             </td>
 
-            <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)' ng-disabled = "!(item.status.display_value === 'Open' && item.classification.display_value === 'Additional')">{{buttonName}}</button></td>
+            <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)' ng-disabled = "item.status.display_value !== 'Open'">{{buttonName}}</button></td>
             <!-- <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirectSub(item)'>{{buttonName}}</button></td>-->
             <td class='columns' ng-show='{{data.show_sub_button__1}}'><button class="btn btn-primary" ng-click='redirect1(item)'>{{buttonName1}}</button></td>
 
