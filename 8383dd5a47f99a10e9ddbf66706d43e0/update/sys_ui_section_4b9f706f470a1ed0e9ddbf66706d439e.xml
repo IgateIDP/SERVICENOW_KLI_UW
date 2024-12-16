@@ -1,128 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Profile" section_id="4b9f706f470a1ed0e9ddbf66706d439e" sys_domain="global" table="x_rptp_kotak_uw_case" version="3" view="kotak_uw_case">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>consumer_id.name</element>
+            <element>consumer_id.customer_name</element>
             <position>0</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>0840c1ef470a1ed0e9ddbf66706d4391</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>152dd405ffeade1019a8ffda7c4fd94b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consumer_id.fso_date_of_birth</element>
             <position>1</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4440c1ef470a1ed0e9ddbf66706d4392</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>512dd405ffeade1019a8ffda7c4fd94c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consumer_id.age</element>
             <position>2</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4392</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>592dd405ffeade1019a8ffda7c4fd94c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consumer_id.gender</element>
             <position>3</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4440c1ef470a1ed0e9ddbf66706d4393</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>512dd405ffeade1019a8ffda7c4fd94d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>4</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4393</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>592dd405ffeade1019a8ffda7c4fd94d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>loan_number.borrower</element>
             <position>5</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4440c1ef470a1ed0e9ddbf66706d4394</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>512dd405ffeade1019a8ffda7c4fd94e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>loan_number.co_borrower</element>
             <position>6</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4394</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>592dd405ffeade1019a8ffda7c4fd94e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consumer_id.nationality</element>
             <position>7</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4440c1ef470a1ed0e9ddbf66706d4395</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>512dd405ffeade1019a8ffda7c4fd94f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consumer_id.country</element>
             <position>8</position>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-11-29 12:23:52</sys_created_on>
-            <sys_id>4c40c1ef470a1ed0e9ddbf66706d4395</sys_id>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-16 11:57:04</sys_created_on>
+            <sys_id>592dd405ffeade1019a8ffda7c4fd94f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Profile" display_value="Profile" name="x_rptp_kotak_uw_case" sys_domain="global" view="efacc49c47465e50e9ddbf66706d4376">4b9f706f470a1ed0e9ddbf66706d439e</sys_ui_section>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-11-29 12:23:52</sys_updated_on>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-16 11:57:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
