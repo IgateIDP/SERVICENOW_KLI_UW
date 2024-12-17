@@ -22,15 +22,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6187a23047021690e9ddbf66706d43c7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Make fields readOnly on Kotak Case View</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_script_client_6187a23047021690e9ddbf66706d43c7</sys_update_name>
-        <sys_updated_by>samarth.n</sys_updated_by>
-        <sys_updated_on>2024-11-27 05:16:34</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 12:10:10</sys_updated_on>
         <table>x_rptp_kotak_uw_case</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
