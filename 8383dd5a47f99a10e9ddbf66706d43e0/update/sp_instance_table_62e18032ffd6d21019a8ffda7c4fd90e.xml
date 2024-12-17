@@ -5,8 +5,10 @@
         <color>default</color>
         <css/>
         <display_field/>
-        <field_list>requirement_id.requiremnt_id,requirement_id.requirement_name,requirement_id.description,requirement_id.type,classification,status,reason_for_waiver,raised_by,raised_date,recieved_date,upload_date,ageing_1,ageing_2</field_list>
-        <filter/>
+        <field_list>policy_id.master_policy_name,policy_id.policy_no,consumer_id.member_number,consumer_id.customer_name,consumer_id.age,sum_assured,risk_term,loan_number.loan_number</field_list>
+        <filter table="x_rptp_kotak_uw_case">sys_id=e3e9ae2247711250e9ddbf66706d43f8^ORsys_id=91cd65d6474652d0e9ddbf66706d4395<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="e3e9ae2247711250e9ddbf66706d43f8"/>
+            <item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="true" value="91cd65d6474652d0e9ddbf66706d4395"/>
+        </filter>
         <glyph/>
         <id/>
         <maximum_entries>10</maximum_entries>
@@ -16,22 +18,22 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">c0e6ba424786de90e9ddbf66706d437d</sp_column>
+        <sp_column display_value="1">d2d1c472ffd6d21019a8ffda7c4fd9ee</sp_column>
         <sp_page/>
-        <sp_widget display_value="KLI List">f48114074771d250e9ddbf66706d43bb</sp_widget>
+        <sp_widget display_value="Audit - Cases list">291efb66ff96d21019a8ffda7c4fd9c8</sp_widget>
         <sys_class_name>sp_instance_table</sys_class_name>
-        <sys_created_by>Ajmal.akram</sys_created_by>
-        <sys_created_on>2024-11-25 05:11:23</sys_created_on>
-        <sys_id>82e636c24786de90e9ddbf66706d435c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-09 10:11:45</sys_created_on>
+        <sys_id>62e18032ffd6d21019a8ffda7c4fd90e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sp_instance_table_82e636c24786de90e9ddbf66706d435c</sys_update_name>
+        <sys_update_name>sp_instance_table_62e18032ffd6d21019a8ffda7c4fd90e</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-17 06:49:12</sys_updated_on>
-        <table>x_rptp_kotak_requirement_mapping</table>
+        <sys_updated_on>2024-12-17 06:21:02</sys_updated_on>
+        <table>x_rptp_kotak_uw_case</table>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
@@ -44,8 +46,8 @@
 		"displayValue": "true"
 	},
 	"button_name": {
-		"value": "",
-		"displayValue": ""
+		"value": "View Audit",
+		"displayValue": "View Audit"
 	},
 	"button_page": {
 		"value": "",
@@ -60,8 +62,8 @@
 		"displayValue": ""
 	},
 	"show_sub_button": {
-		"value": "false",
-		"displayValue": "false"
+		"value": "true",
+		"displayValue": "true"
 	},
 	"show_toggle": {
 		"value": "false",
@@ -93,5 +95,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance_table>
-    <sys_translated_text action="delete_multiple" query="documentkey=82e636c24786de90e9ddbf66706d435c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=62e18032ffd6d21019a8ffda7c4fd90e"/>
 </record_update>

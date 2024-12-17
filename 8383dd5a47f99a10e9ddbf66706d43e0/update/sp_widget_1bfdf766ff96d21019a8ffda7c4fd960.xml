@@ -3,7 +3,7 @@
         <category>custom</category>
         <client_script><![CDATA[api.controller=function ($scope, $rootScope,$location, $window, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager, i18n,spAriaFocusManager) {
 	var c = this;
-
+	var fquery = '';
 	$rootScope.$on('CaseId', function(event, sysId) {
 
 		$scope.sys_idArray = sysId;
@@ -12,6 +12,21 @@
 			$scope.showList = false;
 		} else {
 			$scope.showList = true;
+
+
+			fquery = $scope.sys_idArray.map(function(id) {
+				return 'sys_id=' + id;
+			}).join('^OR');
+			
+		//	console.log(fquery)
+
+
+
+			$scope.data.filter = fquery;
+
+			spUtil.update($scope).then(function() {
+				initRecordWatcher($scope.data.table, $scope.data.filter);
+			});
 		}
 
 		console.log($scope.sys_idArray);
@@ -25,7 +40,7 @@
 	$scope.column1=$scope.column1.split(',');
 	$scope.column2=$scope.options.column2;
 	sessionStorage.setItem('redirect',JSON.stringify($location.search()));
-	$scope.redirect = function(item) {
+/*	$scope.redirect = function(item) {
 
 		var p = $scope.data.pageName;
 
@@ -58,6 +73,12 @@
 		console.log(s)
 		$location.search(s);
 	};
+	*/
+	
+		$scope.redirect = function(item) {
+			
+			$rootScope.$broadcast('AuditSysId',item.sys_id);
+		}
 
 
 
@@ -633,60 +654,10 @@
 
 	}	)
 
-	$rootScope.$on('filterList', function(event, data) {
-		var filter = data;
-		var fquery = 'u_rm_makerDYNAMIC90d1921e5f510100a9ad2572f2b477fe';
 
-		switch (filter) {
-			case 'submitted':
-			case 'saved':
-			case 'completed':
-				fquery += '^u_status=' + filter;
-				break;
-			case 'exception':
-				fquery += '^u_status=exceptions_raised_by_branch_checker^ORu_status=exceptions_raised_by_cpc_checker';
-				break;
-			case 'rejected':
-				fquery += '^u_status=rejected_by_cpc_checker^ORu_status=rejected_by_branch_checker';
-				break;
-			default:
-				fquery = '';
-		}
-
-		$scope.data.filter = fquery;
-
-		spUtil.update($scope).then(function() {
-			initRecordWatcher($scope.data.table, $scope.data.filter);
-			console.log('dnjdhs'+$scope.data.filter)
-		});
-	});
-
-	/*$scope.reset = function() {
-	//	console.log(JSON.stringify(c.data.list))
-		 c.data.list.forEach(function(item) {
-        console.log(item.u_status.display_value);
-    });
-		c.isEditable = false;
-	 var fquery = 'u_rm_makerDYNAMIC90d1921e5f510100a9ad2572f2b477fe';
-		 $scope.data.filter = fquery;
-
-
-    spUtil.update($scope).then(function() {
-        initRecordWatcher($scope.data.table, $scope.data.filter);
-    });
-	}
-*/
 	$scope.reset = function() {
-		// Log the display values of each item's status
-		/*c.data.list.forEach(function(item) {
-			//console.log(item.u_status.display_value);
-		});*/
+		$scope.data.filter = fquery; // Clear the filter to show all records
 
-		// Reset the filter and make records editable
-		//c.isEditable = false;
-		$scope.data.filter = ''; // Clear the filter to show all records
-
-		// Update the scope and reinitialize the record watcher
 		spUtil.update($scope).then(function() {
 			initRecordWatcher($scope.data.table, $scope.data.filter);
 
@@ -1419,14 +1390,14 @@ tbody &gt; tr:nth-of-type(odd) {
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-12-09 09:54:37</sys_created_on>
         <sys_id>1bfdf766ff96d21019a8ffda7c4fd960</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Audit - Cases list filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_1bfdf766ff96d21019a8ffda7c4fd960</sys_update_name>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-09 10:46:10</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 06:40:59</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
