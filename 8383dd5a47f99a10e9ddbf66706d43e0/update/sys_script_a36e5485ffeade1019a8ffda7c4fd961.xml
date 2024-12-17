@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rptp_kotak_requirement_mapping</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>case type</name>
+        <order>1000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+   
+    var hasMedical = false;
+    var allNonMedical = true;
+
+    
+    var gr = new GlideRecord('x_rptp_kotak_requirement_mapping');
+    gr.addQuery('case_id', current.case_id);
+    gr.query();
+    while (gr.next()) {
+        var type = gr.requirement_id.type + '';
+
+        if (type === 'medical') {
+            hasMedical = true;
+            allNonMedical = false;
+            break;
+        } else if (type !== 'non_medical') {
+            allNonMedical = false;
+        }
+    }
+    var gr1 = new GlideRecord('x_rptp_kotak_uw_case');
+    if (gr1.get(current.case_id)) { 
+        if (hasMedical) {
+            gr1.setValue('case_type', 'medical');
+            gs.addErrorMessage('Case type set to: medical');
+        } else if (allNonMedical) {
+            gr1.setValue('case_type', 'non_medical');
+            gs.addErrorMessage('Case type set to: non-medical');
+        }
+        gr1.update(); 
+    } else {
+        gs.addErrorMessage('No case record found for sys_id: ' + current.case_id);
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-16 12:03:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a36e5485ffeade1019a8ffda7c4fd961</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>case type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_a36e5485ffeade1019a8ffda7c4fd961</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:43:56</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a36e5485ffeade1019a8ffda7c4fd961"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a36e5485ffeade1019a8ffda7c4fd961</id>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-16 12:03:30</sys_created_on>
+        <sys_id>a39e9009ffeade1019a8ffda7c4fd93e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:03:30</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
