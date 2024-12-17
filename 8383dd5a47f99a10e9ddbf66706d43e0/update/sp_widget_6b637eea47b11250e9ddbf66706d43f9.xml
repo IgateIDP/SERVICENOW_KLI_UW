@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller = function($scope, spModal,$location,$rootScope) {
+        <client_script><![CDATA[api.controller = function($scope, spModal,$location,$rootScope,snAttachmentHandler) {
 	var c = this;
-	 $rootScope.$on('Senddata1', function(event, data) {
-        filter = data || ''; // Ensure filter is a string
-        console.log('Received filter:', filter);
-    });
-	
+	$rootScope.$on('Senddata1', function(event, data) {
+		filter = data || '';
+		console.log('Received filter:', filter);
+	});
+	$scope.RequirementType = 'Upload Medical Requirement';
+	c.selectedRequirementType = 'Medical';
+
+
+	if(c.selectedRequirementType == 'Medical'){
+		$scope.url = c.data.medicalUrl;
+	}
+	else{
+		$scope.url = c.data.nonMedicalUrl;
+	}
+
+	c.onRequirementTypeChange = function(option){
+
+		if(option === 'Medical'){
+			$scope.RequirementType = 'Upload Medical Requirement';
+
+
+		}
+		else{
+			$scope.url = c.data.nonMedicalUrl;
+			$scope.RequirementType = 'Upload Non Medical Requirement';
+		}
+
+
+	}
+
 	$scope.filter1='';
 	$scope.filter='';
-	
+
 	// Global variables to keep count and track errors
 	var updatedCount = 0;
 
@@ -20,9 +45,6 @@
 
 	$scope.ShowModal = false;
 
-	// Download details
-	$scope.downloadLink = "/path/to/template.xlsx"; // Update with the actual path
-	$scope.downloadFileName = "Template.xlsx";
 
 	$scope.openModal = function () {
 		$scope.ShowModal = true;
@@ -35,19 +57,19 @@
 	$scope.triggerFileUpload = function() {
 		document.getElementById('fileInput').click();
 	};
-$rootScope.$on('Senddata', function(event, data) {
-			$scope.filter1 = data || ''; // Ensure filter1 is a string
-			console.log('Received filter1:', filter1);
-		});
-		// Listen for Senddata1 (filter)
-		
-	 $rootScope.$on('Senddata1', function(event, data) {
-        $scope.filter = data || ''; // Ensure filter is a string
-        console.log('Received filter:', filter);
-    });
+	$rootScope.$on('Senddata', function(event, data) {
+		$scope.filter1 = data || ''; // Ensure filter1 is a string
+		//console.log('Received filter1:', filter1);
+	});
+	// Listen for Senddata1 (filter)
+
+	$rootScope.$on('Senddata1', function(event, data) {
+		$scope.filter = data || ''; // Ensure filter is a string
+		console.log('Received filter:', filter);
+	});
 	$scope.download = function() {
 		console.log($scope.filter);
-		
+
 		var selectedFilter = $scope.filter
 
 
@@ -61,14 +83,13 @@ $rootScope.$on('Senddata', function(event, data) {
 		.filter(Boolean) 
 		.join('^');
 
-		console.log('Updated JSON String:', updatedJsonString);
 		c.server
 			.get({
 			action: 'sendemail',
 			val: updatedJsonString
 		})
 			.then(function(res) {
-			console.log('Server response:', res);
+			//	console.log('Server response:', res);
 		});
 
 		// Open modal to confirm email was sent
@@ -81,11 +102,10 @@ $rootScope.$on('Senddata', function(event, data) {
 			backdrop: 'static'
 		});
 	};
+	var file = '';
 
-	c.uploadFile = function(inputElement) {
-		failedCount =0;
-		updatedCount =0;
-		var file = inputElement.files[0];
+	c.uploadFile = function (inputElement){
+		file = inputElement.files[0];
 		c.fileName = file.name;
 		if (file) {
 			$scope.DataUploaded = false;
@@ -95,127 +115,290 @@ $rootScope.$on('Senddata', function(event, data) {
 				var data = event.target.result;
 				var workbook = XLSX.read(data, { type: 'binary' });
 				var sheet = workbook.Sheets[workbook.SheetNames[0]];
-				var excelData = XLSX.utils.sheet_to_json(sheet);
-
-				var completedRequests = 0; 
-
-				excelData.forEach(function(record, index) {
-					CallSubflow(record, function() {
-						completedRequests++;
-						if (completedRequests === excelData.length) {
-							/*	console.log("Total Count: " + excelData.length);
-							console.log("Count of Total Uploads: " + completedRequests);
-							console.log("Successful Count: " + updatedCount);
-							console.log("Failed Count: " + failedCount);
-							console.log("Error Message on Failed Uploads: \n" + errorMessage);
-*/
-							// Prepare the data to be sent to the server
-							var summaryData = {
-								totalCount: excelData.length,
-								totalUploads: completedRequests,
-								successfulCount: updatedCount,
-								failedCount: failedCount,
-								errorMessage: errorMessage,
-								errorReason: errorReason
-							};
-							$scope.exceldata = summaryData;
-
-							// Send the summary data to the server
-							c.server.get({
-								action: 'create',
-								value: summaryData
-							}).then(function(response) {
-								// Handle the server response if needed
-								console.log("Server response: ", response);
-								$scope.id = response.data.jobID;
-								$scope.time = response.data.time;
-								$scope.DataUploaded = true;
-							});
-						}
-
-					});
-				});
-			};
-
+				$scope.excelData = XLSX.utils.sheet_to_json(sheet, { raw: false });
+			}
 			reader.readAsBinaryString(file);
 		} else {
 			console.error("No file selected.");
 		}
 	};
 
-	function CallSubflow(record, onComplete) {
-		var excelkey = [
-			'Master Policy Number',
-			'Requirement Status',
-			'Loan Account Number',
-			'Requirement (Test) code',
-			'Member Number_Dependent Number'
-		];
+	$scope.Submitfile = function() {
+		$scope.overlay = true;
+		failedCount =0;
+		updatedCount =0;
+		var completedRequests = 0; 
+		console.log($scope.excelData)
 
-		// Initialize the final object
-		var finalobject = {
-			loan_number: null,
-			member_dependent_number: null,
-			policy_number: null,
-			requirement_code: null,
-			requirement_status: null
-		};
-
-		console.log("-------------------------------");
-		console.log(finalobject);
-
-		// Process the record to populate finalobject
-		for (var key in record) {
-			for (var i = 0; i < excelkey.length; i++) {
-				if (key === excelkey[i]) {
-					switch (key) {
-						case 'Loan Account Number':
-							finalobject.loan_number = record[key].toString();
-							break;
-						case 'Member Number_Dependent Number':
-							finalobject.member_dependent_number = record[key].toString();
-							break;
-						case 'Requirement (Test) code':
-							finalobject.requirement_code = record[key].toString();
-							break;
-						case 'Requirement Status':
-							finalobject.requirement_status = record[key];
-							break;
-						case 'Master Policy Number':
-							finalobject.policy_number = record[key].toString();
-							break;
-					}
-				}
-			}
+		if(!$scope.excelData){
+			alert("Please Upload Your Excel")
 		}
 
-		// Call the server-side subflow
+		var fileData ={};
+
+		// Send the summary data to the server
 		c.server.get({
-			action: 'callsubflow',
-			data: finalobject
-		}).then(function(res) {
-			var updatedBoolean = res.data.updated;
-			var errorMsg = res.data.error_message;
+			action: 'create',
+			value: fileData
+		}).then(function (response) {
 
-			// Update counts and error messages based on the server response
-			if (updatedBoolean === false) {
-				failedCount++;
-				errorMessage += failedCount +". Loan Number - " + record["Loan Account Number"] +", Policy Number - " + record["Master Policy Number"] +", Member Dependent Number - " + record["Member Number_Dependent Number"] + ", for the requirement ID - "+record["Requirement (Test) code"] +", has not been updated,\n\n<div style='color:red;'>Error Message:</div>"+ errorMsg + "\n";
-				errorReason += failedCount +". Loan Number - " + record["Loan Account Number"] +", Policy Number - " + record["Master Policy Number"] +", Member Dependent Number - " + record["Member Number_Dependent Number"] + ", for the requirement ID - "+record["Requirement (Test) code"] +", has not been updated,\n\nError Message:\n"+ errorMsg + "\n";
-			} else {
-				updatedCount++;
-			}
+			$scope.excelSys = response.data.sys_id;
 
-			onComplete();
-		});
+			//console.log(response.data.upload )
+			$scope.overlay = false;
+			$scope.ShowModal = false;
+			$scope.id = response.data.jobID;
+			$scope.time = response.data.time;
+			$scope.DataUploaded = true;
+
+			var sna = snAttachmentHandler.create('ZZYYx_rptp_kotak_upload_excel', $scope.excelSys);
+
+			// Start file upload
+			sna.uploadAttachment(file, {
+				progress: function(progress) {
+
+				}
+			}).then(function(response) {
+
+				$scope.excelData.forEach(function (record, index) {
+					var subflowFunction = c.selectedRequirementType === 'Medical' ? CallSubflow : callNonMedSubflow;
+
+					// Call the subflow function
+					subflowFunction(record, function () {
+						completedRequests++;
+
+						if ($scope.excelData.length === 0) {
+							$scope.overlay = false;
+						}
+
+						if (completedRequests === $scope.excelData.length) {
+							// Prepare the summary data
+							var summaryData = {
+								totalCount: $scope.excelData.length,
+								totalUploads: completedRequests,
+								successfulCount: updatedCount,
+								failedCount: failedCount,
+								errorMessage: errorMessage,
+								errorReason: errorReason,
+								Inputfile : file,
+								tableName:"ZZYYx_rptp_kotak_upload_excel",
+								recSys: $scope.excelSys,
+								fileName: file.name
+							};
+
+							$scope.exceldata = summaryData;
+							
+							var csvData = {
+								content: $scope.content,
+								recSYS : $scope.excelSys
+							};
+							
+							c.server.get({
+								action: 'createCSV',
+								value: csvData
+							}).then(function (response) {
+								//console.log("==================="+ JSON.stringify(response.data));
+							});
+
+							// Send the summary data to the server
+							c.server.get({
+								action: 'update',
+								value: summaryData
+							}).then(function (response) {
+
+								$scope.excelSys = response.data.sys_id;
+
+								var sna = snAttachmentHandler.create('ZZYYx_rptp_kotak_upload_excel', $scope.excelSys);
+
+								// Start file upload
+								sna.uploadAttachment(file, {
+									progress: function(progress) {
+
+									}
+								}).then(function(response) {
+
+									var fileData = {
+										tableName:"ZZYYx_rptp_kotak_upload_excel",
+										recSys: $scope.excelSys,
+										fileName: file.name
+									}
+
+									c.server.get({
+										action: 'update',
+										value: fileData
+									}).then(function (response) {
+
+									});
+
+								}).catch(function(error) {
+									console.error('Error uploading ' + uploadField.DocumentType + ':', error);
+									reject(error); // Reject the promise if any error occurs
+								});
+
+		
+							});
+
+
+						}
+					});
+				});
+
+				function callNonMedSubflow(record, onComplete) {
+					var excelkey = {
+						'Requirement Mapping Id':'requirement_mapping_id',
+						'Requirement Status':'requirement_status',
+						'Requirement Received date':'requirement_received_date',
+						'Requirement upload date':'requirement_upload_date',
+					};
+
+					var finalobject = {
+						requirement_mapping_id : null,
+						requirement_status : null,
+						requirement_received_date: null,
+						requirement_upload_date: null,
+						tableName:"ZZYYx_rptp_kotak_upload_excel",
+						recSys: $scope.excelSys,
+						fileName: file.name
+					};
+
+					for (var key in record) {
+						if (excelkey[key]) {
+							finalobject[excelkey[key]] = record[key] != null ? record[key].toString() : null;
+						}
+					}
+					c.server.get({
+						action: 'CallNonmedflow',
+						data: finalobject
+					}).then(function(res) {
+						var updatedBoolean = res.data.updated;
+						var errorMsg = res.data.error_message;
+						$scope.content = res.data.newCsv;
+
+						// Update counts and error messages based on the server response
+						if (updatedBoolean === false) {
+							failedCount++;
+							errorMessage += failedCount +".Requirement Mapping ID - "+record["Requirement Mapping Id"] +", has not been updated,\n\n<div style='color:red;'>Error Message:</div>"+ errorMsg + "\n";
+							errorReason += failedCount +".Requirement Mapping ID - "+record["Requirement Mapping Id"] +", has not been updated,\n\nError Message:\n"+ errorMsg + "\n";
+						} else {
+							updatedCount++;
+						}
+
+						onComplete();
+					});
+				}
+
+				function CallSubflow(record, onComplete) {
+					var excelkey = {
+						'Master Policy Number':'master_policy_number',
+						'Medical Center/ TPA code':'medical_center_tpa_code',
+						'Medical Center/ TPA Name':'medical_center_tpa_name',
+						'Requirement received date':'requirement_received_date',
+						'Requirement Upload date':'requirement_upload_date',
+						'Home / Center Visit':'home_center_visit',
+						'Requirement Status':'requirement_status',
+						'Loan Account Number':'loan_number',
+						'Requirement (Test) code':'requirement_code',
+						'Member Number_Dependent Number':'member_dependent_number'
+					};
+
+					var finalobject = {
+						master_policy_number: null,
+						medical_center_tpa_code: null,
+						medical_center_tpa_name: null,
+						requirement_received_date: null,
+						requirement_upload_date: null,
+						home_center_visit: null,
+						requirement_status: null,
+						loan_number: null,
+						requirement_code: null,
+						member_dependent_number: null,
+						tableName:"ZZYYx_rptp_kotak_upload_excel",
+						recSys: $scope.excelSys,
+						fileName: file.name
+					};
+
+
+					for (var key in record) {
+						if (excelkey[key]) {
+							finalobject[excelkey[key]] = record[key] != null ? record[key].toString() : null;
+						}
+					}
+
+
+					// Call the server-side subflowt
+					c.server.get({
+						action: 'callsubflow',
+						data: finalobject
+					}).then(function(res) {
+						var updatedBoolean = res.data.updated;
+						var errorMsg = res.data.error_message;
+						$scope.content = res.data.newCsv;
+
+						// Update counts and error messages based on the server response
+						if (updatedBoolean === false) {
+							failedCount++;
+							errorMessage += failedCount +". Loan Number - " + record["Loan Account Number"] +", Policy Number - " + record["Master Policy Number"] +", Member Dependent Number - " + record["Member Number_Dependent Number"] + ", for the requirement ID - "+record["Requirement (Test) code"] +", has not been updated,\n\n<div style='color:red;'>Error Message:</div>"+ errorMsg + "\n";
+							errorReason += failedCount +". Loan Number - " + record["Loan Account Number"] +", Policy Number - " + record["Master Policy Number"] +", Member Dependent Number - " + record["Member Number_Dependent Number"] + ", for the requirement ID - "+record["Requirement (Test) code"] +", has not been updated,\n\nError Message:\n"+ errorMsg + "\n";
+						} else {
+							updatedCount++;
+						}
+
+						onComplete();
+					});
+					
+				}
+			});
+
+
+		})
 	}
-};
+}
 ]]></client_script>
         <controller_as>c</controller_as>
         <css>.upload-summary-container {
   width: 100%;
   font-family: Arial, sans-serif;
 }
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* Space between input and button */
+  padding: 10px 15px; /* Padding around the file-upload container */
+  margin: 20px auto; /* Center the container with margin */
+  border: 1px solid #e0e0e0; /* Subtle border for definition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.file-upload input[type="file"] {
+  flex: 1;
+  padding: 5px; /* Space inside the input field */
+  margin-right: 10px; /* Space between input and button */
+  border: 1px solid #ccc; /* Border for input field */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  font-size: 14px; /* Readable font size */
+  cursor: pointer;
+}
+
+.file-upload .upload-button {
+  padding: 10px 20px; /* Comfortable button size */
+  background-color: #4caf50; /* Primary color for the button */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Readable font size */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  display: flex;
+  align-items: center; /* Center icon and text */
+  gap: 5px; /* Space between icon and text */
+}
+
+.file-upload .upload-button i {
+  font-size: 16px; /* Adjust icon size */
+}
+
 
 .summary-title {
   color: #0073e6;
@@ -291,17 +474,14 @@ $rootScope.$on('Senddata', function(event, data) {
   margin-right: 10px;
 }
 
-input[type="file"] {
-  display: none; /* Hide the file input field */
-}
-.upload-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
 
-  .download-button {
-    justify-content: center;
+.upload-container {
+  align-items: center;
+  gap: 10px;
+}
+
+.download-button {
+  justify-content: center;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
@@ -312,15 +492,13 @@ input[type="file"] {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  }
+}
 
-  .download-button:hover, .upload-button:hover {
-    background-color: #0056b3;
-  }
+.download-button:hover, .upload-button:hover {
+  background-color: #0056b3;
+}
 
-  .upload-button input[type="file"] {
-    display: none;
-  }
+
 
 .upload-container {
   text-align: center;
@@ -375,8 +553,8 @@ input[type="file"] {
 .file-modal-container {
   background: #fff;
   border-radius: 10px;
-  padding: 20px;
-  width: 400px;
+  padding: 2rem;
+  width: 61rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -404,6 +582,26 @@ input[type="file"] {
   color: white;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
 </css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -421,78 +619,269 @@ input[type="file"] {
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-if(input && input.action == 'sendemail'){
-	//gs.addErrorMessage(());
-	var filter = input.val; // Use 'd' based on your preference
-var gr = new GlideRecord('sys_report');
-
-gr.addQuery('sys_id', 'e94cba7b47f59a50e9ddbf66706d43fc');
-gr.query();
-
-if (gr.next()) {
-    // Ensure a separator '^' if needed and append the new filter
-    var existingFilter = 'status=O'; // Handle null or undefined gracefully
-    var newFilter = existingFilter ? existingFilter + '^' + filter : filter;
-
-    gr.filter = newFilter;
- //   gs.addErrorMessage(JSON.stringify(gr.filter));
-
-    gr.update();
-}
-
-	  var reportId = "8a6cfebb47f59a50e9ddbf66706d4371";
-        var userId = gs.getUserID();
 
 
-        var result = new global.kotak_report().sending_report_dynamically(reportId, userId);
 
-}
+
+	var grExcel = new GlideRecord('sys_attachment');
+	grExcel.addQuery('table_sys_id', '1c89a77affb5129019a8ffda7c4fd937');
+	grExcel.addEncodedQuery('table_sys_idSTARTSWITH1c89a77affb5129019a8ffda7c4fd937^file_nameSTARTSWITHMedical Requirement Excel Template.xlsx^ORfile_nameSTARTSWITHNon-med upload Template.xlsx');
+	grExcel.query();
+
+	var url1 = ""; // To store Medical Requirement Template URL
+	var url2 = ""; // To store Non-med upload Template URL
+
+	while (grExcel.next()) {
+		var fileName = grExcel.getValue('file_name');
+		var fileUrl = gs.getProperty('glide.servlet.uri') + grExcel.getLink(false);
+
+		if (fileName == 'Medical Requirement Excel Template.xlsx') {
+			url1 = fileUrl;
+		} else if (fileName == 'Non-med upload Template.xlsx') {
+			url2 = fileUrl;
+		}
+	}
+	data.medicalUrl = url1;
+	data.nonMedicalUrl = url2;
+
+
+	if(input && input.action == 'sendemail'){
+		//gs.addErrorMessage(());
+		var filter = input.val; // Use 'd' based on your preference
+		var gr = new GlideRecord('sys_report');
+
+		gr.addQuery('sys_id', 'e94cba7b47f59a50e9ddbf66706d43fc');
+		gr.query();
+
+		if (gr.next()) {
+			// Ensure a separator '^' if needed and append the new filter
+			var existingFilter = 'status=O'; // Handle null or undefined gracefully
+			var newFilter = existingFilter ? existingFilter + '^' + filter : filter;
+
+			gr.filter = newFilter;
+			//   gs.addErrorMessage(JSON.stringify(gr.filter));
+
+			gr.update();
+		}
+
+		var reportId = "8a6cfebb47f59a50e9ddbf66706d4371";
+		var userId = gs.getUserID();
+
+
+		var result = new global.kotak_report().sending_report_dynamically(reportId, userId);
+
+	}
+
+	//Updating the Status of Each item in Excel
+	function buildCsv(headers, parser){
+
+		// Initialize CSV content
+		var csvContent = headers.join(',') + ',Status\r\n';
+
+		while (parser.next()) {
+			var row = parser.getRow();
+			var updateStatus = "";
+
+			if(data.updated === true){
+				updateStatus = "Success";
+			}else{
+				updateStatus = "Failure";
+			}
+
+			var errorMessage = data.error_message;
+
+
+			// Add row to CSV
+			csvContent += headers.map(header => (row[header] || '')).join(',') + ',' + updateStatus + '\r\n';
+		}
+
+		return {
+			csv: csvContent,
+		};
+	}
+
+	function createAttachment(tableName, recSys, fileName){
+		//CSv file
+		var sysAtt = new GlideRecord("sys_attachment");
+		sysAtt.addQuery("table_name", tableName);
+		sysAtt.addQuery("table_sys_id", recSys);
+		sysAtt.addQuery("file_name", fileName);
+		sysAtt.query();
+		//gs.addErrorMessage(sysAtt.getRowCount());
+
+		var sysAttSys ="";
+
+		if(sysAtt.next()){
+			sysAttSys = sysAtt.getValue("sys_id"); 
+		}
+
+		// Fetch the latest attachment for the record
+		var attachmentGR = new GlideRecord('sys_attachment');
+		attachmentGR.addQuery('sys_id', sysAttSys);
+		attachmentGR.query();
+
+		if (attachmentGR.next()) {
+			var attachmentSysId = attachmentGR.sys_id;
+
+			try {
+				// Retrieve attachment content
+				var attachment = new GlideSysAttachment();
+				var contentStream = attachment.getContentStream(attachmentSysId);
+				var parser = new sn_impex.GlideExcelParser();
+				parser.setSource(contentStream);
+
+				var sheetNames = parser.getSheetNames();
+
+				//gs.addInfoMessage("sheetnames-----"+sheetNames);
+
+				// Iterate over each worksheet in the Excel workbook
+				for (var i = 0; i < sheetNames.length; i++) {
+					parser.setSheetName(sheetNames[i]);
+
+					if (parser.parse()) {
+						var headers = parser.getColumnHeaders();
+						var content = buildCsv(headers, parser);
+						var newCsv = content.csv;
+
+						data.newCsv = newCsv;
+
+					} else {
+						gs.addErrorMessage('Error parsing sheet: ' + sheetNames[i] + ' - ' + parser.getErrorMessage());
+					}
+				}
+			} catch (error) {
+				gs.addErrorMessage('Error processing attachment: ' + error.message);
+			}
+		}
+
+	}
+
 	if(input && input.action == 'callsubflow'){
 
-try {
-		var inputs = {};
+		try {
+			var inputs = {};
 			inputs.loan_number =  input.data.loan_number; // String 
 			inputs.member_dependent_number =  input.data.member_dependent_number; // String 
-			inputs.policy_number =  input.data.policy_number; // String 
+			inputs.policy_number =  input.data.master_policy_number; // String 
 			inputs.requirement_code =  input.data.requirement_code; // String 
 			inputs.requirement_status =  input.data.requirement_status; // String
- 
-		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
-		// sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.kotak__updating_requirement_status').inBackground().withInputs(inputs).run();
-		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
-		var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.kotak__updating_requirement_status').inForeground().withInputs(inputs).run();
-		var outputs = result.getOutputs();
- 
-		// Get Outputs:
-		// Note: outputs can only be retrieved when executing synchronously.
-		data.error_message = outputs['error_message']; // String
-		data.updated = outputs['updated']; // True/False
-//	gs.addErrorMessage(data.error_message);
-	} catch (ex) {
-		var message = ex.getMessage();
-		gs.error(message);
-	}
+			inputs.medical_center_tpa_code = input.data.medical_center_tpa_code; // String 
+			inputs.medical_center_tpa_name = input.data.medical_center_tpa_name; // String 
+			inputs.requirement_received_date = input.data.requirement_received_date; // Date 
+			inputs.requirement_upload_date = input.data.requirement_upload_date; // Date 
+			inputs.home_center_visit = input.data.home_center_visit; // String 
+
+			// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+			// sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.kotak__updating_requirement_status').inBackground().withInputs(inputs).run();
+			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.kotak__updating_requirement_status').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+
+			// Get Outputs:
+			// Note: outputs can only be retrieved when executing synchronously.
+			data.error_message = outputs['error_message']; // String
+			data.updated = outputs['updated']; // True/False
+			//	gs.addErrorMessage(data.error_message);
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+
+		createAttachment(input.data.tableName, input.data.recSys, input.data.fileName);
 
 	}
-	
-if (input && input.action == 'create') {
-    var excelrequirement = new GlideRecord('x_rptp_kotak_upload_excel');
-    var currentDateTime = new GlideDateTime(); // Get the current date and time
 
-    excelrequirement.initialize(); 
-    excelrequirement.setValue('date_time_of_upload', currentDateTime); // Set the current date and time
-    excelrequirement.setValue('count_of_total_uploads', input.value.totalUploads);
-    excelrequirement.setValue('successful', input.value.successfulCount);
-    excelrequirement.setValue('failed', input.value.failedCount);
-    excelrequirement.setValue('reason', input.value.errorMessage);
-		excelrequirement.setValue('error_reason', input.value.errorReason);
-    excelrequirement.insert();
-	data.jobID =excelrequirement.getValue('number');
-	data.time = excelrequirement.getValue('date_time_of_upload');
-}
+	if(input && input.action == 'CallNonmedflow'){
+		try {
+			var inputs = {};
+			inputs.requirement_mapping_id = input.data.requirement_mapping_id; // String 
+			inputs.requirement_status = input.data.requirement_status; // String 
+			inputs.requirement_received_date = input.data.requirement_received_date; // Date 
+			inputs.requirement_upload_date = input.data.requirement_upload_date; // Date
 
-	
-	
+			// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+			// sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.excel_upload_for_nonmed_requiremnents').inBackground().withInputs(inputs).run();
+			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.excel_upload_for_nonmed_requiremnents').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+
+			// Get Outputs:
+			// Note: outputs can only be retrieved when executing synchronously.
+			data.error_message = outputs['error_message']; // String
+			data.updated = outputs['updated']; // True/False
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+		
+		createAttachment(input.data.tableName, input.data.recSys, input.data.fileName);
+	}
+
+	if (input && input.action == 'create') {
+		var excelrequirement = new GlideRecord('x_rptp_kotak_upload_excel');
+		var currentDateTime = new GlideDateTime(); // Get the current date and time
+
+		excelrequirement.initialize(); 
+		excelrequirement.setValue('date_time_of_upload', currentDateTime); // Set the current date and time
+		excelrequirement.setValue('type_of_upload', 'requirements upload');
+		excelrequirement.insert();
+
+		data.jobID = excelrequirement.getValue('number');
+		data.time = excelrequirement.getValue('date_time_of_upload');
+		data.sys_id = excelrequirement.getValue("sys_id");
+
+	}
+
+	if (input && input.action == 'update') {
+
+		var sysAtt = new GlideRecord("sys_attachment");
+		sysAtt.addQuery("table_name", input.value.tableName);
+		sysAtt.addQuery("table_sys_id", input.value.recSys);
+		sysAtt.addQuery("file_name", input.value.fileName);
+		sysAtt.query();
+
+		var sysAttSys ="";
+
+		if(sysAtt.next()){
+			sysAttSys = sysAtt.getValue("sys_id"); 
+		}
+
+		var excelUpload = new GlideRecord("x_rptp_kotak_upload_excel");
+		excelUpload.addQuery("sys_id", input.value.recSys);
+		excelUpload.query();
+
+		if(excelUpload.next()){
+			excelUpload.setValue('count_of_total_uploads', input.value.totalUploads);
+			excelUpload.setValue('successful', input.value.successfulCount);
+			excelUpload.setValue('failed', input.value.failedCount);
+			excelUpload.setValue('reason', input.value.errorMessage);
+			excelUpload.setValue('error_reason', input.value.errorReason);
+			excelUpload.setValue("requirement_upload", sysAttSys);
+			excelUpload.update();
+		}
+
+	}
+
+	if (input && input.action == 'createCSV') {
+
+		//Excel upload table object
+		var excelTable = new GlideRecord("x_rptp_kotak_upload_excel");
+		excelTable.addQuery("sys_id", input.value.recSYS);
+		excelTable.query();
+
+		if(excelTable.next()){
+
+		}
+
+		var newCSV = input.value.content;
+		// Attach processed CSV
+		var grAttachment = new GlideSysAttachment();
+		grAttachment.write(excelTable, 'Processed_File.csv', 'text/csv', newCSV);
+		//gs.info("CSV file successfully attached to record: " + current.sys_id);
+	}
+
+
+
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -500,14 +889,14 @@ if (input && input.action == 'create') {
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-14 07:58:43</sys_created_on>
         <sys_id>6b637eea47b11250e9ddbf66706d43f9</sys_id>
-        <sys_mod_count>200</sys_mod_count>
+        <sys_mod_count>377</sys_mod_count>
         <sys_name>Excel Upload</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_6b637eea47b11250e9ddbf66706d43f9</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-05 10:16:43</sys_updated_on>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-17 10:18:53</sys_updated_on>
         <template><![CDATA[<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 
 
@@ -567,25 +956,38 @@ if (input && input.action == 'create') {
   <div class="file-modal-container">
     <h3 class="modal-title">File Upload & Download</h3>
 
+    <div class="form-row">
+      <div class="form-group">
+        <label for="requirementType">Select Requirement Type:</label>
+        <select 
+                id="requirementType" 
+                ng-model="c.selectedRequirementType" 
+                ng-options="type for type in ['Medical', 'Non-Medical']"
+                class="form-control" 
+                ng-change="c.onRequirementTypeChange(c.selectedRequirementType)">
+        </select>
+      </div>
+    </div>
+
 
 
     <!-- Upload Section -->
     <div class="form-row">
-      <div class="form-group">
-        <p class="file-name" ng-if="c.fileName">{{ c.fileName }}</p>
-        <label class="upload-button" for="fileInput">
-          <i class="fas fa-file-excel"></i> Upload File
-        </label>
+      <div class="file-upload">
         <input type="file" id="fileInput" accept=".xls,.xlsx" onchange="angular.element(this).scope().c.uploadFile(this)">
+
+        <button class="upload-button" ng-click = 'Submitfile()'>
+          <i class="fas fa-file-excel"></i> {{RequirementType}}
+        </button>
       </div>
 
 
 
       <!-- Download Section -->
       <div class="form-group">
-         <a
+        <a
            class="download-link"
-           href="{{data.url}}"
+           href="{{url}}"
            target="_blank" 
            download="document.xlsx"
            >
@@ -593,6 +995,14 @@ if (input && input.action == 'create') {
         </a>
       </div>
     </div>
+    <div class="overlay" ng-if="overlay">
+  <div class="overlay-content">
+    <p><strong>Uploading Your File</strong></p>
+    <p>Your Excel file is being uploaded. Please wait while we process it.</p>
+    <p><i class="fa fa-spinner fa-spin"></i></p>
+  </div>
+</div>
+
 
 
 
@@ -602,6 +1012,9 @@ if (input && input.action == 'create') {
     </div>
   </div>
 </div>
+
+
+
 ]]></template>
     </sp_widget>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
