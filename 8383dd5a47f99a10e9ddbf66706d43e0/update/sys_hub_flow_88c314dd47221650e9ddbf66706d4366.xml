@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <compiler_build/>
+        <copied_from>6248aa43474e1ad0e9ddbf66706d4377</copied_from>
+        <copied_from_name>Kotak Case creation</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>kotak_case_creation</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name> Kotak Case creation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88c314dd47221650e9ddbf66706d4366</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name> Kotak Case creation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_hub_flow_88c314dd47221650e9ddbf66706d4366</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_variable_value action="delete_multiple" query="document_key=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=88c314dd47221650e9ddbf66706d4366^sys_idNOT IN40c314dd47221650e9ddbf66706d4369"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>88c314dd47221650e9ddbf66706d4366</id>
+        <name> Kotak Case creation</name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>40c314dd47221650e9ddbf66706d4369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=40c314dd47221650e9ddbf66706d4369"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=88c314dd47221650e9ddbf66706d4366^sys_idNOT IN40c314dd47221650e9ddbf66706d4377,40c314dd47221650e9ddbf66706d4378,40c314dd47221650e9ddbf66706d4379,44c314dd47221650e9ddbf66706d4375,48c314dd47221650e9ddbf66706d4376,48c314dd47221650e9ddbf66706d4377,48c314dd47221650e9ddbf66706d4378"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>40c314dd47221650e9ddbf66706d4377</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>81eef683-2dac-4a90-8897-6a716d47084f</ui_id>
+        <values>H4sIAAAAAAAA/+1W30/bMBD+V5Cf06gk/QF9m0A8bSANxAtjlhNfWgsnzmyn0FX933eOk7S03RgUTZrEo+/O3919uYu/uyURnExINB6OhwyiYZzEUdzvx4N0xDlAlo2T4ygbkIAULAeMtCyRQOtDQOZMVs74RHVpS/qgLHugD0LSUkmRLjCCC1NKtrh9MTCdCck1FGRydx+QkmnMYEGTyXLL9bf1SpaAxNAbV/DRpS94XxN2Ue61fd4HoDR3RfUDAk8WCg5YTcakgYDkrODMKr0gE6srNGhg/KqQiy5iJgqLgMTFPhnxE9Oe9F1cBtheCt7XHevE555A78rOmWXXiJ7aSjfh6UyJFIwnh0PGKmnPNm0+4Kq0QhX+St1qc1vJKi8uPS2kA2i/F1oqA5RD6Xp11TetZNcz9fi1rfRCFDUtjVOqlMnuxKzVIqmsq2dJKnGzh29vbRl39KERJOSYk+asLEUxpaVWc1HnwbLzcCrxEGZSPWJ9RkyLkKWuxxC/Agsv0H5em2+ZFi7XF4TBy6uAmIU5k8yYddvIOf1RuaI9CU271DPmrqRalPYTJphD09kqaJcn+eMwsvXcZQIkNxuLkzODQ95sQU3GtwoB+HLJxwk/HULc4/Eo6w14Bj026se9cRbFp6fRSXQ8YKGwkIf+crgLtVp9b0/qvWCrPAGNwKmaoxUZlQL4m8GfoXSomC8/DJJNoUZBSO0m5jBm1xAdnqlyigOES/j25neQOvSDCFhDODwQhcM+lIFnMG6utOL4EzoMdROk/vhMgkmB+i3xsN0AB7vzvfu8fKzTxzp9rNPb1+mVIuzld68VYRftw7f9ELbiC3LcYwvUP4xbAqxxHt02zkaEHb+XCBsN+/3/TYf57t5Bhm0z/w+lGCYrDWhLfXSb7vUKbUNL/kar3f8C8Wm71OoMAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>40c314dd47221650e9ddbf66706d4378</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>0c2d1e1a-3b77-413c-9160-27b90094b491</ui_id>
+        <values>H4sIAAAAAAAA/+1V204bMRD9FeTnzWrJ5gJ5q0A8tSAVxAul1qw9Syy8l9peII3y7x2vd0OaprRBqFKrPnouZ86csT03S6Ykm7HhdDwdAw7HaZYO0yRJR2IiJWKeT7PDYT5iESuhQIp0kGnk7SFiD6Abb3zipnY1v68c3PPmkQuw3i2VrTUsrl+OEnOlpcGSzW5uI1aDIWyHhs2WW67fZaohQ02hV57qwXmguou+W9Q7be93AVRGelJJxPDJYSmR2OSgLUasgFKCq8yCzZxpyGAQ5EWpF+uIuSodATIf+2TVVyp7lPi4HKk9gcG3PraFT4N6wZWfgoNLQheuMV24mFdKoA3iSMyh0e5k0xYCLmqnqjKktK122ZVuivI8yMLWAP2wyNJY5BJr36tn37WSX86rx4890zNVtrJ0Tl0J0OsTOGdU1jjPZ8kadbVD72DtFffykRE1FlSTF1DXqrzjtakeVFuHaBfxnaZDnOvqkfhZdVfGIHyPMU0B4jOyn7bmazDK1/pAMJS8iphd2BMN1j63TZrzL40nHUTo2uVBMZ8ijKrdOyrwgF1nq6h/NtmLlxGe712uUEu78WR0BSUvmyJD86mhTLlcymkmj8eYDmQ6yQcjmeMAJkk6mObD9Ph4eDQ8HEGsHBZxmwxCVA0xDSCr1WdRlbYp0HAl94cs0KM8g9WVVmLxOiiw9H55h7BGzIy/TkJZmtT+oJvZHVgOStNj4PTa7Gshv8doRQSNVpCnnVhA3RhWtKFytBbpx8/u/3z/sfnuuaZ+/TP0a+qs/xq2v4p+PWFBF8shD1/H1orqnAfXnbNbU4dvtaYm4yT52zZV6O4NFtW28n9wWVGx2qJxPET35fbfYRvb9ifb7PYb9wmZAQYKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>40c314dd47221650e9ddbf66706d4379</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>193db0b4-77d8-4e07-af40-5daa2d74e420</ui_id>
+        <values>H4sIAAAAAAAA/+1W227bMAz9lcLPsWE7F8d561r0aWuBtuvL1hm0RCdC5UtlOW0W5N9H+ZKkWbY1QTFgWB9FkYeHRyTEL0tLcGti+cEwGAL6w37c9/uu2x+wEeeISRLEnp8MrJ6VQYrkqSGWGNWHnjUHWRnjc6QKXUQPuYaHSOFjJRSmmOkohaIQ2ZRcuSgLCYu710ewmZBcYWZNvtz3rAIU5dSorMly5+q1FUiIUZLrrSnh5LIpYV9ZelHstX3cB5Arbki5PQufNWYciU0CssSelULGQedqYU20qsigEPhVJhdrj5nINAFaxve5FN8p7dg1fglSeQybu/WxTnzeKNlcJeeg4YbQma5U685muWBYNuJwTKCS+mzb1jhcFVrkWRNSl9pG57JKs8tGFmsN0D0cWaoSI46FqdWwb0tJbmb503XH9EJktSztpcwZyPUJtFYirrThs7QqcbtH78baKW7kIyPKF00SFSqfizoP0U6dqaSDk8j8ifiVYpo5wEyNDr0COBdkP6/Nd6CEyfWJYCh41bPKRXkmoSw3ZZPm0WNlSDcitOVGjWImhClR6FNKMMe2slWvG6f4t80Im75LBEpebo0SA1JX8K8VRfHl0mU+99ADux8HgT3w+swOvZFr+0Ecum44iAeh5yhk1IUOFUGRq9W37XnaQPHx0GU89mykLrQHwYCgiI/NxiH4MXdDD0PnegcKpmiE9jqQIB4RkzHaLBgQnxFDGzw/tDEEPhyHgTvyE0doTJ3TOtLbYPjHYviEwczriEQwMA96ONLZi3ijEYgSeRQvDse6rkM/LGqlmcA54VCH4RFIyJDah9MQ44bTkVh1cItUatBVeTjITR1HAFUhcziWyuc6uKXCcpBYMoyaVm/Q2i7vvezUn7+J92l4n4b/eBoOXIH+/Ot0K9BF9+3sfkPd6oMpjaHGqPmWdtaf9vLkrr1sVyDvrVag0dB1/7UtqKnuDZagXeX/4iJEyYoSlY4a7y7d4fvR1ib3i03p/gcpkmGHegwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value=" kotak case creation">c139e607474e1ad0e9ddbf66706d43b8</action_type>
+        <action_type_parent display_value=" kotak case creation">bf09eec3474e1ad0e9ddbf66706d435d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c139e607474e1ad0e9ddbf66706d43b8</compiled_snapshot>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>44c314dd47221650e9ddbf66706d4375</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>4b3957b8-fc76-4b79-be80-f8157dbca405</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>48c314dd47221650e9ddbf66706d4376</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>12e69707-6733-4146-ace8-2076f4934bcb</ui_id>
+        <values>H4sIAAAAAAAA/+1WW2vbMBT+K0XPjknjXNq8jYbCYGthLX3pOiFbR4mobHmS3DYL/u87suwky8LWZmVs0Cdzbt/5zsXi3K6I5GRKBpPRZMRgMErSZJD0+8kwG3MOIMQkPR6IIYlIwXJAT8dSBbQRIvLAVOWVT9SUrqT32rF7eq8kzXRhqxwM+nBpS8WWN89wzRZScQMFmd7eRaRkBrM4tExXO6bnclYsBYWu15700UUgva8Qtyz36j7sA9CGe1L9iMCTg4IDshFMWYhIzgrOnDZLMnWmQoUBxi8LtVx7LGThEJB43ycrv2Hak773E4DlZRBsa7FJPAstDCYxY45dIXrmKtO6ZwstM7ChORwEq5Q729YFh8vSSV2EkKbUNlqrKi8uQlvIGqCbGGoqC5RD6Wv17NtSxNVCP37qmJ7LomlLa1Q6Y2otMeeMTCvn+axIJa/39Dtou4779qESFOSYk+asLGUxp6XRD7LJg7TzeK5QiIXSj8jPynkRs8zXGOMUWHyO+lmjvmFG+lwfEQaD64jYpT1TzNpN2dhz+rXypEMT2nJp6JgPyYws3TtM8ADryoLSV7VVDEp7nOu6jrr/Lf3l7rLNmgoJitutf2214pOUn44g6fFkLHpDLqDHxv2kNxGD5PR0cDI4HrJYOsjjHPIUTJzpqnBmWddfsso6jT9bQ/NzhYn5AXg+GMGCRDMlfZskPxgvILyfbTCLyn8OJ9iEI5ywmuIqANWCptK4xcGQXKeIN/c7cTivEI44BfNbypR0yz+YwhrDTzbM+PAZbHZEMwU2AxpWLyDuzjr6YVA/P/NvW/q2pf/glr7wwvj9K91dGOfdM737bHeXBeT4e+CIwzO+c120xqOb1theGMevdWGMR/3+/3ZkhOpe4cbY7fxfvDMwWWnBOBq8u3QvPz+2bov9h0h99x3PvhnwywsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>48c314dd47221650e9ddbf66706d4377</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>8f50a952-06f1-4aa5-aa16-ae6e4109ed5c</ui_id>
+        <values>H4sIAAAAAAAA/+1V3U/bMBD/V5Cf2ygk/YC+TSCeNpAG4oWBdYnP1MOJM8cBuqr/+85xUqqu24ChSZv2Ysn38bu739l3V0umBJuxZDqejgGTcZqlSRrH6SifCIEo5TTbT+SIDVgJBZKlg0wjby8Ddg+68cJHbitX8Tvj4K47tYGSt8ZkJ1RdaVhcPtM8nystLJZsdnU9YBVYiubQstlyS/Xc3DVkqMn0wgfYOw3J7yrILaqdsve7AIwVPql4wPDRYSmQspGgaxywAkoBztgFmznbkMAiiLNSL9YWc1U6AmTe9rFWXynsQeztJFJ5OQbd+toGPg40BpU8BgfnhJ67xnbm+dyoHOtAjkAJjXZHm7JgcFY5ZcrgEjgP3kY3RXkaaGFrgL5rJGlq5AIrX6vPvitFns/Nw8c+0xNVtrR0Sm1y0OsbOGdV1jifz5I16mIH30HaM+7pIyFqLCgmL6CqVHnLK2vuVRuH0i6iW02XSGrzQPnV6raMIPc1RtQFiE5IftyKL8EqH+sDwZDzasDqRX2koa6fyibO+ZfGJx1I6MrlgTHvkltVuXcU4B67ylaD/iNlP32M8PTupEIt6o1P1H6BsikytJ8a8hTLpZhm4nCM6VCkEzkcCYlDmMTpcCqT9PAwOUj2RxAph0XknduDQ56bhtINSKvVTWasNQ+vBu3dCSk3/DfBcjPsET4b+gFaSSTg8Pup66+E9a4E03BqN3IjOb2Jwj9G/2ZeidlD0ezKGlu3UBSD9JWxYBdhZCkR4Ikb0FjnyENfg3Sjpd9Pwf/9/sf7/cI19uvJ0a+xk350bI+Sfn1RztqXE0bL1grrlHuXnbJbY/tvtcYm4zj+2zZZqO4NFtk2839wmVGwqkbreLDuw718x21s4x9su+tvbxeoFTgKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>48c314dd47221650e9ddbf66706d4378</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>d850cdb1-eead-474c-9f7b-c89a2bd091e9</ui_id>
+        <values>H4sIAAAAAAAA/+VYXW/qOBD9K1GegU0IENK3VRHSle7eSm33vty9spzYKVaNndpOvxD/fSdxEhCkQLQgtdpHj8eeMzPnTAy/Vi4j7pVLIi9Ko2g8DT0vCDxvMgkS7MdxMEliL8Yjt+cKvKTgaXDMKSyfMc+L9StSmcnQozT4ESn6lDNFl1QYDT6E6Yzjt58nuCYLxomiwr369bvnZlhBNEOVe7Xa2ToVLscx5eB6X+HdgW/esmaJyj1r+759zPlhN6QiBRSv59JXQwWhgCHFXNOeu8SCYCPVW2NRFJMbwTeGBRMGbnQL51fN3iHu1Cv8UgpZJdTuNcsy8sxWzm6lM2zwnVF5YnJVuScLyRKqbU0ITXHOzfW2zTrcZIZJYY/Y1O1pyfOl+GFL4jYX1I0CS64pIjQrki3QV6mkdwv5clsjnTNR1qXa5DLBvFlhYxSLc1PgWbmUl51GS5xlTDygTMlnVh4GLMvBA4fFIOXyBYJq9iAGOCmAD6C2eDAH+6w0/8SKFVn8BdfAYQDEOLAE2TZqmauynM8o4bkuNxQW2t7lrnuuftPXHGu9yRzKjp7yAretQ5UxskUrjiSKZeZPuOKZVsmte7VqxgdpGG1ol0hBWIFCb0mnlgCEY+SfHO4gq1UYT4I4nNJ+Eo7C/miS0D72h1GfRpiMp1HoTYbpgBm6HNzSp2tJ6Hq9r7Qz3txRmMcrUgvzerskbWWqJLpn+952QSVR/2wSHXneVxMpBP98Gu2uOluCI9LzyUGikQ2ntFQG2VpuaW9fM525fgKEmus3BTud+O0jVBXVU0Y5afsazYuNna/R8P/7NfqURAdABNkOMsGZKJ8XAPRSChgfpF/s73CtpNiG/6UN62RfB9gx0nnvrIYT4NRquIPYzr3F0wKxnvslZXZnfm2sRBCcTQTB8HwiWDWpNsVsqXv9qiw6Wvu/F/541x9ouHXAX7eJrFNMv2vM4XpfxEEnFW8Tzu7MPuDdmZ+eH6iyd8kxsICjVTxkNYxeGHmgZhO99iLSvGD+2LZfCRPVjSrTu8Az1j/4ayreesayFC2hcyyD17aiCZBDI6woSmUuCKre2RsiFZ1MmdKmct4fNrcU9CMcCeJ0zII6pbfTeHf8IB/Poy7lt9SpE6miaQcSccpEnCaRbml3GVyjMz5ULzG45pjxsiPwMyrbailVSqoPhteRZh5gxYmT7URQ/llB/ffR1yaD1hF4BOuX+E1+/vGUUByPhngSBr7veb5HQm8ahv50EqcTHI7SjU4R0iKBiQo3p0AVuB7V1Kj77O/PoGrgdps1J4CqGTiTovgJPgyNU6CC9jo1quO4q5kSS8kpFjtD5R6Q/zEvvwoNXcefcrB8iT+pcna/W21raq33pZ4POftbsKecfitoNqXecOqTpD8N/bA/SsmkHxE87uMoHocBockoPeeL4Pe/VwUj0RAWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=88c314dd47221650e9ddbf66706d4366^sys_idNOT IN0cc314dd47221650e9ddbf66706d4373,ccc314dd47221650e9ddbf66706d4374"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d5753e4347ce1ad0e9ddbf66706d43bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>0cc314dd47221650e9ddbf66706d4373</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</ui_id>
+        <values>H4sIAAAAAAAA/6VTXW+jMBD8L34mCEK+yFvVqFKl3lVqq76cqmixl8SqsTnbJOUQ//3WgdCqTyfdE+zs7nhmMB0zja8b717MjXPyoNn211vEpA4YvXdMCrZlaS7KPE1yns1X2TxJ5ptFWqyyIp2LDFCsWMQ0VEiT0mPlqDyBakLddYsiy5frYjMr+Xo1WxTrfFbgJpmVm3S5FgWHRbKMLbqYg0PX97QspKsVtK//w8GPUgmLo6EaLOnzaNm2+9b6V4MKClQ0ej86/GbYt3UoLXJjxRV4GHeeJpQeQcQ8iRh+eNQC6fgSlMOIVaAFeGNbtvW2IcAiiEet2mniKLUnOhZmP5z8QyemSRIGSyRDHIfmVL5AoXA3pDm0yh14eCZ67hs7jvOjkRzdEIfAEhrlb79iw8Bj7aXRw4oPxOO2UU2lfw5psIng+vEIaRzuBdbBbJA/eimfj+b8dFV6J/UlmLGpDAc1VeC9lUXjg56OocKKiPYV1LXUh31tzUlelklLFR8UFXGpzJkODVc6Bh6Ex5QtxHeE7y7wK1gZXPwgGlruI+Zad6vAuU8vFOT+dxOUDM5GD/shhrDCraz9DR1wwlFu/xZu/8A9ZcqlIwmXz3F//bdCo6VbJPlX6GzsexD/ifV/ARmt+cylAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51753e4347ce1ad0e9ddbf66706d43c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value=" Kotak Case creation">88c314dd47221650e9ddbf66706d4366</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-17 05:54:31</sys_created_on>
+        <sys_id>ccc314dd47221650e9ddbf66706d4374</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-17 05:54:31</sys_updated_on>
+        <ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</ui_id>
+        <values>H4sIAAAAAAAA/61Ty07jMBT9F6/bKI9OId0hKiQkZpAKYjNC1Y1901o4dvCjJRP13+e6SQNiNYtZJffc1znHds9M8G3w7tncOCd3mq1+v86Y1BGj/55JwVYsK0VdZmnJi3xZ5GmaXy+yallUWS4KQLFkM6ahQaqUHhtH4QFUiHHfi6tKlD+wmItiWc8XosY5LNNiflXnRVnm13m2gCS2JRt8D9Jig9q704mGCOlaBd3L/5jF91IJi6PAFizx9WjZqv+W+lfBCipUVHo/Kv5mgO/aGFrkxooL8DD2bCaUPpFEns4YfnjUAml9DcrhjDWgBXhjO7byNhBgEcSjVt1UsZfa0zgWaz+c/EMbszSNhTWSII5DcgqfoVK4HlwdUvUaPDzReO6DHcv53kiObrBDYA1B+duv2FDw2Hpp9NDi4+Cx26jQ6F+DG2wacDlEQoLDrcA2io30Ry31094cNxemd1KfjRmTynBQUwTeW1kFH/n0DNX5mLcNtK3Uu21rzUGem4lLk+wUBUmtzJGWxiueAI/EE/IWkjvC12f4BayMKn7SGGo+zZjr3K0C5z61kJHb9xCZDMpGDdvBhtjCrWz9DS044Ej39BpfwzB78pRLRxTOx3F/eWsx0dEtkvwrdDT2LZL/xE5/AW6l8uS1AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_88c314dd47221650e9ddbf66706d4366"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_88c314dd47221650e9ddbf66706d4366"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_88c314dd47221650e9ddbf66706d4366"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_88c314dd47221650e9ddbf66706d4366"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=88c314dd47221650e9ddbf66706d4366"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=88c314dd47221650e9ddbf66706d4366"/>
+</record_update>
