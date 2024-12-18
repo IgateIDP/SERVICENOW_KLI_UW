@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <app_config display_value="Kotak Tracking Portal App Config">5ed8008438c2da506a1a67498c87a410</app_config>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
@@ -510,15 +510,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f6ba00004706da50e9ddbf66706d4391</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>home</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_ux_screen_f6ba00004706da50e9ddbf66706d4391</sys_update_name>
-        <sys_updated_by>kumar.raja</sys_updated_by>
-        <sys_updated_on>2024-12-04 10:48:49</sys_updated_on>
+        <sys_updated_by>LE96923</sys_updated_by>
+        <sys_updated_on>2024-12-18 05:17:02</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=f6ba00004706da50e9ddbf66706d4391"/>
 </record_update>

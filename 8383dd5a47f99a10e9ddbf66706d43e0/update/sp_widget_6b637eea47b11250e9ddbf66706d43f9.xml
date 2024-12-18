@@ -13,20 +13,25 @@
 
 	if(c.selectedRequirementType == 'Medical'){
 		$scope.url = c.data.medicalUrl;
+		$scope.Template = "Download Medical Template"
 	}
 	else{
 		$scope.url = c.data.nonMedicalUrl;
+		$scope.Template = "Download Non Medical Template"
 	}
 
 	c.onRequirementTypeChange = function(option){
 
 		if(option === 'Medical'){
 			$scope.RequirementType = 'Upload Medical Requirement';
+			$scope.url = c.data.medicalUrl;
+			$scope.Template = "Download Medical Template"
 
 
 		}
 		else{
 			$scope.url = c.data.nonMedicalUrl;
+			$scope.Template = "Download Non Medical Template"
 			$scope.RequirementType = 'Upload Non Medical Requirement';
 		}
 
@@ -106,7 +111,24 @@
 
 	c.uploadFile = function (inputElement){
 		file = inputElement.files[0];
-		c.fileName = file.name;
+
+		var maxSize = 5 * 1024 * 1024;
+		if (file.size > maxSize) {
+			alert("File size exceeds 5MB. Please upload a smaller file.");
+			inputElement.value = ''; // Clear the input
+			return;
+		}
+
+		var allowedExtensions = ['xls', 'xlsx'];
+		var fileExtension = file.name.split('.').pop().toLowerCase();
+
+		if (allowedExtensions.indexOf(fileExtension) === -1) {
+			alert("Invalid file type. Please upload a .xls or .xlsx file.");
+			inputElement.value = ""; // Reset the input field
+			return;
+		}
+
+	
 		if (file) {
 			$scope.DataUploaded = false;
 			var reader = new FileReader();
@@ -124,6 +146,7 @@
 	};
 
 	$scope.Submitfile = function() {
+			c.fileName = file.name;
 		$scope.overlay = true;
 		failedCount =0;
 		updatedCount =0;
@@ -131,7 +154,9 @@
 		console.log($scope.excelData)
 
 		if(!$scope.excelData){
-			alert("Please Upload Your Excel")
+			alert("Please Upload Your Excel");
+			$scope.overlay = false;
+			return;
 		}
 
 		var fileData ={};
@@ -145,7 +170,6 @@
 			$scope.excelSys = response.data.sys_id;
 
 			//console.log(response.data.upload )
-			$scope.overlay = false;
 			$scope.ShowModal = false;
 			$scope.id = response.data.jobID;
 			$scope.time = response.data.time;
@@ -172,6 +196,7 @@
 						}
 
 						if (completedRequests === $scope.excelData.length) {
+
 							// Prepare the summary data
 							var summaryData = {
 								totalCount: $scope.excelData.length,
@@ -187,17 +212,18 @@
 							};
 
 							$scope.exceldata = summaryData;
-							
+
 							var csvData = {
 								content: $scope.content,
 								recSYS : $scope.excelSys
 							};
-							
+
 							c.server.get({
 								action: 'createCSV',
 								value: csvData
 							}).then(function (response) {
 								//console.log("==================="+ JSON.stringify(response.data));
+
 							});
 
 							// Send the summary data to the server
@@ -216,6 +242,8 @@
 
 									}
 								}).then(function(response) {
+									$scope.overlay = false;
+
 
 									var fileData = {
 										tableName:"ZZYYx_rptp_kotak_upload_excel",
@@ -235,7 +263,7 @@
 									reject(error); // Reject the promise if any error occurs
 								});
 
-		
+
 							});
 
 
@@ -256,9 +284,6 @@
 						requirement_status : null,
 						requirement_received_date: null,
 						requirement_upload_date: null,
-						tableName:"ZZYYx_rptp_kotak_upload_excel",
-						recSys: $scope.excelSys,
-						fileName: file.name
 					};
 
 					for (var key in record) {
@@ -272,7 +297,6 @@
 					}).then(function(res) {
 						var updatedBoolean = res.data.updated;
 						var errorMsg = res.data.error_message;
-						$scope.content = res.data.newCsv;
 
 						// Update counts and error messages based on the server response
 						if (updatedBoolean === false) {
@@ -333,6 +357,7 @@
 						var updatedBoolean = res.data.updated;
 						var errorMsg = res.data.error_message;
 						$scope.content = res.data.newCsv;
+						$scope.objectT = res.data.object;
 
 						// Update counts and error messages based on the server response
 						if (updatedBoolean === false) {
@@ -345,7 +370,7 @@
 
 						onComplete();
 					});
-					
+
 				}
 			});
 
@@ -671,91 +696,6 @@
 		var result = new global.kotak_report().sending_report_dynamically(reportId, userId);
 
 	}
-
-	//Updating the Status of Each item in Excel
-	function buildCsv(headers, parser){
-
-		// Initialize CSV content
-		var csvContent = headers.join(',') + ',Status\r\n';
-
-		while (parser.next()) {
-			var row = parser.getRow();
-			var updateStatus = "";
-
-			if(data.updated === true){
-				updateStatus = "Success";
-			}else{
-				updateStatus = "Failure";
-			}
-
-			var errorMessage = data.error_message;
-
-
-			// Add row to CSV
-			csvContent += headers.map(header => (row[header] || '')).join(',') + ',' + updateStatus + '\r\n';
-		}
-
-		return {
-			csv: csvContent,
-		};
-	}
-
-	function createAttachment(tableName, recSys, fileName){
-		//CSv file
-		var sysAtt = new GlideRecord("sys_attachment");
-		sysAtt.addQuery("table_name", tableName);
-		sysAtt.addQuery("table_sys_id", recSys);
-		sysAtt.addQuery("file_name", fileName);
-		sysAtt.query();
-		//gs.addErrorMessage(sysAtt.getRowCount());
-
-		var sysAttSys ="";
-
-		if(sysAtt.next()){
-			sysAttSys = sysAtt.getValue("sys_id"); 
-		}
-
-		// Fetch the latest attachment for the record
-		var attachmentGR = new GlideRecord('sys_attachment');
-		attachmentGR.addQuery('sys_id', sysAttSys);
-		attachmentGR.query();
-
-		if (attachmentGR.next()) {
-			var attachmentSysId = attachmentGR.sys_id;
-
-			try {
-				// Retrieve attachment content
-				var attachment = new GlideSysAttachment();
-				var contentStream = attachment.getContentStream(attachmentSysId);
-				var parser = new sn_impex.GlideExcelParser();
-				parser.setSource(contentStream);
-
-				var sheetNames = parser.getSheetNames();
-
-				//gs.addInfoMessage("sheetnames-----"+sheetNames);
-
-				// Iterate over each worksheet in the Excel workbook
-				for (var i = 0; i < sheetNames.length; i++) {
-					parser.setSheetName(sheetNames[i]);
-
-					if (parser.parse()) {
-						var headers = parser.getColumnHeaders();
-						var content = buildCsv(headers, parser);
-						var newCsv = content.csv;
-
-						data.newCsv = newCsv;
-
-					} else {
-						gs.addErrorMessage('Error parsing sheet: ' + sheetNames[i] + ' - ' + parser.getErrorMessage());
-					}
-				}
-			} catch (error) {
-				gs.addErrorMessage('Error processing attachment: ' + error.message);
-			}
-		}
-
-	}
-
 	if(input && input.action == 'callsubflow'){
 
 		try {
@@ -787,7 +727,101 @@
 			gs.error(message);
 		}
 
-		createAttachment(input.data.tableName, input.data.recSys, input.data.fileName);
+		//Updating the Status of Each item in Excel
+		function buildCsv(headers, parser){
+
+			// Initialize CSV content
+			var csvContent = headers.join(',') + ',Status\r\n'+',Error Message\r\n';
+
+			while (parser.next()) {
+				var row = parser.getRow();
+				var updateStatus = "";
+
+				if(data.updated === true){
+					updateStatus = "Success";
+				}else{
+					updateStatus = "Failure";
+				}
+
+				//var errorMessage = data.error_message;
+
+
+				// Add row to CSV
+				csvContent += headers.map(header => (row[header] || '')).join(',') + ',' + updateStatus + '\r\n';
+				//csvContent += headers.map(header => (row[header] || '')).join(',') + ',' + errorMessage + '\r\n';
+			}
+
+			return {
+				csv: csvContent,
+			};
+		}
+
+		//CSv file
+		var sysAtt = new GlideRecord("sys_attachment");
+		sysAtt.addQuery("table_name", input.data.tableName);
+		sysAtt.addQuery("table_sys_id", input.data.recSys);
+		sysAtt.addQuery("file_name", input.data.fileName);
+		sysAtt.query();
+		//gs.addErrorMessage(sysAtt.getRowCount());
+
+		var sysAttSys ="";
+
+		if(sysAtt.next()){
+			sysAttSys = sysAtt.getValue("sys_id"); 
+		}
+
+
+		// Fetch the latest attachment for the record
+		var attachmentGR = new GlideRecord('sys_attachment');
+		attachmentGR.addQuery('sys_id', sysAttSys);
+		attachmentGR.query();
+
+		if (attachmentGR.next()) {
+			var attachmentSysId = attachmentGR.sys_id;
+
+			try {
+				// Retrieve attachment content
+				var attachment = new GlideSysAttachment();
+				var contentStream = attachment.getContentStream(attachmentSysId);
+				var parser = new sn_impex.GlideExcelParser();
+				parser.setSource(contentStream);
+
+				var sheetNames = parser.getSheetNames();
+
+				//gs.addInfoMessage("sheetnames-----"+sheetNames);
+
+				// Iterate over each worksheet in the Excel workbook
+				for (var i = 0; i < sheetNames.length; i++) {
+					parser.setSheetName(sheetNames[i]);
+
+					if (parser.parse()) {
+						var headers = parser.getColumnHeaders();
+						// if (headers.length < 4) {
+						//     gs.addErrorMessage('Invalid number of headers in the sheet: ' + sheetNames[i]);
+						//     continue;
+						// }
+
+						var content = buildCsv(headers, parser);
+						var newCsv = content.csv;
+
+						data.newCsv = newCsv;
+						data.object = excelTable;
+
+						//gs.addInfoMessage(newCsv);
+
+						// Attach processed CSV
+						//var grAttachment = new GlideSysAttachment();
+						//grAttachment.write(excelTable, 'Processed_File.csv', 'text/csv', newCsv);
+						//gs.info("CSV file successfully attached to record: " + current.sys_id);
+
+					} else {
+						gs.addErrorMessage('Error parsing sheet: ' + sheetNames[i] + ' - ' + parser.getErrorMessage());
+					}
+				}
+			} catch (error) {
+				gs.addErrorMessage('Error processing attachment: ' + error.message);
+			}
+		}
 
 	}
 
@@ -813,8 +847,6 @@
 			var message = ex.getMessage();
 			gs.error(message);
 		}
-		
-		createAttachment(input.data.tableName, input.data.recSys, input.data.fileName);
 	}
 
 	if (input && input.action == 'create') {
@@ -863,7 +895,7 @@
 	}
 
 	if (input && input.action == 'createCSV') {
-
+		
 		//Excel upload table object
 		var excelTable = new GlideRecord("x_rptp_kotak_upload_excel");
 		excelTable.addQuery("sys_id", input.value.recSYS);
@@ -872,7 +904,7 @@
 		if(excelTable.next()){
 
 		}
-
+		
 		var newCSV = input.value.content;
 		// Attach processed CSV
 		var grAttachment = new GlideSysAttachment();
@@ -889,14 +921,14 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-14 07:58:43</sys_created_on>
         <sys_id>6b637eea47b11250e9ddbf66706d43f9</sys_id>
-        <sys_mod_count>377</sys_mod_count>
+        <sys_mod_count>395</sys_mod_count>
         <sys_name>Excel Upload</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_6b637eea47b11250e9ddbf66706d43f9</sys_update_name>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-17 10:18:53</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:06:06</sys_updated_on>
         <template><![CDATA[<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 
 
@@ -991,7 +1023,7 @@
            target="_blank" 
            download="document.xlsx"
            >
-          <i class="fas fa-download"></i> Download Template
+          <i class="fas fa-download"></i> {{Template}}
         </a>
       </div>
     </div>

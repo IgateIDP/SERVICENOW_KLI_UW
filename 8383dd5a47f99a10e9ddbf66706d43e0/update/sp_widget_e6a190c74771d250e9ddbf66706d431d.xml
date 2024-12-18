@@ -754,6 +754,11 @@
   
 }
 
+
+.bold-text {
+  color : indianred;
+  font-weight: bold;
+}
 .btn-sm{
  margin-left: 1rem;
     width: 6rem;
@@ -855,6 +860,7 @@ tbody tr:last-child {
   float:center
   
 }
+
 tbody &gt; tr:nth-of-type(odd) {
     background-color: white;
 }
@@ -1397,14 +1403,14 @@ tbody &gt; tr:nth-of-type(odd) {
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-15 09:27:40</sys_created_on>
         <sys_id>e6a190c74771d250e9ddbf66706d431d</sys_id>
-        <sys_mod_count>129</sys_mod_count>
+        <sys_mod_count>167</sys_mod_count>
         <sys_name>KLI List Filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_e6a190c74771d250e9ddbf66706d431d</sys_update_name>
-        <sys_updated_by>Surya.Prathap</sys_updated_by>
-        <sys_updated_on>2024-12-05 10:06:04</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-18 05:57:40</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -1412,7 +1418,7 @@ tbody &gt; tr:nth-of-type(odd) {
 
   <div class="panel panel-{{options.color}} b" ng-class="{'data-table-high-contrast': accessibilityModeEnabled}">
     <div class="panel-heading form-inline" ng-hide="options.hide_header">
-    <span class="dropdown m-r-xs">
+      <span class="dropdown m-r-xs">
         <button aria-label="{{data.title || data.table_plural}} ${Context Menu}" class="btn dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="optionsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
         <ul class="dropdown-menu" aria-labelledby="optionsMenu">
           <li ng-repeat="t in ::exportTypes">
@@ -1422,30 +1428,30 @@ tbody &gt; tr:nth-of-type(odd) {
         </ul>
       </span>
       <h2 class="panel-title" style="display:inline ;    font-weight: bold;"><i ng-if="options.glyph" class="fa fa-{{options.glyph}} m-r"></i>{{data.title || data.table_plural}}<span class="sr-only">${table} - ${page} {{data.p}}</span></h2>
-<h2 class="panel-title2"> 
-  <span class="sr-only"></span>
-  
-    <i class="fas fa-sync-alt" ng-click="reset()"></i> 
-</h2>
+      <h2 class="panel-title2"> 
+        <span class="sr-only"></span>
+
+        <i class="fas fa-sync-alt" ng-click="reset()"></i> 
+      </h2>
 
 
       <!--<button name="new" role="button" class="btn btn-primary btn-sm m-l-xs" ng-click="newRecord()" ng-if="options.show_new && data.canCreate && !data.newButtonUnsupported" aria-label="${Create new record}">${New}</button>-->
       <div class="pull-right" ng-if="options.show_keywords">
-		<form ng-if="data.hasTextIndex" ng-submit="setSearch(true)">
-        <div class="input-group" role="presentation">
-          <input type="text" name="datatable-search" ng-model="data.keywords" ng-model-options="{debounce:250}" class="form-control" placeholder="${Keyword Search}" aria-label="${Keyword Search}">
-          <span class="input-group-btn">
-            <button name="search" class="btn btn-default" type="submit" aria-label="${Search}" data-original-title="{{::c.data.searchMsg}}" data-toggle="tooltip" data-placement="bottom"><span class="glyphicon glyphicon-search"></span></button>
-          </span>
-        </div>
+        <form ng-if="data.hasTextIndex" ng-submit="setSearch(true)">
+          <div class="input-group" role="presentation">
+            <input type="text" name="datatable-search" ng-model="data.keywords" ng-model-options="{debounce:250}" class="form-control" placeholder="${Keyword Search}" aria-label="${Keyword Search}">
+            <span class="input-group-btn">
+              <button name="search" class="btn btn-default" type="submit" aria-label="${Search}" data-original-title="{{::c.data.searchMsg}}" data-toggle="tooltip" data-placement="bottom"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
         </form>
       </div>
       <div class="clearfix"></div>
     </div>
     <!-- body -->
     <div class="panel-body">
-   <!--   <div ng-if="options.show_breadcrumbs && (data.filter || data.enable_filter)" class="filter-breadcrumbs">
-	    		<sp-widget widget="data.filterBreadcrumbs"></sp-widget>
+      <!--   <div ng-if="options.show_breadcrumbs && (data.filter || data.enable_filter)" class="filter-breadcrumbs">
+       <sp-widget widget="data.filterBreadcrumbs"></sp-widget>
       </div>
 -->
 
@@ -1473,34 +1479,36 @@ tbody &gt; tr:nth-of-type(odd) {
         </thead>
         <tbody>
 
-          <tr ng-repeat="item in data.list track by item.sys_id">
-           <td class="columns" role="{{$first ? 'rowheader' : 'cell'}}" class="pointer sp-list-cell" 
-    ng-class="{selected: item.selected}" ng-click="go(item.targetTable, item)" 
-    ng-repeat="field in ::data.fields_array" 
-    data-field="{{::field}}" data-th="{{::data.column_labels[field]}}">
+          <tr ng-repeat="item in data.list track by item.sys_id" >
+            <td class="columns" role="{{$first ? 'rowheader' : 'cell'}}" 
+                class="pointer sp-list-cell" 
+           
+                ng-click="go(item.targetTable, item)" 
+                ng-repeat="field in ::data.fields_array"
+                data-field="{{::field}}" data-th="{{::data.column_labels[field]}}">
 
-  <a href="javascript:void(0)" ng-if="$index === 0 || $index === 3" 
-     aria-label="${Open record}: {{::item[field].display_value}}" 
-     ng-class="{'clicked-link': item.selected}">
-    <span ng-if="item[field].type === 'user_image'">
-      <img class="user_image" src="{{item[field].display_value}}"/>
-    </span>
-    <span ng-if="item[field].type !== 'user_image'">
-      {{::item[field].display_value | limitTo : item[field].limit}}
-      {{::item[field].display_value.length > item[field].limit ? '...' : ''}}
-    </span>
-  </a>
+              <a href="javascript:void(0)" ng-if="$index === 0 || $index === 3" 
+                 aria-label="${Open record}: {{::item[field].display_value}}" 
+                 ng-class="{'clicked-link': item.selected}">
+                <span ng-if="item[field].type === 'user_image'">
+                  <img class="user_image" src="{{item[field].display_value}}"/>
+                </span>
+                <span ng-if="item[field].type !== 'user_image'" ng-class="{'bold-text': item.req_pending_ageing.display_value > 45}">
+                  {{::item[field].display_value | limitTo : item[field].limit}}
+                  {{::item[field].display_value.length > item[field].limit ? '...' : ''}}
+                </span>
+              </a>
 
-  <span ng-if="$index !== 0 && $index !== 3">
-    <span ng-if="item[field].type === 'user_image'">
-      <img class="user_image" src="{{item[field].display_value}}"/>
-    </span>
-    <span ng-if="item[field].type !== 'user_image'">
-      {{::item[field].display_value | limitTo : item[field].limit}}
-      {{::item[field].display_value.length > item[field].limit ? '...' : ''}}
-    </span>
-  </span>
-</td>
+              <span ng-if="$index !== 0 && $index !== 3">
+                <span ng-if="item[field].type === 'user_image'" ng-class="{'bold-text': item.req_pending_ageing.display_value > 45}">
+                  <img class="user_image" src="{{item[field].display_value}}"/>
+                </span>
+                <span ng-if="item[field].type !== 'user_image'" ng-class="{'bold-text': item.req_pending_ageing.display_value > 45}">
+                  {{::item[field].display_value | limitTo : item[field].limit}}
+                  {{::item[field].display_value.length > item[field].limit ? '...' : ''}}
+                </span>
+              </span>
+            </td>
 
             <td class='columns' ng-show='{{data.show_toggle}}'>
               <button class="btn1" 
@@ -1511,13 +1519,23 @@ tbody &gt; tr:nth-of-type(odd) {
               </button>
             </td>
 
-            <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirect(item)'>{{buttonName}}</button></td>
-            <!-- <td class='columns' ng-show='{{data.show_sub_button}}'><button class="btn btn-primary" ng-click='redirectSub(item)'>{{buttonName}}</button></td>-->
-            <td class='columns' ng-show='{{data.show_sub_button__1}}'><button class="btn btn-primary" ng-click='redirect1(item)'>{{buttonName1}}</button></td>
+            <td class='columns' ng-show='{{data.show_sub_button}}'>
+              <button class="btn btn-primary" ng-click='redirect(item)'>{{buttonName}}</button>
+            </td>
 
-            <td ng-if="data.isAgentTable" class='columns'><button class="btn btn-info"  ng-click='certificationRemainder(item)'>Remainder Agent</button></td>
-            <td  class='columns' ng-show='{{data.show_delete}}'><button class="btn btn-danger"  ng-click='deleteRecord(item)'>Cancel</button></td>
-          </tr>  
+            <td class='columns' ng-show='{{data.show_sub_button__1}}'>
+              <button class="btn btn-primary" ng-click='redirect1(item)'>{{buttonName1}}</button>
+            </td>
+
+            <td ng-if="data.isAgentTable" class='columns'>
+              <button class="btn btn-info" ng-click='certificationRemainder(item)'>Remainder Agent</button>
+            </td>
+
+            <td class='columns' ng-show='{{data.show_delete}}'>
+              <button class="btn btn-danger" ng-click='deleteRecord(item)'>Cancel</button>
+            </td>
+          </tr>
+
         </tbody>
       </table>
       <div ng-class="{'pruned-msg-filter-pad': (!options.show_breadcrumbs || !data.filter) && !data.list.length}" class="pruned-msg" ng-if="rowsWerePruned()">

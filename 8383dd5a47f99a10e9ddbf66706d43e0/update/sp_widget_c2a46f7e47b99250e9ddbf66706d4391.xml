@@ -128,10 +128,14 @@ body {
    // gs.addErrorMessage('dfghkjklhkgjhf')
 
     var gr1 = new GlideRecord('x_rptp_kotak_uw_case');
- gr1.addNotNullQuery('requirement_ids');
+// gr1.addNotNullQuery('requirement_ids');
+	gr1.addEncodedQuery('u_case_stage=pending_requirements_menu')
+	
 
         gr1.query();
         data.rowCount1 = gr1.getRowCount();
+	
+	
     // Initialize visibility flags for tabs
     data.showAudit = true; // Audit Trail is always visible
     data.showCaseSheet = true; // Case Sheet is always visible
@@ -167,14 +171,14 @@ body {
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-15 06:11:16</sys_created_on>
         <sys_id>c2a46f7e47b99250e9ddbf66706d4391</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>Kotak Home Widget</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_c2a46f7e47b99250e9ddbf66706d4391</sys_update_name>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-17 11:08:29</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-18 07:54:44</sys_updated_on>
         <template><![CDATA[<main class="dashboard">
     <!-- Audit Trail -->
     <a href="?id=audit" ng-if="data.showAudit">

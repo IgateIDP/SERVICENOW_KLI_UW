@@ -32,7 +32,8 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
     var gr = new GlideRecord('x_rptp_kotak_requirement_mapping');
     gr.addQuery('case_id', current.case_id);
-    gr.addEncodedQuery('raised_by!=System^status=O'); // Assuming active is a boolean field
+    gr.addEncodedQuery('status=O'); // Assuming active is a boolean field
+	// raised_by!=System^
     gr.query();
 
     if (!gr.hasNext()) {
@@ -46,15 +47,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e235c13447921a14e9ddbf66706d4397</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Check whether there is Add Req in ReqDec</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_script_e235c13447921a14e9ddbf66706d4397</sys_update_name>
-        <sys_updated_by>kumar.raja</sys_updated_by>
-        <sys_updated_on>2024-12-14 06:02:46</sys_updated_on>
+        <sys_updated_by>LE96923</sys_updated_by>
+        <sys_updated_on>2024-12-18 06:07:49</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

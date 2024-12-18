@@ -3,266 +3,280 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.policy_no</element>
             <position>0</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d4397</sys_id>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>3b5b2de1ffaa165019a8ffda7c4fd961</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>loan_number.loan_number</element>
             <position>1</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d4397</sys_id>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd962</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consumer_id.member_number</element>
             <position>2</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d4398</sys_id>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd962</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.cover_applied</element>
             <position>3</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d4398</sys_id>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd963</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.rider_name</element>
             <position>4</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d4399</sys_id>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd963</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sum_assured</element>
+            <position>5</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.rider_term</element>
-            <position>5</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d4399</sys_id>
+            <position>6</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd964</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>loan_number.loan_type</element>
-            <position>6</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d439a</sys_id>
+            <position>7</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd965</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>bre_decision</element>
-            <position>7</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d439a</sys_id>
+            <position>8</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd965</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.reinsurer_name</element>
-            <position>8</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d439b</sys_id>
+            <position>9</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>9</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d439b</sys_id>
+            <position>10</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.master_policy_name</element>
-            <position>10</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d439c</sys_id>
+            <position>11</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>loan_number.temporary_loan_id</element>
-            <position>11</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d439c</sys_id>
+            <position>12</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd967</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consumer_id.member_client_id</element>
-            <position>12</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d439d</sys_id>
+            <position>13</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.cover_term</element>
-            <position>13</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d439d</sys_id>
+            <position>14</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:48</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.rider_sum_assured</element>
-            <position>14</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d439e</sys_id>
+            <position>15</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:49</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>policy_id.product_name</element>
-            <position>15</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d439e</sys_id>
+            <position>16</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:49</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>loan_number.u_date_of_commencement</element>
-            <position>16</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d439f</sys_id>
+            <position>17</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:49</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd96a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>bre_failure_reason</element>
-            <position>17</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>eb6e3e14471a1614e9ddbf66706d439f</sys_id>
+            <position>18</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:49</sys_created_on>
+            <sys_id>7f5b2de1ffaa165019a8ffda7c4fd96a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>uw_ageing</element>
-            <position>18</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 05:30:36</sys_created_on>
-            <sys_id>e36e3e14471a1614e9ddbf66706d43a0</sys_id>
+            <position>19</position>
+            <sys_created_by>LE96923</sys_created_by>
+            <sys_created_on>2024-12-18 06:55:49</sys_created_on>
+            <sys_id>775b2de1ffaa165019a8ffda7c4fd96b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Case Details" display_value="Case Details" name="x_rptp_kotak_uw_case" sys_domain="global" view="db6e3e14471a1614e9ddbf66706d4375">2b6e3e14471a1614e9ddbf66706d4393</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 05:30:36</sys_updated_on>
+            <sys_updated_by>LE96923</sys_updated_by>
+            <sys_updated_on>2024-12-18 06:55:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
