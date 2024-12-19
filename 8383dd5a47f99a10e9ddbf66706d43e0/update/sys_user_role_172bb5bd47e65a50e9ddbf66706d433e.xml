@@ -7,20 +7,20 @@
         <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
-        <name>x_rptp_kotak.netMed_demo_user</name>
+        <name>x_rptp_kotak.kli_admin</name>
         <scoped_admin>false</scoped_admin>
-        <suffix>netMed_demo_user</suffix>
+        <suffix>kli_admin</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
-        <sys_created_by>rushith</sys_created_by>
-        <sys_created_on>2024-11-28 07:01:26</sys_created_on>
-        <sys_id>217c624f474e1ad0e9ddbf66706d4336</sys_id>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-19 02:43:49</sys_created_on>
+        <sys_id>172bb5bd47e65a50e9ddbf66706d433e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_rptp_kotak.netMed_demo_user</sys_name>
+        <sys_name>x_rptp_kotak.kli_admin</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sys_user_role_217c624f474e1ad0e9ddbf66706d4336</sys_update_name>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-11-28 07:01:26</sys_updated_on>
+        <sys_update_name>sys_user_role_172bb5bd47e65a50e9ddbf66706d433e</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-19 02:43:49</sys_updated_on>
     </sys_user_role>
 </record_update>
