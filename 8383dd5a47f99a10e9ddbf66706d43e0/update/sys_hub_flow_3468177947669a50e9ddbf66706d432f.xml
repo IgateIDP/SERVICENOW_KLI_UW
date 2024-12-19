@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=11000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>88c314dd47221650e9ddbf66706d4366</copied_from>
+        <copied_from_name> Kotak Case creation</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>kotak_case_creation_1</internal_name>
+        <label_cache>[{"name":"subflow.body","label":"ReqCodeproduct_nameinput➛body","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","usedInstances":{"4b3957b8-fc76-4b79-be80-f8157dbca405":["req"]},"attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD461514d1dd62165028fe6906b9c9942c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11b4b2ab-dd2c-4bbd-bc53-f04551c5be57","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.body.cases","label":"input➛body➛cases","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"d7bd95e3-d36f-4dfe-a603-7f239928214a":["items"]},"attributes":{"uiUniqueId":"f39f8a8c-212f-4873-911b-c1f5490b5796","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.Status","label":"6 - For Each➛Requirement➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["status"]},"attributes":{"uiUniqueId":"b7ffd88a-ab44-4d8f-8ec7-8180d0a6a5d6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.RaisedDate","label":"6 - For Each➛Requirement➛RaisedDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["raised_date"]},"attributes":{"uiUniqueId":"f0662bdc-6e64-4b02-8d16-fd4b922e5a05","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.RaisedBy","label":"6 - For Each➛Requirement➛RaisedBy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["raised_by"]},"attributes":{"uiUniqueId":"d51ec159-ff09-41d1-9f44-3e1d8b5a4682","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0c2d1e1a-3b77-413c-9160-27b90094b491.record.sys_id","label":"5 - Create or Update Record➛x_rptp_kotak_uw_case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sys_id","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["case_id"]}},{"name":"d850cdb1-eead-474c-9f7b-c89a2bd091e9.Record.sys_id","label":"7 - Look Up Record➛KLI Requirements Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_requirements","column_name":"sys_id","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["req_id","requirement_id"]}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.bre_decision","label":"1 - For Each➛case➛bre_decision","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["bre_decision"]},"attributes":{"uiUniqueId":"5204edba-0adb-491d-bfa0-19d1a405ff8b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.bre_failure_reason","label":"1 - For Each➛case➛bre_failure_reason","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["bre_failure_reason"]},"attributes":{"uiUniqueId":"4a70e1c8-8fba-473b-833b-4a4f0d85d269","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.sum_assured","label":"1 - For Each➛case➛sum_assured","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["sum_assured"]},"attributes":{"uiUniqueId":"58dfab04-3188-4bb6-92ab-17fba28ae334","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.risk_term","label":"1 - For Each➛case➛risk_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["risk_term"]},"attributes":{"uiUniqueId":"2616a5ed-537d-409f-bdfe-d84a97974a12","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c.record.sys_id","label":"4 - Create or Update Record➛KLI Loan Table Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kotak_loan_table","column_name":"sys_id","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["loan_number"]}},{"name":"81eef683-2dac-4a90-8897-6a716d47084f.record.sys_id","label":"3 - Create or Update Record➛KLI Policy Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kil_policy","column_name":"sys_id","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["policy_id"]}},{"name":"12e69707-6733-4146-ace8-2076f4934bcb.record.sys_id","label":"2 - Create or Update Record➛KLI Consumer Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kli_consumer","column_name":"sys_id","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["loan_number","consumer_id"]}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.ReqCode","label":"6 - For Each➛Requirement➛ReqCode","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"d850cdb1-eead-474c-9f7b-c89a2bd091e9":["conditions"]},"attributes":{"uiUniqueId":"513c5fb1-3cfb-4a4f-a3ee-d0cf0c1fd1a3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.Requirements","label":"1 - For Each➛case➛Requirements","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"7b63b78e-c747-46ce-a129-e9ad5897062f":["items"]},"attributes":{"uiUniqueId":"3369eb04-9dbc-4a1e-8122-1582f58e42dd","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.co_borrowerjointlife","label":"1 - For Each➛case➛loan➛co-borrowerjointlife","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["co_borrower"]},"attributes":{"uiUniqueId":"ebb34a80-91fc-4653-83a5-4513b8e424c0","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.borrower","label":"1 - For Each➛case➛loan➛borrower","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["borrower"]},"attributes":{"uiUniqueId":"e0640c9e-3e64-4819-a3f4-434e671f3803","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.date_of_disbursement","label":"1 - For Each➛case➛loan➛date_of_disbursement","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["u_date_of_commencement"]},"attributes":{"uiUniqueId":"d8dc38e6-981f-46ca-82e8-afda939b7c5a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.type","label":"1 - For Each➛case➛loan➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["loan_type"]},"attributes":{"uiUniqueId":"40b1fe0a-7c2f-42cd-928c-f4eb29eb1622","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.amount","label":"1 - For Each➛case➛loan➛amount","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["u_amount"]},"attributes":{"uiUniqueId":"d5e5bdbd-afa9-458b-80c0-f2bc8571aea7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.loan_account_number","label":"1 - For Each➛case➛loan➛loan_account_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["loan_number"]},"attributes":{"uiUniqueId":"32afcddf-24eb-407e-b4dd-072c9adbe8a6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.rider_term","label":"1 - For Each➛case➛policy➛rider_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["rider_term"]},"attributes":{"uiUniqueId":"89791d1a-7822-4f92-aae6-6886b784218c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.rider_sum_assured","label":"1 - For Each➛case➛policy➛rider_sum_assured","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["rider_sum_assured"]},"attributes":{"uiUniqueId":"bfb1c51a-0a0a-495f-b2dd-b9fa4854584e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.product_name","label":"1 - For Each➛case➛policy➛product_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["product_name"]},"attributes":{"uiUniqueId":"d3a03a06-3431-4786-8757-a05106f0fbc7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.rider_name","label":"1 - For Each➛case➛policy➛rider_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["rider_name"]},"attributes":{"uiUniqueId":"7a1eb2c5-93b4-4355-94bb-11d85de0d893","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.reinsurer_name","label":"1 - For Each➛case➛policy➛reinsurer_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["reinsurer_name"]},"attributes":{"uiUniqueId":"1bdc52e2-9ab8-41dd-a5b4-e5d66404d560","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.coverage_term","label":"1 - For Each➛case➛policy➛coverage_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["cover_term"]},"attributes":{"uiUniqueId":"8f1e63eb-ebe9-4276-8331-83f16663a9b7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.cover_applied","label":"1 - For Each➛case➛policy➛cover_applied","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["cover_applied"]},"attributes":{"uiUniqueId":"2cf72da6-5bd5-4e52-aadf-8c6e34160f46","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.master_policy_name","label":"1 - For Each➛case➛policy➛master_policy_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["master_policy_name"]},"attributes":{"uiUniqueId":"210bddeb-b931-4927-a578-fb23dc36636d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.master_policy_number","label":"1 - For Each➛case➛policy➛master_policy_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["policy_no"]},"attributes":{"uiUniqueId":"9aff5b00-fee8-4422-9a20-d040e977969b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.Product_Code","label":"1 - For Each➛case➛policy➛Product_Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["product_code"]},"attributes":{"uiUniqueId":"18859f00-2f40-4a95-91d7-2f360d01439c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.country","label":"1 - For Each➛case➛member➛country","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["country"]},"attributes":{"uiUniqueId":"65fc5115-fc41-4a8d-a2b3-7bb1d77fe2f4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.dob","label":"1 - For Each➛case➛member➛dob","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["fso_date_of_birth"]},"attributes":{"uiUniqueId":"d1da6dee-6905-4a48-acb8-b4346064699e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.nationality","label":"1 - For Each➛case➛member➛nationality","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["nationality"]},"attributes":{"uiUniqueId":"99d5b6de-6b6d-46b8-b433-0af60e8fa9d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.name","label":"1 - For Each➛case➛member➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["customer_name"]},"attributes":{"uiUniqueId":"2ddc2c03-e311-41fb-9ca1-bea6e0467b5f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.number","label":"1 - For Each➛case➛member➛number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["member_number"]},"attributes":{"uiUniqueId":"e6170a3a-e529-4ebb-bc9d-6703a41362c2","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.gender","label":"1 - For Each➛case➛member➛gender","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["gender"]},"attributes":{"uiUniqueId":"f947dcaf-6db0-48ec-bd97-19c0d1da4913","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.clientID","label":"1 - For Each➛case➛member➛clientID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["member_client_id"]},"attributes":{"uiUniqueId":"e36bc7a2-5061-48fc-ab80-66e79b642f03","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>fb68977947669a50e9ddbf66706d43dd</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Kotak Case creation 1</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3468177947669a50e9ddbf66706d432f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Kotak Case creation 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_hub_flow_3468177947669a50e9ddbf66706d432f</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:49</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3468177947669a50e9ddbf66706d432f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3468177947669a50e9ddbf66706d432f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3468177947669a50e9ddbf66706d432f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3468177947669a50e9ddbf66706d432f^sys_idNOT IN7868177947669a50e9ddbf66706d4330"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3468177947669a50e9ddbf66706d432f</id>
+        <name>Kotak Case creation 1</name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>7868177947669a50e9ddbf66706d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7868177947669a50e9ddbf66706d4330"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3468177947669a50e9ddbf66706d432f^sys_idNOT IN4d68177947669a50e9ddbf66706d4339"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD8168177987669a5059cd0a110a363538</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8383dd5a47f99a10e9ddbf66706d43e0</scope_name>
+        <serialized_content>{"FlowDesigner:FD8168177987669a5059cd0a110a363538":{"cases":[{"$4_cases":{"loan":{"date_of_disbursement":"String","date_of_disbursement.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date_of_disbursement\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"amount":"String","amount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amount\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"borrower":"String","borrower.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"borrower\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"co_borrowerjointlife":"String","co_borrowerjointlife.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"co-borrowerjointlife\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"loan_account_number":"String","loan_account_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loan_account_number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"loan.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loan\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"member_number":"String","member_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"member_number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"master_policy_number":"String","master_policy_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"master_policy_number\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"risk_term":"String","risk_term.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"risk_term\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"member":{"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"clientID":"String","clientID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"clientID\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"gender":"String","gender.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"gender\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"nationality":"String","nationality.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nationality\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"dob":"String","dob.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dob\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"member.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"member\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"bre_decision":"String","bre_decision.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"bre_decision\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"bre_failure_reason":"String","bre_failure_reason.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"bre_failure_reason\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"sum_assured":"String","sum_assured.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sum_assured\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"uw_aging":"String","uw_aging.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"uw_aging\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"Requirements":[{"$0_Requirements":{"Status":"String","Status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Status\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"RaisedDate":"String","RaisedDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"RaisedDate\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"RaisedBy":"String","RaisedBy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"RaisedBy\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"ReceivedBy":"String","ReceivedBy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ReceivedBy\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"ReceivedDate":"String","ReceivedDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ReceivedDate\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"Type":"String","Type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"UploadDate":"String","UploadDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"UploadDate\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"Description":"String","Description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"Ageing1":"String","Ageing1.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Ageing1\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"Ageing2":"String","Ageing2.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Ageing2\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"Classification":"String","Classification.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Classification\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"ReqCode":"String","ReqCode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ReqCode\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"Requirements.$field_facets":{"SimpleMapFacet":"{\"max_rows\":null,\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Requirements\",\"mandatory\":\"false\",\"child_name\":\"Requirement\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"Requirement\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"12\",\"max_length\":\"0\",\"child_uiUniqueId\":\"b0ef94d8-fa83-45b4-8ac9-21706061388a\"}"},"loan_account_number":"String","loan_account_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loan_account_number\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"policy":{"cover_applied":"String","cover_applied.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"cover_applied\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"Product_Code":"String","Product_Code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Product_Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"master_policy_number":"String","master_policy_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"master_policy_number\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"rider_name":"String","rider_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rider_name\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"reinsurer_name":"String","reinsurer_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"reinsurer_name\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"rider_term":"String","rider_term.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rider_term\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"product_name":"String","product_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"product_name\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"rider_sum_assured":"String","rider_sum_assured.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rider_sum_assured\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"coverage_term":"String","coverage_term.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"coverage_term\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"master_policy_name":"String","master_policy_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"master_policy_name\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"policy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"policy\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"}}}],"cases.$field_facets":{"SimpleMapFacet":"{\"max_rows\":null,\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"cases\",\"mandatory\":\"false\",\"child_name\":\"case\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"case\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"f59e855e-56a5-4b07-95e9-6b29bf89fddf\"}"}},"FlowDesigner:FD8168177987669a5059cd0a110a363538.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"body\",\"mandatory\":\"false\",\"uiUniqueId\":\"11b4b2ab-dd2c-4bbd-bc53-f04551c5be57\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD8168177987669a5059cd0a110a363538\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4568177947669a50e9ddbf66706d4338</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD8168177987669a5059cd0a110a363538,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=11b4b2ab-dd2c-4bbd-bc53-f04551c5be57</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</model>
+        <model_id>3468177947669a50e9ddbf66706d432f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3468177947669a50e9ddbf66706d432f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>4d68177947669a50e9ddbf66706d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d68177947669a50e9ddbf66706d4339"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3468177947669a50e9ddbf66706d432f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3468177947669a50e9ddbf66706d432f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3468177947669a50e9ddbf66706d432f"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3468177947669a50e9ddbf66706d432f^sys_idNOT IN0568177947669a50e9ddbf66706d4344,4168177947669a50e9ddbf66706d4343,c168177947669a50e9ddbf66706d4351,c168177947669a50e9ddbf66706d4352,c968177947669a50e9ddbf66706d4351,c968177947669a50e9ddbf66706d4352"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>0568177947669a50e9ddbf66706d4344</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>81eef683-2dac-4a90-8897-6a716d47084f</ui_id>
+        <values>H4sIAAAAAAAA/+2WTVPbMBCG/wrjs+Mxdj4gt047nFrotAwXSjWytE40yJYqySFpJv+9K3+EENLCYNpeuEWr9bO7r7TRXq8DwYNpkExGkxGFZJRmaZLGcTpkY84B8nySHSf5MAiDkhaAno5mEki9CIMFlZU3LonRTpNb5egtuRWSaCUFW6EHF1ZLurp60pHNheQGymB6fRMGmhqM4MAE0/XelltpIJJmIJF36bM5Om+yeW4lBz8+VJ4PtW9Thvus4jCApYOSAwbNqbQQBgUtOXXKrIKpMxUaDFB+UcrV1mMuSofAwPsurfiJ9JPY++WA9TFo9thcCQYX2glVNpY6g3ZTyaooz5tsvcCQ00q6TmC0VBYIB+1z89Ha0PnXubr70gU6E2VdRrspFaNyu6LOGZFVDqxXvxKXB2RorB9bJX25aAQJBcYkBdValDOijVqIOg6mXUQziYsol+oO87NiVkaU+RojVI1GZ2j/UJuvqBE+1ifE4MebWiDyo/IpNiW3xZFGH3SwzAjt3iFuAW0dm7C729kfbwS9P/xcgOR2515jAbxijjDF4VuFn/L1mk8yfjqCdMDTcT4Y8hwGdByng0mepKenyUlyPKSRcFBEzd2OPreQ9wjZbL53TB/zxcxdCDKNV7kf8R6x5dmqINTaygDvid0hbenY3EVPrEcgr6AWf7V/Jf1UeIzyJ9au1GthqyIDg2CmFmjFWy5FD4kfULbUXvLWCDqDTmEDovSn1/eOPcDUqVIJlgFpOq8Bb+V+/Hy89eNbP77143/sxxdOaVBgFzs4avo4fPa73AHOuod5/6HuJrQ2AFm0Adop7fi1prTxKI7/9qDWZPMKc9q+GP9wVsNg2oJxpPHuwj01wu2Mlr8Z5m5+ATDy+viqDAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>4168177947669a50e9ddbf66706d4343</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>12e69707-6733-4146-ace8-2076f4934bcb</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lUBnWVAkPxLfCgQBCrQJ0Aa5pClBiUubMEWqFOXYNfTvXYqS47pGGwhJTzkJ3MfM7GrJfdgFggXzIJlNZhMKySTN0iSN43ScTxkD4HyWnSd8HISBogVgpKWZBNIewmBNZe2MG2JKW5KVtnRFVlKQXKuqLsBgDBNVKen2/gWh+VJIZkAF84fHMCipQRaLnvnuyGW3JRBJM5CIeOcUnd14RS+t5mTyqRId1bFNG+ZUxWEAGwuKAZJyKisIg4IqRq0222BuTY0GA5TdKrndRyyFsggYuNhNJX4i+kXs4jhgfTl4X77UIofb0gqtvKVV0Dm1rAt149W6FgOntbR9i9FSV0AYlE6bY+uo+delfvrSE10L1ZbROaXOqdyfqLVGZLWFynW/Fncn2uCtn7pOunLRCBIK5CQFLUuhFqQ0ei1aHpRdRAuJh4hL/YT6KrFQEc1djRF2jUbXaL9qzffUCMf1GWEwuWkbRH7UTqIvuSuO+P5gQJUbUdoPCLeGfR3e6Go4kI6nE8FN04T9dcj+OkD0eVa4AMmqg6uwcLLMtxqT2G7HZhm7nEA6YumUj8aMw4hO43Q040l6eZlcJOdjGgkLRVRAkYGJfHrTfM/rymq8Fq3iwXAuGcH8iajafYaDtenPcLkU7gcINhjRI3y8QkxeaYIzAERzkgljl4NBmc5c/3StrNkOl+bzEUlRN6BUCjsc7QCj1UYlVDkQPz0e9bd/FB63+M+H9H3Q3gftbQZt4BqGAsfTwpkf0PDFL2kPcN0/pcdPa7+COwKy7gi6NXz+Wmt4Oonjt97EXs0rLOLjZvzHZYxkZQXGEh/d0/1rRx8s4NPbunn8BSs1lXyPCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>c168177947669a50e9ddbf66706d4351</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>8f50a952-06f1-4aa5-aa16-ae6e4109ed5c</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4XOjuHa+WhzGzD0tLXAVvTSdYJsUY1WWfJkKW0W5L+PsuwuyLItyLqdehEginyPfKLE2zWRnMxJPpvMJgzySVEWeZFlxbiacg4gxKw8zcWYJESzGtDTsVIB7TYJWTLlg/GJ2sY19ME49tCvyjBNO2f047JtFFvdHOheLaTiFjSZ394lpGEW2RxYMl/vHLlVA1SxEhSiXofok8uY2aFV7Q3eV2qg2rUZy0NWWULgyYHmgKSCqRYSUjPNmTN2RebOejRYYPxKq9Wzx0Jqh4Ak+D618huin2XBTwDWV0E8qxZGVnDVOGl0tESR4qFRvtaXMdsgMwjmlRtkRotvgXJoQm6BracWHxfm8cNAdCF1V0Z/qEzF1POOOWdl6R20QX0vr/fIEK3veiVDuWgEBTVy0po1jdT3tLFmKTseTLtO7xVuUqHMI+bXynudsirUmKJqLL1A+9vOfMOsDFzvEQaDN51A9KsPKcaS++Jo1Acd2srKxr1BuCX0dWySoc/L33YE+3H5QoLi7VaPdx2qfV2C/eQxkq/XfFby8wkUI15MxWjMBYzYNCtGM5EX5+f5WX46Zql0UKchuFsoqyrjMd2ItNl89pTVwXIkaAxGnPiC8CKOBAqhXTp4A0CNoHhNdeiPcI1HYg5Q+P5Lb9sOCjlKY615PFrHIRyRKkP/EmwL4YvBJ6mkCDJENMRnCtoKaGyHaN3qhJ//ttc2eW2TfW1y5EyDGpvLwUlsr+TgX2wAuBi+sd1vbZhnPQFd9gT9TDt9qZk2nWTZvx5rMZsXmGq7YvzHyYZkTQvW0eg90P1p4G0N4l+MvrvvZIyDYOQJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>c168177947669a50e9ddbf66706d4352</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>d850cdb1-eead-474c-9f7b-c89a2bd091e9</ui_id>
+        <values>H4sIAAAAAAAA/9VYW2/iOhD+K1GegU0IENK3o1ZIK53dSt2efelWlhNPilVjp47TG+K/n3EuQLmXUqn7mPFcvpn5ZuLkZupy5p65LPKiNIr6w9DzgsDzBoMgoX4cB4Mk9mLac1uupBNATUNjAfj4SEVhn5+JzkxG7pWh90TDQ8E1TECaHHUYzzNBX34foJqMuWAapHt2c9tyM6oxmgHtnk1XjsxLBkTQGAR6vLZgnJ8WWevgRN4YrydmAzSPRFaulWYWi9dy4dmAZIChUipyaLkTKhk1Sr/MJRoou5RiIRhzadCja5Wfc/6K7oee1UsB00qgOkvGiidwmRmuZCWpEFWHShQT+bNCaisLKS2EaSqLkiIHwiCz4Gy0OnT6a6yerppAIy7LPOpDoRIq5k/UGM3jwkBuiw6ibA2Z0Czj8o5kWj3y0hixTDp3Ah86qVBPGDTnd7JDEwu8g7WgnRHKL0rxb6q5zeIHukFjBMQFtpVU1c1Vocv0H0kiirw80FTmlS93VtaIPBQWZZV1nR+pSoQKeaJ5Zv5Bg0eoU5m1GlL3d3IhWvQ+UZJxGzNfYnbDUAzH2Z8CfbDpNIwHQRwOoZ2EvbDdGyTQpn43akNEWX8Yhd6gm3a4gUnnCh7OFYPZbH0QTuj5uLk5X8730FptNN5UwHqC3sjqCfJPNkE9z/vsGTK6+HojtG8oqoT3TIbPdnabLRqbK21IVbml0Vin9NFUHHEQ7M0KPwBcY3xpWeXEL9vw1kxMbYyVXd79e3b5l+QhAmKkKiyXgsvynYlAT0PQ/k4OxP5Kw8s+L+hZymierNOUOkY5r8fvzbKvDVEPANkY/kJEznWFcgPwZmM27muOBifjaNDdwlFkyM10DnNeng2VbO5AtkeN/qvVp6v6SKMlA392O+f4+XEx/ffG7NqYK0MYvGsKlylUnVxsYdKJL15bpqr1mWM8RtM6HqmmkjxxdgdmEb3RYso8UXG/6bwetfmwlOl9+BLn77zQx0uXOJ6SCfaJZ3iz1JAgFXJCNZBUFZKR+k65oI3tW8p1bmrl9WVxBabQ0lE4W44Zg1NqO3PtU6yQA7JrDL+nTpNejSF3MD2nTM+Zp/e+YmxZPL0TXtMOWjwjykVZY/wIyJaaBForvWX57GnPjj4fuJkOBOWfFNTHV9cmYm9cYXuw/hVflB9dLwnQuNelgzDwfc/zPRZ6wzD0h4M4HdCwly4mipBcJrj/0HOKxED3pCFC01V/fYfU6/HI3xto/G1UrtHWwXAb4wsl7adlNzSOxYttdhq8+zOq90KslAAqF+zsf/5i+Cp/QAp+vVqESvTvpu581tu54P9J/lDAd9v9IXjdoc+S9jD0w3YvZYN2xGi/TaO4HwYMkl56/Av39n+HnXAvDBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>c968177947669a50e9ddbf66706d4351</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>0c2d1e1a-3b77-413c-9160-27b90094b491</ui_id>
+        <values>H4sIAAAAAAAA/+1VTU/cMBD9KyjnJMp3NtwqVZxakFrEhVJrYo/Bwvmo7QBbxH/vZJNsV0ApINoTp92MZ957M37ynN56Snj7XlLmZQ6Y5GmdJmkUpRkvhECUsqzjRGae77XQIGU6qDWyzYfvXYEexuANM73r2WXn4JIN14yDHY+Fsr2G9cnTWfxCaWGw9fZPz3yvB0PYDo23f3vvyK17ZBpq1AR2POrYO5x0PLeHR4sfa2ykuh/rjBhVRb6HNw5bgUQqQVv0vQZaAa4za2/fmYECBkEctXq9zbhQrSNAb8y9seonoa+iMU8i9cdxOuMXneJ41DvVtVNko2A+7PTQtIeT2nG6KGHQbpkuRQaLTGA/ahvZZmr59aK7/rIQHah208Z8qDsOevsFzhlVDw7tOP1BHT8yhin6aZ7k2C4FUWNDnKyBvlftOetNd6U2PCS7Cc81fYRSd9ekz6rzNgQ+9hjS1CA8oPjHTfgEjBq5PhMMFd9tBsR+DKPEqeW5OTbNhxIsN6p3HwjuCuc+7vzF1fWTjoDfly8VamF3HK07aFk7NDWabwNVitvblcwjqPIkiAoZBxlAHgDERQBYYBZHFYqchwY5+SS0a8uUuLv73nda8TX936LExF+s0iARwAmlioLVqiqDAsq4EFkZrTL5AIV3rR0aNDs4cYJFVUZUWKZpkMUZCeG4CpKoLGRWpVnN6wc4tUEmQemBfsmitmsXOFHWosoxDURayCATEgMoojQoZZJWVbJK4gxC5bAJH2LMwAK5suq1kEs1gRllLxm9AM3LkbalBEMTY2At6RQvB9op3swfNFpOjW98MsHtWMTfXrO/c1UPX8B3V7276g1c9cqNiQ150eHe5Eb/2W/kAnCwPJL3H81lW84E7GommDdm/FYbs8ij6F8vzUnNG+zM+8P4j3uTyHqLxrEpe6H72zrdWfN/WKxnvwCx7fP5MAoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>c968177947669a50e9ddbf66706d4352</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>193db0b4-77d8-4e07-af40-5daa2d74e420</ui_id>
+        <values>H4sIAAAAAAAA/+1VTU/cMBD9KyjnJEqy2c1mb60QpxYkQFxoG03sCWvhfGA7C+lq/3vH+eBjS1uKaNVDjxnPvPfmjT253DqCOysnSubJHDCaz/JZNAuCWcwWnCMWRZKHURE7rlNBiZRpIJeY9R+uswHZ2uBdphrTZNe1getM4U0rFJZYmayEphHVFaVyoRsJ3cXLK9haSK6wclaXn12nAUWcBpWz2u4dma7BTEKOkoDPrb6D40HfS3t7tvi5hi3VfqxW3KoKXAfvDFYcibQAqdF1Sqg4mFp1zsqolgIKgZ9UsrvPWIvKEKBjc++0+Eroy8DmFUj9MRzO2LoWDE8aI+pqiPQKxsNatmV1PKi1TmMBrTST0xRpNWYcG6vNso3Uxdm6vj2diI5E1bcxHsqagbz/AmOUyFuD2rrfivNnbBiiH0YnbbsURPlkqlmj6o3oeUh26V9J+vALWd+SPi2uKh+Y7dEn18A/ovhhH74AJSzXR4Kh4l1vUHbTWolDy2Nz2eAPJWimRGPeEdwGxz527nTb85/eCHgYfiFQcv3opjMgLwX/1FIV324DFvEQQ/BmeZJ4cThjXhouAi9K8jQI0jiP09BXyOiO+LrTVLnbfXl83R+g+HIeMJ6HHtId8eIkJijS47FlClHOgzTE1D/dhwKhkWdkF044Sb4gMUv0WBKTpAVDD8Io9TAFPl+mSbCICl8YLP3TvviQaglJGzCt/n2Qs77uQUrevVbI+45QWA0SNcNscH7AGk13nxr3/VL5P5x/aTiv3N9Y0kgNHgxDdV/8YieAo+nJ7j/haXePBNlmJBj3d/hW+3sxD4I/vcIHNW+wwffN+ItbnMgajcpkQ/ZE96vl/uin84M1//kbD2gLItYIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3468177947669a50e9ddbf66706d432f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3468177947669a50e9ddbf66706d432f^sys_idNOT IN0968177947669a50e9ddbf66706d4341,c968177947669a50e9ddbf66706d4342"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d5753e4347ce1ad0e9ddbf66706d43bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>0968177947669a50e9ddbf66706d4341</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</ui_id>
+        <values>H4sIAAAAAAAA/4VSS2/bMAz+LzoHhu0MwZJbgaFAD2uBruhlKAxaohNhsqTqkdQz/N9HxnY29LKTzY/U95A4CpeTzym+uLsY9dGKw8+3jdCWMfofhYUexUHohH0UG3EGk7kex5jbzrhL0To1FBIixmmiAaWjNzC8/m9OnrRRARdBD4F0EgZxGD+10uCxMdCiIbpnlC4oNqIVldVedfuq3MttvdvWZVl//VK1u21b1WoLqHY0t558WAJ8ysPsVIYbL33YRV1uBH4ktApJqAMTcSN6sAqSC4M4pJAJCAjqyZrhNnHSNhGd4NmPqH8Td1WWPNghJZI4N+XJaYlPPmlnZyRBa9amM7m3j7NPvlHsIJu03ighOWKj0LM5llu0ux8nd3lehe61vQZZmsZJMLcKUgq6zQkj3zca7Imo6cF7bY+ND+6sr4fJS18cDRUFvyGJ8o4UINl4QXcBxT3h367wKwTNKb4TDR2erqmb98y6c47FcTOHpoEog/bpjujOuJib3njJZqY4b4BCqSMJvjD2sK4mNwZ6TS3/hS4u/GKrf7HpD9V/+5rkAgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51753e4347ce1ad0e9ddbf66706d43c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>c968177947669a50e9ddbf66706d4342</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:47</sys_updated_on>
+        <ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</ui_id>
+        <values>H4sIAAAAAAAA/61STW/bMAz9Lzonhj8yt86twFCgh61AVvQyFIYs0YkwWXL1kdQz/N9H2k429LyTzUfyvUeKI7Mx9DH4F/vgvToatv/5tmHKEIb/IzO8A7ZnKkDn2YaduY4Uj6O8a2T1BYqtLMp2u5MtbHmZFtu7Ni+qKr/Psx1PqC05wHtUDjowwU8Tkkjle82H1//BJU5KSwer8Z479BvAsf34KRWGHmrNG9AoeQBhnaSBlMQwq2RbZWklirws8jTN73dZUxZNlsuCgyyx7tr5tC7i016IHUN348UPucjTDYOPAEYCCrVce9iwjhvJg3UD2wcXEXDA5bPRw63ipExAOka1H179Ru4sTamwBZxIwJIUJ6sEPPdBWbMggTf6mrQ6dub74pO2Di2POly3jkj0UEvoyRzJrdrtj5O9HK5Cj8rMg6xJbQXXt4iH4FQTA3jaN+j5XeqO970yx7p39qzmZvTSJUeNQdJqe0FRurWECzKe4C548oj41xl+5U7RFN+QBpuneer6PZLuMsfquF6GxgIvnOrDA9KdYTU3vdGxLkx+uQAJQnkUfCHs6XrilBjwNZX4F7pY94us/sWmP8hpop0sAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3468177947669a50e9ddbf66706d432f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3468177947669a50e9ddbf66706d432f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3468177947669a50e9ddbf66706d432f^sys_idNOT INc568177947669a50e9ddbf66706d433d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3468177947669a50e9ddbf66706d432f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:36</sys_created_on>
+        <sys_id>c568177947669a50e9ddbf66706d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3468177947669a50e9ddbf66706d432f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3468177947669a50e9ddbf66706d432f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3468177947669a50e9ddbf66706d432f"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=177369000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>88c314dd47221650e9ddbf66706d4366</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>kotak_case_creation_1</internal_name>
+        <label_cache>[{"name":"subflow.body","label":"ReqCodeproduct_nameinput➛body","reference":"","reference_display":"","type":"object","base_type":"object","column_name":"","usedInstances":{"4b3957b8-fc76-4b79-be80-f8157dbca405":["req"]},"attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD461514d1dd62165028fe6906b9c9942c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11b4b2ab-dd2c-4bbd-bc53-f04551c5be57","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.body.cases","label":"input➛body➛cases","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"d7bd95e3-d36f-4dfe-a603-7f239928214a":["items"]},"attributes":{"uiUniqueId":"f39f8a8c-212f-4873-911b-c1f5490b5796","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.Status","label":"6 - For Each➛Requirement➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["status"]},"attributes":{"uiUniqueId":"b7ffd88a-ab44-4d8f-8ec7-8180d0a6a5d6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.RaisedDate","label":"6 - For Each➛Requirement➛RaisedDate","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["raised_date"]},"attributes":{"uiUniqueId":"f0662bdc-6e64-4b02-8d16-fd4b922e5a05","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.RaisedBy","label":"6 - For Each➛Requirement➛RaisedBy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["raised_by"]},"attributes":{"uiUniqueId":"d51ec159-ff09-41d1-9f44-3e1d8b5a4682","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"0c2d1e1a-3b77-413c-9160-27b90094b491.record.sys_id","label":"5 - Create or Update Record➛x_rptp_kotak_uw_case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_uw_case","column_name":"sys_id","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["case_id"]}},{"name":"d850cdb1-eead-474c-9f7b-c89a2bd091e9.Record.sys_id","label":"7 - Look Up Record➛KLI Requirements Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_requirements","column_name":"sys_id","usedInstances":{"193db0b4-77d8-4e07-af40-5daa2d74e420":["req_id","requirement_id"]}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.bre_decision","label":"1 - For Each➛case➛bre_decision","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["bre_decision"]},"attributes":{"uiUniqueId":"5204edba-0adb-491d-bfa0-19d1a405ff8b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.bre_failure_reason","label":"1 - For Each➛case➛bre_failure_reason","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["bre_failure_reason"]},"attributes":{"uiUniqueId":"4a70e1c8-8fba-473b-833b-4a4f0d85d269","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.sum_assured","label":"1 - For Each➛case➛sum_assured","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["sum_assured"]},"attributes":{"uiUniqueId":"58dfab04-3188-4bb6-92ab-17fba28ae334","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.risk_term","label":"1 - For Each➛case➛risk_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["risk_term"]},"attributes":{"uiUniqueId":"2616a5ed-537d-409f-bdfe-d84a97974a12","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c.record.sys_id","label":"4 - Create or Update Record➛KLI Loan Table Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kotak_loan_table","column_name":"sys_id","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["loan_number"]}},{"name":"81eef683-2dac-4a90-8897-6a716d47084f.record.sys_id","label":"3 - Create or Update Record➛KLI Policy Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kil_policy","column_name":"sys_id","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["policy_id"]}},{"name":"12e69707-6733-4146-ace8-2076f4934bcb.record.sys_id","label":"2 - Create or Update Record➛KLI Consumer Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_rptp_kotak_kli_consumer","column_name":"sys_id","usedInstances":{"0c2d1e1a-3b77-413c-9160-27b90094b491":["loan_number","consumer_id"]}},{"name":"7b63b78e-c747-46ce-a129-e9ad5897062f.item.ReqCode","label":"6 - For Each➛Requirement➛ReqCode","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"d850cdb1-eead-474c-9f7b-c89a2bd091e9":["conditions"]},"attributes":{"uiUniqueId":"513c5fb1-3cfb-4a4f-a3ee-d0cf0c1fd1a3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.Requirements","label":"1 - For Each➛case➛Requirements","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","usedInstances":{"7b63b78e-c747-46ce-a129-e9ad5897062f":["items"]},"attributes":{"uiUniqueId":"3369eb04-9dbc-4a1e-8122-1582f58e42dd","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.co_borrowerjointlife","label":"1 - For Each➛case➛loan➛co-borrowerjointlife","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["co_borrower"]},"attributes":{"uiUniqueId":"ebb34a80-91fc-4653-83a5-4513b8e424c0","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.borrower","label":"1 - For Each➛case➛loan➛borrower","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["borrower"]},"attributes":{"uiUniqueId":"e0640c9e-3e64-4819-a3f4-434e671f3803","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.date_of_disbursement","label":"1 - For Each➛case➛loan➛date_of_disbursement","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["u_date_of_commencement"]},"attributes":{"uiUniqueId":"d8dc38e6-981f-46ca-82e8-afda939b7c5a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.type","label":"1 - For Each➛case➛loan➛type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["loan_type"]},"attributes":{"uiUniqueId":"40b1fe0a-7c2f-42cd-928c-f4eb29eb1622","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.amount","label":"1 - For Each➛case➛loan➛amount","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["u_amount"]},"attributes":{"uiUniqueId":"d5e5bdbd-afa9-458b-80c0-f2bc8571aea7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.loan.loan_account_number","label":"1 - For Each➛case➛loan➛loan_account_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"8f50a952-06f1-4aa5-aa16-ae6e4109ed5c":["loan_number"]},"attributes":{"uiUniqueId":"32afcddf-24eb-407e-b4dd-072c9adbe8a6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.rider_term","label":"1 - For Each➛case➛policy➛rider_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["rider_term"]},"attributes":{"uiUniqueId":"89791d1a-7822-4f92-aae6-6886b784218c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.rider_sum_assured","label":"1 - For Each➛case➛policy➛rider_sum_assured","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["rider_sum_assured"]},"attributes":{"uiUniqueId":"bfb1c51a-0a0a-495f-b2dd-b9fa4854584e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.product_name","label":"1 - For Each➛case➛policy➛product_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["product_name"]},"attributes":{"uiUniqueId":"d3a03a06-3431-4786-8757-a05106f0fbc7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.rider_name","label":"1 - For Each➛case➛policy➛rider_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["rider_name"]},"attributes":{"uiUniqueId":"7a1eb2c5-93b4-4355-94bb-11d85de0d893","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.reinsurer_name","label":"1 - For Each➛case➛policy➛reinsurer_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["reinsurer_name"]},"attributes":{"uiUniqueId":"1bdc52e2-9ab8-41dd-a5b4-e5d66404d560","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.coverage_term","label":"1 - For Each➛case➛policy➛coverage_term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["cover_term"]},"attributes":{"uiUniqueId":"8f1e63eb-ebe9-4276-8331-83f16663a9b7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.cover_applied","label":"1 - For Each➛case➛policy➛cover_applied","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["cover_applied"]},"attributes":{"uiUniqueId":"2cf72da6-5bd5-4e52-aadf-8c6e34160f46","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.master_policy_name","label":"1 - For Each➛case➛policy➛master_policy_name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["master_policy_name"]},"attributes":{"uiUniqueId":"210bddeb-b931-4927-a578-fb23dc36636d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.master_policy_number","label":"1 - For Each➛case➛policy➛master_policy_number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["policy_no"]},"attributes":{"uiUniqueId":"9aff5b00-fee8-4422-9a20-d040e977969b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.policy.Product_Code","label":"1 - For Each➛case➛policy➛Product_Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"81eef683-2dac-4a90-8897-6a716d47084f":["product_code"]},"attributes":{"uiUniqueId":"18859f00-2f40-4a95-91d7-2f360d01439c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.country","label":"1 - For Each➛case➛member➛country","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["country"]},"attributes":{"uiUniqueId":"65fc5115-fc41-4a8d-a2b3-7bb1d77fe2f4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.dob","label":"1 - For Each➛case➛member➛dob","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["fso_date_of_birth"]},"attributes":{"uiUniqueId":"d1da6dee-6905-4a48-acb8-b4346064699e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.nationality","label":"1 - For Each➛case➛member➛nationality","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["nationality"]},"attributes":{"uiUniqueId":"99d5b6de-6b6d-46b8-b433-0af60e8fa9d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.name","label":"1 - For Each➛case➛member➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["customer_name"]},"attributes":{"uiUniqueId":"2ddc2c03-e311-41fb-9ca1-bea6e0467b5f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.number","label":"1 - For Each➛case➛member➛number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["member_number"]},"attributes":{"uiUniqueId":"e6170a3a-e529-4ebb-bc9d-6703a41362c2","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.gender","label":"1 - For Each➛case➛member➛gender","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["gender"]},"attributes":{"uiUniqueId":"f947dcaf-6db0-48ec-bd97-19c0d1da4913","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d7bd95e3-d36f-4dfe-a603-7f239928214a.item.member.clientID","label":"1 - For Each➛case➛member➛clientID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"12e69707-6733-4146-ace8-2076f4934bcb":["member_client_id"]},"attributes":{"uiUniqueId":"e36bc7a2-5061-48fc-ab80-66e79b642f03","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>Kotak Case creation 1</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb68977947669a50e9ddbf66706d43dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fb68977947669a50e9ddbf66706d43dd^sys_idNOT INbb68977947669a50e9ddbf66706d43de"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fb68977947669a50e9ddbf66706d43dd</id>
+        <name>Kotak Case creation 1</name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>bb68977947669a50e9ddbf66706d43de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bb68977947669a50e9ddbf66706d43de"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fb68977947669a50e9ddbf66706d43dd^sys_idNOT IN3768977947669a50e9ddbf66706d43e0"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDb768977975669a501ea22da8bd98c1df</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8383dd5a47f99a10e9ddbf66706d43e0</scope_name>
+        <serialized_content>{"FlowDesigner:FDb768977975669a501ea22da8bd98c1df":{"cases":[{"$4_cases":{"loan":{"date_of_disbursement":"String","date_of_disbursement.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date_of_disbursement\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"amount":"String","amount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amount\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"borrower":"String","borrower.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"borrower\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"co_borrowerjointlife":"String","co_borrowerjointlife.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"co-borrowerjointlife\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"loan_account_number":"String","loan_account_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loan_account_number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"loan.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loan\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"member_number":"String","member_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"member_number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"master_policy_number":"String","master_policy_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"master_policy_number\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"risk_term":"String","risk_term.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"risk_term\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"member":{"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"clientID":"String","clientID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"clientID\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"gender":"String","gender.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"gender\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"nationality":"String","nationality.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nationality\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"dob":"String","dob.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dob\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"member.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"member\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"bre_decision":"String","bre_decision.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"bre_decision\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"bre_failure_reason":"String","bre_failure_reason.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"bre_failure_reason\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"sum_assured":"String","sum_assured.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sum_assured\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"uw_aging":"String","uw_aging.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"uw_aging\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"Requirements":[{"$0_Requirements":{"Status":"String","Status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Status\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"RaisedDate":"String","RaisedDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"RaisedDate\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"RaisedBy":"String","RaisedBy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"RaisedBy\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"ReceivedBy":"String","ReceivedBy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ReceivedBy\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"ReceivedDate":"String","ReceivedDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ReceivedDate\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"Type":"String","Type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"UploadDate":"String","UploadDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"UploadDate\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"Description":"String","Description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"Ageing1":"String","Ageing1.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Ageing1\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\"}"},"Ageing2":"String","Ageing2.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Ageing2\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\"}"},"Classification":"String","Classification.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Classification\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"ReqCode":"String","ReqCode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ReqCode\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"Requirements.$field_facets":{"SimpleMapFacet":"{\"max_rows\":null,\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Requirements\",\"mandatory\":\"false\",\"child_name\":\"Requirement\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"Requirement\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"12\",\"max_length\":\"0\",\"child_uiUniqueId\":\"b0ef94d8-fa83-45b4-8ac9-21706061388a\"}"},"loan_account_number":"String","loan_account_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loan_account_number\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"policy":{"cover_applied":"String","cover_applied.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"cover_applied\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"Product_Code":"String","Product_Code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Product_Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"master_policy_number":"String","master_policy_number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"master_policy_number\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"rider_name":"String","rider_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rider_name\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"reinsurer_name":"String","reinsurer_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"reinsurer_name\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"rider_term":"String","rider_term.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rider_term\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"},"product_name":"String","product_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"product_name\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"rider_sum_assured":"String","rider_sum_assured.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rider_sum_assured\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"coverage_term":"String","coverage_term.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"coverage_term\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"master_policy_name":"String","master_policy_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"master_policy_name\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"policy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"policy\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\"}"}}}],"cases.$field_facets":{"SimpleMapFacet":"{\"max_rows\":null,\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"cases\",\"mandatory\":\"false\",\"child_name\":\"case\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"case\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"f59e855e-56a5-4b07-95e9-6b29bf89fddf\"}"}},"FlowDesigner:FDb768977975669a501ea22da8bd98c1df.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"body\",\"mandatory\":\"false\",\"uiUniqueId\":\"11b4b2ab-dd2c-4bbd-bc53-f04551c5be57\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDb768977975669a501ea22da8bd98c1df\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7b68977947669a50e9ddbf66706d43df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDb768977975669a501ea22da8bd98c1df,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=11b4b2ab-dd2c-4bbd-bc53-f04551c5be57</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</model>
+        <model_id>fb68977947669a50e9ddbf66706d43dd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fb68977947669a50e9ddbf66706d43dd</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>3768977947669a50e9ddbf66706d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3768977947669a50e9ddbf66706d43e0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fb68977947669a50e9ddbf66706d43dd^sys_idNOT INc078d77947669a50e9ddbf66706d4313,c478d77947669a50e9ddbf66706d4310,c478d77947669a50e9ddbf66706d4311,c878d77947669a50e9ddbf66706d4313,cc78d77947669a50e9ddbf66706d4310,cc78d77947669a50e9ddbf66706d4311"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>c078d77947669a50e9ddbf66706d4313</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>d850cdb1-eead-474c-9f7b-c89a2bd091e9</ui_id>
+        <values>H4sIAAAAAAAA/+VYXW/qOBD9K1GegU0IENK3VRHSle7eSm33vty9spzYKVaNndpOvxD/fSdxEhCkQLQgtdpHj8eeMzPnTAy/Vi4j7pVLIi9Ko2g8DT0vCDxvMgkS7MdxMEliL8Yjt+cKvKTgaXDMKSyfMc+L9StSmcnQozT4ESn6lDNFl1QYDT6E6Yzjt58nuCYLxomiwr369bvnZlhBNEOVe7Xa2ToVLscx5eB6X+HdgW/esmaJyj1r+759zPlhN6QiBRSv59JXQwWhgCHFXNOeu8SCYCPVW2NRFJMbwTeGBRMGbnQL51fN3iHu1Cv8UgpZJdTuNcsy8sxWzm6lM2zwnVF5YnJVuScLyRKqbU0ITXHOzfW2zTrcZIZJYY/Y1O1pyfOl+GFL4jYX1I0CS64pIjQrki3QV6mkdwv5clsjnTNR1qXa5DLBvFlhYxSLc1PgWbmUl51GS5xlTDygTMlnVh4GLMvBA4fFIOXyBYJq9iAGOCmAD6C2eDAH+6w0/8SKFVn8BdfAYQDEOLAE2TZqmauynM8o4bkuNxQW2t7lrnuuftPXHGu9yRzKjp7yAretQ5UxskUrjiSKZeZPuOKZVsmte7VqxgdpGG1ol0hBWIFCb0mnlgCEY+SfHO4gq1UYT4I4nNJ+Eo7C/miS0D72h1GfRpiMp1HoTYbpgBm6HNzSp2tJ6Hq9r7Qz3txRmMcrUgvzerskbWWqJLpn+952QSVR/2wSHXneVxMpBP98Gu2uOluCI9LzyUGikQ2ntFQG2VpuaW9fM525fgKEmus3BTud+O0jVBXVU0Y5afsazYuNna/R8P/7NfqURAdABNkOMsGZKJ8XAPRSChgfpF/s73CtpNiG/6UN62RfB9gx0nnvrIYT4NRquIPYzr3F0wKxnvslZXZnfm2sRBCcTQTB8HwiWDWpNsVsqXv9qiw6Wvu/F/541x9ouHXAX7eJrFNMv2vM4XpfxEEnFW8Tzu7MPuDdmZ+eH6iyd8kxsICjVTxkNYxeGHmgZhO99iLSvGD+2LZfCRPVjSrTu8Az1j/4ayreesayFC2hcyyD17aiCZBDI6woSmUuCKre2RsiFZ1MmdKmct4fNrcU9CMcCeJ0zII6pbfTeHf8IB/Poy7lt9SpE6miaQcSccpEnCaRbml3GVyjMz5ULzG45pjxsiPwMyrbailVSqoPhteRZh5gxYmT7URQ/llB/ffR1yaD1hF4BOuX+E1+/vGUUByPhngSBr7veb5HQm8ahv50EqcTHI7SjU4R0iKBiQo3p0AVuB7V1Kj77O/PoGrgdps1J4CqGTiTovgJPgyNU6CC9jo1quO4q5kSS8kpFjtD5R6Q/zEvvwoNXcefcrB8iT+pcna/W21raq33pZ4POftbsKecfitoNqXecOqTpD8N/bA/SsmkHxE87uMoHocBockoPeeL4Pe/VwUj0RAWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>c478d77947669a50e9ddbf66706d4310</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>12e69707-6733-4146-ace8-2076f4934bcb</ui_id>
+        <values>H4sIAAAAAAAA/+1WXU/bMBT9K8jPaVSafkDfJiqkSRtIA/GyMcuJr1sLx85sB+iq/vddx0npumqDik2axFPl+3Huucc3vv28IpKTKRlMRpMRg8Eoy7NB1u9nw2LMOYAQk/x4IIYkIZqVgJGe5Qpoc0jIPVN1MD5SW/mK3hnP7uidkrQw2tUlWIzh0lWKLW+eEVospOIWNJl+vk1IxSxW8eiZrnZcz+WsWA4KQ68D6aOLSHpfI35Z7bV92AdgLA+k+gmBRw+aA7IRTDlISMk0Z97YJZl6W6PBAuOXWi03EQupPQKSEPvo5Hcse9IPcQKwvQKib3NsCs+ihNElZsyzK0QvfG3b8GJhZAEuisNBsFr5s21bDLisvDQ6pjStttlG1aW+iLKQDUB3Y2ipHVAOVeg1sG9bEVcL8/CpY3oudSNL61SmYGpzYt5bmdc+8FmRWl7v0TtaO8WDfGgEBSXWpCWrKqnntLLmXjZ1kHaZzhUeUqHMA/Jzcq5TVoQeU7wFlp6jfdaYb5iVodZHhMHkdULc0p0p5txT26g5/VYH0lGEtl0aFQsphZWVf4cF7mHTWTSGrraawdOe4PV6nXTfW/7b2WVPYyokKO62vrV5oGW/1JjEVys+yfnpCLIez8aiN+QCemzcz3oTMchOTwcng+MhS6WHMi2hzMGmMX29/lrUzhv87hrGB8OFZASLJ6rr8HM4WJP+BFcoGS5A8oMRI8L7GWIKZyhOBVAjaC6tXxwMyk0e9DO19nZ5OLWYj0iahZFlSvrD0bYwGm5MgSuAxumJqD/dUbIr8a8v9dugvQ3a3xm0F+75P7+V3Z4/7x7L3cez2+9Q4oTj1cTHdGfHt86jm9bZ7vnj19rz41G//7+t+tjdK2z6XeX/4bbHYpUD62mM7sq9/E/A1obf/3dgffsD9hFpeVELAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>c478d77947669a50e9ddbf66706d4311</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>8f50a952-06f1-4aa5-aa16-ae6e4109ed5c</ui_id>
+        <values>H4sIAAAAAAAA/+1V3U/bMBD/V5Cf2ygk/YC+TSCeNpAG4oVt1iU+Uw8nzhwH6Kr+7zvHSam6boMOTZrEiyXfx+/ufnf23SyZEmzGkul4OgZMxmmWJmkcp6N8IgSilNPsMJEjNmAlFEiWDjKNvL0M2D3oxgsfua1cxe+Mg7vu1AZK3hqTnVB1pWFx/UzzfK60sFiy2c3nAavAUjSHls2WW6rn5q4hQ02mVz7AwXlIfldBblHtlL3fBWCs8EnFA4aPDkuBlI0EXeOAFVAKcMYu2MzZhgQWQVyUerG2mKvSESDzto+1+k5hj2JvJ5HKyzHo1tc28GmgMajkKTi4JPTcNbYzz+dG5VgHcgRKaLQ72ZQFg4vKKVMGl8B58Da6KcrzQAtbA/RdI0lTIxdY+Vp99l0p8nJuHj72mZ6psqWlU2qTg17fwDmrssb5fJasUVc7+A7SnnFPHwlRY0ExeQFVpcpbXllzr9o4lHYR3Wq6RFKbB8qvVrdlBLmvMaIuQHRG8tNWfA1W+VgfCIacVwNWL+oTDXX9VDZxzr81PulAQlcuD4x5l9yqyr2jAPfYVbYa9A8p++0wwtPcSYVa1BuPqH0CZVNkaD815CmWSzHNxPEY06FIJ3I4EhKHMInT4VQm6fFxcpQcjiBSDovIO7cHhzw3DaUbkFarLw2Hwkv2BA3OhBOeKLVmTyDv2qZDPUFuJKfGFX5ifGP3xOyh6IPJGlu3UBQjM9aah7157N0JKTf8L8E2EL4aevRaSU9DQCN80FjnyMM4BOnGJPz8eb6NyduY7BqTFy7NP/9T/dI86z+q7Y+rX5ZY0HwSweEj21qYnfLgulN2S/PwtZbmZBzH/9veDNW9wtrcZv4frk4KVtVoHQ/WfbiXb9SN3f+L3fr5B0zi/36mCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>c878d77947669a50e9ddbf66706d4313</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>193db0b4-77d8-4e07-af40-5daa2d74e420</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW+bQBD9K9GeAQHGxvjWJsqpTaQkyqVN0bI7xKssH9ldklDL/70DC7bjum1SRVUr9ch8vvd2hvm0IoKTBQnjaTylEE4n2SSc+P4kYjPOAfI8zoIwj4hDSloARhqaSUj7D4c8UNl0xqdU1aZO7ypD71IF941QUEBp0oLWtShvMZQLXUvaXr88gy2F5ApKsvh045CaKuxpQJHFas/1UgaSZiAx9KqjcHRmKRyiZdr6oO3DoQKV4h0o3yHwZKDkgGhyKjU4pKAlp6ZSLVkY1aBBAeXnpWw3EUtRGixIutgnLb5i27nfxeWA9BhY3+azb3xilbSu/IQaeonVmWnUEM6WlWCgrTgcctpIc7xrswHntRFVaVN6qkN2JZuiPLOykE2B8eHQ0mhIOdQd1w79QCW/XFaPFyPSU1H2sgxOWTEqN1/UGCWyxnR4VqQRVwf0ttZR8U4+NIJ8NiRpraoH0fdB2IV3K/HDy2X1iPi0uC09yjqOHr4C9U7RftKbr6kSXa+PWAaT1w7RrT6WVOstbdQ8vW860FaEgW5qFetSmBK1eYcNHmBgtnbGdcp+Oox0O3e5AMn1zioxiuoK/rnBLL5a+SzkAQTUnWRx7EbBhLlJMPPdMM4S30+iLEoCTwHDKfSQBGau119292lbis+nPuNZ4AJOoRvFEZZCPC6bJzTMuJ8EkHgX+6Wo0MBTFBDGOnE2QzBzcFkcIaQZA5cGYeJCQvl0nsT+LMw9YaDwLvpknFDAStpQ0+jXF7ns87ZQsvZ3gbxvsQqrqATNILXK21qD6M5z4b7/a/1/nL/pcV55IH69k+OBOB2Xcn9Jx8MABU6FgdQu7d5xGJxH14NzOBDBWx2I2dT3/7UbYdm9wYnYV/4PnglsVmtQJrXRY7vXX4+dO/eDO3LzDYltKjaYCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>cc78d77947669a50e9ddbf66706d4310</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>81eef683-2dac-4a90-8897-6a716d47084f</ui_id>
+        <values>H4sIAAAAAAAA/+2W30/bMBDH/xXk5zYKSX9A3yYQTxtMA/GyMcuJL62FE2e2U+iq/u87x0kopRtjQZsm8Rafz5+7+9qO7/OaCE5mJJqOp2MG0ThO4igOw3iUTjgHyLJpchhlIzIgBcsBPS1LJNB6MCBLJitnvKe6tCW9VZbd0lshaamkSFfowYUpJVtdP+uYLoTkGgoy+3wzICXTGMGCJrP1ztTv5itZAhJdr1zCB+c+4X1F2FW51/Z+H0Bp7pIKBwTuLRQcMJuMSQMDkrOCM6v0isysrtCggfGLQq46j4UoLAKJ87034juGPQqdXwZYXgp+rhvWgU+9gH4qO2WWXSI9tZVu3NOFEikYLw6HjFXSnmzbvMNFaYUq/JK61Ga1klVenHtZSAdo9wstlQHKoXS1uuybUrLLhbr71GZ6JopalmZSqpTJbsSs1SKprMtnTSpxtUdvb20Vd/KhESTkGJPmrCxFMaelVktRx8G082AucRBkUt1hfkbMi4ClrsYAd4EFZ2g/rc3XTAsX6wNicPFmQMzKnEhmzEPZqDn9VrmkvQhNudQr5pakWpT2HQZYQlPZZtBenuSXh5E9nLtMgORm6+JgSRw3k6aKw5cKl/L1mk8TfjyGeMjjSTYc8QyGbBLGw2kWxcfH0VF0OGKBsJAH/vIEHxvICUI2m68t08X8Y+Y2BJna6d6P+IDoeKbKKW4DHmXeE7tF6uj498h7Yh0CeTkz+NX8q/qp8BTldqwZqdfCVnkCGsGpWqIVz70UPSR+ROmoveStEWwOrcIaROF2r+8Ze4SpU2USTArU3zwP7uR++j693ce3+/h2H//hfXxhG/j8y9u2gWft07v7FLftH+T4I7BA/dO80wI2kwfXzWTTBh6+Vhs4GYfh/9YJ+upeoRHcVf4vNoMYrDSgLfXebbiX94hb3exPusWbH8fX/ftsDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>cc78d77947669a50e9ddbf66706d4311</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>0c2d1e1a-3b77-413c-9160-27b90094b491</ui_id>
+        <values>H4sIAAAAAAAA/+1W207cMBD9FZTnJMo9G94qEE8tSG3FC22tiT0GC+dS2wG2K/69k02yXQG9UKFKlXhbz+XMmeOJZy82nhLeoZeUeZkDJnlap0kaRWnGCyEQpSzrOJGZ53stNEiRDmqNbHvwvRvQw2i8Y6Z3PbvuHFyz4ZZxsKNbKNtrWJ//OopfKS0Mtt7hxWff68EQtkPjHW4euP6UqYYaNYV+HKkenE5Un6Lv1v2TtrdPAXRGjKQi38M7h61AYiNBW/S9BloBrjNr79CZgQwGQZy1er2LuFKtI0BvjL2z6huVXUVjnERqj+Pk2x23hY8n9SaXPAYHHwidu8HM4fyqUxztJI5ACYN2R/u2KeCsd6prp5Rtq3N2p4emPZ1k8XYAy2WRZbDIBPZjryP7uRX54aq7fb8wPVHtVpbZqTsOencC54yqBzfy2XiD+viE3pN1UXyUj4yosaGarIG+V+0l6013o7Z1iHYTXmo6hFJ3t8TPqss2BD72GNItQHhC9uOt+RyMGmu9IxhKvvc9u7ZHGqz90TZpzr4OI+lJhLldNik2pnCjeveGCtzg3Nm9v3w29S+HEX7MnVSohd37ZHQHLWuHpkbzaaBMsdmsZB5BlSdBVMg4yADyACAuAsACsziqUOQ8NMhpEkNqhClxf/+l77Tia/q9Q4mpfrFKg0QAJ5QqClarqgwKKONCZGW0yuQjFN61dmjQ7OHECRZVGVFimaZBFmdEhOMqSKKykFmVZjWvH+HUBpkEpWlGGX0EtmsXOFHWosoxDURayCATEgMoojQoZZJWVbJK4gxC5bAJH2PMwAK5supvIZdsAjPKXjN6YprnI+1SCYYUYzRLxFM8H2gveas/aLScGt/OyQS3NyL+7pr9vat6/MS+TtXrVL3AVD1zJf/+FVxW8snyDD58FpdVjA2Ns0M2PZMP1vHsPDifnfNKjl9qJRd5FP1vW3nq7gWW8kPl/+FipmK9RePYFL2Ue/6+3vtn8ZPN/fk7eVfAHPIKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fb68977947669a50e9ddbf66706d43dd^sys_idNOT IN4478d77947669a50e9ddbf66706d430e,4878d77947669a50e9ddbf66706d430f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d5753e4347ce1ad0e9ddbf66706d43bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>4478d77947669a50e9ddbf66706d430e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</ui_id>
+        <values>H4sIAAAAAAAA/4VSTW/bMAz9Lzobhu0MwZJb0aBAgW0F2qKXoTBoiU6EyZKmj6Sekf8+KnLcopeebD6Sj49PnJiJwcbgn82N93Kv2fb3a8GkThj9T0zDgGzLZMDBs4IdQcUUT5OPXa/MqeyMGEsOHv35TAVCeqtgfPmqjh+kEg7ngRYczQno2Hb6lJKCaOqN6Dd1teGrZr1qqqr5/q3u1quubsQKUKyJUEGHikrvZ6WfhIfRptAhN05cgR9zz+OC0ieJaKqC4VtALZDG96A8FmwALSAYN7JtcJEAhyAetBqXioPUgehYqn3z8h9NrKsqFfZIC3HMySV8hk7hLjuWU/0OAjwRPQ/RzeX8YCRHn+0Q2ENU4fYjlgsebJBG55aQiOduo+Kgf2U32EJwfSBCosdWoE3LJvnzLv3TwZwer0rvpL4YMyeV4aCWCEJwsosh6ZkYKhyIqB3AWqn3rXXmKC/NpGUo94qCMp0EDU0nVwJPwkvyFso7wncX+AWcTFv8JBpqPhfMj/5Wgffvu5CR7d+YlOTN5h3abENq4U7acEMDjjjLPb+mK87ci6dcepJweY776+2nxEhXJPlH6GTcnyT+HTv/B4tLTcRFAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51753e4347ce1ad0e9ddbf66706d43c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Kotak Case creation 1">fb68977947669a50e9ddbf66706d43dd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>d7bd95e3-d36f-4dfe-a603-7f239928214a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>4878d77947669a50e9ddbf66706d430f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <ui_id>7b63b78e-c747-46ce-a129-e9ad5897062f</ui_id>
+        <values>H4sIAAAAAAAA/61TTU/jMBD9Lz63UT66hfSGqJCQdkEqiMsKVRN70lrr2MEfLSHqf99xkwbEmVMyb2bevHm2e2aCb4N3z+bGObnTbPX3dcakjhj990xDg2zFpMfGsRk7gAox7ntxVYnyFxZzUSzr+ULUOIdlWsyv6rwoy/w6zxaQxLZkg29BWmxQe3c6EYmQrlXQvfwEF99LJSyOwluwpNejZav+W0oKGpWVoi6ztORFvizyNM2vF1m1LKosFwWgWBKhggoVld6PG38zwHdtDC1yY8UF+D32bCaUPlFEns4YvnvUAml8DcrhjDWgBXhjO7byNhBgEcSjVt1UsZfaEx2Lte9OftDELE1jYY20EMchOYXPUClcD64OqXoNHp6Invtgx3K+N5KjG+wQWENQ/vYrNhQ8tl4aPbT4SDx2GxUa/TC4wSaCyyESEhxuBbZx2Sh/3KV+2pvj5qL0TuqzMWNSGQ5qisB7K6vgo56eoTof87aBtpV6t22tOchzM2lpkp2iIKmVOdLQeHUT4FF4Qt5Cckf4+gy/gJVxiz9EQ82nGXOdu1Xg3OcuZOT2LUQlw2bjDtvBhtjCrWz9DQ044Cj39Bpfw8A9ecqlIwnn47i/vKGY6OgWSf4VOhr7L4r/xE7/AX79bYONAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fb68977947669a50e9ddbf66706d43dd^sys_idNOT IN8c78d77947669a50e9ddbf66706d4308"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fb68977947669a50e9ddbf66706d43dd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:48</sys_created_on>
+        <sys_id>8c78d77947669a50e9ddbf66706d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fb68977947669a50e9ddbf66706d43dd"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3468177947669a50e9ddbf66706d432f</sys_id>
+        <latest_snapshot>fb68977947669a50e9ddbf66706d43dd</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix3b-11-14-2024_11-25-2024_0807.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3468177947669a50e9ddbf66706d432f"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3468177947669a50e9ddbf66706d432f^sys_idNOT IN8878d77947669a50e9ddbf66706d4328"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@6d7e714e</plan>
+        <plan_id display_value="Kotak Case creation 1">3468177947669a50e9ddbf66706d432f</plan_id>
+        <snapshot>fb68977947669a50e9ddbf66706d43dd</snapshot>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 09:30:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8878d77947669a50e9ddbf66706d4328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 09:30:49</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
