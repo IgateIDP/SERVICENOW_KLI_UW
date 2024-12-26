@@ -32,7 +32,7 @@
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Integer">integer</internal_type>
         <mandatory>false</mandatory>
         <max_length>100</max_length>
         <name>x_rptp_kotak_upload_excel</name>
@@ -58,8 +58,8 @@
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_dictionary_x_rptp_kotak_upload_excel_successful</sys_update_name>
-        <sys_updated_by>samarth.n</sys_updated_by>
-        <sys_updated_on>2024-11-15 06:43:46</sys_updated_on>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-23 09:50:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

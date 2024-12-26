@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rptp_kotak_upload_excel</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_rptp_kotak_upload_excel">type_of_upload=requirements upload^u_type_of_requirement_upload=Non-Medical^requirement_uploadANYTHING^EQ<item display_value="Requirements Upload" endquery="false" field="type_of_upload" goto="false" newquery="false" operator="=" or="false" value="requirements upload"/>
+            <item display_value="Non Medical" endquery="false" field="u_type_of_requirement_upload" goto="false" newquery="false" operator="=" or="false" value="Non-Medical"/>
+            <item endquery="false" field="requirement_upload" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>PDF and CSV file - Non-Med Excel - Kotak</name>
+        <order>110</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var totalCount = 0;
+    var sucCount = 0;
+    var failCount = 0;
+    var reasonPdf = "";
+    var errorReason = "";
+    var excelReason = "";
+
+    if (current.requirement_upload.nil()) {
+        gs.info('No attachment uploaded. Skipping processing for record: ' + current.sys_id);
+        return;
+    }
+
+    // Fetch the latest attachment for the record
+    var attachmentGR = new GlideRecord('sys_attachment');
+    attachmentGR.addQuery('sys_id', current.requirement_upload);
+    attachmentGR.query();
+
+    if (attachmentGR.next()) {
+        var attachmentSysId = attachmentGR.sys_id;
+
+        try {
+            // Retrieve attachment content
+            var attachment = new GlideSysAttachment();
+            var contentStream = attachment.getContentStream(attachmentSysId);
+            var parser = new sn_impex.GlideExcelParser();
+            parser.setSource(contentStream);
+
+            var sheetNames = parser.getSheetNames();
+            var processedSheets = 0; // Counter for successful sheets
+
+            // Iterate over each worksheet in the Excel workbook
+            for (var i = 0; i < sheetNames.length; i++) {
+                parser.setSheetName(sheetNames[i]);
+
+                if (parser.parse()) {
+                    var headers = parser.getColumnHeaders();
+
+                    var content = buildCsv(headers, parser);
+                    var newCsv = content.csv;
+
+                    // Attach processed CSV
+                    var grAttachment = new GlideSysAttachment();
+                    grAttachment.write(current, 'Processed_File.csv', 'text/csv', newCsv);
+                    //gs.info("CSV file successfully attached to record: " + current.sys_id);
+
+                    processedSheets++; // Increment counter for successful processing
+                } else {
+                    gs.addErrorMessage('Error parsing sheet: ' + sheetNames[i] + ' - ' + parser.getErrorMessage());
+                }
+            }
+
+        } catch (error) {
+            gs.addErrorMessage('Error processing attachment: ' + error.message);
+        }
+    } else {
+        gs.addErrorMessage('No attachment found for record: ' + current.sys_id);
+    }
+
+
+    /**
+     * Build CSV and PDF content from headers and parser rows.
+     */
+    function buildCsv(headers, parser) {
+        // Initialize CSV content
+        var csvContent = headers.join(',') + ',Status' + ',ErrorMessage\r\n';
+
+        while (parser.next()) {
+            var row = parser.getRow();
+            var updateStatus = updateCase(row, headers).updated ? "SUCCESS" : "FAILURE";
+            var excelError = updateCase(row, headers).error_message_excel || '-';
+            var errorMessage = updateCase(row, headers).error_message || "-";
+
+            // Add row to CSV
+            csvContent += headers.map(header => (row[header] || '')).join(',') + ',' + updateStatus + ',' + excelError + '\r\n';
+
+            totalCount++;
+            if (updateStatus == "SUCCESS") {
+                sucCount++;
+            } else {
+                failCount++;
+            }
+            if (errorMessage != "-") {
+
+                reasonPdf += failCount +".Requirement Mapping ID - "+ row[headers[0]] +", has not been updated,\n\n<div style='color:red;'>Error Message:</div>"+ errorMessage + "\n\n";
+
+                errorReason += failCount +".Requirement Mapping ID - "+ row[headers[0]] +", has not been updated,\n\nError Message:\n"+ errorMessage + "\n\n";
+            }
+
+        }
+
+        return {
+            csv: csvContent
+        };
+    }
+
+    //Calling Subflow
+    function updateCase(row, headers) {
+
+        try {
+            var inputs = {};
+            inputs['requirement_mapping_id'] = row[headers[0]]; // String 
+            inputs['requirement_status'] = row[headers[1]]; // String 
+            inputs['requirement_received_date'] = row[headers[2]]; // String 
+            inputs['requirement_upload_date'] = row[headers[3]]; // String 
+
+            // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+            var result = sn_fd.FlowAPI.getRunner().subflow('x_rptp_kotak.excel_upload_for_nonmed_requiremnents').inForeground().withInputs(inputs).run();
+            var outputs = result.getOutputs();
+
+            // Get Outputs:
+            // Note: outputs can only be retrieved when executing synchronously.
+            var error_message_excel = outputs['error_message_excel']; // String
+            var error_message = outputs['error_message']; // String
+            var updated = outputs['updated']; // True/False
+
+			return outputs;
+
+        } catch (ex) {
+            var message = ex.getMessage();
+            gs.error(message);
+        }
+    }
+
+    //updating the Record
+    current.count_of_total_uploads = totalCount;
+    current.successful = sucCount;
+    current.failed = failCount;
+    current.error_reason = errorReason;
+    current.reason = reasonPdf;
+    current.update();
+
+    try {
+        new x_rptp_kotak.pdf_kotak_uw_portal().job_id_pdf(current.sys_id);
+    } catch (e) {
+        gs.info(e);
+    }
+
+    try {
+        gs.eventQueue("x_rptp_kotak.job_id_email", current);
+    } catch (e) {
+        gs.info(e);
+    }
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-23 10:08:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f667409347a69690e9ddbf66706d4313</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>PDF and CSV file - Non-Med Excel - Kotak</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_f667409347a69690e9ddbf66706d4313</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-23 11:06:00</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f667409347a69690e9ddbf66706d4313"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f667409347a69690e9ddbf66706d4313</id>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-23 10:08:37</sys_created_on>
+        <sys_id>3c77845347a69690e9ddbf66706d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-23 10:08:37</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

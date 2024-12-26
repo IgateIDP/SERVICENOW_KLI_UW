@@ -138,7 +138,15 @@
 				c.data.list[x].selected = false;
 			}
 			item.selected = true;
-			$scope.$emit(eventNames.click, parms);
+
+
+			if(c.data.pageId == 'nedmed_user'){
+				$scope.$emit(eventNames.click, parms);
+
+			} 
+			else{
+				return;
+			}
 		}, function() {
 		});	
 	};
@@ -1302,8 +1310,6 @@ tbody &gt; tr:nth-of-type(odd) {
 		data.column_types[field] = ge.getED().getInternalType();
 	}
 
-	//gs.addErrorMessage(JSON.stringify(data.fields_array));
-
 	function formatPropertyName(propertyName) {
 
 		var parts = propertyName.split('.');
@@ -1312,18 +1318,62 @@ tbody &gt; tr:nth-of-type(odd) {
 		});
 		return formattedParts.join(' ');
 	}
+
 	function getFieldName(field) {
-		var a = field.split('.');
+		var dictgr = new GlideRecord('sys_dictionary');
+		var reftable = '';
+		if(field.includes(".")){
+			var f = field.split(".");
+			var fetchrefgr = new GlideRecord('sys_dictionary');
+			fetchrefgr.addQuery('element',f[0]);
+			fetchrefgr.addQuery('name',data.table)
 
-		if (a[1]) {
-			a[1] = a[1].replace('_', ' ').toUpperCase();
-			return a[1];
-		} else {
-			a[0] = a[0].replace('_', ' ').toUpperCase();
-			return a[0];
+			fetchrefgr.query();
+
+			if(fetchrefgr.next()){
+				reftable = fetchrefgr.getValue('reference');
+
+			}
+			dictgr.addQuery('element',f[1]);
+			dictgr.addQuery('name',reftable);
 		}
-	}
+		else{
+			dictgr.addQuery('element',field);
+			dictgr.addQuery('name',data.table)
+		}
 
+		dictgr.query();
+		if(dictgr.next()){					
+			return dictgr.getValue('column_label');
+		}
+		else{
+			var perenttable = '';
+			var perenttable1 = '';
+			var db = new GlideRecord('sys_db_object');
+			db.addQuery('name',reftable);
+			db.query();
+			if(db.next()){
+				perenttable =  db.getValue('super_class');
+			}
+			var db1 = new GlideRecord('sys_db_object');
+			db1.addEncodedQuery('sys_idSTARTSWITH'+perenttable)
+			db1.query();
+			if(db1.next()){
+				perenttable1 =  db1.getValue('name');
+
+			}
+			var dictgr1 = new GlideRecord('sys_dictionary');
+				var fields = field.split(".")
+			dictgr1.addQuery('element',fields[1]);
+			dictgr1.addQuery('name',perenttable1);
+			dictgr1.query();
+		
+			if(dictgr1.next()){
+				return dictgr1.getValue('column_label');
+			}
+		}
+
+	}
 
 	data.list = [];
 	while (gr._next()) {
@@ -1403,14 +1453,14 @@ tbody &gt; tr:nth-of-type(odd) {
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-15 09:27:40</sys_created_on>
         <sys_id>e6a190c74771d250e9ddbf66706d431d</sys_id>
-        <sys_mod_count>167</sys_mod_count>
+        <sys_mod_count>233</sys_mod_count>
         <sys_name>KLI List Filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_e6a190c74771d250e9ddbf66706d431d</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-18 05:57:40</sys_updated_on>
+        <sys_updated_on>2024-12-24 06:55:18</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 

@@ -9,7 +9,7 @@
         <default_answer>false</default_answer>
         <input_table>var__m_sys_decision_input_33489d43ff12121019a8ffda7c4fd994</input_table>
         <label>UW Assignment Group Decision Table_200</label>
-        <marked_for_deletion>false</marked_for_deletion>
+        <marked_for_deletion>true</marked_for_deletion>
         <order>200</order>
         <sys_class_name>sys_decision_question</sys_class_name>
         <sys_created_by>kumar.raja</sys_created_by>
@@ -17,7 +17,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b7deed74792d210e9ddbf66706d436f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>UW Assignment Group Decision Table_200</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
@@ -25,6 +25,6 @@
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_decision_question_4b7deed74792d210e9ddbf66706d436f</sys_update_name>
         <sys_updated_by>kumar.raja</sys_updated_by>
-        <sys_updated_on>2024-12-11 11:58:33</sys_updated_on>
+        <sys_updated_on>2024-12-26 11:25:31</sys_updated_on>
     </sys_decision_question>
 </record_update>

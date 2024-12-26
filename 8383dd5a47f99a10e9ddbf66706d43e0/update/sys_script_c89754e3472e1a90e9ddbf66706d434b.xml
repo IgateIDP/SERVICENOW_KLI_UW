@@ -11,16 +11,19 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_rptp_kotak_upload_excel</collection>
+        <collection>x_rptp_kotak_requirement_mapping</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_rptp_kotak_upload_excel">type_of_upload=requirements upload^EQ<item display_value="Requirements Upload" endquery="false" field="type_of_upload" goto="false" newquery="false" operator="=" or="false" value="requirements upload"/>
+        <filter_condition table="x_rptp_kotak_requirement_mapping">recieved_dateVALCHANGES^upload_dateISNOTEMPTY^NQupload_dateVALCHANGES^recieved_dateISNOTEMPTY^EQ<item endquery="false" field="recieved_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="upload_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="upload_date" goto="false" newquery="true" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="recieved_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Pdf and Email for Excel Upload - Kotak</name>
+        <name>Ageing 2 - upload and received  - Kotak</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,47 +34,49 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    try {
-        new x_rptp_kotak.pdf_kotak_uw_portal().job_id_pdf(current.sys_id);
-    } catch (e) {
-        gs.info(e);
-    }
+    var receivedDate = current.recieved_date;
+    var uploadDate = current.upload_date;
 
-    try {
-        gs.eventQueue("x_rptp_kotak.job_id_email", current);
-    } catch (e) {
-        gs.info(e);
-    }
+    var received = new GlideDateTime(receivedDate);
+    var upload = new GlideDateTime(uploadDate);
+
+    var duration = GlideDateTime.subtract(received, upload);
+
+    // Convert duration to days (duration is in milliseconds)
+    var diffDays = Math.floor(duration.getDayPart());
+	
+	current.ageing_2 = diffDays;
+	current.update();
 
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>rushith</sys_created_by>
-        <sys_created_on>2024-11-19 09:47:27</sys_created_on>
+        <sys_created_on>2024-12-24 06:03:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>1febb494474e5e50e9ddbf66706d43c6</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>Pdf and Email for Excel Upload - Kotak</sys_name>
+        <sys_id>c89754e3472e1a90e9ddbf66706d434b</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Ageing 2 - upload and received  - Kotak</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sys_script_1febb494474e5e50e9ddbf66706d43c6</sys_update_name>
+        <sys_update_name>sys_script_c89754e3472e1a90e9ddbf66706d434b</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-17 11:14:59</sys_updated_on>
+        <sys_updated_on>2024-12-24 06:50:47</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=1febb494474e5e50e9ddbf66706d43c6"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c89754e3472e1a90e9ddbf66706d434b"/>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>1febb494474e5e50e9ddbf66706d43c6</id>
+        <id>c89754e3472e1a90e9ddbf66706d434b</id>
         <sys_created_by>rushith</sys_created_by>
-        <sys_created_on>2024-11-19 09:47:26</sys_created_on>
-        <sys_id>d38c7418474e5e50e9ddbf66706d4344</sys_id>
+        <sys_created_on>2024-12-24 06:03:13</sys_created_on>
+        <sys_id>3fd89027472e1a90e9ddbf66706d435f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-11-19 09:47:26</sys_updated_on>
+        <sys_updated_on>2024-12-24 06:03:13</sys_updated_on>
         <table>sys_script</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>

@@ -165,7 +165,7 @@ $scope.toggleState=function(item){
 				c.data.list[x].selected = false;
 			}
 			item.selected = true;
-			$scope.$emit(eventNames.click, parms);
+	//		$scope.$emit(eventNames.click, parms);
 		}, function() {
 		});	
 	};
@@ -570,7 +570,9 @@ function createEncodedQuery(filterObj) {
 	}
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css>
+        <css>.clicked-link {
+  color: black !important; /* Force the color to black */
+}
 .panel-subheading {
   margin-top: 15px;
   padding: 10px 15px;
@@ -685,7 +687,7 @@ th .disabled{
 
 
 .selected {
- // color: #fff;
+  color: black;
  // background-color: $data-table-selected;
   border-color: 1px solid #fff;
 }
@@ -1249,23 +1251,58 @@ data.policy=gr.getDisplayValue('policy_id')
 		return formattedParts.join(' ');
 	}
 	function getFieldName(field) {
-		var a = new GlideRecord('sys_dictionary');
-
-		// Check the table and set the query
-		if (data.table == 'x_rptp_insureme_payment_details') {
-			a.addQuery('name','x_rptp_insureme_payment_details');
+		var dictgr = new GlideRecord('sys_dictionary');
+		var reftable = '';
+		if(field.includes(".")){
+			var f = field.split(".");
+			var fetchrefgr = new GlideRecord('sys_dictionary');
+			fetchrefgr.addQuery('element',f[0]);
+			fetchrefgr.addQuery('name',data.table)
+ 
+			fetchrefgr.query();
+ 
+			if(fetchrefgr.next()){
+				reftable = fetchrefgr.getValue('reference');
+ 
+			}
+			dictgr.addQuery('element',f[1]);
+			dictgr.addQuery('name',reftable);
 		}
-
-		var arr = field.split(".");
-		if (arr.length > 1) {
-			field = arr[1]; // Take the second part
+		else{
+			dictgr.addQuery('element',field);
+			dictgr.addQuery('name',data.table)
 		}
-		a.addQuery('element', field);
-		a.query();
-
-		while (a.next()) {
-			return a.getValue('column_label');
+ 
+		dictgr.query();
+		if(dictgr.next()){					
+			return dictgr.getValue('column_label');
 		}
+		else{
+			var perenttable = '';
+			var perenttable1 = '';
+			var db = new GlideRecord('sys_db_object');
+			db.addQuery('name',reftable);
+			db.query();
+			if(db.next()){
+				perenttable =  db.getValue('super_class');
+			}
+			var db1 = new GlideRecord('sys_db_object');
+			db1.addEncodedQuery('sys_idSTARTSWITH'+perenttable)
+			db1.query();
+			if(db1.next()){
+				perenttable1 =  db1.getValue('name');
+ 
+			}
+			var dictgr1 = new GlideRecord('sys_dictionary');
+				var fields = field.split(".")
+			dictgr1.addQuery('element',fields[1]);
+			dictgr1.addQuery('name',perenttable1);
+			dictgr1.query();
+			if(dictgr1.next()){
+				return dictgr1.getValue('column_label');
+			}
+		}
+ 
 	}
 
 	data.list = [];
@@ -1346,14 +1383,14 @@ data.policy=gr.getDisplayValue('policy_id')
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-19 07:10:28</sys_created_on>
         <sys_id>3398dc10470a5e50e9ddbf66706d43ee</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>111</sys_mod_count>
         <sys_name>Copy of KLI List Filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_3398dc10470a5e50e9ddbf66706d43ee</sys_update_name>
-        <sys_updated_by>Surya.Prathap</sys_updated_by>
-        <sys_updated_on>2024-12-16 05:25:57</sys_updated_on>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-24 06:58:48</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <div class="modal-content" ng-if="ShowModal">

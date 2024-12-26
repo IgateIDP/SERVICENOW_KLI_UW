@@ -3,377 +3,377 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4fbb882c47965614e9ddbf66706d43e7</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a3b0ff084732de90e9ddbf66706d4339</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.policy_id.policy_no</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>43bb882c47965614e9ddbf66706d43e8</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a7b0ff084732de90e9ddbf66706d4339</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.policy_id.master_policy_name</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>47bb882c47965614e9ddbf66706d43e8</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>abb0ff084732de90e9ddbf66706d4339</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>case_id.loan_number.loan_number</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>3</position>
-            <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4bbb882c47965614e9ddbf66706d43e8</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.consumer_id.member_number</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>afb0ff084732de90e9ddbf66706d4339</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>case_id.loan_number.loan_number</element>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4fbb882c47965614e9ddbf66706d43e8</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a3b0ff084732de90e9ddbf66706d433a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.consumer_id.member_client_id</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>43bb882c47965614e9ddbf66706d43e9</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a7b0ff084732de90e9ddbf66706d433a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.consumer_id.age</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>47bb882c47965614e9ddbf66706d43e9</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>abb0ff084732de90e9ddbf66706d433a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.consumer_id.gender</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4bbb882c47965614e9ddbf66706d43e9</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>afb0ff084732de90e9ddbf66706d433a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.consumer_id.customer_name</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4fbb882c47965614e9ddbf66706d43e9</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a3b0ff084732de90e9ddbf66706d433b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.case_type</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>43bb882c47965614e9ddbf66706d43ea</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a7b0ff084732de90e9ddbf66706d433b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case_id.consumer_id.mobile_phone</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>47bb882c47965614e9ddbf66706d43ea</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>abb0ff084732de90e9ddbf66706d433b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>requirement_id.requirement_name</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>11</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4bbb882c47965614e9ddbf66706d43ea</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>afb0ff084732de90e9ddbf66706d433b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>requirement_id.requiremnt_id</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>12</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4fbb882c47965614e9ddbf66706d43ea</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a3b0ff084732de90e9ddbf66706d433c</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>requirement_id.description</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>13</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>43bb882c47965614e9ddbf66706d43eb</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a7b0ff084732de90e9ddbf66706d433c</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>requirement_id.type</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>14</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>47bb882c47965614e9ddbf66706d43eb</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>abb0ff084732de90e9ddbf66706d433c</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>classification</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>15</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4bbb882c47965614e9ddbf66706d43eb</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>afb0ff084732de90e9ddbf66706d433c</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>status</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>16</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4fbb882c47965614e9ddbf66706d43eb</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a3b0ff084732de90e9ddbf66706d433d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>waiver</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>17</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>43bb882c47965614e9ddbf66706d43ec</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a7b0ff084732de90e9ddbf66706d433d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>reason_for_waiver</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>18</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>47bb882c47965614e9ddbf66706d43ec</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>abb0ff084732de90e9ddbf66706d433d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>recieved_by</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>19</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4bbb882c47965614e9ddbf66706d43ec</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>afb0ff084732de90e9ddbf66706d433d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>raised_date</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>20</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4fbb882c47965614e9ddbf66706d43ec</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a3b0ff084732de90e9ddbf66706d433e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>recieved_date</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>21</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>43bb882c47965614e9ddbf66706d43ed</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a7b0ff084732de90e9ddbf66706d433e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>upload_date</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>22</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>47bb882c47965614e9ddbf66706d43ed</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>abb0ff084732de90e9ddbf66706d433e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>ageing_1</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>23</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4bbb882c47965614e9ddbf66706d43ed</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>afb0ff084732de90e9ddbf66706d433e</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>ageing_2</element>
-            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">43bb882c47965614e9ddbf66706d43e7</list_id>
+            <list_id display_value="x_rptp_kotak_requirement_mapping" element="NULL" name="x_rptp_kotak_requirement_mapping" parent="NULL" relationship="NULL" sys_domain="global" view="e14cbabb47f59a50e9ddbf66706d43f0">e3b0ff084732de90e9ddbf66706d4338</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>24</position>
             <sum>false</sum>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
-            <sys_id>4fbb882c47965614e9ddbf66706d43ed</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
+            <sys_id>a3b0ff084732de90e9ddbf66706d433f</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -386,19 +386,19 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>rushith</sys_created_by>
-            <sys_created_on>2024-12-02 11:08:21</sys_created_on>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-26 11:03:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>43bb882c47965614e9ddbf66706d43e7</sys_id>
+            <sys_id>e3b0ff084732de90e9ddbf66706d4338</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_rptp_kotak_requirement_mapping</sys_name>
             <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
             <sys_policy/>
             <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
             <sys_update_name>sys_ui_list_x_rptp_kotak_requirement_mapping_RPTe94cba7b47f59a50e9ddbf66706d43fc</sys_update_name>
-            <sys_updated_by>rushith</sys_updated_by>
-            <sys_updated_on>2024-12-02 11:08:21</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:03:20</sys_updated_on>
             <sys_user/>
             <view display_value="Rpte94cba7b47f59a50e9ddbf66706d43fc" name="RPTe94cba7b47f59a50e9ddbf66706d43fc">e14cbabb47f59a50e9ddbf66706d43f0</view>
             <view_name/>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>60</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>d589dda2073240ab881e8dba754c56c2</client_id>
+        <client_secret>﷞﷟﷒42a0be85476d3110237dd902516d43ff﷬﷔1﷬﷭uKxhGKFNSEa5eD8khN8TAw==ZVMHuKoyUeW2JmdpOKTaeHV_1nzPDVs1aJk=﷮﷯</client_secret>
+        <client_type/>
+        <client_uuid>992a6f42ffae5a5019a8ffda7c4fd918</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>password</default_grant_type>
+        <id_token_lifespan>86400</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>60</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>kotak </name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>true</public_client>
+        <redirect_url/>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt/>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-20 05:27:02</sys_created_on>
+        <sys_id>d92a6f42ffae5a5019a8ffda7c4fd918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>kotak </sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>oauth_entity_d92a6f42ffae5a5019a8ffda7c4fd918</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-20 05:27:02</sys_updated_on>
+        <token_url/>
+        <type>client</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+</record_update>
