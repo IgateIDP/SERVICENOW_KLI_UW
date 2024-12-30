@@ -6,24 +6,24 @@
         <applies_to/>
         <condition/>
         <decision_type>allow</decision_type>
-        <description>Default access control on x_rptp_kotak_uw_case</description>
+        <description>UW particular Field level access control on x_rptp_kotak_uw_case</description>
         <local_or_existing>Local</local_or_existing>
-        <name>x_rptp_kotak_uw_case.*</name>
+        <name>x_rptp_kotak_uw_case.hold_internal_requiremnet</name>
         <operation display_value="write">write</operation>
         <script/>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-12-27 06:32:28</sys_created_on>
-        <sys_id>795c7b1447f652d0e9ddbf66706d43d8</sys_id>
+        <sys_created_on>2024-12-30 12:12:28</sys_created_on>
+        <sys_id>dfe660e5ff7656d019a8ffda7c4fd9eb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_rptp_kotak_uw_case.*</sys_name>
+        <sys_name>x_rptp_kotak_uw_case.hold_internal_requiremnet</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sys_security_acl_795c7b1447f652d0e9ddbf66706d43d8</sys_update_name>
+        <sys_update_name>sys_security_acl_dfe660e5ff7656d019a8ffda7c4fd9eb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-27 06:32:28</sys_updated_on>
+        <sys_updated_on>2024-12-30 12:12:28</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
