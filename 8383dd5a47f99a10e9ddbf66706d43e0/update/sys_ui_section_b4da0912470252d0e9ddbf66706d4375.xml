@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="UW Decision" section_id="b4da0912470252d0e9ddbf66706d4375" sys_domain="global" table="x_rptp_kotak_underwriter_decision" version="3" view="Decision_Comments_View">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>reason</element>
+            <element>remarks</element>
             <position>0</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 06:09:15</sys_created_on>
-            <sys_id>3147c754479a1614e9ddbf66706d4312</sys_id>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-12-26 11:45:58</sys_created_on>
+            <sys_id>d08a77c4ff7e9a9019a8ffda7c4fd928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="UW Decision" display_value="UW Decision" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="88da0912470252d0e9ddbf66706d430a">b4da0912470252d0e9ddbf66706d4375</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 06:09:15</sys_updated_on>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:45:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>comments</element>
             <position>1</position>
-            <sys_created_by>kumar.raja</sys_created_by>
-            <sys_created_on>2024-12-02 06:09:15</sys_created_on>
-            <sys_id>7d47c754479a1614e9ddbf66706d4312</sys_id>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-12-26 11:45:58</sys_created_on>
+            <sys_id>108a77c4ff7e9a9019a8ffda7c4fd929</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="UW Decision" display_value="UW Decision" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="88da0912470252d0e9ddbf66706d430a">b4da0912470252d0e9ddbf66706d4375</sys_ui_section>
-            <sys_updated_by>kumar.raja</sys_updated_by>
-            <sys_updated_on>2024-12-02 06:09:15</sys_updated_on>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-12-26 11:45:58</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

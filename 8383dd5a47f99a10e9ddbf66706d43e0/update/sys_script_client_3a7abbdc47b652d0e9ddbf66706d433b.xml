@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Retrict the submission of decision</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // Get the current value of the 'reason' field
+    var newValue = g_form.getValue('reason');
+
+    var modifiedReason = newValue.replace(/,/g, " ");
+    var totalCharacters = modifiedReason.length;
+
+    if (totalCharacters > 80) {
+        g_form.addErrorMessage("Length of reason cannot exceed 80 characters");
+        return false;
+    }
+
+    var finalValue = modifiedReason.replace(/\s+/g, ",").trim();
+
+    if (newValue !== finalValue) {
+        g_form.setValue('reason', finalValue);
+    }
+
+    return true; // Allow form submission
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-27 06:25:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3a7abbdc47b652d0e9ddbf66706d433b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Retrict the submission of decision</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_3a7abbdc47b652d0e9ddbf66706d433b</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-27 06:31:43</sys_updated_on>
+        <table>x_rptp_kotak_underwriter_decision</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

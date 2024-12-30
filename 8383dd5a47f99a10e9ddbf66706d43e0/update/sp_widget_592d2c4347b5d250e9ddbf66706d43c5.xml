@@ -4,8 +4,9 @@
         <client_script><![CDATA[api.controller = function($scope, spUtil, $rootScope) {
 	var c = this;
 
+	console.log(c.data.fields[0].name);
 
-	c.selectedField = c.data.fields && c.data.fields.length > 0 ? c.data.fields[0].name : '';
+	c.selectedField = c.data.fields[0].name;
 	c.searchText = '';
 	c.previousSearchText = ''; 
 	var searchQuery;
@@ -20,6 +21,7 @@
 
 	c.onSearchChange = function() {
 		if (c.selectedField) {
+			
 			$rootScope.$broadcast('searchCriteriaChanged', c.selectedField + 'LIKE' +c.searchText);
 
 			/*   if (c.searchText == '') {
@@ -98,25 +100,64 @@
   data.table = $sp.getValue('table'); // Get the table name
   var fields = $sp.getValue('field_list').split(','); // Split the field list into an array
   data.fields = [];
+	
+	function getFieldName(field) {
+    var dictgr = new GlideRecord('sys_dictionary');
+    var reftable = '';
+    if (field.includes(".")) {
+        var f = field.split(".");
+        var fetchrefgr = new GlideRecord('sys_dictionary');
+        fetchrefgr.addQuery('element', f[0]);
+        fetchrefgr.addQuery('name', data.table);
 
-  fields.forEach(function(field) {
-    var label = '';
-    
-    // Query sys_dictionary to get the label for the field
-    var grdic = new GlideRecord('sys_dictionary');
-    grdic.addQuery('name', data.table); // Filter by table name
-    grdic.addQuery('element', field); // Filter by field name
-    grdic.query();
-    
-    if (grdic.next()) {
-      label = grdic.getValue('column_label'); // Fetch the field label
+        fetchrefgr.query();
+
+        if (fetchrefgr.next()) {
+            reftable = fetchrefgr.getValue('reference');
+        }
+
+        dictgr.addQuery('element', f[1]);
+        dictgr.addQuery('name', reftable);
+    } else {
+        dictgr.addQuery('element', field);
+        dictgr.addQuery('name', data.table);
     }
+
+    dictgr.query();
+    if (dictgr.next()) {
+        return dictgr.getValue('column_label');
+    } else {
+        var perenttable = '';
+        var perenttable1 = '';
+        var db = new GlideRecord('sys_db_object');
+        db.addQuery('name', reftable);
+        db.query();
+        if (db.next()) {
+            perenttable = db.getValue('super_class');
+        }
+        var db1 = new GlideRecord('sys_db_object');
+        db1.addEncodedQuery('sys_idSTARTSWITH' + perenttable);
+        db1.query();
+        if (db1.next()) {
+            perenttable1 = db1.getValue('name');
+        }
+        var dictgr1 = new GlideRecord('sys_dictionary');
+        var fields = field.split(".");
+        dictgr1.addQuery('element', fields[1]);
+        dictgr1.addQuery('name', perenttable1);
+        dictgr1.query();
+        if (dictgr1.next()) {
+            return dictgr1.getValue('column_label');
+        }
+    }
+}
+  fields.forEach(function(field) {
+    var label = getFieldName(field)
     
-    // Add the field object with name and label
     data.fields.push({
-      name: field,
-      label: field.split('.')[1].toUpperCase().replace('_',' ') || field.split('.')[0].toUpperCase().replace('_',' ') // Use field name as fallback if label is not found
-    });
+      name: label,
+      label: field
+		});
   });
 })($sp);
 ]]></script>
@@ -125,19 +166,26 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-15 11:28:03</sys_created_on>
         <sys_id>592d2c4347b5d250e9ddbf66706d43c5</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>KLI Search</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_592d2c4347b5d250e9ddbf66706d43c5</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-10 05:20:16</sys_updated_on>
+        <sys_updated_on>2024-12-27 07:33:56</sys_updated_on>
         <template><![CDATA[<div class="search-widget d-flex align-items-center">
-  <select id="fieldDropdown" ng-model="c.selectedField" ng-options="field.name as field.label for field in c.data.fields" class="form-control me-2" ng-change = 'Selectinputchange()'>
+  <select id="fieldDropdown" 
+          ng-model="c.selectedField" 
+          ng-options="field.label as field.name for field in c.data.fields" 
+          class="form-control me-2" 
+          ng-change="Selectinputchange()">
   </select>
-  
-  <input type="text" ng-model="c.searchText" placeholder="Search..." ng-change="c.onSearchChange()" class="form-control"/>
+  <input type="text" 
+         ng-model="c.searchText" 
+         placeholder="Search..." 
+         ng-change="c.onSearchChange()" 
+         class="form-control" />
 </div>
 ]]></template>
     </sp_widget>
