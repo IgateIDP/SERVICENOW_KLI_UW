@@ -14,7 +14,7 @@
         "allRecordsSelected": false,
         "columnFilteringPopoverDisplay": "allowBoth",
         "columnLimit": 20,
-        "columns": "u_number,policy_id.master_policy_name,policy_id.policy_no,case_status,consumer_id.member_number,consumer_id.member_client_id,consumer_id.name,loan_number.loan_number,loan_number.loan_type,uw_ageing,overall_ageing,type_of_case,case_type,hold_internal_requiremnet",
+        "columns": "consumer_id.member_number,policy_id.master_policy_name,policy_id.policy_no,case_status,consumer_id.member_client_id,consumer_id.name,loan_number.loan_number,loan_number.loan_type,uw_ageing,overall_ageing,type_of_case,case_type,hold_internal_requiremnet",
         "currentPage": 0,
         "enableCellFiltering": true,
         "enableColumnSorting": true,
@@ -25,11 +25,11 @@
         "enableReferenceLinks": true,
         "fetchHighlightedValues": true,
         "filter": "",
-        "fixedFilter": "assignment_group=0eab44ea47ca92d0e9ddbf66706d43f0",
+        "fixedFilter": "u_case_stage=uw_workbench_menu^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe",
         "groupBy": "",
         "listId": null,
         "listMenuConfigurationId": null,
-        "listTitle": "UW Pending Assessment",
+        "listTitle": "Pending Cases",
         "listType": "default",
         "onlyEnableSelectionWhenRequiredByActions": true,
         "parentRecordSysId": null,
@@ -38,7 +38,7 @@
         "table": "x_rptp_kotak_uw_case"
     },
     "table": "x_rptp_kotak_uw_case",
-    "sysId": "e3e9ae2247711250e9ddbf66706d43f8",
+    "sysId": "2da087ad47aed650e9ddbf66706d435e",
     "views": "kotak_case_view",
     "07811f1077a31110960ced43ba5a9949": {
         "browser": null,
@@ -74,13 +74,13 @@
         <sys_created_by>kumar.raja</sys_created_by>
         <sys_created_on>2024-11-27 05:35:07</sys_created_on>
         <sys_id>018f81b6478a56d0e9ddbf66706d43ca</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_uib_screen_test_values_018f81b6478a56d0e9ddbf66706d43ca</sys_update_name>
         <sys_updated_by>kumar.raja</sys_updated_by>
-        <sys_updated_on>2024-11-28 05:37:14</sys_updated_on>
+        <sys_updated_on>2024-12-31 02:41:49</sys_updated_on>
     </sys_uib_screen_test_values>
 </record_update>

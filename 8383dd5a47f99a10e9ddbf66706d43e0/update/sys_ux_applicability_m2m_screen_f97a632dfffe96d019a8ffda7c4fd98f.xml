@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="KLI UnderWriter">6e2a23e9fffe96d019a8ffda7c4fd9c5</applicability>
+        <order>0</order>
+        <screen display_value="UnderWriter Home">ac782fe5fffe96d019a8ffda7c4fd91c</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-31 02:26:47</sys_created_on>
+        <sys_id>f97a632dfffe96d019a8ffda7c4fd98f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_f97a632dfffe96d019a8ffda7c4fd98f</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-31 02:26:47</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+</record_update>
