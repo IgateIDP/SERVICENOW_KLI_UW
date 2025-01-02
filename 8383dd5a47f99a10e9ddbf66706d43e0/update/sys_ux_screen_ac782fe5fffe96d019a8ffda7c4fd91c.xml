@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <app_config display_value="Kotak Tracking Portal App Config">5ed8008438c2da506a1a67498c87a410</app_config>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
@@ -625,15 +625,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ac782fe5fffe96d019a8ffda7c4fd91c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>UnderWriter Home</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_ux_screen_ac782fe5fffe96d019a8ffda7c4fd91c</sys_update_name>
-        <sys_updated_by>nanditha.br</sys_updated_by>
-        <sys_updated_on>2025-01-02 07:07:14</sys_updated_on>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-02 07:38:39</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=ac782fe5fffe96d019a8ffda7c4fd91c"/>
 </record_update>
