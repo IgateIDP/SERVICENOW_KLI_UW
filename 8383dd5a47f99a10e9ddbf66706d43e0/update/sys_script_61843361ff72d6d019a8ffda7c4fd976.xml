@@ -41,7 +41,7 @@
 
         var gr = new GlideRecord('sys_user_group'); // Replace with your actual table name
         gr.addQuery('u_uw_decision_limit_max', '>', targetSum); // Senior UW sum assured greater than target
-        gr.orderBy('u_snr_uw'); // Closest higher value
+        gr.orderBy('u_uw_decision_limit_max'); // Closest higher value
         gr.query();
 
         if (gr.next()) {
@@ -57,15 +57,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>61843361ff72d6d019a8ffda7c4fd976</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Recommend Assignment Group </sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_script_61843361ff72d6d019a8ffda7c4fd976</sys_update_name>
-        <sys_updated_by>kumar.raja</sys_updated_by>
-        <sys_updated_on>2024-12-31 03:17:49</sys_updated_on>
+        <sys_updated_by>nanditha.br</sys_updated_by>
+        <sys_updated_on>2025-01-02 08:11:38</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

@@ -11,21 +11,15 @@
 	$scope.column1=$scope.column1.split(',');
 	$scope.column2=$scope.options.column2;
 	sessionStorage.setItem('redirect',JSON.stringify($location.search()));
-	  	$scope.redirect = function(item) {
-					c.server.get({action:'fetch', recordId : item.sys_id}).then(function(res){
-		$scope.decision=res.data.val;
-						$scope.date1 = new Date(res.data.senddate);
-$scope.date2 =new Date(res.data.revdate);
-
-
-
-
-
-
-					
+	$scope.redirect = function(item) {
+		c.server.get({action:'fetch', recordId : item.sys_id}).then(function(res){
+			$scope.decision=res.data.val;
+			$scope.date1 = new Date(res.data.senddate);
+			$scope.date2 =new Date(res.data.revdate);
+			$scope.remarks =res.data.remarks; 
 		})
-			$scope.ShowModal = true;
-	/*	var p = $scope.data.pageName;
+		$scope.ShowModal = true;
+		/*	var p = $scope.data.pageName;
 		var value = item.sys_id;
 		var s = { id: p };
 		var so = {};
@@ -43,42 +37,46 @@ $scope.date2 =new Date(res.data.revdate);
 		s.redire = 'true';
 		$location.search(s);
 		*/
-	
 
-function openWaiverModal() {
-    spModal.open({
-        title: 'Reason for Waiver',
-        widget: false, // If you're not using a widget
-        message: '', // Any message you want to display
-        buttons: [
-            { label: 'Submit', primary: true, action: 'submit' },
-            { label: 'Cancel', action: 'cancel' }
-        ]
-    }).then(function(action) {
-        if (action === 'submit') {
-            // Show the modal and capture the reason
-            $scope.submitReason();
-        } else if (action === 'cancel') {
-            // Handle cancel action
-            $scope.cancel();
-        }
-    });
-}
 
-$scope.submitReason = function(remarks,date2,date1) {
-    
-      //  alert("Reason submitted: " + reason);
-       	c.server.get({action:'updatecomment', recordId : item.sys_id,comment:remarks,date1:date1,date2:date2}).then(function(res){
-		//	alert("update")
-		})
-        $scope.ShowModal = false; // Close the modal after submission
-    
-};
+		function openWaiverModal() {
+			spModal.open({
+				title: 'Reason for Waiver',
+				widget: false, // If you're not using a widget
+				message: '', // Any message you want to display
+				buttons: [
+					{ label: 'Submit', primary: true, action: 'submit' },
+					{ label: 'Cancel', action: 'cancel' }
+				]
+			}).then(function(action) {
+				if (action === 'submit') {
+					// Show the modal and capture the reason
+					$scope.submitReason();
+				} else if (action === 'cancel') {
+					// Handle cancel action
+					$scope.cancel();
+				}
+			});
+		}
 
-$scope.cancel = function() {
-    $scope.reason = ''; // Clear the reason field
-    $scope.ShowModal = false; // Close the modal
-};
+		$scope.submitReason = function(remarks,date2,date1) {
+			
+			//  alert("Reason submitted: " + reason);
+			c.server.get({action:'updatecomment', recordId : item.sys_id,comment:remarks,date1:date1,date2:date2}).then(function(res){
+				//	alert("update")
+		
+				
+			})
+						 $window.location.reload();
+
+			$scope.ShowModal = false; // Close the modal after submission
+
+		};
+
+		$scope.cancel = function() {
+			$scope.reason = ''; // Clear the reason field
+			$scope.ShowModal = false; // Close the modal
+		};
 
 	};
 
@@ -158,8 +156,8 @@ $scope.cancel = function() {
 		setFilter: 'data_table.setFilter',
 		setKeywords: 'data_table.setKeywords'
 	};
-//	console.log(JSON.stringify(c.data.list))
-/*	$scope.go = function(table, item) {
+	//	console.log(JSON.stringify(c.data.list))
+	/*	$scope.go = function(table, item) {
 
 		if ($window.getSelection().toString().length > 0)
 			return;
@@ -508,7 +506,7 @@ $scope.cancel = function() {
 			eq += getEncodedTerm(newTerm);
 
 			$scope.data.filter = eq;
-			
+
 			$scope.setSearch();
 			$location.search(angular.extend($location.$$search, {spa: 1, filter: eq, p: $scope.data.p}));
 		});
@@ -525,7 +523,7 @@ $scope.cancel = function() {
 			eq += getEncodedTerm(newTerm);
 			$scope.data.filter = eq;
 			$scope.setSearch();
-			
+
 			$location.search(angular.extend($location.$$search, {spa: 1, filter: eq, p: $scope.data.p}));
 			return;
 		}
@@ -613,7 +611,7 @@ $scope.cancel = function() {
 		// Update $scope.column and $scope.value if needed
 		$scope.column = $scope.location.column;
 		$scope.value = $scope.location.value;
-		
+
 
 
 		// Initialize record watcher with updated filter
@@ -711,7 +709,7 @@ $scope.cancel = function() {
 	};
 
 
-$rootScope.$on('searchCriteriaChanged', function(event, data) {
+	$rootScope.$on('searchCriteriaChanged', function(event, data) {
 		console.log('Received Data:', data);
 		console.log('Current Filter:', $scope.data.filter);
 
@@ -1209,6 +1207,9 @@ tbody &gt; tr:nth-of-type(odd) {
 			 if(gr.getValue('consent_received_date')){
 			 data.revdate=gr.getValue('consent_received_date');
 		 }
+			 if(gr.getValue('remark')){
+			 data.remarks=gr.getValue('remark');
+		 }
 		}
 
 	}
@@ -1564,14 +1565,14 @@ function getFieldName(field) {
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-26 05:39:13</sys_created_on>
         <sys_id>d3d6cca2478a92d0e9ddbf66706d438e</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>group ops filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_d3d6cca2478a92d0e9ddbf66706d438e</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-30 05:47:09</sys_updated_on>
+        <sys_updated_on>2025-01-02 09:20:59</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <div class="modal-overlay" ng-if="ShowModal">
   <div class="customer-consent-container">
