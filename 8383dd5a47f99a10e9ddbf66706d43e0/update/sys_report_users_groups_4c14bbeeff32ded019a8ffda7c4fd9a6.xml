@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Kotak Pending Requirements">e94cba7b47f59a50e9ddbf66706d43fc</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2025-01-03 05:42:39</sys_created_on>
+        <sys_id>4c14bbeeff32ded019a8ffda7c4fd9a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e94cba7b47f59a50e9ddbf66706d43fc</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_report_users_groups_4c14bbeeff32ded019a8ffda7c4fd9a6</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2025-01-03 05:42:39</sys_updated_on>
+        <user_id display_value="Ajmal">4afd02e447cff51055784a02516d4336</user_id>
+    </sys_report_users_groups>
+</record_update>

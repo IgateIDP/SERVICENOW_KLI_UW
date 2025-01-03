@@ -3,84 +3,98 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_number</element>
             <position>0</position>
-            <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
-            <sys_id>baac8657ff56921019a8ffda7c4fd9ec</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2025-01-03 06:26:17</sys_created_on>
+            <sys_id>8f0e37ea47329614e9ddbf66706d43bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
-            <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2025-01-03 06:26:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>uw_decision</element>
             <position>1</position>
-            <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
-            <sys_id>b2ac8657ff56921019a8ffda7c4fd9ed</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2025-01-03 06:26:17</sys_created_on>
+            <sys_id>1f0e37ea47329614e9ddbf66706d43bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
-            <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2025-01-03 06:26:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consent_send_date</element>
             <position>2</position>
-            <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
-            <sys_id>baac8657ff56921019a8ffda7c4fd9ed</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2025-01-03 06:26:17</sys_created_on>
+            <sys_id>170e37ea47329614e9ddbf66706d43bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
-            <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2025-01-03 06:26:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consent_received_date</element>
             <position>3</position>
-            <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
-            <sys_id>b2ac8657ff56921019a8ffda7c4fd9ee</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2025-01-03 06:26:17</sys_created_on>
+            <sys_id>1f0e37ea47329614e9ddbf66706d43bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
-            <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2025-01-03 06:26:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consent_ageing</element>
             <position>4</position>
-            <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
-            <sys_id>baac8657ff56921019a8ffda7c4fd9ee</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2025-01-03 06:26:17</sys_created_on>
+            <sys_id>170e37ea47329614e9ddbf66706d43be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
-            <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2025-01-03 06:26:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>consent_start_date</element>
             <position>5</position>
-            <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-11 09:34:57</sys_created_on>
-            <sys_id>b2ac8657ff56921019a8ffda7c4fd9ef</sys_id>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2025-01-03 06:26:17</sys_created_on>
+            <sys_id>1f0e37ea47329614e9ddbf66706d43be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
-            <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-11 09:34:57</sys_updated_on>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2025-01-03 06:26:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consent_sent_ageing</element>
+            <position>6</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2025-01-03 06:26:17</sys_created_on>
+            <sys_id>170e37ea47329614e9ddbf66706d43bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_uw_case" sys_domain="global" view="307cce93ff56921019a8ffda7c4fd9a9">a17c0257ff56921019a8ffda7c4fd940</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2025-01-03 06:26:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

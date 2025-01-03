@@ -148,15 +148,14 @@
 		$scope.DataUploaded = false;
 
 		c.fileName = file.name;
-		$scope.overlay = true;
+		$scope.Overlay = true;
 		failedCount =0;
 		updatedCount =0;
 		var completedRequests = 0; 
-		console.log($scope.excelData)
 
 		if(!$scope.excelData){
 			alert("Please Upload Your Excel");
-			$scope.overlay = false;
+			$scope.Overlay = false;
 			return;
 		}
 
@@ -204,11 +203,12 @@
 					$scope.failed = response.data.failed;
 
 					$scope.excelSys = response.data.sys_id;
-					if($scope.total !==  ""){
-						$scope.overlay = false;
-						$scope.excelData = "";
+
+					if(response.data){
+						$scope.Overlay = false;
 					}
-					
+					$scope.excelData = "";
+
 
 
 				});
@@ -594,14 +594,14 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-14 07:58:43</sys_created_on>
         <sys_id>6b637eea47b11250e9ddbf66706d43f9</sys_id>
-        <sys_mod_count>432</sys_mod_count>
+        <sys_mod_count>444</sys_mod_count>
         <sys_name>Excel Upload</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_6b637eea47b11250e9ddbf66706d43f9</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-23 11:02:43</sys_updated_on>
+        <sys_updated_on>2025-01-03 07:07:23</sys_updated_on>
         <template><![CDATA[<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 
 
@@ -700,13 +700,7 @@
         </a>
       </div>
     </div>
-    <div class="overlay" ng-if="overlay">
-  <div class="overlay-content">
-    <p><strong>Uploading Your File</strong></p>
-    <p>Your Excel file is being uploaded. Please wait while we process it.</p>
-    <p><i class="fa fa-spinner fa-spin"></i></p>
-  </div>
-</div>
+
 
 
 
@@ -715,6 +709,14 @@
     <div class="button-group">
       <button class="button cancel-button" ng-click="closeModal()">Close</button>
     </div>
+  </div>
+</div>
+
+    <div class="overlay" ng-if="Overlay">
+  <div class="overlay-content">
+    <p><strong>Uploading Your File</strong></p>
+    <p>Your Excel file is being uploaded. Please wait while we process it.</p>
+    <p><i class="fa fa-spinner fa-spin"></i></p>
   </div>
 </div>
 

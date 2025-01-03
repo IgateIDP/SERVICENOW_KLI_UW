@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="consent_start_date" table="x_rptp_kotak_uw_case">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="address" table="x_rptp_kotak_kli_consumer">
         <active>true</active>
         <array>false</array>
         <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice/>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Consent Raised date</column_label>
+        <column_label>Address</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,16 +21,16 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>consent_start_date</element>
+        <element>address</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_date</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_rptp_kotak_uw_case</name>
+        <max_length>100</max_length>
+        <name>x_rptp_kotak_kli_consumer</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -46,15 +46,15 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Surya.Prathap</sys_created_by>
-        <sys_created_on>2024-12-11 09:34:03</sys_created_on>
-        <sys_id>a97c0257ff56921019a8ffda7c4fd943</sys_id>
-        <sys_name>Consent Raised date</sys_name>
+        <sys_created_on>2025-01-03 05:30:13</sys_created_on>
+        <sys_id>8a31fb6aff32ded019a8ffda7c4fd90b</sys_id>
+        <sys_name>Address</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sys_dictionary_x_rptp_kotak_uw_case_consent_start_date</sys_update_name>
+        <sys_update_name>sys_dictionary_x_rptp_kotak_kli_consumer_address</sys_update_name>
         <sys_updated_by>Surya.Prathap</sys_updated_by>
-        <sys_updated_on>2025-01-03 06:13:49</sys_updated_on>
+        <sys_updated_on>2025-01-03 05:30:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

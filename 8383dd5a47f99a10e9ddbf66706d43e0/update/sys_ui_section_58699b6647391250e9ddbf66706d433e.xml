@@ -4,13 +4,13 @@
             <element>customer_name</element>
             <position>0</position>
             <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-18 12:46:12</sys_created_on>
-            <sys_id>9c9b32e147aed650e9ddbf66706d43d0</sys_id>
+            <sys_created_on>2025-01-03 05:30:14</sys_created_on>
+            <sys_id>1631fb6aff32ded019a8ffda7c4fd92a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
             <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-18 12:46:12</sys_updated_on>
+            <sys_updated_on>2025-01-03 05:30:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>member_number</element>
             <position>1</position>
             <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-18 12:46:12</sys_created_on>
-            <sys_id>d89b32e147aed650e9ddbf66706d43d1</sys_id>
+            <sys_created_on>2025-01-03 05:30:14</sys_created_on>
+            <sys_id>9231fb6aff32ded019a8ffda7c4fd92b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
             <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-18 12:46:12</sys_updated_on>
+            <sys_updated_on>2025-01-03 05:30:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>member_client_id</element>
             <position>2</position>
             <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-18 12:46:12</sys_created_on>
-            <sys_id>d09b32e147aed650e9ddbf66706d43d2</sys_id>
+            <sys_created_on>2025-01-03 05:30:14</sys_created_on>
+            <sys_id>9a31fb6aff32ded019a8ffda7c4fd92b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
             <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-18 12:46:12</sys_updated_on>
+            <sys_updated_on>2025-01-03 05:30:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>age</element>
             <position>3</position>
             <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-18 12:46:12</sys_created_on>
-            <sys_id>e89b32e147aed650e9ddbf66706d43d2</sys_id>
+            <sys_created_on>2025-01-03 05:30:14</sys_created_on>
+            <sys_id>9231fb6aff32ded019a8ffda7c4fd92c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
             <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-18 12:46:12</sys_updated_on>
+            <sys_updated_on>2025-01-03 05:30:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,27 @@
             <element>date_of_birth</element>
             <position>4</position>
             <sys_created_by>Surya.Prathap</sys_created_by>
-            <sys_created_on>2024-12-18 12:46:12</sys_created_on>
-            <sys_id>e09b32e147aed650e9ddbf66706d43d3</sys_id>
+            <sys_created_on>2025-01-03 05:30:14</sys_created_on>
+            <sys_id>9a31fb6aff32ded019a8ffda7c4fd92c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
             <sys_updated_by>Surya.Prathap</sys_updated_by>
-            <sys_updated_on>2024-12-18 12:46:12</sys_updated_on>
+            <sys_updated_on>2025-01-03 05:30:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>5</position>
+            <sys_created_by>Surya.Prathap</sys_created_by>
+            <sys_created_on>2025-01-03 05:30:14</sys_created_on>
+            <sys_id>9231fb6aff32ded019a8ffda7c4fd92d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_kli_consumer" sys_domain="global" view="e359d76647391250e9ddbf66706d4348">58699b6647391250e9ddbf66706d433e</sys_ui_section>
+            <sys_updated_by>Surya.Prathap</sys_updated_by>
+            <sys_updated_on>2025-01-03 05:30:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

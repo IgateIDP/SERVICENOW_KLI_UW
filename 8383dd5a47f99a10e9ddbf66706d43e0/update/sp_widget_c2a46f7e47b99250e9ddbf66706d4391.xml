@@ -152,19 +152,18 @@ body {
 	data.showPendingRequirements = false;
 	data.showAssessmentWorkbench = false;
 	data.showGroupOpsWorkbench= false;
-
+data.showCaseSheet = false;
 	if (gs.hasRole('x_rptp_kotak.kli_admin')) { 
 		data.showPendingRequirements = true;
 		data.showAssessmentWorkbench = true;
 		data.showGroupOpsWorkbench= true;
+		data.showCaseSheet=true;
+		
 	}
-
-
-
-	// Role-based logic for other roles
 	if (gs.hasRole('x_rptp_kotak.underwriter')) {
 		data.showPendingRequirements = true;
 		data.showAssessmentWorkbench = true;
+		data.showCaseSheet=true;
 	}
 
 	if (gs.hasRole('x_rptp_kotak.groupops')) { 
@@ -172,11 +171,9 @@ body {
 	}
 	if (gs.hasRole('x_rptp_kotak.netmed')) {
 		data.showPendingRequirements = true;
-
-
 	}
 
-	// Example GlideRecord logic (optional, if needed for dynamic data)
+	
 
 
 })();
@@ -186,14 +183,14 @@ body {
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-15 06:11:16</sys_created_on>
         <sys_id>c2a46f7e47b99250e9ddbf66706d4391</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>Kotak Home Widget</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_c2a46f7e47b99250e9ddbf66706d4391</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-27 09:32:37</sys_updated_on>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-03 06:22:05</sys_updated_on>
         <template><![CDATA[<main class="dashboard">
     <!-- Audit Trail -->
     <a href="?id=audit" ng-if="data.showAudit">
