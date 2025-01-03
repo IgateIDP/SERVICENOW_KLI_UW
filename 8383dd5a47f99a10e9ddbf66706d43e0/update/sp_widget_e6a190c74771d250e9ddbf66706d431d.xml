@@ -1453,14 +1453,14 @@ tbody &gt; tr:nth-of-type(odd) {
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-15 09:27:40</sys_created_on>
         <sys_id>e6a190c74771d250e9ddbf66706d431d</sys_id>
-        <sys_mod_count>233</sys_mod_count>
+        <sys_mod_count>237</sys_mod_count>
         <sys_name>KLI List Filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_e6a190c74771d250e9ddbf66706d431d</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-24 06:55:18</sys_updated_on>
+        <sys_updated_on>2025-01-03 09:34:15</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -1537,7 +1537,7 @@ tbody &gt; tr:nth-of-type(odd) {
                 ng-repeat="field in ::data.fields_array"
                 data-field="{{::field}}" data-th="{{::data.column_labels[field]}}">
 
-              <a href="javascript:void(0)" ng-if="$index === 0 || $index === 3" 
+              <a href="javascript:void(0)" ng-if="$index === 0" 
                  aria-label="${Open record}: {{::item[field].display_value}}" 
                  ng-class="{'clicked-link': item.selected}">
                 <span ng-if="item[field].type === 'user_image'">
@@ -1549,7 +1549,7 @@ tbody &gt; tr:nth-of-type(odd) {
                 </span>
               </a>
 
-              <span ng-if="$index !== 0 && $index !== 3">
+              <span ng-if="$index !== 0">
                 <span ng-if="item[field].type === 'user_image'" ng-class="{'bold-text': item.req_pending_ageing.display_value > 45}">
                   <img class="user_image" src="{{item[field].display_value}}"/>
                 </span>
