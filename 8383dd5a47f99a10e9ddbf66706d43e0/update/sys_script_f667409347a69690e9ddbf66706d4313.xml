@@ -101,12 +101,29 @@
 
         while (parser.next()) {
             var row = parser.getRow();
-            var updateStatus = updateCase(row, headers).updated ? "SUCCESS" : "FAILURE";
-            var excelError = updateCase(row, headers).error_message_excel || '-';
-            var errorMessage = updateCase(row, headers).error_message || "-";
 
-            // Add row to CSV
-            csvContent += headers.map(header => (row[header] || '')).join(',') + ',' + updateStatus + ',' + excelError + '\r\n';
+            // Check if row is empty
+            var isEmptyRow = true;
+            for (var i = 0; i < headers.length; i++) {
+                var value = (row[headers[i]] || '').toString().trim();
+                if (value !== '') {
+                    isEmptyRow = false;
+                    break;
+                }
+            }
+
+            // // If row is empty, add it to CSV with empty status and continue
+            // if (isEmptyRow) {
+            //     csvContent += headers.map(() => '').join(',') + ',EMPTY,-\r\n';
+            //     continue;
+            // }
+
+            // var updateStatus = updateCase(row, headers).updated ? "SUCCESS" : "FAILURE";
+            // var excelError = updateCase(row, headers).error_message_excel || '-';
+            // var errorMessage = updateCase(row, headers).error_message || "-";
+
+            // // Add row to CSV
+            // csvContent += headers.map(header => (row[header] || '')).join(',') + ',' + updateStatus + ',' + excelError + '\r\n';
 
             totalCount++;
             if (updateStatus == "SUCCESS") {
@@ -116,9 +133,9 @@
             }
             if (errorMessage != "-") {
 
-                reasonPdf += failCount +".Requirement Mapping ID - "+ row[headers[0]] +", has not been updated,\n\n<div style='color:red;'>Error Message:</div>"+ errorMessage + "\n\n";
+                reasonPdf += failCount + ".Requirement Mapping ID - " + row[headers[0]] + ", has not been updated,\n\n<div style='color:red;'>Error Message:</div>" + errorMessage + "\n\n";
 
-                errorReason += failCount +".Requirement Mapping ID - "+ row[headers[0]] +", has not been updated,\n\nError Message:\n"+ errorMessage + "\n\n";
+                errorReason += failCount + ".Requirement Mapping ID - " + row[headers[0]] + ", has not been updated,\n\nError Message:\n" + errorMessage + "\n\n";
             }
 
         }
@@ -148,7 +165,7 @@
             var error_message = outputs['error_message']; // String
             var updated = outputs['updated']; // True/False
 
-			return outputs;
+            return outputs;
 
         } catch (ex) {
             var message = ex.getMessage();
@@ -184,7 +201,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f667409347a69690e9ddbf66706d4313</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>PDF and CSV file - Non-Med Excel - Kotak</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
@@ -192,7 +209,7 @@
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_script_f667409347a69690e9ddbf66706d4313</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-23 11:06:00</sys_updated_on>
+        <sys_updated_on>2025-01-03 05:22:32</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

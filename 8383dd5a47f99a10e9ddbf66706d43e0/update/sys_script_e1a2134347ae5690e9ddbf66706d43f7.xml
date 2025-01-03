@@ -69,7 +69,7 @@
 
                 if (parser.parse()) {
                     var headers = parser.getColumnHeaders();
-					
+
                     var content = buildCsv(headers, parser);
                     var newCsv = content.csv;
 
@@ -101,6 +101,24 @@
 
         while (parser.next()) {
             var row = parser.getRow();
+
+            // // Check if row is empty
+            // var isEmptyRow = true;
+            // for (var i = 0; i < headers.length; i++) {
+            //     var value = (row[headers[i]] || '').toString().trim();
+            //     if (value !== '') {
+            //         isEmptyRow = false;
+            //         break;
+            //     }
+            // }
+
+            // // If row is empty, add it to CSV with empty status and continue
+            // if (isEmptyRow) {
+            //     //csvContent += headers.map(() => '').join(',') + ',EMPTY,-\r\n';
+			// 	csvContent = csvContent;
+            //     continue;
+            // }
+
             var updateStatus = updateCase(row, headers).updated ? "SUCCESS" : "FAILURE";
             var excelError = updateCase(row, headers).error_message_excel || '-';
             var errorMessage = updateCase(row, headers).error_message || "-";
@@ -190,7 +208,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e1a2134347ae5690e9ddbf66706d43f7</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>PDF and CSV file for Med Excel - Kotak</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
@@ -198,7 +216,7 @@
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_script_e1a2134347ae5690e9ddbf66706d43f7</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-23 10:49:29</sys_updated_on>
+        <sys_updated_on>2025-01-03 05:23:01</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
