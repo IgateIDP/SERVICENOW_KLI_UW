@@ -73,9 +73,20 @@
                     var content = buildCsv(headers, parser);
                     var newCsv = content.csv;
 
+					var fileName = "";
+
+					var sysAtt = new GlideRecord("sys_attachment");
+					sysAtt.addQuery("table_name", "ZZYYx_rptp_kotak_upload_excel");
+					sysAtt.addQuery("table_sys_id", current.sys_id);
+					sysAtt.query();
+
+					if(sysAtt.next()){
+						fileName = sysAtt.getValue("file_name");
+					}
+
                     // Attach processed CSV
                     var grAttachment = new GlideSysAttachment();
-                    grAttachment.write(current, 'Job ID - ' + current.number + '.csv', 'text/csv', newCsv);
+                    grAttachment.write(current, fileName+'-Job ID ' + current.number + '.csv', 'text/csv', newCsv);
                     //gs.info("CSV file successfully attached to record: " + current.sys_id);
 
                     processedSheets++; // Increment counter for successful processing
@@ -209,7 +220,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e1a2134347ae5690e9ddbf66706d43f7</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>PDF and CSV file for Med Excel - Kotak</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
@@ -217,7 +228,7 @@
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_script_e1a2134347ae5690e9ddbf66706d43f7</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2025-01-03 07:39:02</sys_updated_on>
+        <sys_updated_on>2025-01-06 05:46:29</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

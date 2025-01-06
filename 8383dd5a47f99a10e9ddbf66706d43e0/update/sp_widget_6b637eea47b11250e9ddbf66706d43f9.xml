@@ -196,11 +196,8 @@
 					action: 'update',
 					value: summaryData
 				}).then(function (response) {
-					console.log(response.data);
+				//	console.log(response.data);
 
-					$scope.total = response.data.count_of_total_uploads;
-					$scope.successful = response.data.successful;
-					$scope.failed = response.data.failed;
 
 					$scope.excelSys = response.data.sys_id;
 
@@ -568,19 +565,7 @@
 			sysAttSys = sysAtt.getValue("sys_id"); 
 		}
 
-		var excelUpload = new GlideRecord("x_rptp_kotak_upload_excel");
-		excelUpload.addQuery("sys_id", input.value.recSys);
-		excelUpload.query();
 
-		if(excelUpload.next()){
-			excelUpload.setValue("requirement_upload", sysAttSys);
-			excelUpload.update();
-			data.count_of_total_uploads = excelUpload.getValue('count_of_total_uploads');
-			data.successful = excelUpload.getValue('successful');
-			data.failed = excelUpload.getValue("failed");
-
-
-		}
 
 	}
 
@@ -594,14 +579,14 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-14 07:58:43</sys_created_on>
         <sys_id>6b637eea47b11250e9ddbf66706d43f9</sys_id>
-        <sys_mod_count>444</sys_mod_count>
+        <sys_mod_count>475</sys_mod_count>
         <sys_name>Excel Upload</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_6b637eea47b11250e9ddbf66706d43f9</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2025-01-03 07:07:23</sys_updated_on>
+        <sys_updated_on>2025-01-06 10:51:15</sys_updated_on>
         <template><![CDATA[<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 
 
