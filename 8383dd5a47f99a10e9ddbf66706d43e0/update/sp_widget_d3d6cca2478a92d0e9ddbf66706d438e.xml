@@ -63,7 +63,7 @@
 
 		$scope.submitReason = function(remarks,date2,date1) {
 			
-			//  alert("Reason submitted: " + reason);
+			 //("Reason submitted: " + date2);
 			c.server.get({action:'updatecomment', recordId : item.sys_id,comment:remarks,date1:date1,date2:date2}).then(function(res){
 				//	alert("update")
 		
@@ -1204,7 +1204,6 @@ tbody &gt; tr:nth-of-type(odd) {
 			data.val=gr.getValue('uw_decision');
 		 if(gr.getValue('consent_send_date')){
 			 data.senddate=gr.getValue('consent_send_date');
-			// gs.addErrorMessage(gr.getValue('consent_send_date'))
 		 }
 			 if(gr.getValue('consent_received_date')){
 			 data.revdate=gr.getValue('consent_received_date');
@@ -1216,13 +1215,14 @@ tbody &gt; tr:nth-of-type(odd) {
 
 	}
 	if (input && input.action == 'updatecomment') {
+		  var consentSendDate = new GlideDateTime(input.date1);
+        var consentReceivedDate = new GlideDateTime(input.date2);
 		var gr1= new GlideRecord('x_rptp_kotak_uw_case');
 		gr1.addQuery('sys_id',input.recordId);
-		
 		gr1.query()
 		if(gr1.next()){
-			gr1.setValue('consent_send_date',input.date1)
-			gr1.setValue('consent_received_date',input.date2)
+			  gr1.setValue('consent_send_date', consentSendDate);
+        gr1.setValue('consent_received_date', consentReceivedDate);
 			gr1.setValue('remark',input.comment)
 			gr1.update()
 		}
@@ -1567,14 +1567,14 @@ function getFieldName(field) {
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-26 05:39:13</sys_created_on>
         <sys_id>d3d6cca2478a92d0e9ddbf66706d438e</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_name>group ops filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_d3d6cca2478a92d0e9ddbf66706d438e</sys_update_name>
         <sys_updated_by>Surya.Prathap</sys_updated_by>
-        <sys_updated_on>2025-01-03 05:57:13</sys_updated_on>
+        <sys_updated_on>2025-01-08 10:33:02</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <div class="modal-overlay" ng-if="ShowModal">
   <div class="customer-consent-container">
