@@ -5,7 +5,7 @@
         <condition/>
         <description/>
         <field/>
-        <global>true</global>
+        <global>false</global>
         <isolate_script>false</isolate_script>
         <messages/>
         <name>Retrict the submission of decision</name>
@@ -30,23 +30,23 @@
     return true; // Allow form submission
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
-        <sys_created_by>Ajmal.akram</sys_created_by>
-        <sys_created_on>2024-12-27 06:25:12</sys_created_on>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2025-01-15 05:25:15</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3a7abbdc47b652d0e9ddbf66706d433b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>1e232da2ff471a5019a8ffda7c4fd9c2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Retrict the submission of decision</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_update_name>sys_script_client_3a7abbdc47b652d0e9ddbf66706d433b</sys_update_name>
+        <sys_update_name>sys_script_client_1e232da2ff471a5019a8ffda7c4fd9c2</sys_update_name>
         <sys_updated_by>kumar.raja</sys_updated_by>
-        <sys_updated_on>2025-01-15 08:14:03</sys_updated_on>
-        <table>x_rptp_kotak_underwriter_decision</table>
+        <sys_updated_on>2025-01-15 08:16:00</sys_updated_on>
+        <table>x_rptp_kotak_uw_case</table>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
-        <view/>
+        <view>UW_Decision_View</view>
     </sys_script_client>
 </record_update>
