@@ -30,7 +30,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>samarth.n</sys_created_by>
@@ -38,15 +38,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4436590c470f9610e9ddbf66706d4348</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Sync Decision to Case- Kotak</sys_name>
         <sys_overrides/>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_hub_flow_4436590c470f9610e9ddbf66706d4348</sys_update_name>
-        <sys_updated_by>samarth.n</sys_updated_by>
-        <sys_updated_on>2025-01-07 10:03:47</sys_updated_on>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2025-01-16 04:30:52</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
