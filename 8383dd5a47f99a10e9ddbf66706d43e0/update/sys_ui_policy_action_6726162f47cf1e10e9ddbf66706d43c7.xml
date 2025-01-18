@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>reduced_sum_assured</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-18 11:42:19</sys_created_on>
+        <sys_id>6726162f47cf1e10e9ddbf66706d43c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>reduced_sum_assured</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ui_policy_action_6726162f47cf1e10e9ddbf66706d43c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-18 11:45:59</sys_updated_on>
+        <table>x_rptp_kotak_uw_case</table>
+        <ui_policy display_value="Make Decision ReadOnly when he is not the one to perform">d9e46d2bffc7921019a8ffda7c4fd9a8</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>
