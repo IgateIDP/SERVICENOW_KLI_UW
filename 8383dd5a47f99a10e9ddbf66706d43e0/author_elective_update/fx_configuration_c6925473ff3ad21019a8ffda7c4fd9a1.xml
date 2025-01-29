@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="fx_configuration">
+    <fx_configuration action="DELETE">
+        <aggregation_source>as_entered</aggregation_source>
+        <conversion_date_source/>
+        <display_digits>-1</display_digits>
+        <display_value>as_entered</display_value>
+        <rate_filter_rate_table_field/>
+        <rate_filter_target_table_field/>
+        <rate_table>fx_system_rate</rate_table>
+        <reference_currency display_value="INR">INR</reference_currency>
+        <reference_currency_source/>
+        <sys_class_name>fx_configuration</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2025-01-06 10:31:23</sys_created_on>
+        <sys_id>c6925473ff3ad21019a8ffda7c4fd9a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>fx_configuration_c6925473ff3ad21019a8ffda7c4fd9a1</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-06 10:31:23</sys_updated_on>
+        <target_field>demo</target_field>
+        <target_table>x_rptp_kotak_uw_case</target_table>
+    </fx_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>fx_configuration_c6925473ff3ad21019a8ffda7c4fd9a1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="fx_configuration"><fx_configuration action="INSERT_OR_UPDATE"><aggregation_source>as_entered</aggregation_source><conversion_date_source/><display_digits>-1</display_digits><display_value>as_entered</display_value><rate_filter_rate_table_field/><rate_filter_target_table_field/><rate_table>fx_system_rate</rate_table><reference_currency display_value="INR">INR</reference_currency><reference_currency_source/><sys_class_name>fx_configuration</sys_class_name><sys_created_by>Surya.Prathap</sys_created_by><sys_created_on>2025-01-06 10:31:23</sys_created_on><sys_id>c6925473ff3ad21019a8ffda7c4fd9a1</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>fx_configuration_c6925473ff3ad21019a8ffda7c4fd9a1</sys_update_name><sys_updated_by>Surya.Prathap</sys_updated_by><sys_updated_on>2025-01-06 10:31:23</sys_updated_on><target_field>demo</target_field><target_table>x_rptp_kotak_uw_case</target_table></fx_configuration></record_update>]]></payload>
+        <payload_hash>-1869219911</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ef7f78b247ba9614e9ddbf66706d43a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2025-01-06 10:31:23</sys_created_on>
+        <sys_id>8be2d4b3ff3ad21019a8ffda7c4fd94b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1943b2b57ff0000001</sys_recorded_at>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-06 10:31:23</sys_updated_on>
+        <type>FX Currency Configuration</type>
+        <update_guid>0fe2d4b37c3ad21055b26243129e6b4a</update_guid>
+        <update_guid_history>0fe2d4b37c3ad21055b26243129e6b4a:-1869219911</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b43310f3ff3ad21019a8ffda7c4fd9f2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2025-01-06 10:32:36</sys_created_on>
+        <sys_db_object display_value="" name="fx_configuration">fx_configuration</sys_db_object>
+        <sys_id>0bbbca69042541a882b1fdeda7dfbaf9</sys_id>
+        <sys_metadata>c6925473ff3ad21019a8ffda7c4fd9a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>fx_configuration_c6925473ff3ad21019a8ffda7c4fd9a1</sys_update_name>
+        <sys_update_version display_value="fx_configuration_c6925473ff3ad21019a8ffda7c4fd9a1">8be2d4b3ff3ad21019a8ffda7c4fd94b</sys_update_version>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-06 10:32:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

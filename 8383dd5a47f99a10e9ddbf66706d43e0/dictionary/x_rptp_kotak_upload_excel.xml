@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1c89a77affb5129019a8ffda7c4fd937" label="KLI File Upload" max_length="40" name="x_rptp_kotak_upload_excel" text_index="true" type="collection">
+        <element label="Count of total uploads " max_length="100" name="count_of_total_uploads" type="integer"/>
+        <element attributes="encode_utf8=false" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript: gs.getUserID();" label="Created User" max_length="32" name="created_user" reference="sys_user" type="reference"/>
+        <element label="Date &amp; Time of upload " max_length="100" name="date_time_of_upload" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Error Reason" max_length="1000" name="error_reason" type="string"/>
+        <element label="Failed" max_length="100" name="failed" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Job ID" max_length="40" name="number" type="string"/>
+        <element label="Reason" max_length="3000" name="reason" type="string"/>
+        <element label="Requirement Upload" max_length="40" name="requirement_upload" type="file_attachment"/>
+        <element label="Successful" max_length="100" name="successful" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="requirements upload" label="Type of Upload" max_length="40" name="type_of_upload" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Requirements Upload" sequence="0" value="requirements upload"/>
+                <element inactive_on_update="false" label="Assignment Group" sequence="1" value="assignment group"/>
+            </choice>
+        </element>
+        <element label="Upload File" mandatory="true" max_length="40" name="uploadfile" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type of Requirement upload" max_length="40" name="u_type_of_requirement_upload" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Medical" sequence="0" value="Medical"/>
+                <element inactive_on_update="false" label="Non Medical" sequence="1" value="Non-Medical"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="created_user"/>
+        </index>
+    </element>
+</database>

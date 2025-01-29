@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e55cde5647f5da10e9ddbf66706d4376" label="KLI Audit trail" max_length="40" name="x_rptp_kotak_kotak_audit_trail" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Activity" max_length="4000" name="activity" type="string"/>
+        <element label="Case" max_length="32" name="case_id" reference="x_rptp_kotak_uw_case" type="reference"/>
+        <element attributes="encode_utf8=false" default="javascript: gs.getUserID();" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="case_id"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

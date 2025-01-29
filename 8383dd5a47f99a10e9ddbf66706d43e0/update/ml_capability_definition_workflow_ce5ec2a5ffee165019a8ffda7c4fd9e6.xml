@@ -2,7 +2,7 @@
     <ml_capability_definition_workflow action="INSERT_OR_UPDATE">
         <active>true</active>
         <capability display_value="Workflow">d12a03f173212010c0bbb63854f6a7b9</capability>
-        <current_solution_version/>
+        <current_solution_version>3</current_solution_version>
         <dataset_language>en</dataset_language>
         <description>DocIntel PDF preprocessing workflow</description>
         <fields/>
@@ -12,7 +12,7 @@
         <solution_label>docintel_pdf_preprocessing_workflow_bd5e8e65ffee165019a8ffda7c4fd988</solution_label>
         <solution_name>ml_x_rptp_x_rptp_kotak_global_docintel_pdf_preprocessing_workflow_bd5e8e65ffee165019a8ffda7c4fd988</solution_name>
         <solution_parameters/>
-        <solution_properties>{"concurrency_policy":"allow","description":"DocIntel PDF preprocessing workflow","label":"docintel_pdf_preprocessing_workflow_bd5e8e65ffee165019a8ffda7c4fd988","predictPipeline":{},"schedulingInfo":{"useCase":"docintel_pdf2img_workflow","overrideCapability":{"name":"docintel_trainer","version":"26.1"}},"tags":"docintel,pdf,workflow,prediction","trainingPipeline":{"pipelineName":"docintel_multipage_preprocessing_v26_1","pipelineInput":{"config":{"max_pages":25.0,"save_format":"JPEG","quality":95.0,"pdf_component_version":"26.1"},"datasets":{"pdf_input":{"tableName":"sys_di_pdf_input","fieldNames":["pdf","data","task_definition","task"],"encodedQuery":"state\u003dassigned^task_definition\u003dbd5e8e65ffee165019a8ffda7c4fd988","name":"pdf_input","fetchDisplayValue":false}}}},"workflowConfiguration":{"trainingFrequency":"run_once"},"workflowLanguageVersion":"1.0.0"}</solution_properties>
+        <solution_properties>{"concurrency_policy":"allow","description":"DocIntel PDF preprocessing workflow","label":"docintel_pdf_preprocessing_workflow_bd5e8e65ffee165019a8ffda7c4fd988","predictPipeline":{},"schedulingInfo":{"useCase":"docintel_pdf2img_workflow","overrideCapability":{"name":"docintel_trainer","version":"26.1"}},"tags":"docintel,pdf,workflow,prediction","trainingPipeline":{"pipelineName":"docintel_multipage_preprocessing_v26_1","pipelineInput":{"datasets":{"pdf_input":{"encodedQuery":"state\u003dassigned^task_definition\u003dbd5e8e65ffee165019a8ffda7c4fd988","fieldNames":["pdf","data","task_definition","task"],"name":"pdf_input","fetchDisplayValue":false,"tableName":"sys_di_pdf_input"}},"config":{"save_format":"JPEG","pdf_component_version":"26.1","max_pages":25.0,"quality":95.0}}},"workflowConfiguration":{"trainingFrequency":"run_once"},"workflowLanguageVersion":"1.0.0"}</solution_properties>
         <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
         <sys_class_name>ml_capability_definition_workflow</sys_class_name>
         <sys_created_by>Ajmal.akram</sys_created_by>
@@ -20,14 +20,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce5ec2a5ffee165019a8ffda7c4fd9e6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>DocIntel PDF preprocessing workflow</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>ml_capability_definition_workflow_ce5ec2a5ffee165019a8ffda7c4fd9e6</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-18 09:28:36</sys_updated_on>
+        <sys_updated_on>2024-12-18 10:11:11</sys_updated_on>
         <table/>
         <tags>docintel,pdf,workflow,prediction</tags>
         <training_frequency>run_once</training_frequency>

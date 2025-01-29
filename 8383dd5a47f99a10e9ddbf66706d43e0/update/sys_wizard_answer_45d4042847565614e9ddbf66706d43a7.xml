@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>KLI Task</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>KLI Task</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">e0d7fd8547213110237dd902516d4311</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-02 10:38:10</sys_created_on>
+        <sys_id>45d4042847565614e9ddbf66706d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KLI Task</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_wizard_answer_45d4042847565614e9ddbf66706d43a7</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-02 10:38:10</sys_updated_on>
+        <table/>
+        <target_url>x_rptp_kotak_kli_task.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

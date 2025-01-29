@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="Record Default">2a3e9ea847c65290e9ddbf66706d43b4</macroponent>
+        <macroponent display_value="Case Record">2a3e9ea847c65290e9ddbf66706d43b4</macroponent>
         <name>card_base_header_1/heading</name>
         <preset/>
         <required_translations>[]</required_translations>

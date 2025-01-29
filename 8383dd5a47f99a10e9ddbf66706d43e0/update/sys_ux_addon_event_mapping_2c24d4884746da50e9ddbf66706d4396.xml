@@ -4,7 +4,7 @@
         <controller/>
         <description/>
         <name>RPA Open Change Page</name>
-        <parent_macroponent display_value="Simple List">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
+        <parent_macroponent display_value="Default">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
         <source_component/>
         <source_da display_value="create-new-uxf">d3d7554723b17010785ddc1756bf6523</source_da>
         <source_element_id>list_1</source_element_id>

@@ -11,6 +11,7 @@
         <metadata/>
         <name>aadharnumber</name>
         <order>0</order>
+        <prediction_method/>
         <stp_threshold/>
         <synonym/>
         <sys_class_name>sys_di_key</sys_class_name>
@@ -18,18 +19,18 @@
         <sys_created_on>2024-12-18 09:33:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>286f4ee5ffee165019a8ffda7c4fd97d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Aadhar number</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_di_key_286f4ee5ffee165019a8ffda7c4fd97d</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-18 09:33:08</sys_updated_on>
+        <sys_updated_by>sharedservice.worker</sys_updated_by>
+        <sys_updated_on>2024-12-18 10:37:41</sys_updated_on>
         <target_field>pan_number</target_field>
         <target_table>x_rptp_los_loan_or_los_verification</target_table>
         <task_definition display_value="Aadhar card">bd5e8e65ffee165019a8ffda7c4fd988</task_definition>
-        <total_used_positive_samples>0</total_used_positive_samples>
+        <total_used_positive_samples>1</total_used_positive_samples>
         <type>Text</type>
     </sys_di_key>
 </record_update>

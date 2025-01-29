@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-18 09:25:19</sys_created_on>
+        <sys_id>5b9675e747cb1e10e9ddbf66706d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.read.certain</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_security_acl display_value="">ff86f1e747cb1e10e9ddbf66706d43b6</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5b9675e747cb1e10e9ddbf66706d439f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-18 09:25:19</sys_updated_on>
+        <sys_user_role display_value="read.certain" name="read.certain">1d5cad6bff0b921019a8ffda7c4fd91a</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

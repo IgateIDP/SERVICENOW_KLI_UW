@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="KLI Consumer">9f39848847c2da50e9ddbf66706d43ae</macroponent>
+        <macroponent display_value="KLI Consumer Record Page">9f39848847c2da50e9ddbf66706d43ae</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_column/>
+        <sp_container display_value="Audit - Container 3">656a3322ff96d21019a8ffda7c4fd9c8</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-09 09:39:10</sys_created_on>
+        <sys_id>cd7a3322ff96d21019a8ffda7c4fd9b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_row_cd7a3322ff96d21019a8ffda7c4fd9b2</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-09 09:39:10</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sp_row_cd7a3322ff96d21019a8ffda7c4fd9b2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="Audit - Container 3">656a3322ff96d21019a8ffda7c4fd9c8</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>rushith</sys_created_by><sys_created_on>2024-12-09 09:39:10</sys_created_on><sys_id>cd7a3322ff96d21019a8ffda7c4fd9b2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sp_row_cd7a3322ff96d21019a8ffda7c4fd9b2</sys_update_name><sys_updated_by>rushith</sys_updated_by><sys_updated_on>2024-12-09 09:39:10</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>647226926</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>b3cc5679472e5a50e9ddbf66706d4355</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-09 09:39:10</sys_created_on>
+        <sys_id>497a3322ff96d21019a8ffda7c4fd9b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>193aac976c50000001</sys_recorded_at>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-19 05:10:30</sys_updated_on>
+        <type>Row</type>
+        <update_guid>c97a33221d96d210f10233b17e3e28b4</update_guid>
+        <update_guid_history>c97a33221d96d210f10233b17e3e28b4:647226926</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">9eaa3f22ff96d21019a8ffda7c4fd90d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-09 09:40:04</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>111167b40f674e90b38e8b8e9e6c1a90</sys_id>
+        <sys_metadata>cd7a3322ff96d21019a8ffda7c4fd9b2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sp_row_cd7a3322ff96d21019a8ffda7c4fd9b2</sys_update_name>
+        <sys_update_version display_value="sp_row_cd7a3322ff96d21019a8ffda7c4fd9b2">497a3322ff96d21019a8ffda7c4fd9b5</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-09 09:40:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

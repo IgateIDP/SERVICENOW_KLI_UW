@@ -48,7 +48,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-13 11:22:03</sys_created_on>
-        <sys_id>62a89a9a47b5da10e9ddbf66706d4341</sys_id>
         <sys_name>Consumer ID</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>

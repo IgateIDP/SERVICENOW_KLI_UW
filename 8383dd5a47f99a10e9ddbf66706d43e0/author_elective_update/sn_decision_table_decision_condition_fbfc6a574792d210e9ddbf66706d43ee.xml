@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="DELETE">
+        <decision_input/>
+        <decision_table display_value="UW Assignment Group Decision Table delta">0ffcaad34792d210e9ddbf66706d430a</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>Processing Limit Condition</label>
+        <order>200</order>
+        <parent display_value="">e5b1614747521210e9ddbf66706d43a7</parent>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 11:56:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fbfc6a574792d210e9ddbf66706d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_fbfc6a574792d210e9ddbf66706d43ee</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 11:56:12</sys_updated_on>
+        <type display_value="Integer">aab367c1bf3320001875647fcf073909</type>
+    </sn_decision_table_decision_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sn_decision_table_decision_condition_fbfc6a574792d210e9ddbf66706d43ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition"><sn_decision_table_decision_condition action="INSERT_OR_UPDATE"><decision_input/><decision_table display_value="UW Assignment Group Decision Table delta">0ffcaad34792d210e9ddbf66706d430a</decision_table><default_operator>=</default_operator><description/><field/><field_label/><field_parent_table/><label>Processing Limit Condition</label><order>200</order><parent display_value="">e5b1614747521210e9ddbf66706d43a7</parent><reference/><sys_class_name>sn_decision_table_decision_condition</sys_class_name><sys_created_by>kumar.raja</sys_created_by><sys_created_on>2024-12-11 11:56:12</sys_created_on><sys_domain>global</sys_domain><sys_id>fbfc6a574792d210e9ddbf66706d43ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sn_decision_table_decision_condition_fbfc6a574792d210e9ddbf66706d43ee</sys_update_name><sys_updated_by>kumar.raja</sys_updated_by><sys_updated_on>2024-12-11 11:56:12</sys_updated_on><type display_value="Integer">aab367c1bf3320001875647fcf073909</type></sn_decision_table_decision_condition></record_update>]]></payload>
+        <payload_hash>1640807176</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b3cc5679472e5a50e9ddbf66706d4355</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 11:58:16</sys_created_on>
+        <sys_id>467d6ed74792d210e9ddbf66706d4390</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>193b59589a40000001</sys_recorded_at>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-19 05:10:25</sys_updated_on>
+        <type>Decision Condition</type>
+        <update_guid>3ffc6a572192d2109960ee098ff0cfef</update_guid>
+        <update_guid_history>3ffc6a572192d2109960ee098ff0cfef:-579239198,3ffc6a572192d2109960ee098ff0cfef:-579239198</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">567d26574792d210e9ddbf66706d43cc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-11 11:58:17</sys_created_on>
+        <sys_db_object display_value="" name="sn_decision_table_decision_condition">sn_decision_table_decision_condition</sys_db_object>
+        <sys_id>402e1cd52b4945908b071bf63957b100</sys_id>
+        <sys_metadata>fbfc6a574792d210e9ddbf66706d43ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sn_decision_table_decision_condition_fbfc6a574792d210e9ddbf66706d43ee</sys_update_name>
+        <sys_update_version display_value="sn_decision_table_decision_condition_fbfc6a574792d210e9ddbf66706d43ee">467d6ed74792d210e9ddbf66706d4390</sys_update_version>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-11 11:58:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

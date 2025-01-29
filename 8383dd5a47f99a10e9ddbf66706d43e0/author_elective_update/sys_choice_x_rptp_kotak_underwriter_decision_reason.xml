@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="reason" table="x_rptp_kotak_underwriter_decision" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>reason</element>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:24:23</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>reason</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_choice_x_rptp_kotak_underwriter_decision_reason</sys_update_name>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:24:23</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Albuminuria</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>albuminuria</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Anaemia</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>anaemia</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Build</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>build</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CBC findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>cbc_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CTMT findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>ctmt_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Diabetes</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>diabetes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dyslipidaemia</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>700</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>dyslipidaemia</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ECG findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>800</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>ecg_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated Blood Sugar</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>900</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:17</sys_updated_on>
+            <value>elevated_blood_sugar</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated lipids</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1000</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_lipids</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated Urine Cotinine level</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1100</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_urine_cotinine_level</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated liver enzymes</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1200</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_liver_enzymes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated uric acid</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1300</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_uric_acid</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated creatinine</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1400</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_creatinine</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated Nicotine level</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1500</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_nicotine_level</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated Blood Pressure</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1600</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_blood_pressure</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elevated ESR</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1700</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>elevated_esr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Family history</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1800</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>family_history</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Financial Risk categorization</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>1900</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>financial_risk_categorization</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Haematuria</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2000</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:18</sys_updated_on>
+            <value>haematuria</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Habits</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2100</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>habits</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hepatitis</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2200</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>hepatitis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Heart disease</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2300</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>heart_disease</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hyperthyroidism</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2400</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>hyperthyroidism</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hypertension</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2500</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>hypertension</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hypothyroidism</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2600</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>hypothyroidism</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Occupational Risk</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2700</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>occupational_risk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oedema</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2800</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>oedema</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Overweight</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>2900</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:19</sys_updated_on>
+            <value>overweight</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Personal medical history</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3000</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>personal_medical_history</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Physical Disability</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3100</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>physical_disability</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Poliomyelitis</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3200</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>poliomyelitis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pre existing medical condition</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3300</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>pre_existing_medical_condition</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Respiratory disorders</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3400</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>respiratory_disorders</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Residential Risk</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3500</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>residential_risk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Risk Categorisation</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3600</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>risk_categorisation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Urine report findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3700</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:20</sys_updated_on>
+            <value>urine_report_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Smoker</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3800</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>smoker</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Underweight</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>3900</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>underweight</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Urinary disorder</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4000</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>urinary_disorder</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hazardous Avocation</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4100</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>hazardous_avocation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Product Specification</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4200</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>product_specification</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Chest Xray findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4300</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>chest_xray_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2D Echo findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4400</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>2d_echo_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Stress Dobutamine test</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4500</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>stress_dobutamine_test</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Stress Thallium test</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4600</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:21</sys_updated_on>
+            <value>stress_thallium_test</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pulmonary function test</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4700</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:22</sys_updated_on>
+            <value>pulmonary_function_test</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical report findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4800</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:22</sys_updated_on>
+            <value>medical_report_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ultrasonography findings</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>4900</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:22</sys_updated_on>
+            <value>ultrasonography_findings</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prostate Specific Antigen</label>
+            <language>en</language>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <sequence>5000</sequence>
+            <synonyms/>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-23 04:33:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-23 04:33:22</sys_updated_on>
+            <value>prostate_specific_antigen</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

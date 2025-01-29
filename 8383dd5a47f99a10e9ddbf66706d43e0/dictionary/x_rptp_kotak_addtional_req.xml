@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="931c91f6470e56d0e9ddbf66706d43b3" extends="sys_import_set_row" label="addtional req" max_length="40" name="x_rptp_kotak_addtional_req" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="309" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Group Asia Requirement code" label="Group Asia Requirement code" max_length="40" name="u_group_asia_requirement_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Medical/non medical" label="Medical/non medical" max_length="40" name="u_medical_non_medical" type="string"/>
+    </element>
+</database>

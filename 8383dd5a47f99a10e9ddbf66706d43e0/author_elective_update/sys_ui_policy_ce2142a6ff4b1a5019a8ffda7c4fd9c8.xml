@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_rptp_kotak_uw_case">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>false</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var uiActionElement = document.getElementById('close');
+            if (uiActionElement) {
+                // Hide the button
+                uiActionElement.style.display = "none";
+                console.log("'close' button hidden.");
+            } else {
+                console.warn("'close' button not found. Verify the element ID.");
+            }
+        }, 500); 
+    });
+}]]></script_true>
+        <set_values/>
+        <short_description>Make Decision InVisible and empty when kept on hold</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2025-01-15 07:36:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce2142a6ff4b1a5019a8ffda7c4fd9c8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Make Decision InVisible and empty when kept on hold</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ui_policy_ce2142a6ff4b1a5019a8ffda7c4fd9c8</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-15 07:50:57</sys_updated_on>
+        <table>x_rptp_kotak_uw_case</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_es_latest_script action="DELETE">
+        <id>ce2142a6ff4b1a5019a8ffda7c4fd9c8</id>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2025-01-15 07:40:55</sys_created_on>
+        <sys_id>ed320e2aff4b1a5019a8ffda7c4fd977</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-15 07:40:55</sys_updated_on>
+        <table>sys_ui_policy</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ui_policy_ce2142a6ff4b1a5019a8ffda7c4fd9c8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_rptp_kotak_uw_case"&gt;active=true^EQ&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            var uiActionElement = document.getElementById('close');
+            if (uiActionElement) {
+                // Hide the button
+                uiActionElement.style.display = "none";
+                console.log("'close' button hidden.");
+            } else {
+                console.warn("'close' button not found. Verify the element ID.");
+            }
+        }, 500); 
+    });
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Make Decision InVisible and empty when kept on hold&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Surya.Prathap&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-15 07:36:18&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ce2142a6ff4b1a5019a8ffda7c4fd9c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Make Decision InVisible and empty when kept on hold&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_ce2142a6ff4b1a5019a8ffda7c4fd9c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Surya.Prathap&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-15 07:50:57&lt;/sys_updated_on&gt;&lt;table&gt;x_rptp_kotak_uw_case&lt;/table&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;ce2142a6ff4b1a5019a8ffda7c4fd9c8&lt;/id&gt;&lt;sys_created_by&gt;Surya.Prathap&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-15 07:40:55&lt;/sys_created_on&gt;&lt;sys_id&gt;ed320e2aff4b1a5019a8ffda7c4fd977&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Surya.Prathap&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-15 07:40:55&lt;/sys_updated_on&gt;&lt;table&gt;sys_ui_policy&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1044226645</payload_hash>
+        <record_name>Make Decision InVisible and empty when kept on hold</record_name>
+        <reverted_from/>
+        <source>75a3a0f7ffbad21019a8ffda7c4fd9c7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2025-01-15 07:50:57</sys_created_on>
+        <sys_id>ac8406eeff4b1a5019a8ffda7c4fd9b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19468f1b0ce0000001</sys_recorded_at>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-15 07:50:57</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>208406ee104b1a502e528642965eccb1</update_guid>
+        <update_guid_history>208406ee104b1a502e528642965eccb1:-1044226645,ef0402ae414b1a5076e431c215de1292:1493197785,77b3426e424b1a50cf127dd927768cd9:562540475,0d93022e064b1a50fbdb5827cf055e76:1742275100,7e730eeaa14b1a50a386b95b319f3f44:-614072083,9462862a454b1a503a0c98ae0a55cd6b:2099540674,0d52026a7d4b1a508974f62d097c2c13:-2066428273,ca320e2a914b1a50f5df1f1c169fe26f:757490902,ce2142a6914b1a502e9b26508adf41cb:-686147432</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2025-01-15 07:57:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>34e5711933144ded9586bf964f7ee941</sys_id>
+        <sys_metadata>ce2142a6ff4b1a5019a8ffda7c4fd9c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make Decision InVisible and empty when kept on hold</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="Case">3e95861e47f1da10e9ddbf66706d4313</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_ce2142a6ff4b1a5019a8ffda7c4fd9c8</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_ce2142a6ff4b1a5019a8ffda7c4fd9c8">ac8406eeff4b1a5019a8ffda7c4fd9b1</sys_update_version>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-15 07:57:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

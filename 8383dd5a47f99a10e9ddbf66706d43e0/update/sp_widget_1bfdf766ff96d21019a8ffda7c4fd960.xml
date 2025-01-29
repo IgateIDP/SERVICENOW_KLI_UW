@@ -76,8 +76,11 @@
 	*/
 	
 		$scope.redirect = function(item) {
-			
+		
 			$rootScope.$broadcast('AuditSysId',item.sys_id);
+			var clientHeight = document.documentElement.clientHeight;
+    window.scrollBy(0, clientHeight / 2);
+			 
 		}
 
 
@@ -726,7 +729,10 @@
 
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css>.panel-heading {
+        <css>html {
+  scroll-behavior: smooth;
+}
+.panel-heading {
   padding-left: 8px;
 }
 .clicked-link {
@@ -1433,14 +1439,14 @@ tbody &gt; tr:nth-of-type(odd) {
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-12-09 09:54:37</sys_created_on>
         <sys_id>1bfdf766ff96d21019a8ffda7c4fd960</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Audit - Cases list filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_1bfdf766ff96d21019a8ffda7c4fd960</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-24 06:32:12</sys_updated_on>
+        <sys_updated_by>rahul.dhir</sys_updated_by>
+        <sys_updated_on>2025-01-21 12:33:55</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 

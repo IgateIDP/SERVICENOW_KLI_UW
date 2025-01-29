@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_rptp_kotak.kotak_validations</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>kotak_validations</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var kotak_validations = Class.create();
+kotak_validations.prototype = {
+    initialize: function() {
+    },
+
+	loan_number_records : function(policySys){
+
+		var lnRecords = [];
+
+		var uwCase = new GlideRecord("x_rptp_kotak_uw_case");
+		uwCase.addQuery("policy_id", policySys);
+		uwCase.query();
+
+		while(uwCase.next()){
+			lnRecords.push(uwCase.getValue("loan_number"));
+		}
+
+		return 'sys_idIN' + lnRecords;
+	},
+
+	member_dep_records : function(policySys,loanSys){
+
+		var memRecords = [];
+
+		var uwCase = new GlideRecord("x_rptp_kotak_uw_case");
+		uwCase.addQuery("policy_id", policySys);
+		uwCase.addQuery("loan_number", loanSys);
+		uwCase.query();
+
+		while(uwCase.next()){
+			memRecords.push(uwCase.getValue("consumer_id"));
+		}
+
+		return 'sys_idIN' + memRecords;
+	},
+
+    type: 'kotak_validations'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-03 07:53:26</sys_created_on>
+        <sys_id>aae6e8b8475ed614e9ddbf66706d4312</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>kotak_validations</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_include_aae6e8b8475ed614e9ddbf66706d4312</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-03 10:21:44</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>aae6e8b8475ed614e9ddbf66706d4312</id>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-03 07:53:26</sys_created_on>
+        <sys_id>a5b8acbc475ed614e9ddbf66706d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-03 07:53:26</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_script_include_aae6e8b8475ed614e9ddbf66706d4312</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_rptp_kotak.kotak_validations&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;kotak_validations&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var kotak_validations = Class.create();
+kotak_validations.prototype = {
+    initialize: function() {
+    },
+
+	loan_number_records : function(policySys){
+
+		var lnRecords = [];
+
+		var uwCase = new GlideRecord("x_rptp_kotak_uw_case");
+		uwCase.addQuery("policy_id", policySys);
+		uwCase.query();
+
+		while(uwCase.next()){
+			lnRecords.push(uwCase.getValue("loan_number"));
+		}
+
+		return 'sys_idIN' + lnRecords;
+	},
+
+	member_dep_records : function(policySys,loanSys){
+
+		var memRecords = [];
+
+		var uwCase = new GlideRecord("x_rptp_kotak_uw_case");
+		uwCase.addQuery("policy_id", policySys);
+		uwCase.addQuery("loan_number", loanSys);
+		uwCase.query();
+
+		while(uwCase.next()){
+			memRecords.push(uwCase.getValue("consumer_id"));
+		}
+
+		return 'sys_idIN' + memRecords;
+	},
+
+    type: 'kotak_validations'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rushith&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-03 07:53:26&lt;/sys_created_on&gt;&lt;sys_id&gt;aae6e8b8475ed614e9ddbf66706d4312&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;kotak_validations&lt;/sys_name&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_aae6e8b8475ed614e9ddbf66706d4312&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rushith&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-03 10:21:44&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;aae6e8b8475ed614e9ddbf66706d4312&lt;/id&gt;&lt;sys_created_by&gt;rushith&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-03 07:53:26&lt;/sys_created_on&gt;&lt;sys_id&gt;a5b8acbc475ed614e9ddbf66706d4308&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;rushith&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-03 07:53:26&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1326411173</payload_hash>
+        <record_name>kotak_validations</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-03 10:21:44</sys_created_on>
+        <sys_id>4aaac13847d21a14e9ddbf66706d4399</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1938c0a4a2e0000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:07:52</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>8aaac1381fd21a14f4866f3a52f54698</update_guid>
+        <update_guid_history>8aaac1381fd21a14f4866f3a52f54698:1326411173,798ca4384b9ed614c4c62aaa300fbd73:-553122539,9ec8a4fcf85ed614e27cd0112293f125:-97766050,35b820fc8f5ed614bafebdd9418bb2c2:-1628351921</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-04 07:06:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>44f77a3daee64be9b179495e2d9eb341</sys_id>
+        <sys_metadata>aae6e8b8475ed614e9ddbf66706d4312</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>kotak_validations</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_script_include_aae6e8b8475ed614e9ddbf66706d4312</sys_update_name>
+        <sys_update_version display_value="sys_script_include_aae6e8b8475ed614e9ddbf66706d4312">4aaac13847d21a14e9ddbf66706d4399</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-04 07:06:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

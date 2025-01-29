@@ -8,12 +8,12 @@
         <derived>true</derived>
         <field/>
         <label>kotak-demo Search Profile Default Spell Check Dictionary</label>
-        <last_derived/>
+        <last_derived>2025-01-29 08:26:57</last_derived>
         <locale>en</locale>
         <name>x_rptp_kotak_kotak_demo_search_profile_default_spell_check_dictionary</name>
-        <publish_id/>
+        <publish_id>acbd4d8f-2675-4c63-a2b9-a06e3abfeed0</publish_id>
         <punctuation_sensitive>false</punctuation_sensitive>
-        <state>DRAFT</state>
+        <state>PUBLISHED</state>
         <sys_class_name>ais_dictionary</sys_class_name>
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-11-18 11:24:42</sys_created_on>

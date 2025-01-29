@@ -8,9 +8,9 @@
 	$scope.column1=$scope.options.column1;
 	$scope.column1=$scope.column1.split(',');
 	$scope.column2=$scope.options.column2;
-  	$scope.redirect = function(item) {
-			$scope.ShowModal = true;
-	/*	var p = $scope.data.pageName;
+	$scope.redirect = function(item) {
+		$scope.ShowModal = true;
+		/*	var p = $scope.data.pageName;
 		var value = item.sys_id;
 		var s = { id: p };
 		var so = {};
@@ -30,42 +30,42 @@
 		*/
 		$scope.reason = ''; // Initialize reason variable
 
-function openWaiverModal() {
-    spModal.open({
-        title: 'Reason for Waiver',
-        widget: false, // If you're not using a widget
-        message: '', // Any message you want to display
-        buttons: [
-            { label: 'Submit', primary: true, action: 'submit' },
-            { label: 'Cancel', action: 'cancel' }
-        ]
-    }).then(function(action) {
-        if (action === 'submit') {
-            // Show the modal and capture the reason
-            $scope.submitReason();
-        } else if (action === 'cancel') {
-            // Handle cancel action
-            $scope.cancel();
-        }
-    });
-}
+		function openWaiverModal() {
+			spModal.open({
+				title: 'Reason for Waiver',
+				widget: false, // If you're not using a widget
+				message: '', // Any message you want to display
+				buttons: [
+					{ label: 'Submit', primary: true, action: 'submit' },
+					{ label: 'Cancel', action: 'cancel' }
+				]
+			}).then(function(action) {
+				if (action === 'submit') {
+					// Show the modal and capture the reason
+					$scope.submitReason();
+				} else if (action === 'cancel') {
+					// Handle cancel action
+					$scope.cancel();
+				}
+			});
+		}
 
-$scope.submitReason = function(reason) {
-    if (reason) {
-      //  alert("Reason submitted: " + reason);
-       	c.server.get({action:'updatecomment', recordId : item.sys_id,comment:reason}).then(function(res){
-		//	alert("update")
-		})
-        $scope.ShowModal = false; // Close the modal after submission
-    } else {
-        alert("Please enter a reason before submitting.");
-    }
-};
+		$scope.submitReason = function(reason) {
+			if (reason) {
+				//  alert("Reason submitted: " + reason);
+				c.server.get({action:'updatecomment', recordId : item.sys_id,comment:reason}).then(function(res){
+					//	alert("update")
+				})
+				$scope.ShowModal = false; // Close the modal after submission
+			} else {
+				alert("Please enter a reason before submitting.");
+			}
+		};
 
-$scope.cancel = function() {
-    $scope.reason = ''; // Clear the reason field
-    $scope.ShowModal = false; // Close the modal
-};
+		$scope.cancel = function() {
+			$scope.reason = ''; // Clear the reason field
+			$scope.ShowModal = false; // Close the modal
+		};
 
 	};
 	$scope.redirectSub = function(item) {
@@ -75,7 +75,7 @@ $scope.cancel = function() {
 		var value = item.sys_id;
 		console.log(value);
 		var s = { id: p ,
-						table : table
+						 table : table
 						};
 		var so = {};
 		if ($scope.column1.length > 0 && $scope.column1[0] !== '') {
@@ -88,10 +88,10 @@ $scope.cancel = function() {
 			return key + '=' + so[key];
 		});
 		var filterString = filterArray.join(' ^');
-	  s.query = filterString;
+		s.query = filterString;
 		$location.search(s);
 	};
-		$scope.redirect1 = function(item) {		
+	$scope.redirect1 = function(item) {		
 		var pg = $scope.data.pageName1;
 		var value1 = item.sys_id;				
 		var s1 = { id: pg };
@@ -120,7 +120,7 @@ $scope.cancel = function() {
 			})	
 		}
 	}
-$scope.toggleState=function(item){
+	$scope.toggleState=function(item){
 		var confirmation = confirm("Are you sure you want to update this record?");
 		if(confirmation){
 			c.data.update= true;
@@ -165,7 +165,7 @@ $scope.toggleState=function(item){
 				c.data.list[x].selected = false;
 			}
 			item.selected = true;
-	//		$scope.$emit(eventNames.click, parms);
+			//		$scope.$emit(eventNames.click, parms);
 		}, function() {
 		});	
 	};
@@ -191,7 +191,7 @@ $scope.toggleState=function(item){
 		};
 		if ($scope.data.exportQuery != '')
 			parms.query = $scope.data.exportQuery;
-      $location.search(parms);
+		$location.search(parms);
 	};
 	function recoverStateFromUrl() {
 		$scope.data.fields = [];
@@ -356,7 +356,7 @@ $scope.toggleState=function(item){
 	}
 	$scope.$on(eventNames.setFilter, function(e, newFilter){
 		$scope.data.filter = newFilter;
-		
+
 		$scope.setSearch(false);
 	});
 	$scope.$on(eventNames.setKeywords, function(e, keywords){
@@ -453,7 +453,7 @@ $scope.toggleState=function(item){
 			$scope.data.filter = eq;
 			ur.filter=eq;
 			$location.search(ur);
-		//	alert(JSON.stringify(ur))
+			//	alert(JSON.stringify(ur))
 			$scope.setSearch();	
 			$location.search(angular.extend($location.$$search, {spa: 1, filter: eq, p: $scope.data.p}));
 			return;
@@ -461,7 +461,7 @@ $scope.toggleState=function(item){
 	};
 	c.filterOut = function(field, newTerm) {
 		var eq = "";
-	//	alert($scope.data.p)
+		//	alert($scope.data.p)
 		if ($scope.data.filter.indexOf("^NQ") == -1) {
 			// don't need server roundtrip to parse query,
 			// can just append the new term
@@ -524,50 +524,61 @@ $scope.toggleState=function(item){
 	if($location.search().filter){
 		console.log($location.search().filter);
 		$scope.data.filter=$location.search().filter;
-		 $scope.initialFilter = $location.search().filter;
+		$scope.initialFilter = $location.search().filter;
 	}
-function createEncodedQuery(filterObj) {
-  var queryArray = [];
-  for (var key in filterObj) {
-    if (filterObj.hasOwnProperty(key)) {
-      queryArray.push(key + '=' + filterObj[key]);
-    }
-  }
-  return queryArray.join('^');
-}
+	function createEncodedQuery(filterObj) {
+		var queryArray = [];
+		for (var key in filterObj) {
+			if (filterObj.hasOwnProperty(key)) {
+				queryArray.push(key + '=' + filterObj[key]);
+			}
+		}
+		return queryArray.join('^');
+	}
 	$scope.filterData={};
 	$rootScope.$on('captureFilterData',function(event,data){
 		$scope.filter=data;
-		
+
 		console.log('demo1233444   '+JSON.stringify($scope.filter))
 		var filterColumn=$scope.filter.backend[0];	
 		var id=$scope.filter.id;
 		if(id){
-		$scope.filterData[filterColumn]=id;		
+			$scope.filterData[filterColumn]=id;		
 		}
 		else{
 			delete $scope.filterData[filterColumn]
 		}
 		console.log($scope.filterData)
-	//	alert($scope.filterData)
+		//	alert($scope.filterData)
 		var eq=createEncodedQuery($scope.filterData);
 		console.log("demo    "+eq)		
 		$scope.data.filter = eq;		
 		spUtil.update($scope).then();
 		initRecordWatcher($scope.data.table, $scope.data.filter);
- 	})
-	
-	
-		$scope.reset = function() {
-	//	console.log(JSON.stringify(c.data.list))
-	 var fquery = c.data.filter;
-		 $scope.data.filter = fquery;
+	})
 
+
+	$scope.reset = function() {
+		var queryString = c.data.filter;
+
+		queryString = decodeURIComponent(queryString);
+
+		var match = queryString.match(/case_id=([\w]+)/);
 		
-    spUtil.update($scope).then(function() {
-        initRecordWatcher($scope.data.table, $scope.data.filter);
-    });
+		console.log(match)
+
+		$scope.data.filter = 'case_id='+match[1];
+		$rootScope.$emit('sp.list.reload', $scope.data.table);
+		spUtil.update($scope).then();
+		initRecordWatcher($scope.data.table, $scope.data.filter);
+		//location.reload();
+
+
 	}
+
+	// Extract and log the case_id
+
+	// Extract the case_id val
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>td.selected a:not(.text-muted):not(.btn) {
@@ -1393,14 +1404,14 @@ data.policy=gr.getDisplayValue('policy_id')
         <sys_created_by>Surya.Prathap</sys_created_by>
         <sys_created_on>2024-11-19 07:10:28</sys_created_on>
         <sys_id>3398dc10470a5e50e9ddbf66706d43ee</sys_id>
-        <sys_mod_count>127</sys_mod_count>
+        <sys_mod_count>156</sys_mod_count>
         <sys_name>Copy of KLI List Filter</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_3398dc10470a5e50e9ddbf66706d43ee</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2025-01-07 07:14:29</sys_updated_on>
+        <sys_updated_on>2025-01-22 07:14:31</sys_updated_on>
         <template><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <div class="modal-content" ng-if="ShowModal">

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="idr_consumer_replication_entry">
+    <idr_consumer_replication_entry action="INSERT_OR_UPDATE">
+        <audit_transformer display_value="IDR:IDR_CONSUMER_ENTRY:66d06db1fffed6d019a8ffda7c4fd9d5:x_rptp_smartinte_0_integ">f9816db5fffed6d019a8ffda7c4fd9cd</audit_transformer>
+        <coalesce_field/>
+        <discrete_field/>
+        <draft_record_transformer/>
+        <enable_coalesce>false</enable_coalesce>
+        <enable_transform>false</enable_transform>
+        <enforce_unique_coalesce>true</enforce_unique_coalesce>
+        <entry_set display_value="SmartAggregator-uat">3c54607947b65ed0e9ddbf66706d43ab</entry_set>
+        <filter/>
+        <include_attachments>false</include_attachments>
+        <include_fields>productid,fundcode,sys_mod_count,sys_updated_on,sys_id,sys_updated_by,sys_created_on,insurer,percentage,id,isdefault,variantid,sys_created_by</include_fields>
+        <journal_transformer display_value="IDR:IDR_CONSUMER_ENTRY:66d06db1fffed6d019a8ffda7c4fd9d5:x_rptp_smartinte_0_integ">79816db5fffed6d019a8ffda7c4fd9ac</journal_transformer>
+        <preserve_modified_by>false</preserve_modified_by>
+        <record_transformer display_value="IDR:IDR_CONSUMER_ENTRY:66d06db1fffed6d019a8ffda7c4fd9d5:x_rptp_smartinte_0_integ">e5816db5fffed6d019a8ffda7c4fd986</record_transformer>
+        <run_business_rule>false</run_business_rule>
+        <sys_class_name>idr_consumer_replication_entry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:04:01</sys_created_on>
+        <sys_id>66d06db1fffed6d019a8ffda7c4fd9d5</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_rptp_smartinte_0_integration_variantfunds</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>idr_consumer_replication_entry_66d06db1fffed6d019a8ffda7c4fd9d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:06:59</sys_updated_on>
+        <table_name>x_rptp_smartinte_0_integration_variantfunds</table_name>
+        <target_table_name/>
+        <use_target_table_name>true</use_target_table_name>
+    </idr_consumer_replication_entry>
+</record_update>

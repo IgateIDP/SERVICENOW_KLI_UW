@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dc17d9feffdb5a5019a8ffda7c4fd9b2" label="Kotak Policy Product" max_length="40" name="x_rptp_kotak_kotak_policy_product" type="collection">
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Policy" max_length="40" name="policy" type="string"/>
+        <element label="Policy Code" max_length="40" name="policy_code" type="string"/>
+        <element label="Product Code" max_length="40" name="product_code" type="string"/>
+        <element choice="1" label="Rider Type" max_length="40" name="rider_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical Illness" value="3"/>
+                <element inactive_on_update="false" label="Death Benefits" value="1"/>
+                <element inactive_on_update="false" label="Death Benefits+CI" value="2"/>
+            </choice>
+        </element>
+    </element>
+</database>

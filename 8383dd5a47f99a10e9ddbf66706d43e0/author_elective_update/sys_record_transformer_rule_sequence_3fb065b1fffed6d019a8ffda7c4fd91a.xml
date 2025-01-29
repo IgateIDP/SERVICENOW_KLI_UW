@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_record_transformer_rule_sequence">
+    <sys_record_transformer_rule_sequence action="DELETE">
+        <description/>
+        <name>IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ</name>
+        <namespace display_value="IDR">00cddbf077102300c37525e36810616d</namespace>
+        <sys_class_name>sys_record_transformer_rule_sequence</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:03:34</sys_created_on>
+        <sys_id>3fb065b1fffed6d019a8ffda7c4fd91a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_record_transformer_rule_sequence_3fb065b1fffed6d019a8ffda7c4fd91a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:03:34</sys_updated_on>
+        <type>xml</type>
+    </sys_record_transformer_rule_sequence>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_record_transformer_rule_sequence_3fb065b1fffed6d019a8ffda7c4fd91a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_record_transformer_rule_sequence"><sys_record_transformer_rule_sequence action="INSERT_OR_UPDATE"><description/><name>IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ</name><namespace display_value="IDR">00cddbf077102300c37525e36810616d</namespace><sys_class_name>sys_record_transformer_rule_sequence</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-31 11:03:34</sys_created_on><sys_id>3fb065b1fffed6d019a8ffda7c4fd91a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ</sys_name><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_record_transformer_rule_sequence_3fb065b1fffed6d019a8ffda7c4fd91a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-31 11:03:34</sys_updated_on><type>xml</type></sys_record_transformer_rule_sequence></record_update>]]></payload>
+        <payload_hash>-280327444</payload_hash>
+        <record_name>IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ</record_name>
+        <reverted_from/>
+        <source>ed40d5bdff3ed6d019a8ffda7c4fd9c3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:03:34</sys_created_on>
+        <sys_id>73b065b1fffed6d019a8ffda7c4fd91c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1941c62a4c70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:03:34</sys_updated_on>
+        <type>Record Transformer Rule Sequence</type>
+        <update_guid>33b065b158fed6d03210f50eba3f8e1c</update_guid>
+        <update_guid_history>33b065b158fed6d03210f50eba3f8e1c:-280327444</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:04:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_record_transformer_rule_sequence">sys_record_transformer_rule_sequence</sys_db_object>
+        <sys_id>037eee0a72e54bec91d2c6ea2b248a51</sys_id>
+        <sys_metadata>3fb065b1fffed6d019a8ffda7c4fd91a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_record_transformer_rule_sequence_3fb065b1fffed6d019a8ffda7c4fd91a</sys_update_name>
+        <sys_update_version display_value="sys_record_transformer_rule_sequence_3fb065b1fffed6d019a8ffda7c4fd91a">73b065b1fffed6d019a8ffda7c4fd91c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:04:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

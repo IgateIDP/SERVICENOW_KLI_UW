@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="acc44ce447565614e9ddbf66706d4333" extends="task" label="KLI Task" max_length="40" name="x_rptp_kotak_kli_task" type="collection">
+        <element attributes="encode_utf8=false" label="Case ID" max_length="32" name="case_id" reference="x_rptp_kotak_uw_case" type="reference"/>
+        <element choice="1" label="Case Stage" max_length="100" name="case_stage" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending Requirements menu" sequence="100" value="pending_requirements_menu"/>
+                <element inactive_on_update="false" label="UW Workbench menu" sequence="200" value="uw_workbench_menu"/>
+                <element inactive_on_update="false" label="Groups Operations Workbench" sequence="300" value="groups_operations_workbench"/>
+                <element inactive_on_update="false" label="Integrated to GA" sequence="400" value="integrated_to_ga"/>
+            </choice>
+        </element>
+        <element choice="1" label="Case Status" max_length="100" name="case_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="UW pending" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Secondary UW required" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Senior UW required" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <element label="Is Secondary UW is present" max_length="40" name="is_uw_is_present" type="boolean"/>
+    </element>
+</database>

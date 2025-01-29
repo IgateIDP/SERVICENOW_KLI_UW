@@ -4,7 +4,7 @@
         <controller/>
         <description/>
         <name>OPEN_NEW_MODEL_MODAL</name>
-        <parent_macroponent display_value="Simple List">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
+        <parent_macroponent display_value="Default">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
         <source_component/>
         <source_da display_value="new-model">50181b4a73253010c01ce234c4f6a7b5</source_da>
         <source_element_id>list_1</source_element_id>

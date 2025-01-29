@@ -1,5 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="4559c4c847c2da50e9ddbf66706d4346" sys_domain="global" table="x_rptp_kotak_upload_excel" version="3" view="workspace-kotak-demo-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:10</sys_created_on>
+            <sys_id>0959c4c847c2da50e9ddbf66706d4347</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_upload_excel" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">4559c4c847c2da50e9ddbf66706d4346</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_time_of_upload</element>
+            <position>1</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:10</sys_created_on>
+            <sys_id>0159c4c847c2da50e9ddbf66706d4348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_upload_excel" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">4559c4c847c2da50e9ddbf66706d4346</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>count_of_total_uploads</element>
+            <position>2</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:10</sys_created_on>
+            <sys_id>0959c4c847c2da50e9ddbf66706d4348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_upload_excel" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">4559c4c847c2da50e9ddbf66706d4346</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>successful</element>
+            <position>3</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:10</sys_created_on>
+            <sys_id>0159c4c847c2da50e9ddbf66706d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_upload_excel" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">4559c4c847c2da50e9ddbf66706d4346</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>failed</element>
+            <position>4</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:10</sys_created_on>
+            <sys_id>0959c4c847c2da50e9ddbf66706d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_upload_excel" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">4559c4c847c2da50e9ddbf66706d4346</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reason</element>
+            <position>5</position>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:10</sys_created_on>
+            <sys_id>0159c4c847c2da50e9ddbf66706d434a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_upload_excel" sys_domain="global" view="99c8844483c2da506ff58cccfdbc4cdd">4559c4c847c2da50e9ddbf66706d4346</sys_ui_section>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:10</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

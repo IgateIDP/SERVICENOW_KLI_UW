@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="DELETE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d9c8844430c2da509d7f95b2bd27dee5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>m2m_app_config_theme_d9c8844430c2da509d7f95b2bd27dee5</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:22:45</sys_updated_on>
+        <theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme>
+        <ux_app_configuration display_value="">9dc8844499c2da50420f6b311527b4e7</ux_app_configuration>
+    </m2m_app_config_theme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>m2m_app_config_theme_d9c8844430c2da509d7f95b2bd27dee5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme"><m2m_app_config_theme action="INSERT_OR_UPDATE"><applicability/><order>0</order><sys_class_name>m2m_app_config_theme</sys_class_name><sys_created_by>rushith</sys_created_by><sys_created_on>2024-11-18 11:22:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d9c8844430c2da509d7f95b2bd27dee5</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>m2m_app_config_theme_d9c8844430c2da509d7f95b2bd27dee5</sys_update_name><sys_updated_by>rushith</sys_updated_by><sys_updated_on>2024-11-18 11:22:45</sys_updated_on><theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme><ux_app_configuration display_value="">9dc8844499c2da50420f6b311527b4e7</ux_app_configuration></m2m_app_config_theme></record_update>]]></payload>
+        <payload_hash>-1487505884</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d7074e12ff12121019a8ffda7c4fd9b5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-12-08 06:36:28</sys_created_on>
+        <sys_id>f451fe35ff26d65019a8ffda7c4fd90a</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>193a4fbd5e00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX App Theme</type>
+        <update_guid>b451fe355226d650caaec7b37bb5760a</update_guid>
+        <update_guid_history>b451fe355226d650caaec7b37bb5760a:-1487505884</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">fc51fe35ff26d65019a8ffda7c4fd90a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 06:39:55</sys_created_on>
+        <sys_db_object display_value="" name="m2m_app_config_theme">m2m_app_config_theme</sys_db_object>
+        <sys_id>1701e38f4712477cab41a959426a0e41</sys_id>
+        <sys_metadata>d9c8844430c2da509d7f95b2bd27dee5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>m2m_app_config_theme_d9c8844430c2da509d7f95b2bd27dee5</sys_update_name>
+        <sys_update_version display_value="m2m_app_config_theme_d9c8844430c2da509d7f95b2bd27dee5">f451fe35ff26d65019a8ffda7c4fd90a</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 06:39:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

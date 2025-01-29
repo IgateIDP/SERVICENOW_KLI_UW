@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" db_object_id="3e95861e47f1da10e9ddbf66706d4313" extends="sn_customerservice_case" max_length="40" name="x_rptp_kotak_uw_case" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="BRE Decision" max_length="40" name="bre_decision" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="BRE Failure Reason" max_length="40" name="bre_failure_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Case Status" max_length="40" name="case_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="UW pending" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Secondary UW required" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Senior UW required" sequence="300" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Case Type" max_length="40" name="case_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Medical" sequence="1" value="medical"/>
+                <element inactive_on_update="false" label="Non medical" sequence="2" value="non_medical"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Consent Ageing" max_length="40" name="consent_ageing" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Consent Received Date" max_length="40" name="consent_received_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Consent Send Date" max_length="40" name="consent_send_date" type="glide_date"/>
+        <element label="Consent Sent Ageing" max_length="40" name="consent_sent_ageing" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Consent Raised date" max_length="40" name="consent_start_date" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="Consumer ID" max_length="32" name="consumer_id" reference="x_rptp_kotak_kli_consumer" reference_qual="null" reference_qual_condition="null" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Country" max_length="40" name="country" type="string"/>
+        <element choice="1" label="Decision" mandatory="true" max_length="40" name="decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Accept at Standard" sequence="10" value="Accept at Standard"/>
+                <element inactive_on_update="false" label="Rate up on EMR" sequence="20" value="Rate up on EMR"/>
+                <element inactive_on_update="false" label="Benefit change" sequence="30" value="Benefit change"/>
+                <element inactive_on_update="false" label="Rate up/Per mille along with Benefit Change" sequence="40" value="Rate up/Per mille along with Benefit Change"/>
+                <element inactive_on_update="false" label="Declined" sequence="50" value="Declined"/>
+                <element inactive_on_update="false" label="Defer/Postponed" sequence="60" value="Defer/Postponed"/>
+                <element inactive_on_update="false" label="Requirements" sequence="70" value="Requirements"/>
+            </choice>
+        </element>
+        <element choice="1" label="Emr" max_length="40" name="emr" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="25" sequence="0" value="25"/>
+                <element inactive_on_update="false" label="50" sequence="1" value="50"/>
+                <element inactive_on_update="false" label="75" sequence="2" value="75"/>
+                <element inactive_on_update="false" label="100" sequence="3" value="100"/>
+                <element inactive_on_update="false" label="125" sequence="4" value="125"/>
+                <element inactive_on_update="false" label="150" sequence="5" value="150"/>
+                <element inactive_on_update="false" label="175" sequence="6" value="175"/>
+                <element inactive_on_update="false" label="200" sequence="7" value="200"/>
+                <element inactive_on_update="false" label="225" sequence="8" value="225"/>
+                <element inactive_on_update="false" label="250" sequence="9" value="250"/>
+            </choice>
+        </element>
+        <element label="Final remarks" mandatory="true" max_length="200" name="final_remarks" type="string"/>
+        <element label="Generate Audit Trail" max_length="40" name="generate_audit_trail" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Hold/Internal Requiremnet" max_length="40" name="hold_internal_requiremnet" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Hold" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="AMO" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="CMO" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="RI" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="MedNet" sequence="500" value="5"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Loan Number" max_length="32" name="loan_number" reference="x_rptp_kotak_kotak_loan_table" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Overall Ageing" max_length="40" name="overall_ageing" type="string"/>
+        <element label="Per millie" max_length="40" name="per_millie" type="integer"/>
+        <element attributes="encode_utf8=false" label="Policy Number" max_length="32" name="policy_id" reference="x_rptp_kotak_kil_policy" type="reference"/>
+        <element label="Postponement Period(months)" max_length="40" name="postponement_period" type="integer"/>
+        <element label="Reason" mandatory="true" max_length="40" name="reason" type="glide_list"/>
+        <element label="Recommended Assignment Group" max_length="32" name="recommended_assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Reduced cover term" max_length="40" name="reduced_cover_term" type="integer"/>
+        <element label="Reduced sum assured" max_length="40" name="reduced_sum_assured" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Remark" max_length="40" name="remark" type="string"/>
+        <element label="Remarks" mandatory="true" max_length="500" name="remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requirement IDs" max_length="1000" name="requirement_ids" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Req Pending Ageing" max_length="40" name="req_pending_ageing" type="integer"/>
+        <element label="Risk term" max_length="40" name="risk_term" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Source" max_length="40" name="source" type="string"/>
+        <element label="Sum Assured" max_length="40" name="sum_assured" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type of Case" max_length="40" name="type_of_case" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Fresh" value="fresh"/>
+                <element inactive_on_update="false" label="Rework" value="rework"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="UW Ageing" max_length="40" name="uw_ageing" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="UW Decision" max_length="200" name="uw_decision" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Case Stage" max_length="40" name="u_case_stage" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending Requirements menu" sequence="0" value="pending_requirements_menu"/>
+                <element inactive_on_update="false" label="UW Workbench menu" sequence="1" value="uw_workbench_menu"/>
+                <element inactive_on_update="false" label="Groups Operations Workbench" sequence="3" value="groups_operations_workbench"/>
+                <element inactive_on_update="false" label="Integrated to GA" sequence="4" value="integrated_to_ga"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Comments" mandatory="true" max_length="5000" name="u_comments" type="string"/>
+        <element attributes="encode_utf8=false" label="Loan ID" max_length="32" name="u_loan_id_audit" reference="x_rptp_kotak_kotak_loan_table" reference_qual="javascript: new x_rptp_kotak.kotak_validations().loan_number_records(current.u_master_policy_number_audit);" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="encode_utf8=false" label="Master Policy Number" max_length="32" name="u_master_policy_number_audit" reference="x_rptp_kotak_kil_policy" type="reference"/>
+        <element attributes="encode_utf8=false" label="Member Number_Dependent Number" max_length="32" name="u_member_number_dependent_number" reference="x_rptp_kotak_kli_consumer" reference_qual="javascript: new x_rptp_kotak.kotak_validations().member_dep_records(current.u_master_policy_number_audit, current.u_loan_id_audit);" type="reference" use_reference_qualifier="advanced"/>
+        <element default="javascript:current.number" display="true" label="Case Id" max_length="40" name="u_number" read_only="true" type="string"/>
+    </element>
+</database>

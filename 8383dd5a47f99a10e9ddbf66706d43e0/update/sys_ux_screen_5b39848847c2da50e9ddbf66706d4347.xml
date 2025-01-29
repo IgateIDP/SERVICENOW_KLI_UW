@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="KLI Audit trail">0739848847c2da50e9ddbf66706d4341</macroponent>
+        <macroponent display_value="KLI Audit trail Record Page">0739848847c2da50e9ddbf66706d4341</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

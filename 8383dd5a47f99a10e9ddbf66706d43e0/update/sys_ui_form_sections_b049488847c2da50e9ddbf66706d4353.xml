@@ -56,6 +56,20 @@
             <sys_updated_by>kumar.raja</sys_updated_by>
             <sys_updated_on>2024-11-18 11:24:56</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:24:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61494c8847c2da50e9ddbf66706d4391</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_rptp_kotak_uw_case" name="x_rptp_kotak_uw_case" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">b049488847c2da50e9ddbf66706d4353</sys_ui_form>
+            <sys_ui_section caption="Kotak Case view" display_value="Kotak Case view" name="x_rptp_kotak_uw_case" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">21494c8847c2da50e9ddbf66706d4390</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:24:56</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_rptp_kotak_uw_case</name>
             <roles/>

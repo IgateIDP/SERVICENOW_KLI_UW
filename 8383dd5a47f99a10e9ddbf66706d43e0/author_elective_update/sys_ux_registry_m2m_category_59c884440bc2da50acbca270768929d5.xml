@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_registry_m2m_category">
+    <sys_ux_registry_m2m_category action="DELETE">
+        <experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category>
+        <order/>
+        <page_registry display_value="">d9c8844460c2da508e4c247da13daee7</page_registry>
+        <sys_class_name>sys_ux_registry_m2m_category</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:45</sys_created_on>
+        <sys_id>59c884440bc2da50acbca270768929d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_registry_m2m_category_59c884440bc2da50acbca270768929d5</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:22:45</sys_updated_on>
+    </sys_ux_registry_m2m_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_registry_m2m_category_59c884440bc2da50acbca270768929d5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_registry_m2m_category"><sys_ux_registry_m2m_category action="INSERT_OR_UPDATE"><experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category><order/><page_registry display_value="">d9c8844460c2da508e4c247da13daee7</page_registry><sys_class_name>sys_ux_registry_m2m_category</sys_class_name><sys_created_by>rushith</sys_created_by><sys_created_on>2024-11-18 11:22:45</sys_created_on><sys_id>59c884440bc2da50acbca270768929d5</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_ux_registry_m2m_category_59c884440bc2da50acbca270768929d5</sys_update_name><sys_updated_by>rushith</sys_updated_by><sys_updated_on>2024-11-18 11:22:45</sys_updated_on></sys_ux_registry_m2m_category></record_update>]]></payload>
+        <payload_hash>-689337750</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d7074e12ff12121019a8ffda7c4fd9b5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-12-08 06:36:28</sys_created_on>
+        <sys_id>0c517e35ff26d65019a8ffda7c4fd9f2</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>193a4fbd5e00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Application Category M2M</type>
+        <update_guid>c8517e359826d6500d56cecbf899e5f2</update_guid>
+        <update_guid_history>c8517e359826d6500d56cecbf899e5f2:-689337750</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 06:39:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_registry_m2m_category">sys_ux_registry_m2m_category</sys_db_object>
+        <sys_id>8ae0108239ac40d3aefc94a0f38d4a79</sys_id>
+        <sys_metadata>59c884440bc2da50acbca270768929d5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_registry_m2m_category_59c884440bc2da50acbca270768929d5</sys_update_name>
+        <sys_update_version display_value="sys_ux_registry_m2m_category_59c884440bc2da50acbca270768929d5">0c517e35ff26d65019a8ffda7c4fd9f2</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 06:39:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

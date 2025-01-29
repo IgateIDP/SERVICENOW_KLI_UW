@@ -4,7 +4,7 @@
         <controller/>
         <description/>
         <name>New Asset Modal</name>
-        <parent_macroponent display_value="Simple List">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
+        <parent_macroponent display_value="Default">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
         <source_component/>
         <source_da display_value="new_asset">2a6c76850b21301021fd092db4673a16</source_da>
         <source_element_id>list_1</source_element_id>

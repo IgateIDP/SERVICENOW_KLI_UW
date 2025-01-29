@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="DELETE">
+        <active>true</active>
+        <applicability display_value="KLI Case Assignment Audience">66ce3674ff6e9e1019a8ffda7c4fd9d0</applicability>
+        <order>0</order>
+        <screen display_value="Assign Case Home">db826488476e1a10e9ddbf66706d43b1</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-30 16:01:33</sys_created_on>
+        <sys_id>cf5bd1e9473adad0e9ddbf66706d43ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_cf5bd1e9473adad0e9ddbf66706d43ad</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-30 16:01:33</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_applicability_m2m_screen_cf5bd1e9473adad0e9ddbf66706d43ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen"><sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE"><active>true</active><applicability display_value="KLI Case Assignment Audience">66ce3674ff6e9e1019a8ffda7c4fd9d0</applicability><order>0</order><screen display_value="Assign Case Home">db826488476e1a10e9ddbf66706d43b1</screen><sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name><sys_created_by>kumar.raja</sys_created_by><sys_created_on>2024-12-30 16:01:33</sys_created_on><sys_id>cf5bd1e9473adad0e9ddbf66706d43ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_ux_applicability_m2m_screen_cf5bd1e9473adad0e9ddbf66706d43ad</sys_update_name><sys_updated_by>kumar.raja</sys_updated_by><sys_updated_on>2024-12-30 16:01:33</sys_updated_on></sys_ux_applicability_m2m_screen></record_update>]]></payload>
+        <payload_hash>-58291096</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>c59b282947fe9ad0e9ddbf66706d43ec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-30 16:01:33</sys_created_on>
+        <sys_id>035bd1e9473adad0e9ddbf66706d43b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194184d1a950000001</sys_recorded_at>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-30 16:01:33</sys_updated_on>
+        <type>Screen Applicability</type>
+        <update_guid>835bd1e99f3adad093ab6c10866ccfb1</update_guid>
+        <update_guid_history>835bd1e99f3adad093ab6c10866ccfb1:-58291096</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2025-01-02 07:42:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_screen">sys_ux_applicability_m2m_screen</sys_db_object>
+        <sys_id>cf751e56236a4ab8930d2cc31b893f90</sys_id>
+        <sys_metadata>cf5bd1e9473adad0e9ddbf66706d43ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_screen_cf5bd1e9473adad0e9ddbf66706d43ad</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_screen_cf5bd1e9473adad0e9ddbf66706d43ad">035bd1e9473adad0e9ddbf66706d43b2</sys_update_version>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2025-01-02 07:42:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

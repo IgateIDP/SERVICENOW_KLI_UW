@@ -1,5 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="3b4944c847c2da50e9ddbf66706d437f" sys_domain="global" table="x_rptp_kotak_requirement_mapping" version="3" view="workspace-kotak-tracking-portal-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_id</element>
+            <position>0</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4380</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>raised_date</element>
+            <position>1</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>f34944c847c2da50e9ddbf66706d4381</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>2</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4381</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>waiver</element>
+            <position>3</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>f34944c847c2da50e9ddbf66706d4382</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recieved_date</element>
+            <position>4</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4382</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ageing_1</element>
+            <position>5</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>f34944c847c2da50e9ddbf66706d4383</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4383</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requirement_id</element>
+            <position>7</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>f34944c847c2da50e9ddbf66706d4384</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>uw_additional_req</element>
+            <position>8</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4384</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reason_for_waiver</element>
+            <position>9</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>f34944c847c2da50e9ddbf66706d4385</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>classification</element>
+            <position>10</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4385</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>upload_date</element>
+            <position>11</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>f34944c847c2da50e9ddbf66706d4386</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ageing_2</element>
+            <position>12</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4386</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>raised_by</element>
+            <position>13</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>f34944c847c2da50e9ddbf66706d4387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recieved_by</element>
+            <position>14</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-18 11:25:05</sys_created_on>
+            <sys_id>fb4944c847c2da50e9ddbf66706d4387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_rptp_kotak_requirement_mapping" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">3b4944c847c2da50e9ddbf66706d437f</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-18 11:25:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

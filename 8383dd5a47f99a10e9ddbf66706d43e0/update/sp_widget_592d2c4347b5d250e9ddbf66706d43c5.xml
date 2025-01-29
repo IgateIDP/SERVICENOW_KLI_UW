@@ -6,7 +6,7 @@
 
 	console.log(c.data.fields);
 
-  c.selectedField = c.data.fields && c.data.fields.length > 0 ? c.data.fields[0].name : '';
+	c.selectedField = c.data.fields && c.data.fields.length > 0 ? c.data.fields[0] : '';
 	c.searchText = '';
 	c.previousSearchText = ''; 
 	var searchQuery;
@@ -20,10 +20,17 @@
 
 
 	c.onSearchChange = function() {
+		console.log(c.searchText)
 		if (c.selectedField) {
-			
-			$rootScope.$broadcast('searchCriteriaChanged', c.selectedField + 'LIKE' +c.searchText);
-			c.previousSearchText = c.searchText;
+			if(c.searchText.includes("*")){
+				var search = c.searchText.replace("*","")
+				$rootScope.$broadcast('searchCriteriaChanged', c.selectedField.label + 'LIKE' +search);
+				c.previousSearchText = search;
+			}
+			else{
+				$rootScope.$broadcast('searchCriteriaChanged', c.selectedField.label + 'LIKE' +c.searchText);
+				c.previousSearchText = c.searchText;
+			}
 		}
 	};
 };
@@ -149,18 +156,18 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-15 11:28:03</sys_created_on>
         <sys_id>592d2c4347b5d250e9ddbf66706d43c5</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>KLI Search</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_592d2c4347b5d250e9ddbf66706d43c5</sys_update_name>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2025-01-02 10:43:06</sys_updated_on>
+        <sys_updated_on>2025-01-24 09:23:43</sys_updated_on>
         <template><![CDATA[<div class="search-widget d-flex align-items-center">
   <select id="fieldDropdown" 
           ng-model="c.selectedField" 
-          ng-options="field.label as field.name for field in c.data.fields" 
+          ng-options="field as field.name for field in c.data.fields" 
           class="form-control me-2" 
           ng-change="Selectinputchange()">
   </select>

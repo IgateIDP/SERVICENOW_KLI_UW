@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_workspace_header_ux_header_config">
+    <sys_ux_m2m_workspace_header_ux_header_config action="DELETE">
+        <header_config display_value="demo">7a8a42c5ff16529019a8ffda7c4fd980</header_config>
+        <sys_class_name>sys_ux_m2m_workspace_header_ux_header_config</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-04 09:39:27</sys_created_on>
+        <sys_id>d09a82c5ff16529019a8ffda7c4fd95d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_m2m_workspace_header_ux_header_config_d09a82c5ff16529019a8ffda7c4fd95d</sys_update_name>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-04 09:39:27</sys_updated_on>
+        <workspace_form_header display_value="x_rptp_kotak_requirement_mapping">6f684ecdffd2529019a8ffda7c4fd9c7</workspace_form_header>
+    </sys_ux_m2m_workspace_header_ux_header_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_m2m_workspace_header_ux_header_config_d09a82c5ff16529019a8ffda7c4fd95d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_workspace_header_ux_header_config"><sys_ux_m2m_workspace_header_ux_header_config action="INSERT_OR_UPDATE"><header_config display_value="demo">7a8a42c5ff16529019a8ffda7c4fd980</header_config><sys_class_name>sys_ux_m2m_workspace_header_ux_header_config</sys_class_name><sys_created_by>Surya.Prathap</sys_created_by><sys_created_on>2024-12-04 09:39:27</sys_created_on><sys_id>d09a82c5ff16529019a8ffda7c4fd95d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_ux_m2m_workspace_header_ux_header_config_d09a82c5ff16529019a8ffda7c4fd95d</sys_update_name><sys_updated_by>Surya.Prathap</sys_updated_by><sys_updated_on>2024-12-04 09:39:27</sys_updated_on><workspace_form_header display_value="x_rptp_kotak_requirement_mapping">6f684ecdffd2529019a8ffda7c4fd9c7</workspace_form_header></sys_ux_m2m_workspace_header_ux_header_config></record_update>]]></payload>
+        <payload_hash>-453052052</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-04 09:39:27</sys_created_on>
+        <sys_id>dc9a82c5ff16529019a8ffda7c4fd95f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1939109ee0e0000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:07:51</sys_updated_on>
+        <type>M2m Workspace Header Ux Header Config</type>
+        <update_guid>909a82c583165290bdc1818e06ee775f</update_guid>
+        <update_guid_history>909a82c583165290bdc1818e06ee775f:-453052052</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-04 11:17:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_m2m_workspace_header_ux_header_config">sys_ux_m2m_workspace_header_ux_header_config</sys_db_object>
+        <sys_id>b3dc9678fa194a559d4adc1fa6d40c09</sys_id>
+        <sys_metadata>d09a82c5ff16529019a8ffda7c4fd95d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_m2m_workspace_header_ux_header_config_d09a82c5ff16529019a8ffda7c4fd95d</sys_update_name>
+        <sys_update_version display_value="sys_ux_m2m_workspace_header_ux_header_config_d09a82c5ff16529019a8ffda7c4fd95d">dc9a82c5ff16529019a8ffda7c4fd95f</sys_update_version>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2024-12-04 11:17:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

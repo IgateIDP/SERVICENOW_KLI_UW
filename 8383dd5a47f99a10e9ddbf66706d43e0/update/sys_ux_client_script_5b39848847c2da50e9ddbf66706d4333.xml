@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="KLI Audit trail">c339848847c2da50e9ddbf66706d4330</macroponent>
+        <macroponent display_value="KLI Audit trail Record Page">c339848847c2da50e9ddbf66706d4330</macroponent>
         <name>viewport_gph/initiallyCollapsed</name>
         <preset/>
         <required_translations/>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="idr_consumer_replication_entry">
+    <idr_consumer_replication_entry action="INSERT_OR_UPDATE">
+        <audit_transformer display_value="IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ">eb61a1b5fffed6d019a8ffda7c4fd999</audit_transformer>
+        <coalesce_field/>
+        <discrete_field/>
+        <draft_record_transformer/>
+        <enable_coalesce>false</enable_coalesce>
+        <enable_transform>false</enable_transform>
+        <enforce_unique_coalesce>true</enforce_unique_coalesce>
+        <entry_set display_value="SmartAggregator-uat">3c54607947b65ed0e9ddbf66706d43ab</entry_set>
+        <filter/>
+        <include_attachments>false</include_attachments>
+        <include_fields>access_token,sys_id,expirydate,sys_updated_by,sys_created_on,insurer,sys_mod_count,sys_updated_on,sys_created_by</include_fields>
+        <journal_transformer display_value="IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ">9761a1b5fffed6d019a8ffda7c4fd93a</journal_transformer>
+        <preserve_modified_by>false</preserve_modified_by>
+        <record_transformer display_value="IDR:IDR_CONSUMER_ENTRY:e3b025b1fffed6d019a8ffda7c4fd9aa:x_rptp_smartinte_0_integ">d76161b5fffed6d019a8ffda7c4fd9fb</record_transformer>
+        <run_business_rule>false</run_business_rule>
+        <sys_class_name>idr_consumer_replication_entry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:03:33</sys_created_on>
+        <sys_id>e3b025b1fffed6d019a8ffda7c4fd9aa</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_rptp_smartinte_0_integration_access_token</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>idr_consumer_replication_entry_e3b025b1fffed6d019a8ffda7c4fd9aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:06:33</sys_updated_on>
+        <table_name>x_rptp_smartinte_0_integration_access_token</table_name>
+        <target_table_name/>
+        <use_target_table_name>true</use_target_table_name>
+    </idr_consumer_replication_entry>
+</record_update>

@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="Case Record">c48f0176478a56d0e9ddbf66706d4303</macroponent>
+        <macroponent display_value="UW Case Page">c48f0176478a56d0e9ddbf66706d4303</macroponent>
         <name>card_base_header_1/heading</name>
         <preset/>
         <required_translations>[]</required_translations>

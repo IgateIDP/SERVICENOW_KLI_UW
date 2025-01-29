@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_record_transformer_rule">
+    <sys_record_transformer_rule action="INSERT_OR_UPDATE">
+        <description/>
+        <name/>
+        <order>100</order>
+        <path>/sys_audit/record_checkpoint</path>
+        <rule_sequence display_value="IDR:IDR_CONSUMER_ENTRY:3bc0a9b1fffed6d019a8ffda7c4fd921:x_rptp_smartinte_0_integ">e8416175fffed6d019a8ffda7c4fd9f4</rule_sequence>
+        <symbol>record_checkpoint</symbol>
+        <sys_class_name>sys_record_transformer_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:05:48</sys_created_on>
+        <sys_id>2c416175fffed6d019a8ffda7c4fd9fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_record_transformer_rule_2c416175fffed6d019a8ffda7c4fd9fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:05:48</sys_updated_on>
+    </sys_record_transformer_rule>
+</record_update>

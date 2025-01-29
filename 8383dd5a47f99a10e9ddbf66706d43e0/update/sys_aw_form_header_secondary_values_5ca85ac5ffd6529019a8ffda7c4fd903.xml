@@ -3,7 +3,7 @@
         <active>true</active>
         <conditions/>
         <field>sys_updated_on</field>
-        <form_header display_value="x_rptp_kotak_requirements">22f55e4dff96529019a8ffda7c4fd983</form_header>
+        <form_header/>
         <order>100</order>
         <roles/>
         <sys_class_name>sys_aw_form_header_secondary_values</sys_class_name>

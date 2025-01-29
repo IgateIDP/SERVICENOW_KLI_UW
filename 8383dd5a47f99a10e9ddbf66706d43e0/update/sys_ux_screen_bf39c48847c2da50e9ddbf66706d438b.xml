@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
     <sys_ux_screen action="INSERT_OR_UPDATE">
         <active>true</active>
-        <app_config display_value="Kotak demo App Config">9dc8844499c2da50420f6b311527b4e7</app_config>
+        <app_config/>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="KLI Loan Table">6b39c48847c2da50e9ddbf66706d4385</macroponent>
+        <macroponent display_value="KLI Loan Table Record Page">6b39c48847c2da50e9ddbf66706d4385</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

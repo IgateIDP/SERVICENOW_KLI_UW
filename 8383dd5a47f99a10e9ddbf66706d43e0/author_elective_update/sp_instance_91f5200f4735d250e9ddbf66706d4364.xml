@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">c67010c34771d250e9ddbf66706d432c</sp_column>
+        <sp_widget display_value="KLI Search">5e35a8cb4735d250e9ddbf66706d43dd</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-15 10:56:20</sys_created_on>
+        <sys_id>91f5200f4735d250e9ddbf66706d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sp_instance_91f5200f4735d250e9ddbf66706d4364</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-15 10:56:20</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=91f5200f4735d250e9ddbf66706d4364"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sp_instance_91f5200f4735d250e9ddbf66706d4364</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">c67010c34771d250e9ddbf66706d432c</sp_column><sp_widget display_value="KLI Search">5e35a8cb4735d250e9ddbf66706d43dd</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>Ajmal.akram</sys_created_by><sys_created_on>2024-11-15 10:56:20</sys_created_on><sys_id>91f5200f4735d250e9ddbf66706d4364</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sp_instance_91f5200f4735d250e9ddbf66706d4364</sys_update_name><sys_updated_by>Ajmal.akram</sys_updated_by><sys_updated_on>2024-11-15 10:56:20</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=91f5200f4735d250e9ddbf66706d4364"/></record_update>]]></payload>
+        <payload_hash>870936230</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-15 10:56:20</sys_created_on>
+        <sys_id>15f5200f4735d250e9ddbf66706d4367</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1932f777e070000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:22</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>95f5200feb35d2502db2e4c1175f9066</update_guid>
+        <update_guid_history>95f5200feb35d2502db2e4c1175f9066:870936230</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c19d60c347b5d250e9ddbf66706d4368</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-15 11:29:38</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>65ce641e8deb44dd9b8a18aeefad1e79</sys_id>
+        <sys_metadata>91f5200f4735d250e9ddbf66706d4364</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sp_instance_91f5200f4735d250e9ddbf66706d4364</sys_update_name>
+        <sys_update_version display_value="sp_instance_91f5200f4735d250e9ddbf66706d4364">15f5200f4735d250e9ddbf66706d4367</sys_update_version>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-15 11:29:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

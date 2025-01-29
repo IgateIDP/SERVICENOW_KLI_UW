@@ -6,7 +6,7 @@
         <dashboard display_value="Kotak Tracking Portal">dad800841cc2da502912b8c14715ea09</dashboard>
         <group/>
         <owner>false</owner>
-        <role display_value="x_rptp_kotak.user" name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</role>
+        <role/>
         <sys_class_name>par_dashboard_permission</sys_class_name>
         <sys_created_by>kumar.raja</sys_created_by>
         <sys_created_on>2024-11-18 11:23:12</sys_created_on>

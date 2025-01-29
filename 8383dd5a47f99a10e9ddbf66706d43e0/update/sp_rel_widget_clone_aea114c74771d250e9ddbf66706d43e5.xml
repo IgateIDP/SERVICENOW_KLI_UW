@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
-        <child display_value="Copy of Policy List Filter">e6a190c74771d250e9ddbf66706d431d</child>
+        <child display_value="KLI List Filter">e6a190c74771d250e9ddbf66706d431d</child>
         <cloned>2024-04-17 11:34:13</cloned>
         <last_validated>2024-04-17 11:34:13</last_validated>
         <parent display_value="Data Table">5001b062d7101200b0b044580e6103eb</parent>

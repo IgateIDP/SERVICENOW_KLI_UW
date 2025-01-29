@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Ageing 2 - Req Submission ageing - Kotak</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+
+   var receivedDate = g_form.getValue('recieved_date');
+    var uploadDate = g_form.getValue('upload_date');
+
+	//alert(receivedDate + "----"+ uploadDate);
+
+    if (receivedDate && uploadDate) {
+        
+        var received = new Date(receivedDate);
+		var upload = new Date(uploadDate);
+
+		//alert(receive + "----"+ upload);
+
+		//var timeDiff = Math.abs(received - upload);
+
+        var timeDiff = upload - received;
+
+        // Convert milliseconds to days (1 day = 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+        var diffDays =  timeDiff / (1000 * 3600 * 24);
+
+        // Round the result to remove decimal points (optional)
+        diffDays = Math.abs(Math.round(diffDays)); // Optional: Use Math.abs() to avoid negative days
+
+        g_form.setValue('ageing_2', diffDays);
+    }
+
+    // Return true to allow the form submission
+    return true;
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-25 06:53:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>989d87ce478ade90e9ddbf66706d43b2</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Ageing 2 - Req Submission ageing - Kotak</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_989d87ce478ade90e9ddbf66706d43b2</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-24 06:04:03</sys_updated_on>
+        <table>x_rptp_kotak_requirement_mapping</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_script_client_989d87ce478ade90e9ddbf66706d43b2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Ageing 2 - Req Submission ageing - Kotak&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+
+   var receivedDate = g_form.getValue('recieved_date');
+    var uploadDate = g_form.getValue('upload_date');
+
+	//alert(receivedDate + "----"+ uploadDate);
+
+    if (receivedDate &amp;&amp; uploadDate) {
+        
+        var received = new Date(receivedDate);
+		var upload = new Date(uploadDate);
+
+		//alert(receive + "----"+ upload);
+
+		//var timeDiff = Math.abs(received - upload);
+
+        var timeDiff = upload - received;
+
+        // Convert milliseconds to days (1 day = 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+        var diffDays =  timeDiff / (1000 * 3600 * 24);
+
+        // Round the result to remove decimal points (optional)
+        diffDays = Math.abs(Math.round(diffDays)); // Optional: Use Math.abs() to avoid negative days
+
+        g_form.setValue('ageing_2', diffDays);
+    }
+
+    // Return true to allow the form submission
+    return true;
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rushith&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-25 06:53:45&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;989d87ce478ade90e9ddbf66706d43b2&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;Ageing 2 - Req Submission ageing - Kotak&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_989d87ce478ade90e9ddbf66706d43b2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rushith&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-24 06:04:03&lt;/sys_updated_on&gt;&lt;table&gt;x_rptp_kotak_requirement_mapping&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1905172824</payload_hash>
+        <record_name>Ageing 2 - Req Submission ageing - Kotak</record_name>
+        <reverted_from/>
+        <source>397d72f947629a50e9ddbf66706d432e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-24 06:04:03</sys_created_on>
+        <sys_id>5c19182b472e1a90e9ddbf66706d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193f743ebd10000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-24 06:04:03</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>5019182b6e2e1a909df43d7a6baab286</update_guid>
+        <update_guid_history>5019182b6e2e1a909df43d7a6baab286:-1905172824,8b06d0af93ea1a90e84b50505933b034:-1594233189,00d558ef5cea1a90f1d2bd568c16ccfe:-503519625,65d190e7b5ea1a905e673ab7fb71e873:-1825988705,e8c190e764ea1a908dc1e2ebbb86836c:-17813601,7cf3a41bd2aa9690cc215313dde33754:2052835918,e1c3e8933eaa96904ae68805b6744dd3:39949552,25736857c2aa96908530a9c1dc9fb5fa:8909774,2cb2ac5716aa9690e358856034263d0e:-715184237,a1826c57faaa9690facbc96f3b5eea97:-2106567355,1262a0173daa9690eabfb6fdc412582c:-1836412867,fda12013d1aa9690b9f10f78e76d2bb7:1512211763,c6d0e8df606a96905b27096f04fa6af8:580133469,b6b02013f5aa9690209eae76fb90e27f:1186679939,414020133daa9690142ce1c012e63a78:-1969768154,5ebf905f266a969041ce2760e306546d:1512211763,429f14dba26a9690dae9b0bf3310bbb4:-390120819,837fd05fcb6a9690c9a2efde5a318587:-638577231,6c3f101f546a96902389681a4dd2dedf:773249993,cf8f4b86a0cade909b8b1c0de9c8c4b0:-383006259,d47f43c679cade90a766b1aa3a7dcbcb:1847126311,bdde0346cfcade90f6496de7beaff8b4:849828768,9d5e03c287cade907ad8318df96c1d6e:-816352570</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-24 06:32:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>406c359b3fc74540934df73c3ba8db10</sys_id>
+        <sys_metadata>989d87ce478ade90e9ddbf66706d43b2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ageing 2 - Req Submission ageing - Kotak</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="KLI Requirement Mapping">64ed9156477d9a10e9ddbf66706d43fb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_script_client_989d87ce478ade90e9ddbf66706d43b2</sys_update_name>
+        <sys_update_version display_value="sys_script_client_989d87ce478ade90e9ddbf66706d43b2">5c19182b472e1a90e9ddbf66706d4386</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-24 06:32:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

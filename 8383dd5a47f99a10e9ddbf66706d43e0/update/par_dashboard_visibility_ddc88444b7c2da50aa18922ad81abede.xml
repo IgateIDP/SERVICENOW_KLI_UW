@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
     <par_dashboard_visibility action="INSERT_OR_UPDATE">
         <dashboard display_value="Kotak demo">99c88444ccc2da506ef0befc7ed67be0</dashboard>
-        <experience display_value="Kotak demo">d9c8844460c2da508e4c247da13daee7</experience>
+        <experience/>
         <sys_class_name>par_dashboard_visibility</sys_class_name>
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-11-18 11:22:44</sys_created_on>

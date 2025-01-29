@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_report">
+    <sysauto_report action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <address_list>samarth.jois@rightprompt.ai</address_list>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <group_list/>
+        <include_detail>false</include_detail>
+        <include_with/>
+        <max_drift/>
+        <name>Scheduled execution of Kotak Requirements excel</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <omit_if_no_records>false</omit_if_no_records>
+        <output_type>XLSX</output_type>
+        <page_height_in_pixels>612</page_height_in_pixels>
+        <page_size>A4</page_size>
+        <page_width_in_pixels>792</page_width_in_pixels>
+        <report display_value="Kotak Pending Requirements">e94cba7b47f59a50e9ddbf66706d43fc</report>
+        <report_body><![CDATA[<p>Hi,<br><br></p>
+<div>
+<div>The Report of Pending Requirements is attached.<br><br>Regards,<br>Kotak Bank</div>
+</div>]]></report_body>
+        <report_title>Pending Requirements - Kotak Tracking Portal</report_title>
+        <run_as display_value="Rushith">8a1cb70347a7351055784a02516d434b</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-11-18 05:49:05</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>on_demand</run_type>
+        <sys_class_name>sysauto_report</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 05:49:29</sys_created_on>
+        <sys_id>8a6cfebb47f59a50e9ddbf66706d4371</sys_id>
+        <sys_mod_count>72</sys_mod_count>
+        <sys_name>Scheduled execution of Kotak Requirements excel</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sysauto_report_8a6cfebb47f59a50e9ddbf66706d4371</sys_update_name>
+        <sys_updated_by>samarth.n</sys_updated_by>
+        <sys_updated_on>2025-01-03 05:59:32</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <user_list/>
+        <zip>false</zip>
+    </sysauto_report>
+</record_update>

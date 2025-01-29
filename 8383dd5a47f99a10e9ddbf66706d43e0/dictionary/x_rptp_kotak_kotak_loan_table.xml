@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c40fb15aff7d9a5019a8ffda7c4fd993" extends="sn_bom_loan_account" label="KLI Loan Table" max_length="40" name="x_rptp_kotak_kotak_loan_table" text_index="true" type="collection">
+        <element attributes="encode_utf8=false" label="Borrower" max_length="32" name="borrower" reference="x_rptp_kotak_kli_consumer" type="reference"/>
+        <element attributes="encode_utf8=false" label="Co-borrower" max_length="32" name="co_borrower" reference="x_rptp_kotak_kli_consumer" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Loan ID" max_length="40" name="loan_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Loan Type" max_length="40" name="loan_type" type="string"/>
+        <element attributes="encode_utf8=false" label="Temporary Loan Id" max_length="32" name="temporary_loan_id" type="string"/>
+        <element label="Amount" max_length="40" name="u_amount" type="string"/>
+        <element label="Disbursement date" max_length="40" name="u_date_of_commencement" type="glide_date"/>
+        <index name="index">
+            <element name="borrower"/>
+        </index>
+        <index name="index2">
+            <element name="co_borrower"/>
+        </index>
+        <index name="index3">
+            <element name="temporary_loan_id"/>
+        </index>
+    </element>
+</database>

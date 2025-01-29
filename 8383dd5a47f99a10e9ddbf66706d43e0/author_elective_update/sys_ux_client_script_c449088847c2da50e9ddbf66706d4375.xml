@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="KLI Requirement Mapping">4049088847c2da50e9ddbf66706d4372</macroponent>
+        <name>viewport_gph/initiallyCollapsed</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return api.context.props.userPrefs['workspace.showAgentAssist'] != 'true';
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-18 11:24:50</sys_created_on>
+        <sys_id>c449088847c2da50e9ddbf66706d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>viewport_gph/initiallyCollapsed</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_client_script_c449088847c2da50e9ddbf66706d4375</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:24:50</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_client_script_c449088847c2da50e9ddbf66706d4375</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="KLI Requirement Mapping"&gt;4049088847c2da50e9ddbf66706d4372&lt;/macroponent&gt;&lt;name&gt;viewport_gph/initiallyCollapsed&lt;/name&gt;&lt;preset/&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return api.context.props.userPrefs['workspace.showAgentAssist'] != 'true';
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kumar.raja&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-18 11:24:50&lt;/sys_created_on&gt;&lt;sys_id&gt;c449088847c2da50e9ddbf66706d4375&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;viewport_gph/initiallyCollapsed&lt;/sys_name&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_c449088847c2da50e9ddbf66706d4375&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kumar.raja&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-18 11:24:50&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-439410810</payload_hash>
+        <record_name>viewport_gph/initiallyCollapsed</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-18 11:24:50</sys_created_on>
+        <sys_id>c849088847c2da50e9ddbf66706d4377</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1933f04a9ba0000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:13</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>8c49088855c2da5028b83095e64ca976</update_guid>
+        <update_guid_history>8c49088855c2da5028b83095e64ca976:-439410810</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2025-01-27 05:20:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>3582c03538324dd09ddf804698d0efe9</sys_id>
+        <sys_metadata>c449088847c2da50e9ddbf66706d4375</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>viewport_gph/initiallyCollapsed</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_c449088847c2da50e9ddbf66706d4375</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_c449088847c2da50e9ddbf66706d4375">c849088847c2da50e9ddbf66706d4377</sys_update_version>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2025-01-27 05:20:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

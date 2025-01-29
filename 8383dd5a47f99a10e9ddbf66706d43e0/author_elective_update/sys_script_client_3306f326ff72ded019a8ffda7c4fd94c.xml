@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>emr</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Make permili mandatory </name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    if (newValue !== "") {
+        g_form.setMandatory('per_millie', true);
+    } else {
+        g_form.setMandatory('per_millie', false);
+
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2025-01-03 05:57:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3306f326ff72ded019a8ffda7c4fd94c</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Make permili mandatory </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_3306f326ff72ded019a8ffda7c4fd94c</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2025-01-03 06:18:52</sys_updated_on>
+        <table>x_rptp_kotak_underwriter_decision</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_script_client_3306f326ff72ded019a8ffda7c4fd94c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;emr&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Make permili mandatory &lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    if (newValue !== "") {
+        g_form.setMandatory('per_millie', true);
+    } else {
+        g_form.setMandatory('per_millie', false);
+
+    }
+
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Ajmal.akram&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-03 05:57:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3306f326ff72ded019a8ffda7c4fd94c&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;Make permili mandatory &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_3306f326ff72ded019a8ffda7c4fd94c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Ajmal.akram&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-03 06:18:52&lt;/sys_updated_on&gt;&lt;table&gt;x_rptp_kotak_underwriter_decision&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1016801049</payload_hash>
+        <record_name>Make permili mandatory </record_name>
+        <reverted_from/>
+        <source>5e00f3e6ff32ded019a8ffda7c4fd91b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2025-01-03 06:18:52</sys_created_on>
+        <sys_id>725cbf22ffb2ded019a8ffda7c4fd975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1942ad113cb0000001</sys_recorded_at>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2025-01-03 06:18:52</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>b65cbf2210b2ded0b7b65e973d3b2b74</update_guid>
+        <update_guid_history>b65cbf2210b2ded0b7b65e973d3b2b74:1016801049,67bb37eefa72ded09df84833a4decfe3:-1710075386,049bfbeed872ded0ea719ed0c868aa94:-1243753818,047b7bee9072ded00d7aba3db628ab4b:-447137436,046b3fae8a72ded00a37f746dc5d0c65:877239607,a14bffaedd72ded0f75b638ab455d875:1226854300,5e3b7fae8272ded0141b0b18ee298fd6:-1341306628,c38af36e4b72ded02d84d0f90613b3e3:-538826716,8d8afb6e8c72ded05449925c3ffee028:-473631161,575a376e2272ded08551f8ceeba99a5e:682747706,a54a7b2e0272ded0095f3fba74895a8f:1961697894,2a2af72e9e72ded0024b4a2ad4479080:-1852412489,37f97b2efe72ded0fd719764b9cebc86:1988804632,c8d9b32ed472ded07a481947a429a81e:-1912260198,2a39bfaa1772ded0e498fb5d15ba5a2b:-1291631705,c129f7aadd72ded00594a3e9fea0a8de:-1912260198,8a68b36a6b72ded0c765410a7823bac4:1670999511,17087ba63d72ded065b9866ad2550442:-1917086903,1cf7f32a7772ded06c41ab3ee0460906:-1483229143,69c7f7e6cd72ded0d97a044661d03430:-1791105007,f567f3a6a972ded0432caf649fc808ad:-488741187</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2025-01-03 06:21:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>b445a6a9fd7a4170881512414964b690</sys_id>
+        <sys_metadata>3306f326ff72ded019a8ffda7c4fd94c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make permili mandatory </sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="KLI UnderWriter Decision">c3c4215a47bd9a10e9ddbf66706d43f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_script_client_3306f326ff72ded019a8ffda7c4fd94c</sys_update_name>
+        <sys_update_version display_value="sys_script_client_3306f326ff72ded019a8ffda7c4fd94c">725cbf22ffb2ded019a8ffda7c4fd975</sys_update_version>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2025-01-03 06:21:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

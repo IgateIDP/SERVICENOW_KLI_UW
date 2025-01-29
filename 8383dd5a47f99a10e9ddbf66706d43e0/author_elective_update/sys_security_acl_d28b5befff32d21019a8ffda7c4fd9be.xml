@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>UW particular Field level access control on x_rptp_kotak_uw_case</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_rptp_kotak_uw_case.assigned_to</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-06 06:29:24</sys_created_on>
+        <sys_id>d28b5befff32d21019a8ffda7c4fd9be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_uw_case.assigned_to</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_security_acl_d28b5befff32d21019a8ffda7c4fd9be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-06 06:29:24</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_security_acl_d28b5befff32d21019a8ffda7c4fd9be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><decision_type>allow</decision_type><description>UW particular Field level access control on x_rptp_kotak_uw_case</description><local_or_existing>Local</local_or_existing><name>x_rptp_kotak_uw_case.assigned_to</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-06 06:29:24</sys_created_on><sys_id>d28b5befff32d21019a8ffda7c4fd9be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_rptp_kotak_uw_case.assigned_to</sys_name><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_security_acl_d28b5befff32d21019a8ffda7c4fd9be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-06 06:29:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>11084209</payload_hash>
+        <record_name>x_rptp_kotak_uw_case.assigned_to</record_name>
+        <reverted_from/>
+        <source>ef7f78b247ba9614e9ddbf66706d43a4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-06 06:29:24</sys_created_on>
+        <sys_id>da8bdfefff32d21019a8ffda7c4fd95f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1943a4dcc400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-06 06:29:24</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>1e8bdfefff32d210f1e6e607e5b4375e</update_guid>
+        <update_guid_history>1e8bdfefff32d210f1e6e607e5b4375e:11084209</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-06 06:32:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>27813606b4af48d2be5fef93f962bee1</sys_id>
+        <sys_metadata>d28b5befff32d21019a8ffda7c4fd9be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_uw_case.assigned_to</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="x_rptp_kotak_uw_case">f0b54a1e47f1da10e9ddbf66706d43ab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_security_acl_d28b5befff32d21019a8ffda7c4fd9be</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_d28b5befff32d21019a8ffda7c4fd9be">da8bdfefff32d21019a8ffda7c4fd95f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-06 06:32:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

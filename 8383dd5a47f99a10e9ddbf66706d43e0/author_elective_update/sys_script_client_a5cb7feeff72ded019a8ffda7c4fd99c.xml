@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>per_millie</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Make emr mandatory </name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    if (newValue !== "") {
+		alert("hi");
+        g_form.setMandatory('emr', true);
+    } else {
+		alert("helo")
+        g_form.setMandatory('emr', false);
+
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2025-01-03 06:16:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a5cb7feeff72ded019a8ffda7c4fd99c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Make emr mandatory </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_client_a5cb7feeff72ded019a8ffda7c4fd99c</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2025-01-03 06:21:02</sys_updated_on>
+        <table>x_rptp_kotak_underwriter_decision</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_script_client_a5cb7feeff72ded019a8ffda7c4fd99c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;per_millie&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Make emr mandatory &lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    if (newValue !== "") {
+		alert("hi");
+        g_form.setMandatory('emr', true);
+    } else {
+		alert("helo")
+        g_form.setMandatory('emr', false);
+
+    }
+
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Ajmal.akram&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-03 06:16:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a5cb7feeff72ded019a8ffda7c4fd99c&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Make emr mandatory &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_a5cb7feeff72ded019a8ffda7c4fd99c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Ajmal.akram&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-03 06:21:02&lt;/sys_updated_on&gt;&lt;table&gt;x_rptp_kotak_underwriter_decision&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1429437851</payload_hash>
+        <record_name>Make emr mandatory </record_name>
+        <reverted_from/>
+        <source>5e00f3e6ff32ded019a8ffda7c4fd91b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2025-01-03 06:21:02</sys_created_on>
+        <sys_id>6edcbba2ffb2ded019a8ffda7c4fd920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1942ad30ffe0000001</sys_recorded_at>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2025-01-03 06:21:02</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>a2dcbba224b2ded0059badff66c42720</update_guid>
+        <update_guid_history>a2dcbba224b2ded0059badff66c42720:-1429437851,f1cc33a25db2ded0b582c7d710c05808:-973982894,e9bcfb62b4b2ded05c618da05d76d209:-1429437851,799cf3a28eb2ded0c6f111036c701151:-973982894,9d8cff628db2ded073ffb60d1736d7f2:-1429437851,347c3f6270b2ded0f786481ca06c4a47:-973982894,915cf36286b2ded08278d92d760389c0:1469348574,e83cf362a3b2ded07a6c37f41de0f3b8:-1355988607,a6eb3f22feb2ded02d112aed09a8ba16:-1658079276,21cb7fee2772ded0c45ecd8c3e08319f:-1710075386</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2025-01-03 06:21:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>12edd4e9a290455e8ae2246421addcc4</sys_id>
+        <sys_metadata>a5cb7feeff72ded019a8ffda7c4fd99c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make emr mandatory </sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="KLI UnderWriter Decision">c3c4215a47bd9a10e9ddbf66706d43f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_script_client_a5cb7feeff72ded019a8ffda7c4fd99c</sys_update_name>
+        <sys_update_version display_value="sys_script_client_a5cb7feeff72ded019a8ffda7c4fd99c">6edcbba2ffb2ded019a8ffda7c4fd920</sys_update_version>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2025-01-03 06:21:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

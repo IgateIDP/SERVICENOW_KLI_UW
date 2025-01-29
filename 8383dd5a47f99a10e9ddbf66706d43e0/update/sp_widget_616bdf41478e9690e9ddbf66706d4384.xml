@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller = function($scope,$rootScope,spUtil) {
-	var c = this;
-	
-	console.log(c.data.sys_id)
-		spUtil.get('kotak_audit_form_view', {
-				table: 'x_rptp_kotak_uw_case',
-				view: 'audit_search',
-				sys_id: c.data.sys_id
-			}).then(response => {
-				c.widgetinstance = response;
-			});
+        <client_script><![CDATA[api.controller = function ($scope, $rootScope, spUtil) {
+  var c = this;
+
+  console.log(c.data.sys_id);
+
+  // Fetch the widget instance using spUtil
+  spUtil.get('kotak_audit_form_view', {
+    table: 'x_rptp_kotak_uw_case',
+    view: 'audit_search',
+    sys_id: c.data.sys_id,
+  }).then(function (response) {
+    c.widgetinstance = response;
+  });
 };
 ]]></client_script>
         <controller_as>c</controller_as>
@@ -66,14 +68,14 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-22 05:17:10</sys_created_on>
         <sys_id>616bdf41478e9690e9ddbf66706d4384</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>Audit Search</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_616bdf41478e9690e9ddbf66706d4384</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-30 11:35:50</sys_updated_on>
+        <sys_updated_by>rahul.dhir</sys_updated_by>
+        <sys_updated_on>2025-01-21 10:55:49</sys_updated_on>
         <template><![CDATA[<div class="outer-container">
   <div class="form-container">
 

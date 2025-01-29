@@ -19,7 +19,7 @@
         <sys_updated_by>kumar.raja</sys_updated_by>
         <sys_updated_on>2024-12-03 07:53:55</sys_updated_on>
         <table>x_rptp_kotak_underwriter_decision</table>
-        <ui_policy display_value="Make Decision Non Mandatort">f288e8bc475ed614e9ddbf66706d436b</ui_policy>
+        <ui_policy display_value="Make Decision Non Mandatory">f288e8bc475ed614e9ddbf66706d436b</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>ignore</visible>

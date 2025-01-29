@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_rptp_kotak_requirement_mapping</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_rptp_kotak_requirement_mapping">recieved_dateISNOTEMPTY^raised_dateISNOTEMPTY^EQ<item endquery="false" field="recieved_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="raised_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Ageing 1 - Req received ageing - Kotak</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var receivedDate = current.recieved_date;
+    var raisedDate = current.raised_date;
+
+    // Convert the date fields to Date objects
+    var received = new GlideDateTime(receivedDate);
+    var raised = new GlideDateTime(raisedDate);
+
+	gs.addInfoMessage(received + "----"+ raised);
+
+    // Calculate the difference in milliseconds
+    var diffMilliseconds = received.getNumericValue() - raised.getNumericValue();
+
+	gs.addInfoMessage(diffMilliseconds);
+
+    // Convert milliseconds to days (1 day = 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+    var diffDays = diffMilliseconds / (1000 * 60 * 60 * 24);
+
+	gs.addInfoMessage(diffDays);
+
+    // Store the absolute difference (optional if you want to avoid negative values)
+    //current.ageing_1 = Math.abs(diffDays); // You can remove Math.abs() if negative values are acceptable
+    current.ageing_1 = diffDays;
+    current.update();
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-25 06:15:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7fcb64a47c6de90e9ddbf66706d4328</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Ageing 1 - Req received ageing - Kotak</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_script_e7fcb64a47c6de90e9ddbf66706d4328</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-25 06:49:35</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=e7fcb64a47c6de90e9ddbf66706d4328"/>
+    <sys_es_latest_script action="DELETE">
+        <id>e7fcb64a47c6de90e9ddbf66706d4328</id>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-25 06:15:21</sys_created_on>
+        <sys_id>7a85cb06474ade90e9ddbf66706d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-25 06:15:21</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_script_e7fcb64a47c6de90e9ddbf66706d4328</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_rptp_kotak_requirement_mapping&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_rptp_kotak_requirement_mapping"&gt;recieved_dateISNOTEMPTY^raised_dateISNOTEMPTY^EQ&lt;item endquery="false" field="recieved_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="false" field="raised_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Ageing 1 - Req received ageing - Kotak&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var receivedDate = current.recieved_date;
+    var raisedDate = current.raised_date;
+
+    // Convert the date fields to Date objects
+    var received = new GlideDateTime(receivedDate);
+    var raised = new GlideDateTime(raisedDate);
+
+	gs.addInfoMessage(received + "----"+ raised);
+
+    // Calculate the difference in milliseconds
+    var diffMilliseconds = received.getNumericValue() - raised.getNumericValue();
+
+	gs.addInfoMessage(diffMilliseconds);
+
+    // Convert milliseconds to days (1 day = 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+    var diffDays = diffMilliseconds / (1000 * 60 * 60 * 24);
+
+	gs.addInfoMessage(diffDays);
+
+    // Store the absolute difference (optional if you want to avoid negative values)
+    //current.ageing_1 = Math.abs(diffDays); // You can remove Math.abs() if negative values are acceptable
+    current.ageing_1 = diffDays;
+    current.update();
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rushith&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-25 06:15:21&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e7fcb64a47c6de90e9ddbf66706d4328&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Ageing 1 - Req received ageing - Kotak&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_e7fcb64a47c6de90e9ddbf66706d4328&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rushith&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-25 06:49:35&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e7fcb64a47c6de90e9ddbf66706d4328"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;e7fcb64a47c6de90e9ddbf66706d4328&lt;/id&gt;&lt;sys_created_by&gt;rushith&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-25 06:15:21&lt;/sys_created_on&gt;&lt;sys_id&gt;7a85cb06474ade90e9ddbf66706d43ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;rushith&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-25 06:15:21&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>129879328</payload_hash>
+        <record_name>Ageing 1 - Req received ageing - Kotak</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-25 06:49:35</sys_created_on>
+        <sys_id>6c6dc78e478ade90e9ddbf66706d43ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>19362152f210000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:01</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>ec6dc78e3c8ade900bff9160f996adab</update_guid>
+        <update_guid_history>ec6dc78e3c8ade900bff9160f996adab:129879328,612acbc2838ade9043a06be8acf080ed:-919042637,56d987c2b28ade9037c5e1e5f9d8efd1:-1232901114,d0890f826e8ade9062c37d7241f2151b:628961678,f6858746e44ade9039d86b7ef046d1cd:1443583580</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-25 07:02:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>0e60e985407442008484833bb9440000</sys_id>
+        <sys_metadata>e7fcb64a47c6de90e9ddbf66706d4328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ageing 1 - Req received ageing - Kotak</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="KLI Requirement Mapping">64ed9156477d9a10e9ddbf66706d43fb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_script_e7fcb64a47c6de90e9ddbf66706d4328</sys_update_name>
+        <sys_update_version display_value="sys_script_e7fcb64a47c6de90e9ddbf66706d4328">6c6dc78e478ade90e9ddbf66706d43ac</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-25 07:02:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

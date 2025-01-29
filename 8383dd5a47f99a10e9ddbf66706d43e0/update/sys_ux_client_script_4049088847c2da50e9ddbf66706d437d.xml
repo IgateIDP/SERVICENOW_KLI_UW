@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="KLI Requirement Mapping">c849088847c2da50e9ddbf66706d4379</macroponent>
+        <macroponent display_value="KLI Requirement Mapping Record Page">c849088847c2da50e9ddbf66706d4379</macroponent>
         <name>viewport_gph/initiallyCollapsed</name>
         <preset/>
         <required_translations/>

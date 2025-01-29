@@ -1,41 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function(spUtil,$rootScope,$scope) {
-	/* widget controller */
-	var c = this;
+        <client_script><![CDATA[api.controller = function(spUtil, $rootScope, $scope, $timeout) {
+  /* widget controller */
+  var c = this;
 
-	$rootScope.$on('CaseId', function(event, sysId) {
-		c.widgetinstance = false;
-	})
+  // Watch for widget instance and scroll to it when it becomes true
+  $scope.$watch('c.widgetinstance', function(newValue) {
+    if (newValue) {
+      $timeout(function() {
+        var element = document.getElementById('coverage-details');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+  });
 
+  // Listen for CaseId event
+  var caseIdListener = $rootScope.$on('CaseId', function(event, sysId) {
+    c.widgetinstance = false;
+  });
 
+  // Listen for AuditSysId event and fetch the widget data
+  var auditSysIdListener = $rootScope.$on('AuditSysId', function(event, sysId) {
+    if (sysId) {
+      $scope.receivedSysId = sysId;
 
-	$rootScope.$on('AuditSysId', function(event, sysId) {
-		//	console.log("recieved "+ sysId)
-		if(sysId){
-			$scope.receivedSysId = sysId;
+      spUtil
+        .get('kotak_form', {
+          table: 'x_rptp_kotak_uw_case',
+          view: 'coverage_details',
+          sys_id: $scope.receivedSysId,
+        })
+        .then((response) => {
+          c.widgetinstance = response;
+        })
+        .catch((error) => {
+          console.error('Error fetching widget instance:', error);
+          c.widgetinstance = false;
+        });
+    } else {
+      c.widgetinstance = false;
+    }
+  });
 
-			spUtil.get('kotak_form', {
-				table: 'x_rptp_kotak_uw_case',
-				view: 'coverage_details',
-				sys_id: $scope.receivedSysId 
-			}).then(response => {
-				c.widgetinstance = response;
-			});
-		}
-		else{
-
-			c.widgetinstance = false;
-		}
-	});
-
-
-
-
-
-
-};]]></client_script>
+  // Clean up event listeners to prevent memory leaks
+  $scope.$on('$destroy', function() {
+    caseIdListener();
+    auditSysIdListener();
+  });
+};
+]]></client_script>
         <controller_as>c</controller_as>
         <css>.widget-title {
   font-family: 'Arial', sans-serif;
@@ -101,19 +117,17 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-22 11:04:06</sys_created_on>
         <sys_id>f9ca281d47cad690e9ddbf66706d43fe</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Kotak Form View</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_f9ca281d47cad690e9ddbf66706d43fe</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-10 06:05:11</sys_updated_on>
-        <template><![CDATA[<div class="widget-title" ng-if = 'c.widgetinstance'>
-  <div class="content" >
-
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-22 05:00:32</sys_updated_on>
+        <template><![CDATA[<div class="widget-title" id="coverage-details" ng-if='c.widgetinstance'>
+  <div class="content">
     <span>Coverage Details</span>
-
   </div>
 </div>
 

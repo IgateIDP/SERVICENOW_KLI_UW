@@ -4,7 +4,7 @@
         <controller/>
         <description>Simple List New button to open new tab</description>
         <name>UXF Simple List New</name>
-        <parent_macroponent display_value="Simple List">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
+        <parent_macroponent display_value="Default">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
         <source_component/>
         <source_da display_value="create-new-uxf">17c13e7273131010a0a79329faf6a794</source_da>
         <source_element_id>list_1</source_element_id>

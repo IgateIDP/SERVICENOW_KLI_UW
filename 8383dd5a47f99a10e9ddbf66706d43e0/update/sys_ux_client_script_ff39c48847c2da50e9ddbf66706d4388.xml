@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="KLI Loan Table">6b39c48847c2da50e9ddbf66706d4385</macroponent>
+        <macroponent display_value="KLI Loan Table Record Page">6b39c48847c2da50e9ddbf66706d4385</macroponent>
         <name>viewport_gph/initiallyCollapsed</name>
         <preset/>
         <required_translations/>

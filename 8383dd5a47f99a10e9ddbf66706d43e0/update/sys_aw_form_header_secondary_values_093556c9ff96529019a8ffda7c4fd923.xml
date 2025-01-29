@@ -3,7 +3,7 @@
         <active>true</active>
         <conditions/>
         <field>ageing_1</field>
-        <form_header display_value="x_rptp_kotak_requirement_mapping">6f684ecdffd2529019a8ffda7c4fd9c7</form_header>
+        <form_header/>
         <order>100</order>
         <roles/>
         <sys_class_name>sys_aw_form_header_secondary_values</sys_class_name>

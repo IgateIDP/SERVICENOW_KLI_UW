@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="idr_consumer_replication_entry">
+    <idr_consumer_replication_entry action="INSERT_OR_UPDATE">
+        <audit_transformer display_value="IDR:IDR_CONSUMER_ENTRY:f4c0a5b1fffed6d019a8ffda7c4fd96c:x_rptp_smartinte_0_integ">d971e5b5fffed6d019a8ffda7c4fd90d</audit_transformer>
+        <coalesce_field/>
+        <discrete_field/>
+        <draft_record_transformer/>
+        <enable_coalesce>false</enable_coalesce>
+        <enable_transform>false</enable_transform>
+        <enforce_unique_coalesce>true</enforce_unique_coalesce>
+        <entry_set display_value="SmartAggregator-uat">3c54607947b65ed0e9ddbf66706d43ab</entry_set>
+        <filter/>
+        <include_attachments>false</include_attachments>
+        <include_fields>u_conditional_mandatory_value,u_min_entry_age,u_min_sumassured,u_variant_id,sys_updated_on,max_ppt,u_min_pt,sys_id,u_id,sys_updated_by,u_conditional_mandatory_field_name,sys_created_on,u_max_base_sumassured,u_max_entry_age,u_rider_id,sys_created_by,u_max_pt,u_is_mandatory,min_ppt,sys_mod_count,u_operator_for_conditional_mandatory,u_max_sumassured,u_min_base_sumassured,u_is_default,u_rider_duration_unit,u_product_id</include_fields>
+        <journal_transformer display_value="IDR:IDR_CONSUMER_ENTRY:f4c0a5b1fffed6d019a8ffda7c4fd96c:x_rptp_smartinte_0_integ">0971a5b5fffed6d019a8ffda7c4fd995</journal_transformer>
+        <preserve_modified_by>false</preserve_modified_by>
+        <record_transformer display_value="IDR:IDR_CONSUMER_ENTRY:f4c0a5b1fffed6d019a8ffda7c4fd96c:x_rptp_smartinte_0_integ">4171a5b5fffed6d019a8ffda7c4fd94a</record_transformer>
+        <run_business_rule>false</run_business_rule>
+        <sys_class_name>idr_consumer_replication_entry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:03:38</sys_created_on>
+        <sys_id>f4c0a5b1fffed6d019a8ffda7c4fd96c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_rptp_smartinte_0_integration_rider_per_variant</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>idr_consumer_replication_entry_f4c0a5b1fffed6d019a8ffda7c4fd96c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:06:40</sys_updated_on>
+        <table_name>x_rptp_smartinte_0_integration_rider_per_variant</table_name>
+        <target_table_name/>
+        <use_target_table_name>true</use_target_table_name>
+    </idr_consumer_replication_entry>
+</record_update>

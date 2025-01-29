@@ -1223,9 +1223,9 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8e0921d347969210e9ddbf66706d433b"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8e0921d347969210e9ddbf66706d433b^sys_idNOT INa92ee99347d69210e9ddbf66706d436d"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@79996174</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"a92ee99347d69210e9ddbf66706d436d","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Validate UW Decision Subflow">8e0921d347969210e9ddbf66706d433b</plan_id>
-        <snapshot>fc2ea99347d69210e9ddbf66706d437c</snapshot>
+        <snapshot>8cc131df47d69210e9ddbf66706d43b4</snapshot>
         <sys_created_by>kumar.raja</sys_created_by>
         <sys_created_on>2024-12-11 07:21:36</sys_created_on>
         <sys_domain>global</sys_domain>

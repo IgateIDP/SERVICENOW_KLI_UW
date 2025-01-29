@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d86c9912477d9a10e9ddbf66706d43cc" label="KLI Requirements" max_length="40" name="x_rptp_kotak_requirements" text_index="true" type="collection">
+        <element label="Description" max_length="200" name="description" type="string"/>
+        <element label="Requirement Name" max_length="40" name="requirement_name" type="string"/>
+        <element display="true" label="Requiremnt Id" max_length="40" name="requiremnt_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="req classfication" max_length="40" name="req_classfication" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Additional  requirements" value="Additional  requirements"/>
+            </choice>
+        </element>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medical" value="medical"/>
+                <element inactive_on_update="false" label="Non Medical" value="non_medical"/>
+                <element inactive_on_update="false" label="Non Medical Medical" sequence="0" value="Non Medical+Medical"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="requirement_name"/>
+            <element name="requiremnt_id"/>
+        </index>
+    </element>
+</database>

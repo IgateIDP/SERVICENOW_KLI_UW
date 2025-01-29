@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>x_rptp_kotak.Filtering Fields</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Filtering Fields</name>
+        <output_schema/>
+        <private>false</private>
+        <props>{&#13;
+  "type": "object",&#13;
+  "properties": {&#13;
+    "completeFields": {&#13;
+      "type": "object",&#13;
+      "description": "An object containing metadata for all fields on the form, where each key is a field name and the value is its metadata.",&#13;
+      "additionalProperties": {&#13;
+        "type": "object",&#13;
+        "properties": {&#13;
+          "label": { "type": "string", "description": "The display label of the field." },&#13;
+          "type": { "type": "string", "description": "The data type of the field (e.g., string, choice, number)." },&#13;
+          "mandatory": { "type": "boolean", "description": "Indicates if the field is mandatory." },&#13;
+          "readonly": { "type": "boolean", "description": "Indicates if the field is read-only." }&#13;
+        },&#13;
+        "required": ["label", "type"]&#13;
+      }&#13;
+    },&#13;
+    "needFields": {&#13;
+      "type": "string",&#13;
+      "description": "A comma-separated string of field names that are required to be filtered from the completeFields."&#13;
+    }&#13;
+  },&#13;
+  "required": ["completeFields", "needFields"]&#13;
+}&#13;
+</props>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var completeFields = input.completeFields; // Object with field names as keys
+    var neededFields = input.needFields.split(','); // Array of required field names
+
+    // Filter the fields to include only those needed
+    var filteredFields = {};
+    neededFields.forEach(fieldName => {
+        if (completeFields[fieldName]) { // Check if the field exists in completeFields
+            filteredFields[fieldName] = completeFields[fieldName];
+        }
+    });
+
+    return filteredFields; // Return or process the filtered fields
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 01:37:14</sys_created_on>
+        <sys_id>c45c4f1e474292d0e9ddbf66706d43fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Filtering Fields</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_c45c4f1e474292d0e9ddbf66706d43fd</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 01:41:33</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="DELETE" query="documentkey=c45c4f1e474292d0e9ddbf66706d43fd"/>
+    <sys_es_latest_script action="DELETE">
+        <id>c45c4f1e474292d0e9ddbf66706d43fd</id>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 01:37:14</sys_created_on>
+        <sys_id>aa7f8312478292d0e9ddbf66706d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 01:37:14</sys_updated_on>
+        <table>sys_ux_data_broker_transform</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_data_broker_transform_c45c4f1e474292d0e9ddbf66706d43fd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_transform"&gt;&lt;sys_ux_data_broker_transform action="INSERT_OR_UPDATE"&gt;&lt;acl_failure_result/&gt;&lt;api_name&gt;x_rptp_kotak.Filtering Fields&lt;/api_name&gt;&lt;batch_exclude&gt;false&lt;/batch_exclude&gt;&lt;description/&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;Filtering Fields&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;{&amp;#13;
+  "type": "object",&amp;#13;
+  "properties": {&amp;#13;
+    "completeFields": {&amp;#13;
+      "type": "object",&amp;#13;
+      "description": "An object containing metadata for all fields on the form, where each key is a field name and the value is its metadata.",&amp;#13;
+      "additionalProperties": {&amp;#13;
+        "type": "object",&amp;#13;
+        "properties": {&amp;#13;
+          "label": { "type": "string", "description": "The display label of the field." },&amp;#13;
+          "type": { "type": "string", "description": "The data type of the field (e.g., string, choice, number)." },&amp;#13;
+          "mandatory": { "type": "boolean", "description": "Indicates if the field is mandatory." },&amp;#13;
+          "readonly": { "type": "boolean", "description": "Indicates if the field is read-only." }&amp;#13;
+        },&amp;#13;
+        "required": ["label", "type"]&amp;#13;
+      }&amp;#13;
+    },&amp;#13;
+    "needFields": {&amp;#13;
+      "type": "string",&amp;#13;
+      "description": "A comma-separated string of field names that are required to be filtered from the completeFields."&amp;#13;
+    }&amp;#13;
+  },&amp;#13;
+  "required": ["completeFields", "needFields"]&amp;#13;
+}&amp;#13;
+&lt;/props&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input) {
+    var completeFields = input.completeFields; // Object with field names as keys
+    var neededFields = input.needFields.split(','); // Array of required field names
+
+    // Filter the fields to include only those needed
+    var filteredFields = {};
+    neededFields.forEach(fieldName =&gt; {
+        if (completeFields[fieldName]) { // Check if the field exists in completeFields
+            filteredFields[fieldName] = completeFields[fieldName];
+        }
+    });
+
+    return filteredFields; // Return or process the filtered fields
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_transform&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kumar.raja&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-26 01:37:14&lt;/sys_created_on&gt;&lt;sys_id&gt;c45c4f1e474292d0e9ddbf66706d43fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Filtering Fields&lt;/sys_name&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_transform_c45c4f1e474292d0e9ddbf66706d43fd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kumar.raja&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-26 01:41:33&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_transform&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c45c4f1e474292d0e9ddbf66706d43fd"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;c45c4f1e474292d0e9ddbf66706d43fd&lt;/id&gt;&lt;sys_created_by&gt;kumar.raja&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-26 01:37:14&lt;/sys_created_on&gt;&lt;sys_id&gt;aa7f8312478292d0e9ddbf66706d4349&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;kumar.raja&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-26 01:37:14&lt;/sys_updated_on&gt;&lt;table&gt;sys_ux_data_broker_transform&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1950005877</payload_hash>
+        <record_name>Filtering Fields</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 01:41:33</sys_created_on>
+        <sys_id>31709b56478292d0e9ddbf66706d438f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>193662186490000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:01</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>b1709b56ba8292d090b619c399e7bd8e</update_guid>
+        <update_guid_history>b1709b56ba8292d090b619c399e7bd8e:-1950005877,b67f0712c08292d090ea190ead199d0c:-277133295</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 02:12:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>152b04a3bf074f149612370fa7b12244</sys_id>
+        <sys_metadata>c45c4f1e474292d0e9ddbf66706d43fd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filtering Fields</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_c45c4f1e474292d0e9ddbf66706d43fd</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_c45c4f1e474292d0e9ddbf66706d43fd">31709b56478292d0e9ddbf66706d438f</sys_update_version>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 02:12:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

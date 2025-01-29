@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_footer</name>
+        <page display_value="Kotak demo">d9c8844460c2da508e4c247da13daee7</page>
+        <required_translations>[ ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>d1c88444bdc2da50d8802329d14296d8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_footer</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_page_property_d1c88444bdc2da50d8802329d14296d8</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-19 11:16:47</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_rptp_kotak.d9c8844460c2da508e4c247da13daee7.root.global.chrome_footer</unique_name>
+        <value>{
+    "public_page": {
+        "footer_topbar_options": {},
+        "footer_bar_options": {}
+    }
+}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=d1c88444bdc2da50d8802329d14296d8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_page_property_d1c88444bdc2da50d8802329d14296d8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_footer</name><page display_value="Kotak demo">d9c8844460c2da508e4c247da13daee7</page><required_translations>[ ]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>rushith</sys_created_by><sys_created_on>2024-11-18 11:22:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>d1c88444bdc2da50d8802329d14296d8</sys_id><sys_mod_count>1</sys_mod_count><sys_name>chrome_footer</sys_name><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_ux_page_property_d1c88444bdc2da50d8802329d14296d8</sys_update_name><sys_updated_by>rushith</sys_updated_by><sys_updated_on>2024-11-19 11:16:47</sys_updated_on><type>json</type><unique_name>x_rptp_kotak.d9c8844460c2da508e4c247da13daee7.root.global.chrome_footer</unique_name><value>{
+    "public_page": {
+        "footer_topbar_options": {},
+        "footer_bar_options": {}
+    }
+}</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=d1c88444bdc2da50d8802329d14296d8"/></record_update>]]></payload>
+        <payload_hash>-716007772</payload_hash>
+        <record_name>chrome_footer</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-19 11:16:47</sys_created_on>
+        <sys_id>4401d59047429e50e9ddbf66706d438b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1934423a8c60000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:08</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>8801d59065429e50e47a3c29ef396b8a</update_guid>
+        <update_guid_history>8801d59065429e50e47a3c29ef396b8a:-716007772,4c01d5907d429e5061f57d0d3ff85688:-976583164</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 06:39:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>0d7c4c2d5b9a48ef89743d8d58031769</sys_id>
+        <sys_metadata>d1c88444bdc2da50d8802329d14296d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_footer</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_d1c88444bdc2da50d8802329d14296d8</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_d1c88444bdc2da50d8802329d14296d8">4401d59047429e50e9ddbf66706d438b</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 06:39:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

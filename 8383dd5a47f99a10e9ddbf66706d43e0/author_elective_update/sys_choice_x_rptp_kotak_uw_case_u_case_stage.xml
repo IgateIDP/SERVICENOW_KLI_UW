@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_case_stage" table="x_rptp_kotak_uw_case" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_case_stage</element>
+            <name>x_rptp_kotak_uw_case</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-20 06:46:51</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_case_stage</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_choice_x_rptp_kotak_uw_case_u_case_stage</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-20 06:46:51</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Requirements menu</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-20 06:46:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-20 06:46:51</sys_updated_on>
+            <value>pending_requirements_menu</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UW Workbench menu</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-20 06:46:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-20 06:46:51</sys_updated_on>
+            <value>uw_workbench_menu</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Groups Operations Workbench</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-20 06:46:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-20 06:46:51</sys_updated_on>
+            <value>groups_operations_workbench</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_case_stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Integrated to GA</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>Ajmal.akram</sys_created_by>
+            <sys_created_on>2024-12-05 05:38:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Ajmal.akram</sys_updated_by>
+            <sys_updated_on>2024-12-05 05:39:03</sys_updated_on>
+            <value>integrated_to_ga</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

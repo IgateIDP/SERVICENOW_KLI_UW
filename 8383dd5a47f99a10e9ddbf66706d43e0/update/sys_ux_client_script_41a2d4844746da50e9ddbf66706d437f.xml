@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="Record vertical page ">05a2d4844746da50e9ddbf66706d4323</macroponent>
+        <macroponent display_value="Default">05a2d4844746da50e9ddbf66706d4323</macroponent>
         <name>content_tree_group/selectedItems</name>
         <preset/>
         <required_translations>[]</required_translations>

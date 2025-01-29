@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_rptp_kotak.user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-13 06:20:06</sys_created_on>
+        <sys_id>6f83519a47f99a10e9ddbf66706d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak.user</sys_name>
+        <sys_package display_value="">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_user_role_6f83519a47f99a10e9ddbf66706d43c2</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-13 06:20:06</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_user_role_6f83519a47f99a10e9ddbf66706d43c2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>x_rptp_kotak.user</name><scoped_admin>false</scoped_admin><suffix>user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>Ajmal.akram</sys_created_by><sys_created_on>2024-11-13 06:20:06</sys_created_on><sys_id>6f83519a47f99a10e9ddbf66706d43c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_rptp_kotak.user</sys_name><sys_package display_value="">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_user_role_6f83519a47f99a10e9ddbf66706d43c2</sys_update_name><sys_updated_by>Ajmal.akram</sys_updated_by><sys_updated_on>2024-11-13 06:20:06</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1214743419</payload_hash>
+        <record_name>x_rptp_kotak.user</record_name>
+        <reverted_from/>
+        <source>96b464424781ce5055784a02516d4381</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-13 06:20:06</sys_created_on>
+        <sys_id>e383519a47f99a10e9ddbf66706d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193242de0db0000001</sys_recorded_at>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-13 06:20:06</sys_updated_on>
+        <type>Role</type>
+        <update_guid>a783519af0f99a10fe7c8df7bd12e7c7</update_guid>
+        <update_guid_history>a783519af0f99a10fe7c8df7bd12e7c7:1214743419</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_rptp_kotak.user">410b71bd47e65a50e9ddbf66706d43f8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-12-19 02:42:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>4b74e5ecfdea44549a98005eee206710</sys_id>
+        <sys_metadata>6f83519a47f99a10e9ddbf66706d43c2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak.user</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_user_role_6f83519a47f99a10e9ddbf66706d43c2</sys_update_name>
+        <sys_update_version display_value="sys_user_role_6f83519a47f99a10e9ddbf66706d43c2">e383519a47f99a10e9ddbf66706d43c8</sys_update_version>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-19 02:42:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

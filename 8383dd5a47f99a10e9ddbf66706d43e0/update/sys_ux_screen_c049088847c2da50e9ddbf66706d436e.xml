@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="KLI Requirement Excel">3b39c48847c2da50e9ddbf66706d43eb</macroponent>
+        <macroponent display_value="KLI Requirement Excel Record Page">3b39c48847c2da50e9ddbf66706d43eb</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

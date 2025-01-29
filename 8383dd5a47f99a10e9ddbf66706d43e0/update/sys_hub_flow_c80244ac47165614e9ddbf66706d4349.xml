@@ -77,16 +77,16 @@
         <table>x_rptp_kotak_uw_case</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <active>false</active>
+        <data>{"run_on_extended":"false","run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any"}</data>
         <identifier>c80244ac47165614e9ddbf66706d4349</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-12-03 05:45:49</sys_created_on>
         <sys_id>188b48fc471ad614e9ddbf66706d43fc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-12-05 05:27:27</sys_updated_on>
+        <sys_updated_on>2024-12-05 10:19:06</sys_updated_on>
         <trigger display_value="">3ecd8c6047d65614e9ddbf66706d4363</trigger>
     </sys_trigger_runner_mapping>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c80244ac47165614e9ddbf66706d4349^sys_idNOT IN188b48fc471ad614e9ddbf66706d43fc"/>

@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-11-15 09:55:56</sys_created_on>
-        <sys_id>2c28188b47b1d250e9ddbf66706d4342</sys_id>
         <sys_name>Type of Case</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>

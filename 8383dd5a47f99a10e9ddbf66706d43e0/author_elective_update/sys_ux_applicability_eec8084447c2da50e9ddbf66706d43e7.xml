@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="DELETE">
+        <active>true</active>
+        <api_name>x_rptp_kotak.Audience for app kotak-demo</api_name>
+        <description/>
+        <name>Audience for app kotak-demo</name>
+        <role_names/>
+        <roles name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eec8084447c2da50e9ddbf66706d43e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app kotak-demo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_applicability_eec8084447c2da50e9ddbf66706d43e7</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:22:49</sys_updated_on>
+    </sys_ux_applicability>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_applicability_eec8084447c2da50e9ddbf66706d43e7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability"><sys_ux_applicability action="INSERT_OR_UPDATE"><active>true</active><api_name>x_rptp_kotak.Audience for app kotak-demo</api_name><description/><name>Audience for app kotak-demo</name><role_names/><roles name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</roles><sys_class_name>sys_ux_applicability</sys_class_name><sys_created_by>rushith</sys_created_by><sys_created_on>2024-11-18 11:22:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>eec8084447c2da50e9ddbf66706d43e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Audience for app kotak-demo</sys_name><sys_overrides/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_ux_applicability_eec8084447c2da50e9ddbf66706d43e7</sys_update_name><sys_updated_by>rushith</sys_updated_by><sys_updated_on>2024-11-18 11:22:49</sys_updated_on></sys_ux_applicability></record_update>]]></payload>
+        <payload_hash>-197994338</payload_hash>
+        <record_name>Audience for app kotak-demo</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:49</sys_created_on>
+        <sys_id>eec8084447c2da50e9ddbf66706d43ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1933f02d30a0000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:20</sys_updated_on>
+        <type>Audience</type>
+        <update_guid>62c80844e1c2da50ac1a15caf89257ea</update_guid>
+        <update_guid_history>62c80844e1c2da50ac1a15caf89257ea:-197994338</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 06:39:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability">sys_ux_applicability</sys_db_object>
+        <sys_id>16b2ce1d8c59436a8627081701de8264</sys_id>
+        <sys_metadata>eec8084447c2da50e9ddbf66706d43e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app kotak-demo</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_eec8084447c2da50e9ddbf66706d43e7</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_eec8084447c2da50e9ddbf66706d43e7">eec8084447c2da50e9ddbf66706d43ea</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 06:39:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

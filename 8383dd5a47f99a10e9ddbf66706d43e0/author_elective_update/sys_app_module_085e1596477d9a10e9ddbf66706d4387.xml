@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Kotak">6b83519a47f99a10e9ddbf66706d4333</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>UW Cases</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_rptp_kotak_uw_case</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_rptp_kotak.user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-13 07:07:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>085e1596477d9a10e9ddbf66706d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UW Cases</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_app_module_085e1596477d9a10e9ddbf66706d4387</sys_update_name>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-13 07:07:07</sys_updated_on>
+        <timeline_page/>
+        <title>UW Cases</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_app_module_085e1596477d9a10e9ddbf66706d4387</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Kotak">6b83519a47f99a10e9ddbf66706d4333</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>UW Cases</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_rptp_kotak_uw_case</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_rptp_kotak.user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>Ajmal.akram</sys_created_by><sys_created_on>2024-11-13 07:07:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>085e1596477d9a10e9ddbf66706d4387</sys_id><sys_mod_count>0</sys_mod_count><sys_name>UW Cases</sys_name><sys_overrides/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_app_module_085e1596477d9a10e9ddbf66706d4387</sys_update_name><sys_updated_by>Ajmal.akram</sys_updated_by><sys_updated_on>2024-11-13 07:07:07</sys_updated_on><timeline_page/><title>UW Cases</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1111155273</payload_hash>
+        <record_name>UW Cases</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-13 07:07:07</sys_created_on>
+        <sys_id>905e1596477d9a10e9ddbf66706d438a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1932458eb0b0000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:29</sys_updated_on>
+        <type>Module</type>
+        <update_guid>445e15960f7d9a100029385d416d0489</update_guid>
+        <update_guid_history>445e15960f7d9a100029385d416d0489:1111155273</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="UW Cases">15458e9a47f1da10e9ddbf66706d43c9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Ajmal.akram</sys_created_by>
+        <sys_created_on>2024-11-13 09:57:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>35d0e10bbe1e4978a8817cbc2a663ca4</sys_id>
+        <sys_metadata>085e1596477d9a10e9ddbf66706d4387</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UW Cases</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_app_module_085e1596477d9a10e9ddbf66706d4387</sys_update_name>
+        <sys_update_version display_value="sys_app_module_085e1596477d9a10e9ddbf66706d4387">905e1596477d9a10e9ddbf66706d438a</sys_update_version>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:57:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

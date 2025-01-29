@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-12-03 10:02:02</sys_created_on>
-        <sys_id>a1268db447921a14e9ddbf66706d433d</sys_id>
         <sys_name>Loan ID</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>

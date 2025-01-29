@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="02571ed647b5da10e9ddbf66706d4355" extends="csm_consumer" label="KLI Consumer" max_length="40" name="x_rptp_kotak_kli_consumer" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="100" name="address" type="string"/>
+        <element label="Age" max_length="40" name="age" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer Name" max_length="40" name="customer_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Member Client Id" max_length="40" name="member_client_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Member Number" max_length="40" name="member_number" reference_qual="null" reference_qual_condition="null" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2025-01-28 09:27:58</sys_created_on>
+        <sys_id>a8679532ff1f5a5019a8ffda7c4fd97e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_rptp_kotak_kotak_policy_product.x_rptp_kotak.kli_admin</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_security_acl display_value="x_rptp_kotak_kotak_policy_product">a4679532ff1f5a5019a8ffda7c4fd977</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a8679532ff1f5a5019a8ffda7c4fd97e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 09:49:34</sys_updated_on>
+        <sys_user_role display_value="x_rptp_kotak.kli_admin" name="x_rptp_kotak.kli_admin">172bb5bd47e65a50e9ddbf66706d433e</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_security_acl_role_a8679532ff1f5a5019a8ffda7c4fd97e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>rushith</sys_created_by><sys_created_on>2025-01-28 09:27:58</sys_created_on><sys_id>a8679532ff1f5a5019a8ffda7c4fd97e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_rptp_kotak_kotak_policy_product.x_rptp_kotak.kli_admin</sys_name><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_security_acl display_value="x_rptp_kotak_kotak_policy_product">a4679532ff1f5a5019a8ffda7c4fd977</sys_security_acl><sys_update_name>sys_security_acl_role_a8679532ff1f5a5019a8ffda7c4fd97e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-28 09:49:34</sys_updated_on><sys_user_role display_value="x_rptp_kotak.kli_admin" name="x_rptp_kotak.kli_admin">172bb5bd47e65a50e9ddbf66706d433e</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-207482505</payload_hash>
+        <record_name>x_rptp_kotak_kotak_policy_product.x_rptp_kotak.kli_admin</record_name>
+        <reverted_from/>
+        <source>1a6a557247db9690e9ddbf66706d43fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 09:49:34</sys_created_on>
+        <sys_id>455c197647db9690e9ddbf66706d43df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ac50f7690000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 09:49:34</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>895c197667db96902b3d1ae0e41305de</update_guid>
+        <update_guid_history>895c197667db96902b3d1ae0e41305de:-207482505,606795324e1f5a508eb8de3cb689c990:-1564368949</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_rptp_kotak_kotak_policy_product.x_rptp_kotak.kli_admin">8b47ed3e471f9690e9ddbf66706d43c6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 10:37:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>bb252856fd8146df8c95bdafc4917ab9</sys_id>
+        <sys_metadata>a8679532ff1f5a5019a8ffda7c4fd97e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_kotak_policy_product.x_rptp_kotak.kli_admin</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="">a4679532ff1f5a5019a8ffda7c4fd977</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_a8679532ff1f5a5019a8ffda7c4fd97e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_a8679532ff1f5a5019a8ffda7c4fd97e">455c197647db9690e9ddbf66706d43df</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 10:37:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

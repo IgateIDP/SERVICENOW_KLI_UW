@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="idr_consumer_replication_entry">
+    <idr_consumer_replication_entry action="INSERT_OR_UPDATE">
+        <audit_transformer display_value="IDR:IDR_CONSUMER_ENTRY:82c0e5b1fffed6d019a8ffda7c4fd9a4:x_rptp_smartinte_0_integ">f67169b5fffed6d019a8ffda7c4fd976</audit_transformer>
+        <coalesce_field/>
+        <discrete_field/>
+        <draft_record_transformer/>
+        <enable_coalesce>false</enable_coalesce>
+        <enable_transform>false</enable_transform>
+        <enforce_unique_coalesce>true</enforce_unique_coalesce>
+        <entry_set display_value="SmartAggregator-uat">3c54607947b65ed0e9ddbf66706d43ab</entry_set>
+        <filter/>
+        <include_attachments>false</include_attachments>
+        <include_fields>answer_number,code,source_field,question_category,isactive,sys_updated_on,answer_id,mandatory,default_question,sys_id,sys_updated_by,mandatory_for,sys_created_on,insurer,hdfc_id,sys_created_by,order,numberofsubquest,product,response_option,question,question_sub_category,product_variant,sys_mod_count,sub_question_id,has_sub_questions,question_id,insurance_category,parent_question,regex,question_responsetypeid</include_fields>
+        <journal_transformer display_value="IDR:IDR_CONSUMER_ENTRY:82c0e5b1fffed6d019a8ffda7c4fd9a4:x_rptp_smartinte_0_integ">be7169b5fffed6d019a8ffda7c4fd948</journal_transformer>
+        <preserve_modified_by>false</preserve_modified_by>
+        <record_transformer display_value="IDR:IDR_CONSUMER_ENTRY:82c0e5b1fffed6d019a8ffda7c4fd9a4:x_rptp_smartinte_0_integ">6e7169b5fffed6d019a8ffda7c4fd922</record_transformer>
+        <run_business_rule>false</run_business_rule>
+        <sys_class_name>idr_consumer_replication_entry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 11:03:42</sys_created_on>
+        <sys_id>82c0e5b1fffed6d019a8ffda7c4fd9a4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_rptp_smartinte_0_integration_question_configuration</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>idr_consumer_replication_entry_82c0e5b1fffed6d019a8ffda7c4fd9a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 11:06:47</sys_updated_on>
+        <table_name>x_rptp_smartinte_0_integration_question_configuration</table_name>
+        <target_table_name/>
+        <use_target_table_name>true</use_target_table_name>
+    </idr_consumer_replication_entry>
+</record_update>

@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>balakrishna</sys_created_by>
         <sys_created_on>2024-11-13 12:33:53</sys_created_on>
-        <sys_id>23e8e65647b9da10e9ddbf66706d43c2</sys_id>
         <sys_name>Case Id</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>

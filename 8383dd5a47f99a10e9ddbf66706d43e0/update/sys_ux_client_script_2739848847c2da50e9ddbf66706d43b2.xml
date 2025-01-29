@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="KLI Consumer">9f39848847c2da50e9ddbf66706d43ae</macroponent>
+        <macroponent display_value="KLI Consumer Record Page">9f39848847c2da50e9ddbf66706d43ae</macroponent>
         <name>viewport_gph/initiallyCollapsed</name>
         <preset/>
         <required_translations/>

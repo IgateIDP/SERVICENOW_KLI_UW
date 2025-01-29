@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>A default view for Kotak demo generated</description>
+        <name>view</name>
+        <page display_value="">d9c8844460c2da508e4c247da13daee7</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-11-18 11:22:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>11c88444a3c2da5099c32acf425728d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_ux_page_property_11c88444a3c2da5099c32acf425728d8</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-11-18 11:22:45</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_rptp_kotak.d9c8844460c2da508e4c247da13daee7.root.view</unique_name>
+        <value>workspace-kotak-demo-0</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ux_page_property_11c88444a3c2da5099c32acf425728d8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>A default view for Kotak demo generated</description><name>view</name><page display_value="">d9c8844460c2da508e4c247da13daee7</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>rushith</sys_created_by><sys_created_on>2024-11-18 11:22:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>11c88444a3c2da5099c32acf425728d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>view</sys_name><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_ux_page_property_11c88444a3c2da5099c32acf425728d8</sys_update_name><sys_updated_by>rushith</sys_updated_by><sys_updated_on>2024-11-18 11:22:45</sys_updated_on><type>string</type><unique_name>x_rptp_kotak.d9c8844460c2da508e4c247da13daee7.root.view</unique_name><value>workspace-kotak-demo-0</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>-699451799</payload_hash>
+        <record_name>view</record_name>
+        <reverted_from/>
+        <source>d7074e12ff12121019a8ffda7c4fd9b5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-12-08 06:36:28</sys_created_on>
+        <sys_id>c4517e35ff26d65019a8ffda7c4fd9fb</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>193a4fbd5e00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>84517e352c26d65076db898716ed15fb</update_guid>
+        <update_guid_history>84517e352c26d65076db898716ed15fb:-699451799</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-19 06:39:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>38bdf662d10943489db0d1b0aa9d7239</sys_id>
+        <sys_metadata>11c88444a3c2da5099c32acf425728d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_11c88444a3c2da5099c32acf425728d8</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_11c88444a3c2da5099c32acf425728d8">c4517e35ff26d65019a8ffda7c4fd9fb</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-19 06:39:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

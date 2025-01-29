@@ -5,7 +5,7 @@
         <advanced>false</advanced>
         <applies_to/>
         <condition/>
-        <decision_type/>
+        <decision_type>allow</decision_type>
         <description/>
         <local_or_existing/>
         <name>x.rptp.kotak-tracking-portal.*</name>

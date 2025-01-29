@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="case_type" table="x_rptp_kotak_uw_case" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>case_type</element>
+            <name>x_rptp_kotak_uw_case</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 12:05:48</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>case_type</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_choice_x_rptp_kotak_uw_case_case_type</sys_update_name>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 12:05:48</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 12:05:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 12:06:08</sys_updated_on>
+            <value>medical</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non medical</label>
+            <language>en</language>
+            <name>x_rptp_kotak_uw_case</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>rushith</sys_created_by>
+            <sys_created_on>2024-11-19 12:06:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>rushith</sys_updated_by>
+            <sys_updated_on>2024-11-19 12:06:11</sys_updated_on>
+            <value>non_medical</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

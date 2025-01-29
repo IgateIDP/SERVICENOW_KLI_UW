@@ -9,7 +9,7 @@
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
-        <sys_security_acl display_value="e364ad62ff100210397cffffffffffa3">caff1f9547369ad0e9ddbf66706d434f</sys_security_acl>
+        <sys_security_acl display_value="ab3c8a52ff500210397cffffffffff20">caff1f9547369ad0e9ddbf66706d434f</sys_security_acl>
         <sys_update_name>sys_security_acl_role_73506fd547369ad0e9ddbf66706d4316</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-12-30 07:04:35</sys_updated_on>

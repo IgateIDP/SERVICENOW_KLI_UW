@@ -4,7 +4,7 @@
         <controller/>
         <description>Call Case Type Selector / Product Selector from simple list</description>
         <name>Create Case Task</name>
-        <parent_macroponent display_value="Simple List">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
+        <parent_macroponent display_value="Default">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
         <source_component/>
         <source_da display_value="create-new-uxf">17a708dab7a12110c2c52fe4ae11a91f</source_da>
         <source_element_id>list_1</source_element_id>

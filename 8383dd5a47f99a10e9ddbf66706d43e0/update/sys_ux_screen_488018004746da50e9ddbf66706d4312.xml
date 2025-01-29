@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
-        <macroponent display_value="Standard record page">7b70d4004746da50e9ddbf66706d43f5</macroponent>
+        <macroponent display_value="Default">7b70d4004746da50e9ddbf66706d43f5</macroponent>
         <macroponent_config/>
         <name>Default</name>
         <order>0</order>

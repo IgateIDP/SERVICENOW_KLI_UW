@@ -5,7 +5,7 @@
         <description/>
         <name>Audience for app kotak-tracking-portal</name>
         <role_names/>
-        <roles name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</roles>
+        <roles>6f83519a47f99a10e9ddbf66706d43c2</roles>
         <sys_class_name>sys_ux_applicability</sys_class_name>
         <sys_created_by>kumar.raja</sys_created_by>
         <sys_created_on>2024-11-18 11:23:10</sys_created_on>

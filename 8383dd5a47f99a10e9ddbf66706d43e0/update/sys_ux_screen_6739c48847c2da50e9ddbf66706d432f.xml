@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="KLI Loan Table">2339c48847c2da50e9ddbf66706d4329</macroponent>
+        <macroponent display_value="KLI Loan Table Record Page">2339c48847c2da50e9ddbf66706d4329</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

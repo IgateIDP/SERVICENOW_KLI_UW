@@ -8,7 +8,7 @@
         <name>Create Case </name>
         <optional_parameters>query,sourceListSysIds,actionType,actionLocation,modalHeader,modalTitle,ownedProductDisclaimer,productLabel,parentServiceLabel,serviceLabel,cancelCta,cancelCtaTooltip,actionCta,actionCtaTooltip,productFilter,serviceCategory,productPlaceholder,searchPlaceholder,caseService,caseServiceHelpText,targetTable</optional_parameters>
         <order>0</order>
-        <parent_macroponent display_value="Simple List">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
+        <parent_macroponent display_value="Default">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
         <parent_macroponent_composition_element_id>modal_viewport_1</parent_macroponent_composition_element_id>
         <route_type>create_case</route_type>
         <screen_type display_value="Create Case">88395cd287121010a44a8467a7cb0bc4</screen_type>

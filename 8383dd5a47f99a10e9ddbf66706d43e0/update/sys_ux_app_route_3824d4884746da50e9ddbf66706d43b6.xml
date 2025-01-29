@@ -8,7 +8,7 @@
         <name>New asset modal</name>
         <optional_parameters>query</optional_parameters>
         <order>0</order>
-        <parent_macroponent display_value="Simple List">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
+        <parent_macroponent display_value="Default">c424d4884746da50e9ddbf66706d430b</parent_macroponent>
         <parent_macroponent_composition_element_id>modal_viewport_1</parent_macroponent_composition_element_id>
         <route_type>new-asset-modal</route_type>
         <screen_type display_value="New asset modal">a2487aa143190a508ade1febb7b8f2aa</screen_type>

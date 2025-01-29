@@ -113,7 +113,7 @@ pdf_kotak_uw_portal.prototype = {
             // Audit Trail Section
             dataHtml += "<div><h4 style=\"color: #3498db; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-bottom: 20px;\">" + "Activity" + "</h4></div>";
             dataHtml += '<table>';
-            dataHtml += '<tr><th>Action</th><th>Timestamp</th></tr>';
+            dataHtml += '<tr><th>Action</th><th>Timestamp</th><th>User</th></tr>';
 
             // Get audit trail records
             var auditGR = new GlideRecord('x_rptp_kotak_kotak_audit_trail');
@@ -126,6 +126,7 @@ pdf_kotak_uw_portal.prototype = {
                 dataHtml += '<tr>';
                 dataHtml += '<td>' + auditGR.getValue("activity") + '</td>';
                 dataHtml += '<td>' + auditGR.getValue("sys_created_on") + '</td>';
+				dataHtml += '<td>' + auditGR.getValue("sys_created_by") + '</td>';
                 dataHtml += '</tr>';
             }
 
@@ -314,14 +315,14 @@ pdf_kotak_uw_portal.prototype = {
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-11-19 07:08:45</sys_created_on>
         <sys_id>c523185047c65e50e9ddbf66706d43e5</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>pdf_kotak_uw_portal</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sys_script_include_c523185047c65e50e9ddbf66706d43e5</sys_update_name>
         <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-17 11:13:40</sys_updated_on>
+        <sys_updated_on>2025-01-29 05:27:49</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>c523185047c65e50e9ddbf66706d43e5</id>

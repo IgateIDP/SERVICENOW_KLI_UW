@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4a261f7a47399250e9ddbf66706d4306" extends="sys_import_set_row" label="Imp Tmpl X Rptp Kotak Requirements" max_length="40" name="u_imp_tmpl_x_rptp_kotak_requirements" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DESCITEM" label="DESCITEM" max_length="40" name="u_descitem" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LONGDESC" label="LONGDESC" max_length="309" name="u_longdesc" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SHORTDESC" label="SHORTDESC" max_length="40" name="u_shortdesc" type="string"/>
+    </element>
+</database>

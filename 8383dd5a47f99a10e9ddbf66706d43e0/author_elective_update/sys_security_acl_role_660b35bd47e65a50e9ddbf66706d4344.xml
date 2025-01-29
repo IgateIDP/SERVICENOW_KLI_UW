@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-19 02:42:45</sys_created_on>
+        <sys_id>660b35bd47e65a50e9ddbf66706d4344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_kli_consumer.snc_internal</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_security_acl display_value="">b387d21a47b5da10e9ddbf66706d436e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_660b35bd47e65a50e9ddbf66706d4344</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-19 02:42:45</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_security_acl_role_660b35bd47e65a50e9ddbf66706d4344</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>kumar.raja</sys_created_by><sys_created_on>2024-12-19 02:42:45</sys_created_on><sys_id>660b35bd47e65a50e9ddbf66706d4344</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_rptp_kotak_kli_consumer.snc_internal</sys_name><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_security_acl display_value="">b387d21a47b5da10e9ddbf66706d436e</sys_security_acl><sys_update_name>sys_security_acl_role_660b35bd47e65a50e9ddbf66706d4344</sys_update_name><sys_updated_by>kumar.raja</sys_updated_by><sys_updated_on>2024-12-19 02:42:45</sys_updated_on><sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-722723097</payload_hash>
+        <record_name>x_rptp_kotak_kli_consumer.snc_internal</record_name>
+        <reverted_from/>
+        <source>d7074e12ff12121019a8ffda7c4fd9b5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-12-08 06:36:28</sys_created_on>
+        <sys_id>3105fb1047b652d0e9ddbf66706d4318</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>193a4fbd5e00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Access Roles</type>
+        <update_guid>fd05fb10b1b652d04cfa6bf389584917</update_guid>
+        <update_guid_history>fd05fb10b1b652d04cfa6bf389584917:-722723097</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_rptp_kotak_kli_consumer.snc_internal">7905fb1047b652d0e9ddbf66706d4318</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-12-27 06:00:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0177c31f3f1341008002c2d18d604000</sys_id>
+        <sys_metadata>660b35bd47e65a50e9ddbf66706d4344</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_kli_consumer.snc_internal</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_660b35bd47e65a50e9ddbf66706d4344</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_660b35bd47e65a50e9ddbf66706d4344">3105fb1047b652d0e9ddbf66706d4318</sys_update_version>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-12-27 06:00:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

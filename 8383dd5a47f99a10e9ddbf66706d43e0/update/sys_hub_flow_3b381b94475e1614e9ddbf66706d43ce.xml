@@ -77,16 +77,16 @@
         <table>x_rptp_kotak_underwriter_decision</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>3b381b94475e1614e9ddbf66706d43ce</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-12-02 10:28:26</sys_created_on>
         <sys_id>6a92082047565614e9ddbf66706d43aa</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>rushith</sys_updated_by>
-        <sys_updated_on>2024-12-02 10:28:26</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-27 10:31:04</sys_updated_on>
         <trigger display_value="">c4bff39447165614e9ddbf66706d43e1</trigger>
     </sys_trigger_runner_mapping>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=3b381b94475e1614e9ddbf66706d43ce^sys_idNOT IN6a92082047565614e9ddbf66706d43aa"/>

@@ -1,17 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope,$location) {
+        <client_script><![CDATA[api.controller = function ($scope, $location, $window) {
   /* widget controller */
   var c = this;
-		$scope.redirectToExit=function(){
-		$location.search({
-			id:c.data.href
-		})
-	}
-	
-	 //$scope.heading = $scope.data.heading;
-};]]></client_script>
+
+  // Function to programmatically click the "Discard" button
+  function clickDiscardButton() {
+    var discardButton = document.querySelector(
+      'button[ng-click="buttonClicked(button)"]:not(.btn-primary)'
+    );
+    if (discardButton) {
+      //console.log("Discard button clicked automatically.");
+      discardButton.click(); // Programmatically click the Discard button
+    } else {
+     // console.warn("Discard button not found.");
+    }
+  }
+
+  // Redirect function for navigation with discard action
+  $scope.redirectToExit = function () {
+    console.log("Performing discard action before redirect.");
+    // Ensure the discard action is triggered
+
+    var newUrl = $location.absUrl().split('?')[0] + '?id=' + c.data.href;
+   // console.log("Redirecting to:", newUrl);
+		 
+    $window.location.href = newUrl;
+		clickDiscardButton();
+  };
+
+  // Handle back navigation (popstate event)
+  window.addEventListener("popstate", function () {
+   // console.log("Back button pressed.");
+    clickDiscardButton();
+  });
+
+  // Cleanup event listener when the widget is destroyed
+  $scope.$on("$destroy", function () {
+    window.removeEventListener("popstate", clickDiscardButton);
+  });
+  
+
+  // Set the heading dynamically from data
+  $scope.heading = $scope.data.heading;
+};
+]]></client_script>
         <controller_as>c</controller_as>
         <css>.widget-title {
   font-family: 'Arial', sans-serif;
@@ -81,14 +115,14 @@
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-20 11:28:41</sys_created_on>
         <sys_id>c85dd62847c65290e9ddbf66706d43b8</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>KLI Heading</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sp_widget_c85dd62847c65290e9ddbf66706d43b8</sys_update_name>
-        <sys_updated_by>Ajmal.akram</sys_updated_by>
-        <sys_updated_on>2024-11-20 11:52:00</sys_updated_on>
+        <sys_updated_by>Surya.Prathap</sys_updated_by>
+        <sys_updated_on>2025-01-22 06:22:05</sys_updated_on>
         <template><![CDATA[<div class="widget-title">
   <i class="fa fa-arrow-left back-icon" ng-click="redirectToExit()"></i>
 

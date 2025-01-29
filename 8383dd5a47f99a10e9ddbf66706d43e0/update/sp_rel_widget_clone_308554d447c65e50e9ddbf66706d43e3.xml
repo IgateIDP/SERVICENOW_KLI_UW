@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
-        <child display_value="Copy of KLI List">788554d447c65e50e9ddbf66706d43de</child>
+        <child display_value="Pending Req KLI List">788554d447c65e50e9ddbf66706d43de</child>
         <cloned>2024-04-17 11:07:59</cloned>
         <last_validated>2024-04-17 11:07:59</last_validated>
         <parent display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</parent>

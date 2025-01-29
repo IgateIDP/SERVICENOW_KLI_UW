@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">503b76f747f59a50e9ddbf66706d43ea</sp_column>
-        <sp_widget display_value="Form widget Kotak UW">4eca7eb747f59a50e9ddbf66706d4360</sp_widget>
+        <sp_widget/>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>kumar.raja</sys_created_by>
         <sys_created_on>2024-11-18 05:44:08</sys_created_on>

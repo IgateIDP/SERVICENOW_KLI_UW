@@ -6,7 +6,7 @@
         <dashboard display_value="Kotak demo">99c88444ccc2da506ef0befc7ed67be0</dashboard>
         <group/>
         <owner>false</owner>
-        <role display_value="x_rptp_kotak.user" name="x_rptp_kotak.user">6f83519a47f99a10e9ddbf66706d43c2</role>
+        <role/>
         <sys_class_name>par_dashboard_permission</sys_class_name>
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-11-18 11:22:50</sys_created_on>

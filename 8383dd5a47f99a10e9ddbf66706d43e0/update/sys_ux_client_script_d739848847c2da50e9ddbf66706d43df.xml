@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="Case">9739848847c2da50e9ddbf66706d433a</macroponent>
+        <macroponent display_value="Case Record Page">9739848847c2da50e9ddbf66706d433a</macroponent>
         <name>viewport_gph/initiallyCollapsed</name>
         <preset/>
         <required_translations/>

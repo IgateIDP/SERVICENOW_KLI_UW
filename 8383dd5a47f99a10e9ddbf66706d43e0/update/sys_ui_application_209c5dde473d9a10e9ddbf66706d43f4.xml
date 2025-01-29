@@ -4,7 +4,7 @@
         <hint/>
         <name>Kotak</name>
         <order/>
-        <roles>x_rptp_kotak.user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>Ajmal.akram</sys_created_by>
         <sys_created_on>2024-11-13 06:59:30</sys_created_on>

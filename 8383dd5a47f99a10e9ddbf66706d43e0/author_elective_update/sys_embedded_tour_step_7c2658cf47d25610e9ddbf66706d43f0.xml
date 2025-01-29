@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="DELETE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">70269c0f47d25610e9ddbf66706d43e1</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[Click here to export as excel file]]></content>
+        <guide display_value="Kotak uw case tour">9c91d04747d25610e9ddbf66706d431d</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/kotak_uw?id=nedmed_user"}</options>
+        <order>9</order>
+        <placement>bottom</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>samarth.n</sys_created_by>
+        <sys_created_on>2024-12-10 06:18:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7c2658cf47d25610e9ddbf66706d43f0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_7c2658cf47d25610e9ddbf66706d43f0</sys_update_name>
+        <sys_updated_by>samarth.n</sys_updated_by>
+        <sys_updated_on>2024-12-10 06:35:23</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">70269c0f47d25610e9ddbf66706d43e1</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>kotak_uw</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="DELETE" query="documentkey=7c2658cf47d25610e9ddbf66706d43f0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_embedded_tour_step_7c2658cf47d25610e9ddbf66706d43f0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;70269c0f47d25610e9ddbf66706d43e1&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[Click here to export as excel file]]&gt;&lt;/content&gt;&lt;guide display_value="Kotak uw case tour"&gt;9c91d04747d25610e9ddbf66706d431d&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/kotak_uw?id=nedmed_user"}&lt;/options&gt;&lt;order&gt;9&lt;/order&gt;&lt;placement&gt;bottom&lt;/placement&gt;&lt;skippable&gt;false&lt;/skippable&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;samarth.n&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-10 06:18:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7c2658cf47d25610e9ddbf66706d43f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Kotak" source="x_rptp_kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Kotak"&gt;8383dd5a47f99a10e9ddbf66706d43e0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_7c2658cf47d25610e9ddbf66706d43f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;samarth.n&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-10 06:35:23&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;70269c0f47d25610e9ddbf66706d43e1&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;kotak_uw&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=7c2658cf47d25610e9ddbf66706d43f0"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1967873989</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b3cc5679472e5a50e9ddbf66706d4355</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>samarth.n</sys_created_by>
+        <sys_created_on>2024-12-10 06:35:23</sys_created_on>
+        <sys_id>aaf914c747165610e9ddbf66706d4325</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>193af4792360000001</sys_recorded_at>
+        <sys_updated_by>Ajmal.akram</sys_updated_by>
+        <sys_updated_on>2024-12-19 05:10:27</sys_updated_on>
+        <type>Guided Tour Step</type>
+        <update_guid>eef914c7e21656105883dc5bf6f85a24</update_guid>
+        <update_guid_history>eef914c7e21656105883dc5bf6f85a24:1967873989,29f9d0c7ce16561093909609c7d8439d:-1708690607,382658cfcad2561059c095d9605c3cf2:1548830734</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>samarth.n</sys_created_by>
+        <sys_created_on>2024-12-10 06:35:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_step">sys_embedded_tour_step</sys_db_object>
+        <sys_id>1a44cfc3cb7941c285bec41e04297e64</sys_id>
+        <sys_metadata>7c2658cf47d25610e9ddbf66706d43f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_step_7c2658cf47d25610e9ddbf66706d43f0</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_step_7c2658cf47d25610e9ddbf66706d43f0">aaf914c747165610e9ddbf66706d4325</sys_update_version>
+        <sys_updated_by>samarth.n</sys_updated_by>
+        <sys_updated_on>2024-12-10 06:35:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New section 1" section_id="ac49c396474292d0e9ddbf66706d43dc" sys_domain="global" table="x_rptp_kotak_underwriter_decision" version="3" view="workspace-kotak-tracking-portal-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reason</element>
+            <position>0</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-26 01:10:07</sys_created_on>
+            <sys_id>69490796474292d0e9ddbf66706d436c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">ac49c396474292d0e9ddbf66706d43dc</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-26 01:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>1</position>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-26 01:10:07</sys_created_on>
+            <sys_id>e5490796474292d0e9ddbf66706d436d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">ac49c396474292d0e9ddbf66706d43dc</sys_ui_section>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-26 01:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New section 1</caption>
+            <header>false</header>
+            <name>x_rptp_kotak_underwriter_decision</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>kumar.raja</sys_created_by>
+            <sys_created_on>2024-11-26 01:10:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac49c396474292d0e9ddbf66706d43dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_rptp_kotak_underwriter_decision</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_ui_section_ac49c396474292d0e9ddbf66706d43dc</sys_update_name>
+            <sys_updated_by>kumar.raja</sys_updated_by>
+            <sys_updated_on>2024-11-26 01:10:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Kotak Tracking Portal 0" name="workspace-kotak-tracking-portal-0">dad80084bcc2da5008a3c2437217df06</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_ui_section_ac49c396474292d0e9ddbf66706d43dc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New section 1" section_id="ac49c396474292d0e9ddbf66706d43dc" sys_domain="global" table="x_rptp_kotak_underwriter_decision" version="3" view="workspace-kotak-tracking-portal-0"><sys_ui_element action="INSERT_OR_UPDATE"><element>reason</element><position>0</position><sys_created_by>kumar.raja</sys_created_by><sys_created_on>2024-11-26 01:10:07</sys_created_on><sys_id>69490796474292d0e9ddbf66706d436c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">ac49c396474292d0e9ddbf66706d43dc</sys_ui_section><sys_updated_by>kumar.raja</sys_updated_by><sys_updated_on>2024-11-26 01:10:07</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>comments</element><position>1</position><sys_created_by>kumar.raja</sys_created_by><sys_created_on>2024-11-26 01:10:07</sys_created_on><sys_id>e5490796474292d0e9ddbf66706d436d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_rptp_kotak_underwriter_decision" sys_domain="global" view="dad80084bcc2da5008a3c2437217df06">ac49c396474292d0e9ddbf66706d43dc</sys_ui_section><sys_updated_by>kumar.raja</sys_updated_by><sys_updated_on>2024-11-26 01:10:07</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New section 1</caption><header>false</header><name>x_rptp_kotak_underwriter_decision</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>kumar.raja</sys_created_by><sys_created_on>2024-11-26 01:10:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ac49c396474292d0e9ddbf66706d43dc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_rptp_kotak_underwriter_decision</sys_name><sys_overrides/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_ui_section_ac49c396474292d0e9ddbf66706d43dc</sys_update_name><sys_updated_by>kumar.raja</sys_updated_by><sys_updated_on>2024-11-26 01:10:03</sys_updated_on><sys_user/><title>false</title><view display_value="Workspace Kotak Tracking Portal 0" name="workspace-kotak-tracking-portal-0">dad80084bcc2da5008a3c2437217df06</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1772665552</payload_hash>
+        <record_name>KLI UnderWriter Decision</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 01:10:07</sys_created_on>
+        <sys_id>2d490796474292d0e9ddbf66706d436f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>1936604c1750000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:08:01</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>a1490796044292d01637781099ebc36f</update_guid>
+        <update_guid_history>a1490796044292d01637781099ebc36f:1772665552</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2024-11-26 02:07:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>7648a282255a49f886d147255d182c44</sys_id>
+        <sys_metadata>ac49c396474292d0e9ddbf66706d43dc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New section 1</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent display_value="KLI UnderWriter Decision">c3c4215a47bd9a10e9ddbf66706d43f3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_ui_section_ac49c396474292d0e9ddbf66706d43dc</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_ac49c396474292d0e9ddbf66706d43dc">2d490796474292d0e9ddbf66706d436f</sys_update_version>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2024-11-26 02:07:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

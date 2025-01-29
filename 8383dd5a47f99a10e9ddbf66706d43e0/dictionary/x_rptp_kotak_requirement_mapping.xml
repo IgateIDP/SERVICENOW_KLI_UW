@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="64ed9156477d9a10e9ddbf66706d43fb" label="KLI Requirement Mapping" max_length="40" name="x_rptp_kotak_requirement_mapping" text_index="true" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Ageing 1" max_length="40" name="ageing_1" type="integer"/>
+        <element label="Ageing 2" max_length="40" name="ageing_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Ageing 3" max_length="40" name="ageing_3" type="integer"/>
+        <element label="Case Id" max_length="40" name="case_id" reference="x_rptp_kotak_uw_case" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Classification" max_length="40" name="classification" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Additional" value="Additional"/>
+                <element inactive_on_update="false" label="Mandatory" value="Mandatory"/>
+            </choice>
+        </element>
+        <element label="Closure Date" max_length="40" name="closure_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Home / Center Visit" max_length="40" name="home_center_visit" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Medical Center/ TPA code" max_length="40" name="medical_center_tpa_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Medical Center/ TPA Name" max_length="40" name="medical_center_tpa_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:gs.getUserName();" dynamic_default_value="f97254ad47ca5a90e9ddbf66706d4318" label="Raised By" max_length="40" name="raised_by" type="string" use_dynamic_default="true"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Raised date" max_length="40" name="raised_date" type="glide_date" use_dynamic_default="true"/>
+        <element label="Reason for waiver" max_length="40" name="reason_for_waiver" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Recieved By" max_length="40" name="recieved_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Recieved Date" max_length="40" name="recieved_date" type="glide_date"/>
+        <element attributes="ref_auto_completer=AJAXTableCompleter,ref_ac_columns=description,ref_ac_columns_search=true,ref_ac_display_value=false" label="Requirement Id" max_length="40" name="requirement_id" reference="x_rptp_kotak_requirements" type="reference"/>
+        <element choice="1" default="O" label="Status " max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="1" value="O"/>
+                <element inactive_on_update="false" label="Received" sequence="2" value="R"/>
+                <element inactive_on_update="false" label="Waived" sequence="3" value="W"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Upload Date" max_length="40" name="upload_date" type="glide_date"/>
+        <element label="UW Additional Req" max_length="40" name="uw_additional_req" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Reason" max_length="40" name="u_reason" type="string"/>
+        <element label="Waived" max_length="40" name="waiver" reference_qual="null" reference_qual_condition="null" type="boolean"/>
+    </element>
+</database>

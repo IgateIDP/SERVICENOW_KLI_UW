@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="case_status" table="x_rptp_kotak_kli_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>case_status</element>
+            <name>x_rptp_kotak_kli_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:40:32</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>case_status</sys_name>
+            <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+            <sys_update_name>sys_choice_x_rptp_kotak_kli_task_case_status</sys_update_name>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:40:32</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UW pending</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_task</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:40:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:42:23</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Secondary UW required</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_task</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:40:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:42:28</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Senior UW required</label>
+            <language>en</language>
+            <name>x_rptp_kotak_kli_task</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>samarth.n</sys_created_by>
+            <sys_created_on>2024-12-05 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>samarth.n</sys_updated_by>
+            <sys_updated_on>2024-12-05 07:42:32</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

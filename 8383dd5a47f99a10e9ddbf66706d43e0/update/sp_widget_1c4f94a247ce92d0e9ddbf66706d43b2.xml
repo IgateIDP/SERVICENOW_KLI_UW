@@ -217,4 +217,15 @@ gs.addErrorMessage(gs.hasRole('admin'))
 </main>
 ]]></template>
     </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>1c4f94a247ce92d0e9ddbf66706d43b2</id>
+        <sys_created_by>nanditha.br</sys_created_by>
+        <sys_created_on>2024-11-26 07:26:00</sys_created_on>
+        <sys_id>6f4fd8a247ce92d0e9ddbf66706d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nanditha.br</sys_updated_by>
+        <sys_updated_on>2024-11-26 07:26:00</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

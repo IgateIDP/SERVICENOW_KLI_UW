@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="41e38696ffbd9a5019a8ffda7c4fd974" extends="sn_bom_ins_policy" label="KLI Policy" max_length="40" name="x_rptp_kotak_kil_policy" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Cover Applied" max_length="40" name="cover_applied" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Coverage Term" max_length="40" name="cover_term" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Master Policy Name" max_length="40" name="master_policy_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Master Policy Number" max_length="40" name="policy_no" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Product Code" max_length="40" name="product_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Product Name" max_length="40" name="product_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reinsurer Name" max_length="40" name="reinsurer_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Rider Name" max_length="40" name="rider_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Rider Sum Assured" max_length="40" name="rider_sum_assured" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Rider Term" max_length="40" name="rider_term" type="string"/>
+    </element>
+</database>

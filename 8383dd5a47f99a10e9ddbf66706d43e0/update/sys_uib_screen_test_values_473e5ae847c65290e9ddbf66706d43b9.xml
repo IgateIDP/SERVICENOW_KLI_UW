@@ -48,7 +48,7 @@
     "sysId": "e3e9ae2247711250e9ddbf66706d43f8",
     "views": "kotak_case_view"
 }</macroponent_config>
-        <screen display_value="Record Default copy">c73e5ae847c65290e9ddbf66706d43b4</screen>
+        <screen display_value="Case Record">c73e5ae847c65290e9ddbf66706d43b4</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>kumar.raja</sys_created_by>
         <sys_created_on>2024-11-20 11:32:43</sys_created_on>

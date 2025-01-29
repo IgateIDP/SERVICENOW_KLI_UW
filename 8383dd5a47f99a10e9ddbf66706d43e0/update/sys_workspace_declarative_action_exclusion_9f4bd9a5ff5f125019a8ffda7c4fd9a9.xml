@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_workspace_declarative_action_exclusion">
+    <sys_workspace_declarative_action_exclusion action="INSERT_OR_UPDATE">
+        <action_assignment display_value="edit_({{count}})">1a3fb85453103300099addeeff7b1259</action_assignment>
+        <exclude_all_child_tables>false</exclude_all_child_tables>
+        <exclude_self>true</exclude_self>
+        <sys_class_name>sys_workspace_declarative_action_exclusion</sys_class_name>
+        <sys_created_by>kumar.raja</sys_created_by>
+        <sys_created_on>2025-01-24 12:32:41</sys_created_on>
+        <sys_id>9f4bd9a5ff5f125019a8ffda7c4fd9a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_requirement_mapping</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_workspace_declarative_action_exclusion_9f4bd9a5ff5f125019a8ffda7c4fd9a9</sys_update_name>
+        <sys_updated_by>kumar.raja</sys_updated_by>
+        <sys_updated_on>2025-01-24 12:32:41</sys_updated_on>
+        <table>x_rptp_kotak_requirement_mapping</table>
+        <view/>
+    </sys_workspace_declarative_action_exclusion>
+</record_update>

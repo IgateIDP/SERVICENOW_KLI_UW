@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_form_header">
+    <sys_aw_form_header action="DELETE">
+        <active>true</active>
+        <header_image/>
+        <hide_tags>false</hide_tags>
+        <ignore_highlight>false</ignore_highlight>
+        <order>100</order>
+        <primary_field>sys_created_by</primary_field>
+        <secondary_fields/>
+        <specificity>10</specificity>
+        <subheading>sys_created_by</subheading>
+        <sys_class_name>sys_aw_form_header</sys_class_name>
+        <sys_created_by>Surya.Prathap</sys_created_by>
+        <sys_created_on>2024-12-04 10:40:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>22f55e4dff96529019a8ffda7c4fd983</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_rptp_kotak_requirements</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_aw_form_header_22f55e4dff96529019a8ffda7c4fd983</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-04 11:16:58</sys_updated_on>
+        <table>x_rptp_kotak_requirements</table>
+        <workspace/>
+    </sys_aw_form_header>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</application>
+        <file_path/>
+        <instance_id>59343d0ddb6dbddccaf99027c5961980</instance_id>
+        <instance_name>ven06798</instance_name>
+        <name>sys_aw_form_header_22f55e4dff96529019a8ffda7c4fd983</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_form_header"><sys_aw_form_header action="INSERT_OR_UPDATE"><active>true</active><header_image/><hide_tags>false</hide_tags><ignore_highlight>false</ignore_highlight><order>100</order><primary_field>sys_created_by</primary_field><secondary_fields/><specificity>10</specificity><subheading>sys_created_by</subheading><sys_class_name>sys_aw_form_header</sys_class_name><sys_created_by>Surya.Prathap</sys_created_by><sys_created_on>2024-12-04 10:40:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>22f55e4dff96529019a8ffda7c4fd983</sys_id><sys_mod_count>12</sys_mod_count><sys_name>x_rptp_kotak_requirements</sys_name><sys_overrides/><sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package><sys_policy/><sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope><sys_update_name>sys_aw_form_header_22f55e4dff96529019a8ffda7c4fd983</sys_update_name><sys_updated_by>rushith</sys_updated_by><sys_updated_on>2024-12-04 11:16:58</sys_updated_on><table>x_rptp_kotak_requirements</table><workspace/></sys_aw_form_header></record_update>]]></payload>
+        <payload_hash>-1013506068</payload_hash>
+        <record_name>x_rptp_kotak_requirements</record_name>
+        <reverted_from/>
+        <source>08682799ff5a169019a8ffda7c4fd945</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-04 11:16:58</sys_created_on>
+        <sys_id>74e0aec5ff5a529019a8ffda7c4fd97b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>193916335120000001</sys_recorded_at>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-05 11:07:51</sys_updated_on>
+        <type>Form Header</type>
+        <update_guid>38e0aec5cb5a5290991c76b1c768497a</update_guid>
+        <update_guid_history>38e0aec5cb5a5290991c76b1c768497a:-1013506068,f3302a850f5a529058f97392f34d050d:-1698177052,d510ee45465a529034ec653e8810f981:362726215,6edf9245ee5a5290fb913717771bfedd:-1827719837,80dfd6052c5a52902b40e30aff2a6302:-1633417296,698fdac11f5a5290795a1320d4643be1:-1555298192,e56fdac1635a529032a85c79aa08b34d:1990366391,1d4fde81855a52901c448f69106ed6b4:291571980,3d2f5e81e15a5290a0c57d4c31bdcdbe:-547880717,5b1f9a811e5a52904504b9c45048d8fd:291571980,adf85e09f3d652905f2863b9c8741527:171013756,3ab81ac5ffd652903ef15621a4da3500:707521919,719816c585d6529025a3587a650da7e5:-8923471</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2024-12-04 11:17:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_aw_form_header">sys_aw_form_header</sys_db_object>
+        <sys_id>c6b4aca6d2994350a8dd9fff0c50b900</sys_id>
+        <sys_metadata>22f55e4dff96529019a8ffda7c4fd983</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_rptp_kotak_requirements</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_scope_delete display_value="">cfe7baafbcd8466e9ed70a538234aa21</sys_scope_delete>
+        <sys_update_name>sys_aw_form_header_22f55e4dff96529019a8ffda7c4fd983</sys_update_name>
+        <sys_update_version display_value="sys_aw_form_header_22f55e4dff96529019a8ffda7c4fd983">74e0aec5ff5a529019a8ffda7c4fd97b</sys_update_version>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2024-12-04 11:17:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
