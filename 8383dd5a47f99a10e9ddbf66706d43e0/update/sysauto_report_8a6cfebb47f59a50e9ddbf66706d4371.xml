@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_report">
     <sysauto_report action="INSERT_OR_UPDATE">
         <active>false</active>
-        <address_list>samarth.jois@rightprompt.ai</address_list>
+        <address_list>prakash.siddappa@rightprompt.ai</address_list>
         <business_calendar/>
         <condition/>
         <conditional>false</conditional>
@@ -36,14 +36,14 @@
         <sys_created_by>rushith</sys_created_by>
         <sys_created_on>2024-11-18 05:49:29</sys_created_on>
         <sys_id>8a6cfebb47f59a50e9ddbf66706d4371</sys_id>
-        <sys_mod_count>72</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_name>Scheduled execution of Kotak Requirements excel</sys_name>
         <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
         <sys_update_name>sysauto_report_8a6cfebb47f59a50e9ddbf66706d4371</sys_update_name>
-        <sys_updated_by>samarth.n</sys_updated_by>
-        <sys_updated_on>2025-01-03 05:59:32</sys_updated_on>
+        <sys_updated_by>prakash.hs</sys_updated_by>
+        <sys_updated_on>2025-02-03 11:06:40</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <user_list/>

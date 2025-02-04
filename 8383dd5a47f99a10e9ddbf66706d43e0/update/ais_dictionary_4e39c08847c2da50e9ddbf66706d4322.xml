@@ -8,10 +8,10 @@
         <derived>true</derived>
         <field/>
         <label>kotak-demo Search Profile Default Spell Check Dictionary</label>
-        <last_derived>2025-01-29 08:26:57</last_derived>
+        <last_derived>2025-02-03 13:26:59</last_derived>
         <locale>en</locale>
         <name>x_rptp_kotak_kotak_demo_search_profile_default_spell_check_dictionary</name>
-        <publish_id>acbd4d8f-2675-4c63-a2b9-a06e3abfeed0</publish_id>
+        <publish_id>6a98970a-c296-4259-9350-e37c3ce8119b</publish_id>
         <punctuation_sensitive>false</punctuation_sensitive>
         <state>PUBLISHED</state>
         <sys_class_name>ais_dictionary</sys_class_name>
