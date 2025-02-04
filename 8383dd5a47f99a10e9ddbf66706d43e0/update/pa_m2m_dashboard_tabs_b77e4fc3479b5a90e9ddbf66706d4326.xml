@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="KLI dashboard">cb6e07c3479b5a90e9ddbf66706d4311</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2025-01-29 12:46:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b77e4fc3479b5a90e9ddbf66706d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cb6e07c3479b5a90e9ddbf66706d4311</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_b77e4fc3479b5a90e9ddbf66706d4326</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2025-01-29 12:46:52</sys_updated_on>
+        <tab display_value="New Tab 1">8a7e4fc3479b5a90e9ddbf66706d4303</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

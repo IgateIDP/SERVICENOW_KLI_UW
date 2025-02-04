@@ -73,6 +73,7 @@
         <element attributes="edge_encryption_enabled=true" label="Req Pending Ageing" max_length="40" name="req_pending_ageing" type="integer"/>
         <element label="Risk term" max_length="40" name="risk_term" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Source" max_length="40" name="source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="start_date" type="glide_date"/>
         <element label="Sum Assured" max_length="40" name="sum_assured" type="integer"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Type of Case" max_length="40" name="type_of_case" type="string">
             <choice>

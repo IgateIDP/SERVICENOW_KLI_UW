@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <id/>
+        <label>New Tab 1</label>
+        <language>en</language>
+        <name>pa_tabs</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>rushith</sys_created_by>
+        <sys_created_on>2025-01-29 12:46:47</sys_created_on>
+        <sys_id>aa7e4fc3479b5a90e9ddbf66706d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 1</sys_name>
+        <sys_package display_value="Kotak" source="x_rptp_kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kotak">8383dd5a47f99a10e9ddbf66706d43e0</sys_scope>
+        <sys_update_name>sys_translated_aa7e4fc3479b5a90e9ddbf66706d4315</sys_update_name>
+        <sys_updated_by>rushith</sys_updated_by>
+        <sys_updated_on>2025-01-29 12:46:47</sys_updated_on>
+        <value>8a7e4fc3479b5a90e9ddbf66706d4303New Tab 1</value>
+    </sys_translated>
+</record_update>
